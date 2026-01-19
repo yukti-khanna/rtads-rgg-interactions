@@ -31,8 +31,17 @@ import matplotlib.pyplot as plt
 # Import local modules robustly
 # -----------------------------------------------------------------------------
 _THIS = Path(__file__).resolve()
-_REPO = _THIS.parent.parent if _THIS.parent.name == "scripts" else _THIS.parent
-sys.path.insert(0, str(_REPO))
+# This script lives in: <repo>/fig1/scripts/figure1_make.py
+_FIG_DIR = _THIS.parents[1]          # <repo>/fig1
+_REPO_ROOT = _FIG_DIR.parent         # <repo>
+
+# Ensure local fig1 modules are importable (they live in <repo>/fig1)
+sys.path.insert(0, str(_FIG_DIR))
+
+# Default IO locations (relative to fig1/), independent of where you run the script from
+DEFAULT_INPUT_DIR = _FIG_DIR / "input"
+DEFAULT_OUTPUT_DIR = _FIG_DIR / "output"
+DEFAULT_CACHE_DIR = DEFAULT_OUTPUT_DIR / "cache_figure1"
 
 import tf_rbp_full_pipeline_with_tables as pipeline  # noqa: E402
 import tf_interactor_classes as ic                   # noqa: E402
@@ -299,7 +308,8 @@ def get_tf_interactor_class_matrix(cache_dir: str,
                                    RBP_set: Set[str],
                                    PME_set: Optional[Set[str]] = None,
                                    RAND_set: Optional[Set[str]] = None,
-                                   force_recompute: bool = False) -> pd.DataFrame:
+                                   force_recompute: bool = False,
+                                   signif_out_prefix: Optional[Path] = None) -> pd.DataFrame:
     name = "tf_interactor_classes"
     path = os.path.join(cache_dir, f"{name}.tsv")
     if (not force_recompute) and os.path.isfile(path):
@@ -313,7 +323,10 @@ def get_tf_interactor_class_matrix(cache_dir: str,
         RAND_set=RAND_set or set(),
     )
     save_plot_matrix(df, cache_dir, name)
-    save_vs_rbp_significance_tables(df, out_prefix=Path("output/tf_interactor_classes"), seed=42, n_perm=5000)
+    # Save significance tables next to other outputs (default: <fig1>/output/)
+    if signif_out_prefix is None:
+        signif_out_prefix = DEFAULT_OUTPUT_DIR / "tf_interactor_classes"
+    save_vs_rbp_significance_tables(df, out_prefix=signif_out_prefix, seed=42, n_perm=5000)
     return df
 
 
@@ -588,6 +601,7 @@ def build_composite_figure(df_inter_classes: pd.DataFrame,
     plot_panel_E_top_rbp_hubs(axE, df_rbp_hubs)
 
     
+    outfile.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(outfile, dpi=2400)
     plt.close(fig)
 
@@ -903,9 +917,9 @@ def save_vs_rbp_significance_tables(
 # -----------------------------------------------------------------------------
 def main():
     ap = argparse.ArgumentParser(description="Build Figure 1 (2×2: a,c / d,e) from cached matrices or raw inputs.")
-    ap.add_argument("--input-dir",  type=Path, default=Path("input"))
-    ap.add_argument("--output-dir", type=Path, default=Path("output"))
-    ap.add_argument("--cache-dir",  type=Path, default=Path("output/cache_figure1"))
+    ap.add_argument("--input-dir",  type=Path, default=DEFAULT_INPUT_DIR)
+    ap.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    ap.add_argument("--cache-dir",  type=Path, default=DEFAULT_CACHE_DIR)
     ap.add_argument("--seed", type=int, default=42, help="Seed for random_list sampling")
     ap.add_argument("--random-size", type=int, default=None, help="Size of random_list; default = len(RBP_set)")
     ap.add_argument("--random-universe", choices=["all", "graph"], default="all",
@@ -979,6 +993,7 @@ def main():
         PME_set=pme_genes,
         RAND_set=random_genes,
         force_recompute=args.force_recompute_cache,
+        signif_out_prefix=args.output_dir / "tf_interactor_classes",
     )
 
     # Outputs
