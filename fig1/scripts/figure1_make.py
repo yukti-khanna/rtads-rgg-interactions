@@ -371,6 +371,7 @@ def plot_panel_A_interactor_classes(ax, df: pd.DataFrame, middle: str = "median"
     medianprops = {"color": "black", "linewidth": 1.0} if middle == "median" else {"linewidth": 0.0}
     meanprops   = {"color": "black", "linewidth": 1.0} if middle == "mean"   else {"linewidth": 0.0}
 
+    '''#boxplot
     bp = ax.boxplot(
         data,
         labels=order,
@@ -422,6 +423,56 @@ def plot_panel_A_interactor_classes(ax, df: pd.DataFrame, middle: str = "median"
     for k in ("medians", "means"):
         for line in bp.get(k, []):
             line.set_zorder(2.5)
+    '''
+
+    ##violin plot
+    positions = np.arange(1, len(order) + 1)
+
+    vp = ax.violinplot(
+        data,
+        positions=positions,
+        widths=0.85,
+        showmeans=False,
+        showmedians=False,
+        showextrema=False,   # keep clean; we'll draw our own middle line
+    )
+
+    colors = {"RBP": COLOR_RBP_NODE, "TF": COLOR_TF_NODE, "PME": COLOR_PME, "Random": COLOR_RANDOM}
+
+    # style violins
+    for body, cls in zip(vp["bodies"], order):
+        body.set_facecolor(colors[cls])
+        body.set_alpha(0.6)
+        body.set_edgecolor("black")
+        body.set_linewidth(0.6)
+        body.set_zorder(2)
+
+    # ensure x ticks exist (since violinplot doesn't set labels like boxplot did)
+    ax.set_xticks(positions)
+
+    rng = np.random.default_rng(0)
+    jitter = 0.09
+
+    for i, cls in enumerate(order, start=1):
+        y = long.loc[long["class"] == cls, "percent"].dropna().to_numpy()
+        x = rng.normal(loc=i, scale=jitter, size=len(y))
+        ax.scatter(
+            x, y,
+            s=8,
+            color=colors[cls],
+            alpha=0.18,
+            linewidths=0,
+            zorder=0.5,          # behind violins
+            rasterized=True
+        )
+
+    halfw = 0.18
+    for i, y in enumerate(data, start=1):
+        if len(y) == 0:
+            continue
+        mid = float(np.mean(y)) if middle == "mean" else float(np.median(y))
+        ax.plot([i - halfw, i + halfw], [mid, mid], color="black", linewidth=1.0, zorder=3)
+
 
     # p-values → stars
     pvals_df = ic.compute_vs_rbp_pvalues(long, seed=42, n_perm=5000)
@@ -911,6 +962,49 @@ def save_vs_rbp_significance_tables(
 
     return mwu_df, multi_df
 
+def save_panels_separately(
+    df_inter: pd.DataFrame,
+    df_frac: pd.DataFrame,
+    df_tf_hubs: pd.DataFrame,
+    df_rbp_hubs: pd.DataFrame,
+    output_dir: Path,
+    *,
+    middle: str = "median",
+    star_gap: float = -0.7,
+    dpi: int = 2400,
+):
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Panel A
+    fig, ax = plt.subplots(figsize=(3.4, 3.2))
+    plot_panel_A_interactor_classes(ax, df_inter, middle=middle, star_gap=star_gap)
+    fig.tight_layout()
+    fig.savefig(output_dir / "Figure1A_interactor_classes.png", dpi=dpi)
+    plt.close(fig)
+
+    # Panel C
+    fig, ax = plt.subplots(figsize=(3.4, 3.2))
+    plot_panel_C_pie_rbp_fraction_bins(ax, df_frac)
+    fig.tight_layout()
+    fig.savefig(output_dir / "Figure1C_rbp_fraction_pie.png", dpi=dpi)
+    plt.close(fig)
+
+    # Panel D
+    fig, ax = plt.subplots(figsize=(3.6, 3.2))
+    plot_panel_D_top_tf_hubs(ax, df_tf_hubs)
+    fig.tight_layout()
+    fig.savefig(output_dir / "Figure1D_top_tf_hubs.png", dpi=dpi)
+    plt.close(fig)
+
+    # Panel E
+    fig, ax = plt.subplots(figsize=(3.6, 3.2))
+    plot_panel_E_top_rbp_hubs(ax, df_rbp_hubs)
+    fig.tight_layout()
+    fig.savefig(output_dir / "Figure1E_top_rbp_hubs.png", dpi=dpi)
+    plt.close(fig)
+
+    print(f"[saved] separate panels → {output_dir}")
+
 
 # -----------------------------------------------------------------------------
 # CLI
@@ -1020,7 +1114,16 @@ def main():
         )
         print(f"[saved] {png_out}")
         
-
+    save_panels_separately(
+        df_inter=df_inter,
+        df_frac=df_frac,
+        df_tf_hubs=df_tf_hubs,
+        df_rbp_hubs=df_rbp_hubs,
+        output_dir=args.output_dir,
+        middle=args.box_middle,
+        star_gap=-0.7,
+        dpi=600,
+    )
 
 if __name__ == "__main__":
     main()
