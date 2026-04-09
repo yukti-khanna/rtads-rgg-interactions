@@ -1,0 +1,2 @@
+mode	seed	universe_size	excluded_tf	excluded_rbp	excluded_pme	pool_size	sample_size	reused_existing	random_list_path
+all	42	20187	1464	4096	1199	14021	4106	True	input/random_list.txt

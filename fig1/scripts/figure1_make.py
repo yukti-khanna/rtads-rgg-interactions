@@ -27,21 +27,13 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
+
 # -----------------------------------------------------------------------------
 # Import local modules robustly
 # -----------------------------------------------------------------------------
 _THIS = Path(__file__).resolve()
-# This script lives in: <repo>/fig1/scripts/figure1_make.py
-_FIG_DIR = _THIS.parents[1]          # <repo>/fig1
-_REPO_ROOT = _FIG_DIR.parent         # <repo>
-
-# Ensure local fig1 modules are importable (they live in <repo>/fig1)
-sys.path.insert(0, str(_FIG_DIR))
-
-# Default IO locations (relative to fig1/), independent of where you run the script from
-DEFAULT_INPUT_DIR = _FIG_DIR / "input"
-DEFAULT_OUTPUT_DIR = _FIG_DIR / "output"
-DEFAULT_CACHE_DIR = DEFAULT_OUTPUT_DIR / "cache_figure1"
+_REPO = _THIS.parent.parent if _THIS.parent.name == "scripts" else _THIS.parent
+sys.path.insert(0, str(_REPO))
 
 import tf_rbp_full_pipeline_with_tables as pipeline  # noqa: E402
 import tf_interactor_classes as ic                   # noqa: E402
@@ -308,8 +300,7 @@ def get_tf_interactor_class_matrix(cache_dir: str,
                                    RBP_set: Set[str],
                                    PME_set: Optional[Set[str]] = None,
                                    RAND_set: Optional[Set[str]] = None,
-                                   force_recompute: bool = False,
-                                   signif_out_prefix: Optional[Path] = None) -> pd.DataFrame:
+                                   force_recompute: bool = False) -> pd.DataFrame:
     name = "tf_interactor_classes"
     path = os.path.join(cache_dir, f"{name}.tsv")
     if (not force_recompute) and os.path.isfile(path):
@@ -323,10 +314,7 @@ def get_tf_interactor_class_matrix(cache_dir: str,
         RAND_set=RAND_set or set(),
     )
     save_plot_matrix(df, cache_dir, name)
-    # Save significance tables next to other outputs (default: <fig1>/output/)
-    if signif_out_prefix is None:
-        signif_out_prefix = DEFAULT_OUTPUT_DIR / "tf_interactor_classes"
-    save_vs_rbp_significance_tables(df, out_prefix=signif_out_prefix, seed=42, n_perm=5000)
+    save_vs_rbp_significance_tables(df, out_prefix=Path("output/tf_interactor_classes"), seed=42, n_perm=5000)
     return df
 
 
@@ -336,6 +324,8 @@ def get_tf_interactor_class_matrix(cache_dir: str,
 def _clean_axes_min(ax):
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_linewidth(0.6)
+    ax.spines["bottom"].set_linewidth(0.6)
 
 def _panel_letter(ax, letter: str):
     ax.text(0.02, 0.98, letter, transform=ax.transAxes,
@@ -370,7 +360,7 @@ def plot_panel_A_interactor_classes(ax, df: pd.DataFrame, middle: str = "median"
     meanline    = (middle == "mean")
     medianprops = {"color": "black", "linewidth": 1.0} if middle == "median" else {"linewidth": 0.0}
     meanprops   = {"color": "black", "linewidth": 1.0} if middle == "mean"   else {"linewidth": 0.0}
-
+    
     '''#boxplot
     bp = ax.boxplot(
         data,
@@ -474,6 +464,7 @@ def plot_panel_A_interactor_classes(ax, df: pd.DataFrame, middle: str = "median"
         ax.plot([i - halfw, i + halfw], [mid, mid], color="black", linewidth=1.0, zorder=3)
 
 
+
     # p-values → stars
     pvals_df = ic.compute_vs_rbp_pvalues(long, seed=42, n_perm=5000)
     star_map = {row["class"]: ic.p_to_stars(row["pvalue"]) for _, row in pvals_df.iterrows()}
@@ -533,10 +524,95 @@ def plot_panel_A_interactor_classes(ax, df: pd.DataFrame, middle: str = "median"
         for lbl in raw_labels
     ]
     ax.set_xticklabels(wrapped_labels)
-    ax.set_title("TF interactor classes")
+    #ax.set_title("TF interactor classes")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
+def plot_panel_B_rbp_fraction_distribution(
+    ax,
+    tf_frac_df: pd.DataFrame,
+    *,
+    bins: int = 20,
+    kind: str = "hist",   # "hist" | "kde" | "ecdf"
+):
+    """
+    Panel (optional): plot the full distribution of per-TF RBP-interactor fractions.
+
+    This addresses reviewer feedback that binning (pie) can obscure heterogeneity.
+    Expects a column 'fraction_RBP' in tf_frac_df.
+    """
+    if tf_frac_df is None or tf_frac_df.empty:
+        ax.text(0.5, 0.5, "No data", ha="center", va="center")
+        ax.set_axis_off()
+        return
+
+    col = "fraction_RBP"
+    if col not in tf_frac_df.columns:
+        for alt in ["fraction_rbp", "frac_rbp", "rbp_fraction"]:
+            if alt in tf_frac_df.columns:
+                col = alt
+                break
+
+    x = pd.to_numeric(tf_frac_df[col], errors="coerce").dropna().to_numpy()
+    x = np.clip(x, 0.0, 1.0)
+
+    ax.set_xlim(0, 1)
+    ax.set_xticks([0.0, 0.25, 0.5, 0.75, 1.0])
+    ax.set_xticklabels(["0", "0.25", "0.5", "0.75", "1.0"])
+    ax.set_xlabel("Fraction of RBP interactors per TF")
+    ax.set_ylabel("TF count")
+    #ax.set_title("Distribution of RBP interaction bias across TFs")
+    _clean_axes_min(ax)
+
+    if kind == "ecdf":
+        xs = np.sort(x)
+        ys = np.arange(1, len(xs) + 1) / float(len(xs))
+        ax.plot(xs, ys, color=COLOR_RBP_NODE, linewidth=1.0)
+        ax.set_ylabel("Cumulative fraction of TFs")
+        return
+
+    if kind == "kde":
+        try:
+            from scipy.stats import gaussian_kde
+            kde = gaussian_kde(x)
+            xs = np.linspace(0, 1, 400)
+            ys = kde(xs)
+            binw = 1.0 / float(bins)
+            ys_counts = ys * len(x) * binw
+            ax.plot(xs, ys_counts, color=COLOR_RBP_NODE, linewidth=1.2)
+            return
+        except Exception:
+            kind = "hist"
+    
+    edges = np.linspace(0, 1, bins + 1)
+    counts, bin_edges, patches = ax.hist(
+        x,
+        bins=edges,
+        alpha=0.85,
+        edgecolor="white",
+        linewidth=0.4,
+    )
+
+    # Color bars by the same bins as the pie chart
+    for patch in patches:
+        left = patch.get_x()
+        width = patch.get_width()
+        center = left + 0.5 * width
+
+        if center < 0.25:
+            patch.set_facecolor(PIE_COLORS[2])  # <0.25 (light grey)
+        elif center <= 0.5:
+            patch.set_facecolor(PIE_COLORS[1])  # 0.25–0.5 (sky blue)
+        else:
+            patch.set_facecolor(PIE_COLORS[0])  # >0.5 (dark blue)
+
+    ax.set_xlim(0, 1)
+    ax.set_xticks([0.0, 0.25, 0.5, 0.75, 1.0])
+    ax.set_xticklabels(["0", "0.25", "0.5", "0.75", "1.0"])
+    med = float(np.median(x)) if len(x) else float("nan")
+    if np.isfinite(med):
+        ax.axvline(med, color="grey", linewidth=0.8, linestyle = "--")
+        #ax.text(med, ax.get_ylim()[1], " median", ha="left", va="top", fontsize=6)
 
 
 def plot_panel_C_pie_rbp_fraction_bins(ax, tf_frac_df: pd.DataFrame, radius: float = 1.3):
@@ -587,7 +663,7 @@ def plot_panel_C_pie_rbp_fraction_bins(ax, tf_frac_df: pd.DataFrame, radius: flo
             pct = (v / total) * 100.0
             ax.text(x, y, f"{pct:.1f}% TFs", ha="center", va="center", fontsize=6)
 
-    ax.set_title("RBP interaction bias across TFs", pad=title_pad)
+    #ax.set_title("RBP interaction bias across TFs", pad=title_pad)
     ax.set_aspect("equal", adjustable="box")
 
     extra = (max(radius, 1.0) - 1.0)
@@ -603,13 +679,16 @@ def plot_panel_D_top_tf_hubs(ax, tf_plot: pd.DataFrame):
     ax.bar([i - w/2 for i in x], tf_plot["degree_TF_RBP"], width=w, color=COLOR_TF_INTERACTORS)
     ax2.bar([i + w/2 for i in x], tf_plot["betweenness"],    width=w, color=COLOR_TF_BETWEENNESS)
     ax.set_xticks(x); ax.set_xticklabels(tf_plot["gene"], rotation=45, ha="right")
-    ax.set_ylabel("Number of RBP interactors")
-    ax2.set_ylabel("Betweenness centrality")
-    ax.set_title("Top TF hubs")
+    ax.set_ylabel("Number of RBP interactors", labelpad=2)
+    ax2.set_ylabel("Betweenness centrality", labelpad=2)
+    #ax.set_title("Top TF hubs")
     handle_degree = plt.Rectangle((0, 0), 1, 1, color=COLOR_TF_INTERACTORS)
     handle_betw   = plt.Rectangle((0, 0), 1, 1, color=COLOR_TF_BETWEENNESS)
     ax.legend([handle_degree, handle_betw], ["Degree", "Betweenness"], loc="upper right", frameon=False)
     _clean_axes_min(ax)
+    _clean_axes_min(ax2)
+    ax2.spines["right"].set_visible(True)
+    ax2.spines["right"].set_linewidth(0.6)
 
 
 def plot_panel_E_top_rbp_hubs(ax, rbp_plot: pd.DataFrame):
@@ -621,13 +700,18 @@ def plot_panel_E_top_rbp_hubs(ax, rbp_plot: pd.DataFrame):
     ax.bar([i - w/2 for i in x], rbp_plot["degree_TF_RBP"], width=w, color=COLOR_RBP_INTERACTORS)
     ax2.bar([i + w/2 for i in x], rbp_plot["betweenness"],    width=w, color=COLOR_RBP_BETWEENNESS)
     ax.set_xticks(x); ax.set_xticklabels(rbp_plot["gene"], rotation=45, ha="right")
-    ax.set_ylabel("Number of TF interactors")
-    ax2.set_ylabel("Betweenness centrality")
-    ax.set_title("Top RBP hubs")
+    ax.set_ylabel("Number of TF interactors", labelpad=2)
+    from matplotlib.ticker import MaxNLocator
+    ax.yaxis.set_major_locator(MaxNLocator(nbins=4))
+    ax2.set_ylabel("Betweenness centrality", labelpad=2)
+    #ax.set_title("Top RBP hubs")
     handle_degree = plt.Rectangle((0, 0), 1, 1, color=COLOR_RBP_INTERACTORS)
     handle_betw   = plt.Rectangle((0, 0), 1, 1, color=COLOR_RBP_BETWEENNESS)
     ax.legend([handle_degree, handle_betw], ["Degree", "Betweenness"], loc="upper right", frameon=False)
     _clean_axes_min(ax)
+    _clean_axes_min(ax2)
+    ax2.spines["right"].set_visible(True)
+    ax2.spines["right"].set_linewidth(0.6)
 
 
 # -----------------------------------------------------------------------------
@@ -647,12 +731,11 @@ def build_composite_figure(df_inter_classes: pd.DataFrame,
     axD, axE = axes[1, 0], axes[1, 1]
 
     plot_panel_A_interactor_classes(axA, df_inter_classes, middle=middle, star_gap=star_gap)
-    plot_panel_C_pie_rbp_fraction_bins(axC, df_frac_rbp)
+    plot_panel_B_rbp_fraction_distribution(axC, df_frac_rbp, bins=20, kind="hist")
     plot_panel_D_top_tf_hubs(axD, df_tf_hubs)
     plot_panel_E_top_rbp_hubs(axE, df_rbp_hubs)
 
     
-    outfile.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(outfile, dpi=2400)
     plt.close(fig)
 
@@ -805,7 +888,7 @@ def plot_null_histogram(null: np.ndarray, observed: int, outpath):
     ax.axvline(observed, linewidth=1.6)
     ax.set_xlabel("TF–RBP edge count (null)")
     ax.set_ylabel("Frequency")
-    ax.set_title("Degree-binned label permutation")
+    #ax.set_title("Degree-binned label permutation")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     fig.tight_layout()
@@ -976,28 +1059,35 @@ def save_panels_separately(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Panel A
-    fig, ax = plt.subplots(figsize=(3.4, 3.2))
+    fig, ax = plt.subplots(figsize=(3.6, 2.4))
     plot_panel_A_interactor_classes(ax, df_inter, middle=middle, star_gap=star_gap)
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1A_interactor_classes.png", dpi=dpi)
     plt.close(fig)
 
+    # Panel B (optional distribution; useful as Supplement if Panel C is a pie)
+    fig, ax = plt.subplots(figsize=(3.6, 2.4))
+    plot_panel_B_rbp_fraction_distribution(ax, df_frac, bins=20, kind="hist")
+    fig.tight_layout()
+    fig.savefig(output_dir / "Figure1B_rbp_fraction_distribution.png", dpi=dpi)
+    plt.close(fig)
+
     # Panel C
-    fig, ax = plt.subplots(figsize=(3.4, 3.2))
+    fig, ax = plt.subplots(figsize=(3.6, 2.4))
     plot_panel_C_pie_rbp_fraction_bins(ax, df_frac)
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1C_rbp_fraction_pie.png", dpi=dpi)
     plt.close(fig)
 
     # Panel D
-    fig, ax = plt.subplots(figsize=(3.6, 3.2))
+    fig, ax = plt.subplots(figsize=(3.6, 2.4))
     plot_panel_D_top_tf_hubs(ax, df_tf_hubs)
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1D_top_tf_hubs.png", dpi=dpi)
     plt.close(fig)
 
     # Panel E
-    fig, ax = plt.subplots(figsize=(3.6, 3.2))
+    fig, ax = plt.subplots(figsize=(3.6, 2.4))
     plot_panel_E_top_rbp_hubs(ax, df_rbp_hubs)
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1E_top_rbp_hubs.png", dpi=dpi)
@@ -1011,9 +1101,9 @@ def save_panels_separately(
 # -----------------------------------------------------------------------------
 def main():
     ap = argparse.ArgumentParser(description="Build Figure 1 (2×2: a,c / d,e) from cached matrices or raw inputs.")
-    ap.add_argument("--input-dir",  type=Path, default=DEFAULT_INPUT_DIR)
-    ap.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
-    ap.add_argument("--cache-dir",  type=Path, default=DEFAULT_CACHE_DIR)
+    ap.add_argument("--input-dir",  type=Path, default=Path("input"))
+    ap.add_argument("--output-dir", type=Path, default=Path("output"))
+    ap.add_argument("--cache-dir",  type=Path, default=Path("output/cache_figure1"))
     ap.add_argument("--seed", type=int, default=42, help="Seed for random_list sampling")
     ap.add_argument("--random-size", type=int, default=None, help="Size of random_list; default = len(RBP_set)")
     ap.add_argument("--random-universe", choices=["all", "graph"], default="all",
@@ -1087,7 +1177,6 @@ def main():
         PME_set=pme_genes,
         RAND_set=random_genes,
         force_recompute=args.force_recompute_cache,
-        signif_out_prefix=args.output_dir / "tf_interactor_classes",
     )
 
     # Outputs
@@ -1124,6 +1213,8 @@ def main():
         star_gap=-0.7,
         dpi=600,
     )
+
+
 
 if __name__ == "__main__":
     main()
