@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Iterable, Tuple
 import numpy as np
 import pandas as pd
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 # ---------- Project paths ----------
@@ -38,30 +39,54 @@ OUT_D2 = OUTPUT_MAIN_DIR / "fig3D_right_numrg_vs_len_rbp_highlight"
 DPI_SAVE = 600
 FIGSIZE_PANEL = (2.4, 2.3)
 FIGSIZE_PANEL_A = (3.6, 2.3)
+
 DPI_SAVE = 600
 COLOR_GREY = "#8F8F8F"   # darker print-safe grey
 COLOR_GREY_LIGHT = "#9A9A9A"
 COLOR_BLUE = "#0072B2"
 COLOR_BLACK = "#222222"
 
+# ---------- Typography / export settings ----------
+FONT_FAMILY = "Arial"
+FONT_SIZE_BASE = 7.0
+FONT_SIZE_LABEL = 7.0
+FONT_SIZE_TICK = 6.0
+FONT_SIZE_LEGEND = 6.5
+FONT_SIZE_COLORBAR = 6.5
+FONT_SIZE_TITLE = 7.0
+
+mpl.rcParams.update({
+    "pdf.fonttype": 42,
+    "ps.fonttype": 42,
+    "font.family": FONT_FAMILY,
+    "font.size": FONT_SIZE_BASE,
+    "axes.labelsize": FONT_SIZE_LABEL,
+    "axes.titlesize": FONT_SIZE_TITLE,
+    "xtick.labelsize": FONT_SIZE_TICK,
+    "ytick.labelsize": FONT_SIZE_TICK,
+    "legend.fontsize": FONT_SIZE_LEGEND,
+    "figure.dpi": DPI_SAVE,
+    "savefig.dpi": DPI_SAVE,
+})
+
 def _stem(path: str | Path) -> str:
     return Path(path).with_suffix("").name
 
 def style_axes(ax, xlabel: str = "", ylabel: str = "") -> None:
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
+    ax.set_xlabel(xlabel, fontsize=FONT_SIZE_LABEL)
+    ax.set_ylabel(ylabel, fontsize=FONT_SIZE_LABEL)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_linewidth(0.6)
     ax.spines["bottom"].set_linewidth(0.6)
-    ax.tick_params(width=0.5, length=3)
+    ax.tick_params(width=0.5, length=3, labelsize=FONT_SIZE_TICK)
 
 def style_colorbar(cbar, label: str = "") -> None:
-    cbar.set_label(label)
+    cbar.set_label(label, fontsize=FONT_SIZE_LABEL)
     cbar.outline.set_linewidth(0.5)
-    cbar.ax.tick_params(width=0.5, length=3)
+    cbar.ax.tick_params(width=0.5, length=3, labelsize=FONT_SIZE_COLORBAR)
 
-def style_legend(leg, size: float = 6.0) -> None:
+def style_legend(leg, size: float = FONT_SIZE_LEGEND) -> None:
     if leg is None:
         return
     leg.get_frame().set_linewidth(0.5)
@@ -144,7 +169,7 @@ def plot_rg_chance_cumulative(idr_fasta: Path, rgg_fasta: Path, outfile: Path) -
         ax.axvline(x_rgg, color=COLOR_BLUE, ls="--", lw=0.8, label=f"RG chance~1 per {int(round(mean_rg_len_rgg))} aa")
     style_axes(ax, xlabel="RG dipeptides per 100 aa", ylabel=f"Cumulative % of Regions")
     leg = ax.legend(loc="lower right", frameon=True)
-    style_legend(leg, size=6.0)
+    style_legend(leg, size=FONT_SIZE_LEGEND)
     fig.tight_layout()
     pdf_path = outfile.with_suffix(".pdf")
     png_path = outfile.with_suffix(".png")
@@ -200,7 +225,7 @@ def scatter_len_charge_highlight_rbps(df: pd.DataFrame, rbp_headers: set[str], o
                s=16, alpha=0.92, color=COLOR_BLUE, edgecolors="none", label="RBP regions")
     style_axes(ax, xlabel="RG region length (aa)", ylabel="Charge of RG region")
     leg = ax.legend(loc="best", frameon=True)
-    style_legend(leg, size=5.5)
+    style_legend(leg, size=FONT_SIZE_LEGEND)
     fig.tight_layout()
     pdf_path = outfile.with_suffix(".pdf")
     png_path = outfile.with_suffix(".png")
@@ -225,7 +250,7 @@ def scatter_numrg_len_highlight_rbps(df: pd.DataFrame, rbp_headers: set[str], ou
                s=16, alpha=0.92, color=COLOR_BLUE, edgecolors="none", label="RBP regions")
     style_axes(ax, xlabel="RG region length (aa)", ylabel="RG motifs per region")
     leg = ax.legend(loc="best", frameon=True)
-    style_legend(leg, size=5.5)
+    style_legend(leg, size=FONT_SIZE_LEGEND)
     fig.tight_layout()
     pdf_path = outfile.with_suffix(".pdf")
     png_path = outfile.with_suffix(".png")
