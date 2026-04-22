@@ -122,6 +122,7 @@ if m.sum() >= 3:
 plt.tight_layout()
 plt.savefig(outdir / "FigS6A_scaled_FINCHES_vs_simulated_training.png", dpi=600)
 plt.savefig(outdir / "FigS6A_scaled_FINCHES_vs_simulated_training.pdf")
+plt.savefig(outdir / "FigS6A_scaled_FINCHES_vs_simulated_training.svg")
 plt.close(fig)
 
 # --- Panel B ---
@@ -137,6 +138,7 @@ cb.set_label("Pair density")
 plt.tight_layout()
 plt.savefig(outdir / "FigS6B_scaled_FINCHES_vs_predicted_allpairs.png", dpi=600)
 plt.savefig(outdir / "FigS6B_scaled_FINCHES_vs_predicted_allpairs.pdf")
+plt.savefig(outdir / "FigS6B_scaled_FINCHES_vs_predicted_allpairs.svg")
 plt.close(fig)
 
 print("Wrote:", outdir.resolve())

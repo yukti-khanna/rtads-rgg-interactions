@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
-Figure S4 (Panels A–D): Plateau-aware hybrid model — *mechanism & behavior* (not held-out benchmarking).
+Figure S5 (Panels A–D): Plateau-aware hybrid model — *mechanism & behavior* (not held-out benchmarking).
 
 Uses ONLY your existing CSV artifacts:
   - Training (simulated):  sim_pairs_pred_with_hybrid_sel_cols_with_old.csv
   - Held-out (simulated):  taken_out_preds_with_hybrid_021125_sel_cols.csv
   - Unsampled (pred-only): unsim_preds_with_hybrid_021125_sel_cols.csv
 
-Outputs (PNG + PDF) to: ./figS4_panels/
-  - FigS4A_OCN_distribution.png/.pdf
-  - FigS4B_DeltaPred_vs_OCN.png/.pdf
-  - FigS4C_HighOCN_zoom_training.png/.pdf
-  - FigS4D_SimpleResiduals_LowHighOCN_training.png/.pdf
+Outputs (PNG + PDF) to: ./figS5_panels/
+  - FigS5A_OCN_distribution.png/.pdf
+  - FigS5B_DeltaPred_vs_OCN.png/.pdf
+  - FigS5C_HighOCN_zoom_training.png/.pdf
+  - FigS5D_SimpleResiduals_LowHighOCN_training.png/.pdf
 
 Panel meanings:
   A) Where OCN=40 sits in each dataset distribution (context for “high-OCN subset”)
@@ -36,7 +36,7 @@ UNSIM_CSV = Path("unsim_preds_with_hybrid_021125_sel_cols.csv")
 # -----------------------
 # OUTPUT
 # -----------------------
-OUTDIR = Path("figS4_panels")
+OUTDIR = Path("figS5_panels")
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
 # -----------------------
@@ -44,10 +44,14 @@ OUTDIR.mkdir(parents=True, exist_ok=True)
 # -----------------------
 OCN_THR = 40.0  # “high-OCN subset” threshold used in Results
 X_MIN, X_MAX = -20, 140
+RASTERIZE_SCATTER = True
+RASTERIZE_DPI = 600
+RASTERIZE_ZORDER = 1
 
 plt.rcParams.update({
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
+    "svg.fonttype": "none",
     "font.size": 8,
     "axes.labelsize": 8,
     "axes.titlesize": 8,
@@ -70,7 +74,8 @@ def save(fig, stem: str) -> None:
     clean_figure_axes(fig)
     fig.tight_layout()
     fig.savefig(OUTDIR / f"{stem}.png", dpi=600)
-    fig.savefig(OUTDIR / f"{stem}.pdf")
+    fig.savefig(OUTDIR / f"{stem}.pdf", dpi=RASTERIZE_DPI)
+    fig.savefig(OUTDIR / f"{stem}.svg", bbox_inches="tight", dpi=RASTERIZE_DPI)
     plt.close(fig)
 
 
@@ -99,7 +104,7 @@ ax.set_ylabel("Density")
 ax.set_title("OCN distribution and high-OCN threshold")
 ax.legend(frameon=True, fontsize=6, loc="upper right")
 
-save(fig, "FigS4A_OCN_distribution")
+save(fig, "FigS5A_OCN_distribution")
 
 
 # ============================================================
@@ -139,23 +144,25 @@ c_un, med_un = binned_median(uns_B, edges)
 fig = plt.figure(figsize=(3.2, 2.3))
 ax = plt.gca()
 
-ax.scatter(train_B["Opposite_Charge_Number"], train_B["Delta_pred"], s=8, alpha=0.55, label="Training")
-ax.scatter(held_B["Opposite_Charge_Number"],  held_B["Delta_pred"],  s=8, alpha=0.55, label="Held-out")
+ax.scatter(train_B["Opposite_Charge_Number"], train_B["Delta_pred"], s=8, alpha=0.55, label="Training",
+           rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
+ax.scatter(held_B["Opposite_Charge_Number"],  held_B["Delta_pred"],  s=8, alpha=0.55, label="Held-out",
+           rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
 ax.scatter(uns_samp["Opposite_Charge_Number"], uns_samp["Delta_pred"], s=2, alpha=0.20,
-           label="Unsampled (subset)")
+           label="Unsampled (subset)", rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
 
-ax.plot(c_tr, med_tr, linewidth=1.5, label="Training median (binned)")
-ax.plot(c_he, med_he, linewidth=1.5, label="Held-out median (binned)")
-ax.plot(c_un, med_un, linewidth=1.5, label="Unsampled median (binned)")
+ax.plot(c_tr, med_tr, linewidth=1.5, label="Training median (binned)", zorder=3)
+ax.plot(c_he, med_he, linewidth=1.5, label="Held-out median (binned)", zorder=3)
+ax.plot(c_un, med_un, linewidth=1.5, label="Unsampled median (binned)", zorder=3)
 
-ax.axvline(OCN_THR, linestyle="--", linewidth=1.0)
+ax.axvline(OCN_THR, linestyle="--", linewidth=1.0, zorder=3)
 ax.set_xlim(X_MIN, X_MAX)
 ax.set_xlabel("Opposite-Charge Number (OCN)")
 ax.set_ylabel(r"$\Delta_{\mathrm{pred}}$ (Hybrid − Base)")
 ax.set_title("Applied hybrid correction vs OCN")
 ax.legend(frameon=True, fontsize=6, loc="upper left")
 
-save(fig, "FigS4B_DeltaPred_vs_OCN")
+save(fig, "FigS5B_DeltaPred_vs_OCN")
 
 
 # ============================================================
@@ -168,19 +175,21 @@ sub = train_C.loc[train_C["Opposite_Charge_Number"] >= OCN_THR].copy()
 fig = plt.figure(figsize=(3.2, 2.6))
 ax = plt.gca()
 
-ax.scatter(sub["B22_corr1_log10"], sub["B22_pred_old"], s=10, alpha=0.6, label="Base MLP (old)")
-ax.scatter(sub["B22_corr1_log10"], sub["B22_pred_hybrid"], s=10, alpha=0.6, label="Hybrid")
+ax.scatter(sub["B22_corr1_log10"], sub["B22_pred_old"], s=10, alpha=0.6, label="Base MLP (old)",
+           rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
+ax.scatter(sub["B22_corr1_log10"], sub["B22_pred_hybrid"], s=10, alpha=0.6, label="Hybrid",
+           rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
 
 xmin = float(np.nanmin(sub["B22_corr1_log10"]))
 xmax = float(np.nanmax(sub["B22_corr1_log10"]))
-ax.plot([xmin, xmax], [xmin, xmax], linewidth=1.0, linestyle="--")
+ax.plot([xmin, xmax], [xmin, xmax], linewidth=1.0, linestyle="--", zorder=3)
 
 ax.set_xlabel(r"Simulated $y=\log_{10}(-B_{22})$")
 ax.set_ylabel(r"Predicted $y$")
 ax.set_title(f"High-OCN regime (training; OCN ≥ {int(OCN_THR)})")
 ax.legend(frameon=True, fontsize=7, loc="upper left")
 
-save(fig, "FigS4C_HighOCN_zoom_training")
+save(fig, "FigS5C_HighOCN_zoom_training")
 
 
 # ============================================================
@@ -217,13 +226,13 @@ fig = plt.figure(figsize=(3.1, 2.0))
 ax = plt.gca()
 
 # IQR whiskers + medians
-ax.vlines(x_base, [q1b_l, q1b_h], [q3b_l, q3b_h], linewidth=2.0)
-ax.plot(x_base, [mb_l, mb_h], marker="o", linestyle="None", label="Base")
+ax.vlines(x_base, [q1b_l, q1b_h], [q3b_l, q3b_h], linewidth=2.0, zorder=3)
+ax.plot(x_base, [mb_l, mb_h], marker="o", linestyle="None", label="Base", zorder=4)
 
-ax.vlines(x_hyb, [q1h_l, q1h_h], [q3h_l, q3h_h], linewidth=2.0)
-ax.plot(x_hyb, [mh_l, mh_h], marker="o", linestyle="None", label="Hybrid")
+ax.vlines(x_hyb, [q1h_l, q1h_h], [q3h_l, q3h_h], linewidth=2.0, zorder=3)
+ax.plot(x_hyb, [mh_l, mh_h], marker="o", linestyle="None", label="Hybrid", zorder=4)
 
-ax.axhline(0, linestyle="--", linewidth=1.0)
+ax.axhline(0, linestyle="--", linewidth=1.0, zorder=2)
 
 ax.set_xticks(x)
 ax.set_xticklabels([f"Low OCN\n(<40)\n(n={n_l})", f"High OCN\n(≥40)\n(n={n_h})"])
@@ -231,6 +240,6 @@ ax.set_ylabel(r"Residual ($y_{\mathrm{sim}}-\hat{y}$)")
 ax.set_title("Plateau correction re-centers residuals")
 ax.legend(frameon=True, fontsize=7, loc="lower right")
 
-save(fig, "FigS4D_SimpleResiduals_LowHighOCN_training")
+save(fig, "FigS5D_SimpleResiduals_LowHighOCN_training")
 
-print("Wrote S4 panels to:", OUTDIR.resolve())
+print("Wrote S5 panels to:", OUTDIR.resolve())

@@ -75,6 +75,7 @@ mpl.rcParams.update({
     "savefig.bbox": "tight",
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
+    "svg.fonttype": "none",
 })
 
 DEFAULT_RTADS_FASTA = INPUT_FASTA_DIR / "pred_tads_15aa.fasta"
@@ -329,9 +330,11 @@ def plot_boxpanels_two_group(
         ax.axis("off")
     pdf_path = Path(f"{out_prefix_box}.pdf")
     png_path = Path(f"{out_prefix_box}.png")
+    svg_path = Path(f"{out_prefix_box}.svg")
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(pdf_path)
     fig.savefig(png_path, dpi=600)
+    fig.savefig(svg_path)
     plt.close(fig)
     return pdf_path, png_path
 
@@ -469,9 +472,11 @@ def plot_detailed_overlap_upset(
     ax_mat.set_xlabel("Dataset combination")
     pdf_path = Path(f"{out_prefix}.pdf")
     png_path = Path(f"{out_prefix}.png")
+    svg_path = Path(f"{out_prefix}.svg")
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(pdf_path)
     fig.savefig(png_path, dpi=600)
+    fig.savefig(svg_path)
     plt.close(fig)
     return pdf_path, png_path
 
@@ -497,9 +502,11 @@ def plot_main_d_support_summary(mem: pd.DataFrame, out_prefix_main: str) -> Tupl
         ax.text(bar.get_x() + bar.get_width() / 2.0, value + ymax * 0.03, str(value), ha="center", va="bottom")
     pdf_path = Path(f"{out_prefix_main}.pdf")
     png_path = Path(f"{out_prefix_main}.png")
+    svg_path = Path(f"{out_prefix_main}.svg")
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(pdf_path)
     fig.savefig(png_path, dpi=600)
+    fig.savefig(svg_path)
     plt.close(fig)
     return pdf_path, png_path
 
@@ -589,9 +596,11 @@ def plot_s2a_mapping_yield(out_prefix: str) -> Tuple[Path, Path]:
 
     pdf_path = Path(f"{out_prefix}.pdf")
     png_path = Path(f"{out_prefix}.png")
+    svg_path = Path(f"{out_prefix}.svg")
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(pdf_path)
     fig.savefig(png_path, dpi=600)
+    fig.savefig(svg_path)
     plt.close(fig)
     return pdf_path, png_path
 
@@ -630,9 +639,11 @@ def plot_s2b_alignment_lengths(out_prefix: str) -> Tuple[Path, Path]:
 
     pdf_path = Path(f"{out_prefix}.pdf")
     png_path = Path(f"{out_prefix}.png")
+    svg_path = Path(f"{out_prefix}.svg")
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(pdf_path)
     fig.savefig(png_path, dpi=600)
+    fig.savefig(svg_path)
     plt.close(fig)
     return pdf_path, png_path
 # ----------------------------- CLI -------------------------------------------

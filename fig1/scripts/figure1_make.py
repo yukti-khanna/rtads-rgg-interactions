@@ -19,6 +19,7 @@ import argparse
 import os
 import sys
 import textwrap
+import subprocess
 from pathlib import Path
 from typing import Dict, Set, List, Optional, Tuple
 
@@ -63,9 +64,10 @@ mpl.rcParams.update({
     "savefig.dpi": 600,
     "savefig.bbox": "tight",
 
-    # --- PDF font embedding (TrueType 42) ---
+    # --- PDF / SVG font embedding ---
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
+    "svg.fonttype": "none",
 })
 
 COLOR_TF_NODE       = "#E69F00"   # TFs = orange
@@ -339,6 +341,50 @@ def _yticks_to_100(ax, step: int = 20):
     ax.yaxis.set_major_formatter(FixedFormatter([f"{int(t)}" for t in ticks]))
 
 
+def save_svg_and_emf(fig, outpath: Path, inkscape_path: Optional[str] = None) -> None:
+    """
+    Save SVG, and if Inkscape is available, convert that SVG to EMF.
+    On macOS, a typical Inkscape binary path is:
+    /Applications/Inkscape.app/Contents/MacOS/inkscape
+    """
+    outpath = Path(outpath)
+    svg_path = outpath.with_suffix(".svg")
+    emf_path = outpath.with_suffix(".emf")
+
+    fig.savefig(svg_path, format="svg", bbox_inches="tight")
+
+    candidates = []
+    if inkscape_path:
+        candidates.append(str(inkscape_path))
+    candidates.extend([
+        "/Applications/Inkscape.app/Contents/MacOS/inkscape",
+        "inkscape",
+    ])
+
+    inkscape_bin = None
+    for cand in candidates:
+        try:
+            subprocess.run([cand, "--version"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            inkscape_bin = cand
+            break
+        except Exception:
+            continue
+
+    if inkscape_bin is None:
+        print(f"[warn] Inkscape not found; skipping EMF export for {outpath.name}")
+        return
+
+    try:
+        subprocess.run(
+            [inkscape_bin, str(svg_path), f"--export-filename={emf_path}"],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+    except Exception as e:
+        print(f"[warn] EMF export failed for {outpath.name}: {e}")
+
+
 # -----------------------------------------------------------------------------
 # Panel drawers (A, C, D, E)
 # -----------------------------------------------------------------------------
@@ -452,8 +498,7 @@ def plot_panel_A_interactor_classes(ax, df: pd.DataFrame, middle: str = "median"
             color=colors[cls],
             alpha=0.18,
             linewidths=0,
-            zorder=0.5,          # behind violins
-            rasterized=True
+            zorder=0.5,
         )
 
     halfw = 0.18
@@ -723,7 +768,8 @@ def build_composite_figure(df_inter_classes: pd.DataFrame,
                            df_rbp_hubs: pd.DataFrame,
                            outfile: Path,
                            middle: str = "median",
-                           star_gap: float = -0.7) -> None:
+                           star_gap: float = -0.7,
+                           inkscape_path: Optional[str] = None) -> None:
     fig, axes = plt.subplots(2, 2, figsize=(7.2, 4.6))
     fig.subplots_adjust(wspace=0.6, hspace=0.8)
 
@@ -737,6 +783,7 @@ def build_composite_figure(df_inter_classes: pd.DataFrame,
 
     
     fig.savefig(outfile, dpi=2400)
+    save_svg_and_emf(fig, Path(outfile), inkscape_path=inkscape_path)
     plt.close(fig)
 
 # -----------------------------------------------------------------------------
@@ -881,7 +928,7 @@ def degree_binned_rbp_label_permutation(
     }
     return obs, null, float(p_emp), summary
 
-def plot_null_histogram(null: np.ndarray, observed: int, outpath):
+def plot_null_histogram(null: np.ndarray, observed: int, outpath, inkscape_path: Optional[str] = None):
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots(figsize=(3.2, 2.2))
     ax.hist(null, bins=40)
@@ -893,6 +940,7 @@ def plot_null_histogram(null: np.ndarray, observed: int, outpath):
     ax.spines["right"].set_visible(False)
     fig.tight_layout()
     fig.savefig(outpath)
+    save_svg_and_emf(fig, Path(outpath), inkscape_path=inkscape_path)
     plt.close(fig)
 
 from pathlib import Path
@@ -1055,6 +1103,7 @@ def save_panels_separately(
     middle: str = "median",
     star_gap: float = -0.7,
     dpi: int = 2400,
+    inkscape_path: Optional[str] = None,
 ):
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -1063,6 +1112,8 @@ def save_panels_separately(
     plot_panel_A_interactor_classes(ax, df_inter, middle=middle, star_gap=star_gap)
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1A_interactor_classes.png", dpi=dpi)
+    fig.savefig(output_dir / "Figure1A_interactor_classes.pdf", dpi=dpi)
+    save_svg_and_emf(fig, output_dir / "Figure1A_interactor_classes.png", inkscape_path=inkscape_path)
     plt.close(fig)
 
     # Panel B (optional distribution; useful as Supplement if Panel C is a pie)
@@ -1070,6 +1121,7 @@ def save_panels_separately(
     plot_panel_B_rbp_fraction_distribution(ax, df_frac, bins=20, kind="hist")
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1B_rbp_fraction_distribution.png", dpi=dpi)
+    save_svg_and_emf(fig, output_dir / "Figure1B_rbp_fraction_distribution.png", inkscape_path=inkscape_path)
     plt.close(fig)
 
     # Panel C
@@ -1077,6 +1129,7 @@ def save_panels_separately(
     plot_panel_C_pie_rbp_fraction_bins(ax, df_frac)
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1C_rbp_fraction_pie.png", dpi=dpi)
+    save_svg_and_emf(fig, output_dir / "Figure1C_rbp_fraction_pie.png", inkscape_path=inkscape_path)
     plt.close(fig)
 
     # Panel D
@@ -1084,6 +1137,7 @@ def save_panels_separately(
     plot_panel_D_top_tf_hubs(ax, df_tf_hubs)
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1D_top_tf_hubs.png", dpi=dpi)
+    save_svg_and_emf(fig, output_dir / "Figure1D_top_tf_hubs.png", inkscape_path=inkscape_path)
     plt.close(fig)
 
     # Panel E
@@ -1091,6 +1145,7 @@ def save_panels_separately(
     plot_panel_E_top_rbp_hubs(ax, df_rbp_hubs)
     fig.tight_layout()
     fig.savefig(output_dir / "Figure1E_top_rbp_hubs.png", dpi=dpi)
+    save_svg_and_emf(fig, output_dir / "Figure1E_top_rbp_hubs.png", inkscape_path=inkscape_path)
     plt.close(fig)
 
     print(f"[saved] separate panels → {output_dir}")
@@ -1116,6 +1171,12 @@ def main():
         choices=["median", "mean"],
         default="median",
         help="Center line in Panel A boxplot: 'median' (default) or 'mean'."
+    )
+    ap.add_argument(
+        "--inkscape",
+        type=str,
+        default=None,
+        help="Optional path to Inkscape binary for EMF export, e.g. /Applications/Inkscape.app/Contents/MacOS/inkscape"
     )
 
     args = ap.parse_args()
@@ -1188,6 +1249,7 @@ def main():
         df_rbp_hubs=df_rbp_hubs,
         outfile=pdf_out,
         middle=args.box_middle,   # <---
+        inkscape_path=args.inkscape,
     )
     print(f"[saved] {pdf_out}")
 
@@ -1200,6 +1262,7 @@ def main():
             df_rbp_hubs=df_rbp_hubs,
             outfile=png_out,       # <-- use png_out here
             middle=args.box_middle,
+            inkscape_path=args.inkscape,
         )
         print(f"[saved] {png_out}")
         
@@ -1212,6 +1275,7 @@ def main():
         middle=args.box_middle,
         star_gap=-0.7,
         dpi=600,
+        inkscape_path=args.inkscape,
     )
 
 

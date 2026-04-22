@@ -3,8 +3,11 @@ import argparse
 import re
 from pathlib import Path
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
+
+mpl.rcParams["svg.fonttype"] = "none"
 
 def _resolve_project_root() -> Path:
     here = Path(__file__).resolve().parent
@@ -108,6 +111,7 @@ def main(pred_fasta: Path, tf_fasta: Path, out_prefix_length: Path, out_prefix_m
     fig.tight_layout()
     fig.savefig(out_prefix_length.with_suffix(".pdf"))
     fig.savefig(out_prefix_length.with_suffix(".png"), dpi=600)
+    fig.savefig(out_prefix_length.with_suffix(".svg"), bbox_inches="tight")
     plt.close(fig)
 
     # Panel E: midpoint distribution
@@ -121,6 +125,7 @@ def main(pred_fasta: Path, tf_fasta: Path, out_prefix_length: Path, out_prefix_m
     fig.tight_layout()
     fig.savefig(out_prefix_midpoint.with_suffix(".pdf"))
     fig.savefig(out_prefix_midpoint.with_suffix(".png"), dpi=600)
+    fig.savefig(out_prefix_midpoint.with_suffix(".svg"), bbox_inches="tight")
     plt.close(fig)
 
 if __name__ == "__main__":

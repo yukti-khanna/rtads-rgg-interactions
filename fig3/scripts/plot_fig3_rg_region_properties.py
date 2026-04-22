@@ -58,6 +58,7 @@ FONT_SIZE_TITLE = 7.0
 mpl.rcParams.update({
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
+    "svg.fonttype": "none",
     "font.family": FONT_FAMILY,
     "font.size": FONT_SIZE_BASE,
     "axes.labelsize": FONT_SIZE_LABEL,
@@ -175,6 +176,7 @@ def plot_rg_chance_cumulative(idr_fasta: Path, rgg_fasta: Path, outfile: Path) -
     png_path = outfile.with_suffix(".png")
     fig.savefig(pdf_path, bbox_inches="tight")
     fig.savefig(png_path, dpi=DPI_SAVE, bbox_inches="tight")
+    fig.savefig(outfile.with_suffix(".svg"), bbox_inches="tight")
     plt.close(fig)
 
     cache = OUTPUT_CACHE_DIR / "fig3A_rg_chance_cumulative_data.tsv"
@@ -205,6 +207,7 @@ def fig_hexbin_len_vs_numrg_charge(df: pd.DataFrame, outfile: Path):
     png_path = outfile.with_suffix(".png")
     fig.savefig(pdf_path, dpi=DPI_SAVE, bbox_inches="tight")
     fig.savefig(png_path, dpi=DPI_SAVE, bbox_inches="tight")
+    fig.savefig(outfile.with_suffix(".svg"), bbox_inches="tight")
     plt.close(fig)
     return pdf_path, png_path
 
@@ -231,6 +234,7 @@ def scatter_len_charge_highlight_rbps(df: pd.DataFrame, rbp_headers: set[str], o
     png_path = outfile.with_suffix(".png")
     fig.savefig(pdf_path, dpi=DPI_SAVE, bbox_inches="tight", pad_inches=0.08)
     fig.savefig(png_path, dpi=DPI_SAVE, bbox_inches="tight", pad_inches=0.08)
+    fig.savefig(outfile.with_suffix(".svg"), bbox_inches="tight", pad_inches=0.08)
     plt.close(fig)
     return pdf_path, png_path
 
@@ -256,6 +260,7 @@ def scatter_numrg_len_highlight_rbps(df: pd.DataFrame, rbp_headers: set[str], ou
     png_path = outfile.with_suffix(".png")
     fig.savefig(pdf_path, dpi=DPI_SAVE, bbox_inches="tight", pad_inches=0.08)
     fig.savefig(png_path, dpi=DPI_SAVE, bbox_inches="tight", pad_inches=0.08)
+    fig.savefig(outfile.with_suffix(".svg"), bbox_inches="tight", pad_inches=0.08)
     plt.close(fig)
     return pdf_path, png_path
 

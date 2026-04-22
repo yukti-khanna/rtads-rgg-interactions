@@ -57,6 +57,7 @@ mpl.rcParams.update({
     "legend.fontsize": 6.0,
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
+    "svg.fonttype": "none",
     "axes.linewidth": 0.6,
     "xtick.major.width": 0.5,
     "ytick.major.width": 0.5,
@@ -138,9 +139,11 @@ def save_fig(fig: mpl.figure.Figure, stem: str) -> None:
     if SAVE_TIGHT:
         fig.savefig(pdf, bbox_inches="tight", pad_inches=0.01)
         fig.savefig(png, dpi=DPI_PNG, bbox_inches="tight", pad_inches=0.01)
+        fig.savefig(svg, bbox_inches="tight", pad_inches=0.01)
     else:
         fig.savefig(pdf)
         fig.savefig(png, dpi=DPI_PNG)
+        fig.savefig(svg)
     plt.close(fig)
 
 def pearsonr_safe(x: np.ndarray, y: np.ndarray) -> Tuple[float, int]:

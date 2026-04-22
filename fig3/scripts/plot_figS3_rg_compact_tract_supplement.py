@@ -4,6 +4,9 @@ import argparse
 from pathlib import Path
 import numpy as np
 import pandas as pd
+import matplotlib as mpl
+
+mpl.rcParams["svg.fonttype"] = "none"
 import matplotlib.pyplot as plt
 
 def _resolve_project_root() -> Path:
@@ -94,6 +97,7 @@ def main(in_xlsx: Path = IN_XLSX, out_prefix: Path = OUT_PREFIX):
     png_path = out_prefix.with_suffix(".png")
     fig.savefig(pdf_path, bbox_inches="tight")
     fig.savefig(png_path, dpi=600, bbox_inches="tight")
+    fig.savefig(pdf_path.with_suffix(".svg"), bbox_inches="tight")
     plt.close(fig)
     print(pdf_path)
     print(png_path)

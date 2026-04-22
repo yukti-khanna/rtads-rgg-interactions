@@ -54,6 +54,7 @@ mpl.rcParams.update({
 
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
+    "svg.fonttype": "none",
 })
 
 # =========================
@@ -123,12 +124,15 @@ def _new_fig_ax() -> tuple[mpl.figure.Figure, mpl.axes.Axes]:
 def save_fig(fig: mpl.figure.Figure, stem: str) -> None:
     pdf = OUTDIR / f"{stem}.pdf"
     png = OUTDIR / f"{stem}.png"
+    svg = OUTDIR / f"{stem}.svg"
     if SAVE_TIGHT:
         fig.savefig(pdf, bbox_inches="tight", pad_inches=0.01)
         fig.savefig(png, dpi=DPI_PNG, bbox_inches="tight", pad_inches=0.01)
+        fig.savefig(svg, bbox_inches="tight", pad_inches=0.01)
     else:
         fig.savefig(pdf)
         fig.savefig(png, dpi=DPI_PNG)
+        fig.savefig(svg)
     plt.close(fig)
 
 def clean_spines(ax: mpl.axes.Axes) -> None:

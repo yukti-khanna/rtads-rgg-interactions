@@ -25,6 +25,7 @@ mpl.rcParams.update({
     "legend.fontsize": 6,
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
+    "svg.fonttype": "none",
     "axes.linewidth": 0.6,
     "xtick.major.width": 0.6,
     "ytick.major.width": 0.6,
@@ -48,6 +49,9 @@ COLOR_GREY = "#656565"      # visible grey
 RNG_SEED = 12345
 N_BINS = 30
 MAX_BG_POINTS_F = 100_000  # non-RBP background downsampling in Panel F
+RASTERIZE_SCATTER = True
+RASTERIZE_DPI = 600
+RASTERIZE_ZORDER = 1
 
 # Fixed input files (hard-coded)
 TRAINING_CSV = "sim_pairs_pred_with_hybrid_sel_cols_with_old.csv"
@@ -275,8 +279,10 @@ def save_fig(fig: mpl.figure.Figure, name: str) -> None:
     clean_figure_axes(fig)
     pdf_path = OUTPUT_DIR / f"{name}.pdf"
     png_path = OUTPUT_DIR / f"{name}.png"
-    fig.savefig(pdf_path, bbox_inches="tight", pad_inches=0.01)
+    svg_path = OUTPUT_DIR / f"{name}.svg"
+    fig.savefig(pdf_path, bbox_inches="tight", pad_inches=0.01, dpi=RASTERIZE_DPI)
     fig.savefig(png_path, dpi=DPI_PNG, bbox_inches="tight", pad_inches=0.01)
+    fig.savefig(svg_path, bbox_inches="tight", pad_inches=0.01, dpi=RASTERIZE_DPI)
     plt.close(fig)
 
 import matplotlib.patches as mpatches
@@ -291,8 +297,10 @@ def save_fig_with_right_gutter(fig, ax, name, right_gutter_in=0.12):
                                transform=ax.transAxes, fill=False, linewidth=0)
     pdf = OUTPUT_DIR / f"{name}.pdf"
     png = OUTPUT_DIR / f"{name}.png"
-    fig.savefig(pdf, bbox_inches="tight", bbox_extra_artists=[extra], pad_inches=0.01)
+    svg = OUTPUT_DIR / f"{name}.svg"
+    fig.savefig(pdf, bbox_inches="tight", bbox_extra_artists=[extra], pad_inches=0.01, dpi=RASTERIZE_DPI)
     fig.savefig(png, dpi=DPI_PNG, bbox_inches="tight", bbox_extra_artists=[extra], pad_inches=0.01)
+    fig.savefig(svg, bbox_inches="tight", bbox_extra_artists=[extra], pad_inches=0.01, dpi=RASTERIZE_DPI)
     plt.close(fig)
 
 def prettify_feature_label(raw: str) -> str:
@@ -376,12 +384,14 @@ def panel_C(rbp_ids: set[str]) -> None:
     fig.set_constrained_layout_pads(w_pad=0.02, h_pad=0.02, wspace=0.0, hspace=0.0)
 
     ax.scatter(x, y_base, s=7, alpha=0.5, edgecolors="none", c=COLOR_GREY,
-               label=f"Base (r={r_base:.2f}, n={n_base})")
+               label=f"Base (r={r_base:.2f}, n={n_base})", rasterized=RASTERIZE_SCATTER,
+               zorder=RASTERIZE_ZORDER)
     ax.scatter(x, y_hyb, s=7, alpha=0.8, edgecolors="none", c=COLOR_BLUE,
-               label=f"Hybrid (r={r_hyb:.2f}, n={n_hyb})")
+               label=f"Hybrid (r={r_hyb:.2f}, n={n_hyb})", rasterized=RASTERIZE_SCATTER,
+               zorder=RASTERIZE_ZORDER)
 
     dmin, dmax = identity_limits(np.concatenate([x, x]), np.concatenate([y_base, y_hyb]))
-    ax.plot([dmin, dmax], [dmin, dmax], lw=0.8, color="black")  # identity
+    ax.plot([dmin, dmax], [dmin, dmax], lw=0.8, color="black", zorder=3)  # identity
     ax.set_xlim(dmin, dmax); ax.set_ylim(dmin, dmax)
     ax.set_aspect("equal", adjustable="box")
 
@@ -417,12 +427,14 @@ def panel_D(rbp_ids: set[str]) -> None:
     fig.set_constrained_layout_pads(w_pad=0.02, h_pad=0.02, wspace=0.0, hspace=0.0)
 
     # Non-RBP background in visible grey
-    ax.scatter(x[~is_rbp], y[~is_rbp], s=7, alpha=0.50, c=COLOR_GREY, edgecolors="none", label="Non-RBP")
+    ax.scatter(x[~is_rbp], y[~is_rbp], s=7, alpha=0.50, c=COLOR_GREY, edgecolors="none", label="Non-RBP",
+               rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
     # RBP overlay
-    ax.scatter(x[is_rbp], y[is_rbp], s=7, alpha=0.8, c=COLOR_BLUE, edgecolors="none", label="RBP")
+    ax.scatter(x[is_rbp], y[is_rbp], s=7, alpha=0.8, c=COLOR_BLUE, edgecolors="none", label="RBP",
+               rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
 
     dmin, dmax = identity_limits(x, y)
-    ax.plot([dmin, dmax], [dmin, dmax], lw=0.8, color="black")
+    ax.plot([dmin, dmax], [dmin, dmax], lw=0.8, color="black", zorder=3)
     ax.set_xlim(dmin, dmax); ax.set_ylim(dmin, dmax)
     ax.set_aspect("equal", adjustable="box")
 
@@ -481,8 +493,10 @@ def panel_E(rbp_ids: set[str]) -> None:
     fig, ax = plt.subplots(figsize=FIGSIZE, constrained_layout=True)
     fig.set_constrained_layout_pads(w_pad=0.02, h_pad=0.02, wspace=0.0, hspace=0.0)
 
-    ax.scatter(df_tr[ocn_tr], df_tr[y_sim_tr], s=7, alpha=0.50, c=COLOR_GREY, edgecolors="none", label="Training")
-    ax.scatter(df_te[ocn_te], df_te[y_sim_te], s=7, alpha=0.80, c=COLOR_BLUE, edgecolors="none", label="Held-Out")
+    ax.scatter(df_tr[ocn_tr], df_tr[y_sim_tr], s=7, alpha=0.50, c=COLOR_GREY, edgecolors="none", label="Training",
+               rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
+    ax.scatter(df_te[ocn_te], df_te[y_sim_te], s=7, alpha=0.80, c=COLOR_BLUE, edgecolors="none", label="Held-Out",
+               rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
 
     # Draw straight lines across each dataset span
     for (m, b, xvals, col) in [
@@ -557,14 +571,16 @@ def panel_F(rbp_ids: set[str]) -> None:
 
     # Background (All Pairs) in visible grey
     mask_bg = ~is_rbp_plot
-    ax.scatter(x_all[mask_bg], y_all[mask_bg], s=7, alpha=0.50, c=COLOR_GREY, edgecolors="none", label="All Pairs")
+    ax.scatter(x_all[mask_bg], y_all[mask_bg], s=7, alpha=0.50, c=COLOR_GREY, edgecolors="none", label="All Pairs",
+               rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
     # RBP overlay in blue
-    ax.scatter(x_all[~mask_bg], y_all[~mask_bg], s=7, alpha=0.80, c=COLOR_BLUE, edgecolors="none", label="RBP")
+    ax.scatter(x_all[~mask_bg], y_all[~mask_bg], s=7, alpha=0.80, c=COLOR_BLUE, edgecolors="none", label="RBP",
+               rasterized=RASTERIZE_SCATTER, zorder=RASTERIZE_ZORDER)
 
     # Straight fit line for All Pairs (computed on ALL points)
     if np.isfinite(m_all) and np.isfinite(b_all) and len(df) > 0:
         xa, xb = np.nanmin(df[ocn_col]), np.nanmax(df[ocn_col])
-        ax.plot([xa, xb], [m_all*xa + b_all, m_all*xb + b_all], lw=1.0, color="black")
+        ax.plot([xa, xb], [m_all*xa + b_all, m_all*xb + b_all], lw=1.0, color="black", zorder=3)
 
     ax.set_xlabel(LBL_X_OCN)
     ax.set_ylabel(LBL_Y_PRED_HYB)

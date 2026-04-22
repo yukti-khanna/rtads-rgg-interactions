@@ -25,6 +25,7 @@ mpl.rcParams.update({
     "legend.fontsize": 6,
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
+    "svg.fonttype": "none",
     "axes.linewidth": 0.6,
     "xtick.major.width": 0.6,
     "ytick.major.width": 0.6,
@@ -254,6 +255,7 @@ def save_fig(fig: mpl.figure.Figure, name: str) -> None:
     png_path = OUTPUT_DIR / f"{name}.png"
     fig.savefig(pdf_path, bbox_inches="tight", pad_inches=0.01)
     fig.savefig(png_path, dpi=DPI_PNG, bbox_inches="tight", pad_inches=0.01)
+    fig.savefig(svg_path, bbox_inches="tight", pad_inches=0.01)
     plt.close(fig)
 
 import matplotlib.patches as mpatches
@@ -269,6 +271,7 @@ def save_fig_with_right_gutter(fig, ax, name, right_gutter_in=0.12):
     png = OUTPUT_DIR / f"{name}.png"
     fig.savefig(pdf, bbox_inches="tight", bbox_extra_artists=[extra], pad_inches=0.01)
     fig.savefig(png, dpi=DPI_PNG, bbox_inches="tight", bbox_extra_artists=[extra], pad_inches=0.01)
+    fig.savefig(svg, bbox_inches="tight", bbox_extra_artists=[extra], pad_inches=0.01)
     plt.close(fig)
 
 def prettify_feature_label(raw: str) -> str:

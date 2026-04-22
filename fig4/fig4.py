@@ -33,20 +33,22 @@ from scipy import stats
 
 
 # ============================ Global Style (EXACT) ============================
-FONT_SCALE = 1.25
+FONT_SCALE = 1.0
 def _fs(pts: float) -> float: return float(pts) * float(FONT_SCALE)
 
 AXIS_LABEL_FONTSIZE = _fs(6.5)
 AXIS_TITLE_FONTSIZE = _fs(7.0)
 TICK_LABEL_FONTSIZE = _fs(6.0)
 LEGEND_FONTSIZE     = _fs(6.0)
-FIGSIZE_PANEL       = (4.15,2.65)
+FIGSIZE_PANEL       = (3.6,2.3)
 
 AXES_LINEWIDTH = 0.6
 TICK_WIDTH     = 0.5
 LINE_WIDTH     = 0.8
 
 DPI_SAVE       = 2400
+RASTERIZE_HEAVY_ARTISTS = True
+RASTER_DPI = 600
 
 _FALLBACK = {
     "blue": "#0072B2",
@@ -110,9 +112,10 @@ def apply_mpl_style():
     mpl.rcParams["xtick.major.width"] = TICK_WIDTH
     mpl.rcParams["ytick.major.width"] = TICK_WIDTH
     mpl.rcParams["lines.linewidth"] = LINE_WIDTH
-    mpl.rcParams["savefig.dpi"] = DPI_SAVE
+    mpl.rcParams["savefig.dpi"] = RASTER_DPI
     mpl.rcParams["pdf.fonttype"] = 42
     mpl.rcParams["ps.fonttype"] = 42
+    mpl.rcParams["svg.fonttype"] = "none"
 
 def label_panel(ax, letter: str):
     ax.text(
@@ -167,8 +170,16 @@ def panel_a(ax: plt.Axes, df: pd.DataFrame, cache: Path):
     df[["name", "B22_corr1_log10"]].to_csv(cache / "Fig4a_B22_values.csv", index=False)
 
     bins = 70 if vals.size >= 300 else 40
-    ax.hist(vals, bins=bins, color=C("grey_light", "grey_light"), edgecolor=C("grey", "grey"),
-            linewidth=0.35)
+    n, bins_hist, patches = ax.hist(
+        vals,
+        bins=bins,
+        color=C("grey_light", "grey_light"),
+        edgecolor=C("grey", "grey"),
+        linewidth=0.35,
+    )
+    if RASTERIZE_HEAVY_ARTISTS:
+        for p in patches:
+            p.set_rasterized(True)
 
     if vals.size:
         med = float(np.nanmedian(vals))
@@ -300,6 +311,8 @@ def panel_b0(ax_parent: plt.Axes, rdf_strong: Path, rdf_weak: Path, cache: Path,
     def _plot_one(ax, cur, main_color):
         rs = cur["rs"]
         (ln,) = ax.plot(rs, cur["corr1"], color=main_color, lw=1.1, label="RDF")  # capture handle
+        if RASTERIZE_HEAVY_ARTISTS:
+            ln.set_rasterized(True)
         ax.axhline(1.0, color=C("grey","grey"), ls=":", lw=0.7)
 
         style_axes(ax, ylabel=r"$g(r)$")   # no title
@@ -375,6 +388,8 @@ def panel_b(ax_parent: plt.Axes, rdf_strong: Path, rdf_weak: Path, cache: Path,
     def _plot_one(ax, cur, main_color, *, xlabel: bool, ylabel: bool):
         rs = cur["rs"]
         (ln,) = ax.plot(rs, cur["corr1"], color=main_color, lw=1.1, label="RDF")
+        if RASTERIZE_HEAVY_ARTISTS:
+            ln.set_rasterized(True)
         ax.axhline(1.0, color=C("grey", "grey"), ls=":", lw=0.7)
 
         # keep x physical if you want; remove this too if you truly want fully auto x-range
@@ -545,7 +560,15 @@ def panel_c(
         clip = 2.0
     G_plot = np.clip(G_log2, -clip, clip)
 
-    im = ax.imshow(G_plot, origin="lower", cmap="RdBu_r", vmin=-clip, vmax=clip, aspect="equal")
+    im = ax.imshow(
+        G_plot,
+        origin="lower",
+        cmap="RdBu_r",
+        vmin=-clip,
+        vmax=clip,
+        aspect="equal",
+        rasterized=RASTERIZE_HEAVY_ARTISTS,
+    )
 
     ax.set_xticks(range(len(CLASS_ORDER)))
     ax.set_yticks(range(len(CLASS_ORDER)))
@@ -590,7 +613,16 @@ def panel_d(ax: plt.Axes, df: pd.DataFrame, cache: Path):
     y = table["B22_corr1_log10"].to_numpy(dtype=float)
     c = table["lambda_TAD"].to_numpy(dtype=float)
 
-    sc = ax.scatter(x, y, c=c, s=10, alpha=0.6, linewidths=0.0, cmap="viridis")
+    sc = ax.scatter(
+        x,
+        y,
+        c=c,
+        s=10,
+        alpha=0.6,
+        linewidths=0.0,
+        cmap="viridis",
+        rasterized=RASTERIZE_HEAVY_ARTISTS,
+    )
 #    style_axes(ax, xlabel="Opposite-charge number (OCN)", ylabel=r"$\log_{10}\!\left(-B_{22}\right)$", title=r"$\log_{10}\!\left(-B_{22}\right)$"+" Vs. OCN: Simulated pairs")
     style_axes(ax, xlabel="Opposite-charge number (OCN)", ylabel=r"$\log_{10}\!\left(-B_{22}\right)$")
 
@@ -615,8 +647,9 @@ def panel_d(ax: plt.Axes, df: pd.DataFrame, cache: Path):
 
 def _save_panel(fig, out_base: Path):
     out_base.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(str(out_base) + ".pdf")
+    fig.savefig(str(out_base) + ".pdf", dpi=RASTER_DPI)
     fig.savefig(str(out_base) + ".png", dpi=DPI_SAVE)
+    fig.savefig(str(out_base) + ".svg", bbox_inches="tight", dpi=RASTER_DPI)
     plt.close(fig)
 
 def build_panel_a_figure(df: pd.DataFrame, cache: Path, out_panels: Path):
@@ -700,8 +733,9 @@ def build_figure(
     fig.subplots_adjust(bottom=0.15)  # increase to 0.14 if needed
 
 
-    fig.savefig(outdir / "Figure4_full.pdf")
+    fig.savefig(outdir / "Figure4_full.pdf", dpi=RASTER_DPI)
     fig.savefig(outdir / "Figure4_full.png", dpi=DPI_SAVE)
+    fig.savefig(outdir / "Figure4_full.svg", bbox_inches="tight", dpi=RASTER_DPI)
     plt.close(fig)
 
 # =============================== CLI =========================================
@@ -780,7 +814,7 @@ def main(argv: Optional[List[str]] = None):
     #build_panel_c_figure(df, energy_dir, aa_script, cache, out_panels,box_nm=args.box_nm)
     #build_panel_d_figure(df, cache, out_panels)
 
-    print(f"Done. Wrote: {outdir/'Figure4_full.pdf'} and {outdir/'Figure4_full.png'}")
+    print(f"Done. Wrote: {outdir/'Figure4_full.pdf'}, {outdir/'Figure4_full.png'}, and {outdir/'Figure4_full.svg'}")
 
 if __name__ == "__main__":
     main()
