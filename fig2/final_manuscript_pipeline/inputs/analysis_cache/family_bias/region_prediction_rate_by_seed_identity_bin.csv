@@ -1,0 +1,11 @@
+statistical_unit,identity_aggregation,identity_bin,denominator_regions,denominator_unique_proteins,constituent_windows,predicted_positive_regions,prediction_rate,Wilson_95_CI_low,Wilson_95_CI_high,FOX_regions,TCF_regions,LEF_regions,Combined_regions
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,no reported alignment,8937,7091,491335,559,0.06254895378762448,0.05771408739088846,0.06775972444076281,37,6,1,44
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,<20,1,1,25,0,0.0,0.0,0.7934506856227626,0,0,0,0
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,20-30,366,356,38754,47,0.1284153005464481,0.097961112014603,0.16658862000483898,3,0,0,3
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,30-40,1265,1195,155664,189,0.14940711462450593,0.13082473050885068,0.17011236148654407,13,3,0,16
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,40-50,1632,1511,229199,336,0.20588235294117646,0.18696657528614297,0.22617948796861748,10,1,2,13
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,50-60,2535,2276,467581,683,0.26942800788954635,0.25251564426130335,0.28703811718427863,8,1,0,9
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,60-70,2691,2339,738312,890,0.33073206986250464,0.3132085841246555,0.3487381337358198,21,7,1,29
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,70-80,778,707,279893,341,0.4383033419023136,0.4038253601034381,0.4733875979497157,8,2,0,10
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,80-90,1259,1100,511664,522,0.414614773629865,0.3877015589007922,0.44204745789124594,12,2,0,14
+biological_candidate_region,maximum reported local identity among constituent 15-aa windows,90-100,1022,911,511072,481,0.4706457925636008,0.44021135321897087,0.5013000767548421,29,7,2,38
