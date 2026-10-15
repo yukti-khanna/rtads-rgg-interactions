@@ -1,0 +1,3663 @@
+{
+  "seed": 20260906,
+  "source_paths": {
+    "all_fasta": "/Users/yuktikhanna/rtads-rgg-interactions/fig4/all_tads_rggs_dis.fasta",
+    "rgg_fasta": "/Users/yuktikhanna/rtads-rgg-interactions/fig4/combined_rg_regions_ll_7_all.fasta",
+    "conventional": "/Users/yuktikhanna/rtads-rgg-interactions/fig4/conventional_rbp_uniprot_ids.txt",
+    "tad_selection": "/Users/yuktikhanna/rtads-rgg-interactions/fig4/tad_region_selection.xlsx",
+    "external": "/Users/yuktikhanna/rtads-rgg-interactions/fig4/ETV4_SPI1_CREB3_core_and_longest_sequences.xlsx",
+    "basic": "/Users/yuktikhanna/rtads-rgg-interactions/fig4/basic_AD_IDR_controls.xlsx",
+    "exclusion": "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/simulation_pair_names_400.txt"
+  },
+  "source_sha256": {
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/all_tads_rggs_dis.fasta": "373cf3468fcc4f7ab5fdd10ff74778b2de6f605011e0bfd68381b725e4a59928",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/combined_rg_regions_ll_7_all.fasta": "87a9c4497bfc794839ce016dca07a1da42b3a5c3712777a4bebb41a151ecf580",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/conventional_rbp_uniprot_ids.txt": "155eea01796f7d4f4af4c880009b9b34edd4f4cd16317288cae485803d3fe649",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/tad_region_selection.xlsx": "9ea1e4836e68b69edca4fb38ebc09bf32cd14f4674a873301cacc6688d7b5838",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/ETV4_SPI1_CREB3_core_and_longest_sequences.xlsx": "88bb4a1be04953a3a5ef8a34ebc554d1304c301e8436e05a4cd449bc75d2cd53",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/basic_AD_IDR_controls.xlsx": "4e75323d147e723578f214e06de6ac21620c535197c4606013f54fd5ac064467",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/simulation_pair_names_400.txt": "358e5034e1f139a3c153693d4c2745448f293a478c68093dc67130d5934fff71",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/simulation_sequence_lookup_400.csv": "96078d93cb848d95187039afbb7d472e1a4a2955462c9d60964d0327beb75082",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/simulation_manifest_400.csv": "2110152a976491ccef0b13ae994f00ea52843cc2e688e741ba27039b590aa33a",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/simulation_sequences_400.fasta": "02ef91cf1025567cb0275d9f4324cd9a275584f0922273c1826ac7a79557c8b8",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/shuffle_TAD_variants.csv": "caa8a39c7b41933f0f098c4401aad68e5b04cbdffb2819305e579dc258831790"
+  },
+  "old_pair_count": 400,
+  "old_valid_dataset_pairs": 260,
+  "old_valid_nondataset_WT_pairs": 35,
+  "old_not_used_pairs": 105,
+  "old_classification": [
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_O43889_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_P17947_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_P43268_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_SHUF12__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_SHUF12"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O14948_55_81_SHUF15",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF15",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O14948_55_81_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF19",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43313_588_602_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF09",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43313_588_602_SHUF17",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF17",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43889_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43889_external_AD_core_SHUF17",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF17",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O43889_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P17947_external_AD_core_SHUF04",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF04",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P17947_external_AD_core_SHUF08",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF08",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P17947_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P18848_83_99_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF03",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P18848_83_99_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF12",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P19532_512_529_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF09",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P19532_512_529_SHUF20",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF20",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P43268_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P43268_external_AD_core_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF12",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P43268_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P98177_463_504_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF01",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P98177_463_504_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF19",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q12778_597_631_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF13",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q12778_597_631_SHUF16",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF16",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q15329_298_317_SHUF08",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF08",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q15329_298_317_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF18",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q16665_523_538_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF01",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q16665_523_538_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF19",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q6P1N0_24_44_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF03",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q6P1N0_24_44_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF13",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q8IUX7_694_709_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF09",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q8IUX7_694_709_SHUF10",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF10",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q99814_491_510_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF01",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q99814_491_510_SHUF04",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF04",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9UIF9_321_335_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF12",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9UIF9_321_335_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF13",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9Y6Q9_796_812_SHUF11",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF11",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9Y6Q9_796_812_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF18",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_A6NNA2_2_1_WT__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_A6NNA2_2_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_O43889_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_P17947_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_P43268_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_SHUF10__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_O60506_3_1_SHUF10"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O14948_55_81_SHUF15",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF15",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O14948_55_81_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF19",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43313_588_602_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF09",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43313_588_602_SHUF17",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF17",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43889_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43889_external_AD_core_SHUF17",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF17",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O43889_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P17947_external_AD_core_SHUF04",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF04",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P17947_external_AD_core_SHUF08",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF08",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P17947_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P18848_83_99_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF03",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P18848_83_99_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF12",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P19532_512_529_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF09",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P19532_512_529_SHUF20",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF20",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P43268_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P43268_external_AD_core_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF12",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P43268_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P98177_463_504_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF01",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P98177_463_504_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF19",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q12778_597_631_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF13",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q12778_597_631_SHUF16",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF16",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q15329_298_317_SHUF08",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF08",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q15329_298_317_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF18",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q16665_523_538_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF01",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q16665_523_538_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF19",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q6P1N0_24_44_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF03",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q6P1N0_24_44_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF13",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q8IUX7_694_709_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF09",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q8IUX7_694_709_SHUF10",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF10",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q99814_491_510_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF01",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q99814_491_510_SHUF04",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF04",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9UIF9_321_335_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF12",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9UIF9_321_335_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF13",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9Y6Q9_796_812_SHUF11",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF11",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9Y6Q9_796_812_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF18",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_O60506_3_1_WT__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_O60506_3_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_O43889_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_P17947_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_P43268_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_SHUF15__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_SHUF15"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O14948_55_81_SHUF15",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF15",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O14948_55_81_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF19",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43313_588_602_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF09",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43313_588_602_SHUF17",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF17",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43889_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43889_external_AD_core_SHUF17",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF17",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O43889_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P17947_external_AD_core_SHUF04",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF04",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P17947_external_AD_core_SHUF08",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF08",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P17947_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P18848_83_99_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF03",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P18848_83_99_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF12",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P19532_512_529_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF09",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P19532_512_529_SHUF20",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF20",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P43268_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P43268_external_AD_core_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF12",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P43268_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P98177_463_504_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF01",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P98177_463_504_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF19",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q12778_597_631_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF13",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q12778_597_631_SHUF16",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF16",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q15329_298_317_SHUF08",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF08",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q15329_298_317_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF18",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q16665_523_538_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF01",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q16665_523_538_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF19",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q6P1N0_24_44_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF03",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q6P1N0_24_44_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF13",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q8IUX7_694_709_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF09",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q8IUX7_694_709_SHUF10",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF10",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q99814_491_510_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF01",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q99814_491_510_SHUF04",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF04",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9UIF9_321_335_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF12",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9UIF9_321_335_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF13",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9Y6Q9_796_812_SHUF11",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF11",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9Y6Q9_796_812_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF18",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q8IY67_4_1_WT__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_Q8IY67_4_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_O43889_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_P17947_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_P43268_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_SHUF03__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_SHUF03"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O14948_55_81_SHUF15",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF15",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O14948_55_81_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF19",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43313_588_602_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF09",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43313_588_602_SHUF17",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF17",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43889_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43889_external_AD_core_SHUF17",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF17",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O43889_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P17947_external_AD_core_SHUF04",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF04",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P17947_external_AD_core_SHUF08",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF08",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P17947_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P18848_83_99_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF03",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P18848_83_99_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF12",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P19532_512_529_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF09",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P19532_512_529_SHUF20",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF20",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P43268_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P43268_external_AD_core_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF12",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P43268_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P98177_463_504_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF01",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P98177_463_504_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF19",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q12778_597_631_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF13",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q12778_597_631_SHUF16",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF16",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q15329_298_317_SHUF08",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF08",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q15329_298_317_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF18",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q16665_523_538_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF01",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q16665_523_538_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF19",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q6P1N0_24_44_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF03",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q6P1N0_24_44_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF13",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q8IUX7_694_709_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF09",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q8IUX7_694_709_SHUF10",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF10",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q99814_491_510_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF01",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q99814_491_510_SHUF04",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF04",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9UIF9_321_335_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF12",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9UIF9_321_335_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF13",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9Y6Q9_796_812_SHUF11",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF11",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9Y6Q9_796_812_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF18",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9NZI8_1_1_WT__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_Q9NZI8_1_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_O43889_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_P17947_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_P43268_external_AD_core_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_SHUF18__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "RGG_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_SHUF18"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O14948_55_81_SHUF15",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF15",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O14948_55_81_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O14948_55_81_SHUF19",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O14948_55_81_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O14948_55_81_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43151_1419_1523_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43151_1419_1523_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43313_588_602_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF09",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43313_588_602_SHUF17",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_O43313_588_602_SHUF17",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43313_588_602_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43313_588_602_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43889_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43889_external_AD_core_SHUF17",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O43889_external_AD_core_SHUF17",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O43889_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O43889_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF01",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_O95936_571_686_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_O95936_571_686_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P17947_external_AD_core_SHUF04",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF04",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P17947_external_AD_core_SHUF08",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P17947_external_AD_core_SHUF08",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P17947_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P17947_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P18848_83_99_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF03",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P18848_83_99_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P18848_83_99_SHUF12",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P18848_83_99_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P18848_83_99_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P19532_512_529_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF09",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P19532_512_529_SHUF20",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P19532_512_529_SHUF20",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P19532_512_529_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P19532_512_529_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P43268_external_AD_core_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF05",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P43268_external_AD_core_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_P43268_external_AD_core_SHUF12",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P43268_external_AD_core_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P43268_external_AD_core_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P98177_463_504_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF01",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P98177_463_504_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_P98177_463_504_SHUF19",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_P98177_463_504_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_P98177_463_504_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q12778_597_631_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF13",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q12778_597_631_SHUF16",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q12778_597_631_SHUF16",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q12778_597_631_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q12778_597_631_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q15329_298_317_SHUF08",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF08",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q15329_298_317_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q15329_298_317_SHUF18",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q15329_298_317_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q15329_298_317_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q16665_523_538_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF01",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q16665_523_538_SHUF19",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q16665_523_538_SHUF19",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q16665_523_538_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q16665_523_538_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q6P1N0_24_44_SHUF03",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF03",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q6P1N0_24_44_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q6P1N0_24_44_SHUF13",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q6P1N0_24_44_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q6P1N0_24_44_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q8IUX7_694_709_SHUF09",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF09",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q8IUX7_694_709_SHUF10",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q8IUX7_694_709_SHUF10",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q8IUX7_694_709_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q8IUX7_694_709_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q99814_491_510_SHUF01",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF01",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q99814_491_510_SHUF04",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q99814_491_510_SHUF04",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q99814_491_510_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q99814_491_510_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9NQB0_459_505_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9UIF9_321_335_SHUF12",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF12",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9UIF9_321_335_SHUF13",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9UIF9_321_335_SHUF13",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9UIF9_321_335_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UIF9_321_335_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "category": "OLD_NOT_USED_IN_FINAL_DESIGN",
+      "condition": "NONDATASET_SHUFFLED",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "category": "VALID_NONDATASET_WT",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9UJU2_174_256_basic_AD_control_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9Y6Q9_796_812_SHUF11",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF11",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9Y6Q9_796_812_SHUF18",
+      "category": "VALID_DATASET",
+      "condition": "TAD_SHUFFLE",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_SHUF18",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    },
+    {
+      "pair_name": "RGG_Q9UPR6_11_1_WT__TAD_Q9Y6Q9_796_812_WT",
+      "category": "VALID_DATASET",
+      "condition": "WT_WT",
+      "TAD_variant": "TAD_Q9Y6Q9_796_812_WT",
+      "RGG_variant": "RGG_Q9UPR6_11_1_WT"
+    }
+  ],
+  "old_unused_pair_names": [
+    "RGG_A6NNA2_2_1_SHUF12__TAD_O43151_1419_1523_basic_AD_control_WT",
+    "RGG_A6NNA2_2_1_SHUF12__TAD_O43889_external_AD_core_WT",
+    "RGG_A6NNA2_2_1_SHUF12__TAD_O95936_571_686_basic_AD_control_WT",
+    "RGG_A6NNA2_2_1_SHUF12__TAD_P17947_external_AD_core_WT",
+    "RGG_A6NNA2_2_1_SHUF12__TAD_P43268_external_AD_core_WT",
+    "RGG_A6NNA2_2_1_SHUF12__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+    "RGG_A6NNA2_2_1_SHUF12__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+    "RGG_A6NNA2_2_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+    "RGG_A6NNA2_2_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+    "RGG_A6NNA2_2_1_WT__TAD_O43889_external_AD_core_SHUF05",
+    "RGG_A6NNA2_2_1_WT__TAD_O43889_external_AD_core_SHUF17",
+    "RGG_A6NNA2_2_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+    "RGG_A6NNA2_2_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+    "RGG_A6NNA2_2_1_WT__TAD_P17947_external_AD_core_SHUF04",
+    "RGG_A6NNA2_2_1_WT__TAD_P17947_external_AD_core_SHUF08",
+    "RGG_A6NNA2_2_1_WT__TAD_P43268_external_AD_core_SHUF05",
+    "RGG_A6NNA2_2_1_WT__TAD_P43268_external_AD_core_SHUF12",
+    "RGG_A6NNA2_2_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+    "RGG_A6NNA2_2_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+    "RGG_A6NNA2_2_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+    "RGG_A6NNA2_2_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+    "RGG_O60506_3_1_SHUF10__TAD_O43151_1419_1523_basic_AD_control_WT",
+    "RGG_O60506_3_1_SHUF10__TAD_O43889_external_AD_core_WT",
+    "RGG_O60506_3_1_SHUF10__TAD_O95936_571_686_basic_AD_control_WT",
+    "RGG_O60506_3_1_SHUF10__TAD_P17947_external_AD_core_WT",
+    "RGG_O60506_3_1_SHUF10__TAD_P43268_external_AD_core_WT",
+    "RGG_O60506_3_1_SHUF10__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+    "RGG_O60506_3_1_SHUF10__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+    "RGG_O60506_3_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+    "RGG_O60506_3_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+    "RGG_O60506_3_1_WT__TAD_O43889_external_AD_core_SHUF05",
+    "RGG_O60506_3_1_WT__TAD_O43889_external_AD_core_SHUF17",
+    "RGG_O60506_3_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+    "RGG_O60506_3_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+    "RGG_O60506_3_1_WT__TAD_P17947_external_AD_core_SHUF04",
+    "RGG_O60506_3_1_WT__TAD_P17947_external_AD_core_SHUF08",
+    "RGG_O60506_3_1_WT__TAD_P43268_external_AD_core_SHUF05",
+    "RGG_O60506_3_1_WT__TAD_P43268_external_AD_core_SHUF12",
+    "RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+    "RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+    "RGG_O60506_3_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+    "RGG_O60506_3_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+    "RGG_Q8IY67_4_1_SHUF15__TAD_O43151_1419_1523_basic_AD_control_WT",
+    "RGG_Q8IY67_4_1_SHUF15__TAD_O43889_external_AD_core_WT",
+    "RGG_Q8IY67_4_1_SHUF15__TAD_O95936_571_686_basic_AD_control_WT",
+    "RGG_Q8IY67_4_1_SHUF15__TAD_P17947_external_AD_core_WT",
+    "RGG_Q8IY67_4_1_SHUF15__TAD_P43268_external_AD_core_WT",
+    "RGG_Q8IY67_4_1_SHUF15__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+    "RGG_Q8IY67_4_1_SHUF15__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+    "RGG_Q8IY67_4_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+    "RGG_Q8IY67_4_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+    "RGG_Q8IY67_4_1_WT__TAD_O43889_external_AD_core_SHUF05",
+    "RGG_Q8IY67_4_1_WT__TAD_O43889_external_AD_core_SHUF17",
+    "RGG_Q8IY67_4_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+    "RGG_Q8IY67_4_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+    "RGG_Q8IY67_4_1_WT__TAD_P17947_external_AD_core_SHUF04",
+    "RGG_Q8IY67_4_1_WT__TAD_P17947_external_AD_core_SHUF08",
+    "RGG_Q8IY67_4_1_WT__TAD_P43268_external_AD_core_SHUF05",
+    "RGG_Q8IY67_4_1_WT__TAD_P43268_external_AD_core_SHUF12",
+    "RGG_Q8IY67_4_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+    "RGG_Q8IY67_4_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+    "RGG_Q8IY67_4_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+    "RGG_Q8IY67_4_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+    "RGG_Q9NZI8_1_1_SHUF03__TAD_O43151_1419_1523_basic_AD_control_WT",
+    "RGG_Q9NZI8_1_1_SHUF03__TAD_O43889_external_AD_core_WT",
+    "RGG_Q9NZI8_1_1_SHUF03__TAD_O95936_571_686_basic_AD_control_WT",
+    "RGG_Q9NZI8_1_1_SHUF03__TAD_P17947_external_AD_core_WT",
+    "RGG_Q9NZI8_1_1_SHUF03__TAD_P43268_external_AD_core_WT",
+    "RGG_Q9NZI8_1_1_SHUF03__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+    "RGG_Q9NZI8_1_1_SHUF03__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+    "RGG_Q9NZI8_1_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+    "RGG_Q9NZI8_1_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+    "RGG_Q9NZI8_1_1_WT__TAD_O43889_external_AD_core_SHUF05",
+    "RGG_Q9NZI8_1_1_WT__TAD_O43889_external_AD_core_SHUF17",
+    "RGG_Q9NZI8_1_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+    "RGG_Q9NZI8_1_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+    "RGG_Q9NZI8_1_1_WT__TAD_P17947_external_AD_core_SHUF04",
+    "RGG_Q9NZI8_1_1_WT__TAD_P17947_external_AD_core_SHUF08",
+    "RGG_Q9NZI8_1_1_WT__TAD_P43268_external_AD_core_SHUF05",
+    "RGG_Q9NZI8_1_1_WT__TAD_P43268_external_AD_core_SHUF12",
+    "RGG_Q9NZI8_1_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+    "RGG_Q9NZI8_1_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+    "RGG_Q9NZI8_1_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+    "RGG_Q9NZI8_1_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19",
+    "RGG_Q9UPR6_11_1_SHUF18__TAD_O43151_1419_1523_basic_AD_control_WT",
+    "RGG_Q9UPR6_11_1_SHUF18__TAD_O43889_external_AD_core_WT",
+    "RGG_Q9UPR6_11_1_SHUF18__TAD_O95936_571_686_basic_AD_control_WT",
+    "RGG_Q9UPR6_11_1_SHUF18__TAD_P17947_external_AD_core_WT",
+    "RGG_Q9UPR6_11_1_SHUF18__TAD_P43268_external_AD_core_WT",
+    "RGG_Q9UPR6_11_1_SHUF18__TAD_Q9NQB0_459_505_basic_AD_control_WT",
+    "RGG_Q9UPR6_11_1_SHUF18__TAD_Q9UJU2_174_256_basic_AD_control_WT",
+    "RGG_Q9UPR6_11_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF10",
+    "RGG_Q9UPR6_11_1_WT__TAD_O43151_1419_1523_basic_AD_control_SHUF13",
+    "RGG_Q9UPR6_11_1_WT__TAD_O43889_external_AD_core_SHUF05",
+    "RGG_Q9UPR6_11_1_WT__TAD_O43889_external_AD_core_SHUF17",
+    "RGG_Q9UPR6_11_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF01",
+    "RGG_Q9UPR6_11_1_WT__TAD_O95936_571_686_basic_AD_control_SHUF19",
+    "RGG_Q9UPR6_11_1_WT__TAD_P17947_external_AD_core_SHUF04",
+    "RGG_Q9UPR6_11_1_WT__TAD_P17947_external_AD_core_SHUF08",
+    "RGG_Q9UPR6_11_1_WT__TAD_P43268_external_AD_core_SHUF05",
+    "RGG_Q9UPR6_11_1_WT__TAD_P43268_external_AD_core_SHUF12",
+    "RGG_Q9UPR6_11_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05",
+    "RGG_Q9UPR6_11_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12",
+    "RGG_Q9UPR6_11_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF12",
+    "RGG_Q9UPR6_11_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_SHUF19"
+  ],
+  "existing_13_dataset_TADs": [
+    {
+      "parent_id": "O14948_55_81",
+      "gene": "TFEC",
+      "UniProt_ID": "O14948",
+      "sequence": "DNAQWHMEDVIEDIIGMESSFKEEGAD",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 3,
+      "RTAD_overlap_status": "documented: O14948_55_81"
+    },
+    {
+      "parent_id": "O43313_588_602",
+      "gene": "ATMIN",
+      "UniProt_ID": "O43313",
+      "sequence": "IDLLSDLENILSSNL",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: O43313_588_602"
+    },
+    {
+      "parent_id": "P18848_83_99",
+      "gene": "ATF4",
+      "UniProt_ID": "P18848",
+      "sequence": "DWMLEKMDLKEFDLDAL",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 3,
+      "RTAD_overlap_status": "documented: P18848_83_99"
+    },
+    {
+      "parent_id": "P19532_512_529",
+      "gene": "TFE3",
+      "UniProt_ID": "P19532",
+      "sequence": "DLGDPFHLGLEDILMEEE",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 3,
+      "RTAD_overlap_status": "documented: P19532_512_529"
+    },
+    {
+      "parent_id": "P98177_463_504",
+      "gene": "FOXO4",
+      "UniProt_ID": "P98177",
+      "sequence": "QDRMPQDLDLDMYMENLECDMDNIISDLMDEGEGLDFNFEPD",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 3,
+      "RTAD_overlap_status": "documented: P98177_463_504"
+    },
+    {
+      "parent_id": "Q12778_597_631",
+      "gene": "FOXO1",
+      "UniProt_ID": "Q12778",
+      "sequence": "KLPSDLDGMFIERLDCDMESIIRNDLMDGDTLDFN",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: Q12778_597_631"
+    },
+    {
+      "parent_id": "Q15329_298_317",
+      "gene": "E2F5",
+      "UniProt_ID": "Q15329",
+      "sequence": "ISGDIIDELMSSDVFPLLRL",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 4,
+      "RTAD_overlap_status": "documented: Q15329_298_317"
+    },
+    {
+      "parent_id": "Q16665_523_538",
+      "gene": "HIF1A",
+      "UniProt_ID": "Q16665",
+      "sequence": "VDSDMVNEFKLELVEK",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 4,
+      "RTAD_overlap_status": "documented: Q16665_523_538"
+    },
+    {
+      "parent_id": "Q6P1N0_24_44",
+      "gene": "CC2D1A",
+      "UniProt_ID": "Q6P1N0",
+      "sequence": "LVDLSPDGLMIPEDGANDEEL",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: Q6P1N0_24_44"
+    },
+    {
+      "parent_id": "Q8IUX7_694_709",
+      "gene": "AEBP1",
+      "UniProt_ID": "Q8IUX7",
+      "sequence": "EGFDIFEDFPDLNSVL",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: Q8IUX7_694_709"
+    },
+    {
+      "parent_id": "Q99814_491_510",
+      "gene": "EPAS1",
+      "UniProt_ID": "Q99814",
+      "sequence": "SLDNDLKIEVIEKLFAMDTE",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 3,
+      "RTAD_overlap_status": "documented: Q99814_491_510"
+    },
+    {
+      "parent_id": "Q9UIF9_321_335",
+      "gene": "BAZ2A",
+      "UniProt_ID": "Q9UIF9",
+      "sequence": "ELMGAEDKLPLEDSP",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: Q9UIF9_321_335"
+    },
+    {
+      "parent_id": "Q9Y6Q9_796_812",
+      "gene": "NCOA3",
+      "UniProt_ID": "Q9Y6Q9",
+      "sequence": "DLDNLDAILGDLTSSDF",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: Q9Y6Q9_796_812"
+    }
+  ],
+  "additional_7_dataset_TADs": [
+    {
+      "parent_id": "Q8WTR7_97_112",
+      "gene": "ZNF473",
+      "UniProt_ID": "Q8WTR7",
+      "sequence": "EIIEMLSKDGFWNSNF",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: Q8WTR7_97_112"
+    },
+    {
+      "parent_id": "Q9Y4A8_383_401",
+      "gene": "NFE2L3",
+      "UniProt_ID": "Q9Y4A8",
+      "sequence": "DLDINIFDEINLMSLATED",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 3,
+      "RTAD_overlap_status": "documented: Q9Y4A8_383_401"
+    },
+    {
+      "parent_id": "P48436_267_286",
+      "gene": "SOX9",
+      "UniProt_ID": "P48436",
+      "sequence": "PIDFRDVDIGELSSDVISNI",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: P48436_267_286"
+    },
+    {
+      "parent_id": "P18850_57_75",
+      "gene": "ATF6",
+      "UniProt_ID": "P18850",
+      "sequence": "FDNLDFDLDLMPWESDIWD",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 4,
+      "RTAD_overlap_status": "documented: P18850_57_75"
+    },
+    {
+      "parent_id": "Q14494_171_187",
+      "gene": "NFE2L1",
+      "UniProt_ID": "Q14494",
+      "sequence": "DIDLIDILWRQDIDLGA",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: Q14494_171_187"
+    },
+    {
+      "parent_id": "O75461_149_164",
+      "gene": "E2F6",
+      "UniProt_ID": "O75461",
+      "sequence": "DLSAMEDALDELIKDC",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 2,
+      "RTAD_overlap_status": "documented: O75461_149_164"
+    },
+    {
+      "parent_id": "Q9Y2N7_475_490",
+      "gene": "HIF3A",
+      "UniProt_ID": "Q9Y2N7",
+      "sequence": "DLDIAQDADALDLEML",
+      "biological_class": "dataset_RTAD",
+      "external_dataset_count": 4,
+      "RTAD_overlap_status": "documented: Q9Y2N7_475_490"
+    }
+  ],
+  "five_existing_RGGs": [
+    {
+      "parent_id": "A6NNA2_2_1",
+      "UniProt_ID": "A6NNA2",
+      "sequence": "PASCYRGHRGYRTKH",
+      "gene": "A6NNA2",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "O60506_3_1",
+      "UniProt_ID": "O60506",
+      "sequence": "GGRGARGAAPSRGRGAAPPRGRAGYSQRGGPGSARGVRGARGGAQQQRGRGVRGARGGRGGNVGG",
+      "gene": "O60506",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q8IY67_4_1",
+      "UniProt_ID": "Q8IY67",
+      "sequence": "APVGLRGSGLRGPLSHF",
+      "gene": "Q8IY67",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q9NZI8_1_1",
+      "UniProt_ID": "Q9NZI8",
+      "sequence": "PENGRRGGFGSRGQPRQG",
+      "gene": "Q9NZI8",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q9UPR6_11_1",
+      "UniProt_ID": "Q9UPR6",
+      "sequence": "FRKRQRGPGEGEEGAGEKKRGRRGGEGLV",
+      "gene": "Q9UPR6",
+      "biological_class": "dataset_conventional_RGG"
+    }
+  ],
+  "existing_five_RGG_shuffle_variants": {
+    "A6NNA2_2_1": {
+      "variant_id": "RGG_A6NNA2_2_1_SHUF12",
+      "sequence": "RHSTGKRAGYCRHPY",
+      "shuffle_seed": 702151744,
+      "shuffle_number": 12,
+      "variant_type": "shuffle",
+      "origin": "historical_sequence_mapping"
+    },
+    "O60506_3_1": {
+      "variant_id": "RGG_O60506_3_1_SHUF10",
+      "sequence": "GVPAGGQGVVRPGGGAASAGRGQGGRAGPRARRPRGRGRGGNGGAAGGGRRRQRAGSRGGARSQY",
+      "shuffle_seed": 3154499431,
+      "shuffle_number": 10,
+      "variant_type": "shuffle",
+      "origin": "historical_sequence_mapping"
+    },
+    "Q8IY67_4_1": {
+      "variant_id": "RGG_Q8IY67_4_1_SHUF15",
+      "sequence": "RGGGPSVHGSPFRLALL",
+      "shuffle_seed": 733424877,
+      "shuffle_number": 15,
+      "variant_type": "shuffle",
+      "origin": "historical_sequence_mapping"
+    },
+    "Q9NZI8_1_1": {
+      "variant_id": "RGG_Q9NZI8_1_1_SHUF03",
+      "sequence": "GERFGQGQGRGPRPRNSG",
+      "shuffle_seed": 946707974,
+      "shuffle_number": 3,
+      "variant_type": "shuffle",
+      "origin": "historical_sequence_mapping"
+    },
+    "Q9UPR6_11_1": {
+      "variant_id": "RGG_Q9UPR6_11_1_SHUF18",
+      "sequence": "RRGGGKKKEEEQVPGEARGGRGFRGGERL",
+      "shuffle_seed": 1578541889,
+      "shuffle_number": 18,
+      "variant_type": "shuffle",
+      "origin": "historical_sequence_mapping"
+    }
+  },
+  "selected_14_new_TAD_shuffle_variants": [
+    {
+      "parent_id": "Q8WTR7_97_112",
+      "gene": "ZNF473",
+      "condition": "TAD_SHUFFLE_A",
+      "variant_id": "TAD_Q8WTR7_97_112_SHUF03",
+      "sequence": "EFNIKGEWMDNSFSIL",
+      "shuffle_number": 3,
+      "shuffle_seed": 1856034204,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 470828929
+    },
+    {
+      "parent_id": "Q8WTR7_97_112",
+      "gene": "ZNF473",
+      "condition": "TAD_SHUFFLE_B",
+      "variant_id": "TAD_Q8WTR7_97_112_SHUF18",
+      "sequence": "SNGLEEFNIKSIDMFW",
+      "shuffle_number": 18,
+      "shuffle_seed": 1856034204,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 470828929
+    },
+    {
+      "parent_id": "Q9Y4A8_383_401",
+      "gene": "NFE2L3",
+      "condition": "TAD_SHUFFLE_A",
+      "variant_id": "TAD_Q9Y4A8_383_401_SHUF07",
+      "sequence": "ESAILLIDLMNDINEDTDF",
+      "shuffle_number": 7,
+      "shuffle_seed": 1395653052,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 1409158400
+    },
+    {
+      "parent_id": "Q9Y4A8_383_401",
+      "gene": "NFE2L3",
+      "condition": "TAD_SHUFFLE_B",
+      "variant_id": "TAD_Q9Y4A8_383_401_SHUF11",
+      "sequence": "INDDEASNILTFELDMILD",
+      "shuffle_number": 11,
+      "shuffle_seed": 1395653052,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 1409158400
+    },
+    {
+      "parent_id": "P48436_267_286",
+      "gene": "SOX9",
+      "condition": "TAD_SHUFFLE_A",
+      "variant_id": "TAD_P48436_267_286_SHUF06",
+      "sequence": "DVLPIIDDVNFSISDREGIS",
+      "shuffle_number": 6,
+      "shuffle_seed": 3797482140,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 3446376315
+    },
+    {
+      "parent_id": "P48436_267_286",
+      "gene": "SOX9",
+      "condition": "TAD_SHUFFLE_B",
+      "variant_id": "TAD_P48436_267_286_SHUF12",
+      "sequence": "IISIILVDDDDRSGSENVFP",
+      "shuffle_number": 12,
+      "shuffle_seed": 3797482140,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 3446376315
+    },
+    {
+      "parent_id": "P18850_57_75",
+      "gene": "ATF6",
+      "condition": "TAD_SHUFFLE_A",
+      "variant_id": "TAD_P18850_57_75_SHUF06",
+      "sequence": "ELWDDMDFDNDWISFLPDL",
+      "shuffle_number": 6,
+      "shuffle_seed": 2246662267,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 1203889160
+    },
+    {
+      "parent_id": "P18850_57_75",
+      "gene": "ATF6",
+      "condition": "TAD_SHUFFLE_B",
+      "variant_id": "TAD_P18850_57_75_SHUF13",
+      "sequence": "LNDILEDDLDPDWSFWDMF",
+      "shuffle_number": 13,
+      "shuffle_seed": 2246662267,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 1203889160
+    },
+    {
+      "parent_id": "Q14494_171_187",
+      "gene": "NFE2L1",
+      "condition": "TAD_SHUFFLE_A",
+      "variant_id": "TAD_Q14494_171_187_SHUF08",
+      "sequence": "DRLIWLDLIGIQDDDAI",
+      "shuffle_number": 8,
+      "shuffle_seed": 2454469876,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 637592111
+    },
+    {
+      "parent_id": "Q14494_171_187",
+      "gene": "NFE2L1",
+      "condition": "TAD_SHUFFLE_B",
+      "variant_id": "TAD_Q14494_171_187_SHUF20",
+      "sequence": "RDLDWDALDLIIDQIIG",
+      "shuffle_number": 20,
+      "shuffle_seed": 2454469876,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 637592111
+    },
+    {
+      "parent_id": "O75461_149_164",
+      "gene": "E2F6",
+      "condition": "TAD_SHUFFLE_A",
+      "variant_id": "TAD_O75461_149_164_SHUF06",
+      "sequence": "DEDLAILLKEASDDMC",
+      "shuffle_number": 6,
+      "shuffle_seed": 311040993,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 2317115267
+    },
+    {
+      "parent_id": "O75461_149_164",
+      "gene": "E2F6",
+      "condition": "TAD_SHUFFLE_B",
+      "variant_id": "TAD_O75461_149_164_SHUF09",
+      "sequence": "IEADLCDLDDAKSLEM",
+      "shuffle_number": 9,
+      "shuffle_seed": 311040993,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 2317115267
+    },
+    {
+      "parent_id": "Q9Y2N7_475_490",
+      "gene": "HIF3A",
+      "condition": "TAD_SHUFFLE_A",
+      "variant_id": "TAD_Q9Y2N7_475_490_SHUF19",
+      "sequence": "LMDDIADLELALAQDD",
+      "shuffle_number": 19,
+      "shuffle_seed": 67695234,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 3005673738
+    },
+    {
+      "parent_id": "Q9Y2N7_475_490",
+      "gene": "HIF3A",
+      "condition": "TAD_SHUFFLE_B",
+      "variant_id": "TAD_Q9Y2N7_475_490_SHUF09",
+      "sequence": "DELADLAAIQMDDDLL",
+      "shuffle_number": 9,
+      "shuffle_seed": 67695234,
+      "variant_type": "shuffle",
+      "origin": "existing_shuffle_TAD_variants.csv",
+      "selection_seed": 3005673738
+    }
+  ],
+  "additional_20_nondataset_RGGs": [
+    {
+      "parent_id": "Q96E39_4_3",
+      "UniProt_ID": "Q96E39",
+      "sequence": "VGRQERGLPPSVERGYPSSRDSYSSSSRGAPRGAGPGGSRSDRGGGRSR",
+      "gene": "Q96E39",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "P98179_3_1",
+      "UniProt_ID": "P98179",
+      "sequence": "AGKSARGTRGGGFGAHGRGRSYSRGGGDQG",
+      "gene": "P98179",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q12872_8_1",
+      "UniProt_ID": "Q12872",
+      "sequence": "SPVESRGSSQERSRGVSQEK",
+      "gene": "Q12872",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "P0DJD3_5_2",
+      "UniProt_ID": "P0DJD3",
+      "sequence": "KMSYSRGLIPVKRGPSSRS",
+      "gene": "P0DJD3",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q16630_5_1",
+      "UniProt_ID": "Q16630",
+      "sequence": "FPQGGRGRGRFPGA",
+      "gene": "Q16630",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q9NQ39_2_1",
+      "UniProt_ID": "Q9NQ39",
+      "sequence": "TEFQFRGRCGRGRGQPPQ",
+      "gene": "Q9NQ39",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q14011_4_1",
+      "UniProt_ID": "Q14011",
+      "sequence": "SDNRSRGYRGGSAGGRGFFRGGRGRGRGFSRGGGDRGYGGNR",
+      "gene": "Q14011",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q13405_1_1",
+      "UniProt_ID": "Q13405",
+      "sequence": "FRATLRGWRTGVQRGCGLRL",
+      "gene": "Q13405",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "O43290_6_1",
+      "UniProt_ID": "O43290",
+      "sequence": "FGSRLRGRGRRRVS",
+      "gene": "O43290",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "A2A288_4_1",
+      "UniProt_ID": "A2A288",
+      "sequence": "SLPPARGSPDLAALRGSFSRL",
+      "gene": "A2A288",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "P16989_4_1",
+      "UniProt_ID": "P16989",
+      "sequence": "RRRYRRGYYGRRRGPPRNY",
+      "gene": "P16989",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "P98175_10_1",
+      "UniProt_ID": "P98175",
+      "sequence": "AQTRVRGSGLGARGSSYG",
+      "gene": "P98175",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q9BQ48_1_1",
+      "UniProt_ID": "Q9BQ48",
+      "sequence": "TPQQARGKARGNEYQP",
+      "gene": "Q9BQ48",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "P38432_3_1",
+      "UniProt_ID": "P38432",
+      "sequence": "PASLGRGWGREENLFSWKGAKGRGMRGRGRGRGHPVSC",
+      "gene": "P38432",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q8N7X1_4_3",
+      "UniProt_ID": "Q8N7X1",
+      "sequence": "HYEEYRGRSHDTHSRGRSPDA",
+      "gene": "Q8N7X1",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "P09651_2_1",
+      "UniProt_ID": "P09651",
+      "sequence": "NFGGGRGGGFGGNDNFGRGGNFSGRGGFGGSRGGGGYG",
+      "gene": "P09651",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "O43390_4_1",
+      "UniProt_ID": "O43390",
+      "sequence": "GRGGRGAPPPPRGRGAPPPRGRAGYSQRGAPLGPPRGSRGGRGGPAQQQRGRGSRGSRGNRGGNVGG",
+      "gene": "O43390",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "A6NEQ0_5_2",
+      "UniProt_ID": "A6NEQ0",
+      "sequence": "KMSYSRGLIPVKRGPSSRS",
+      "gene": "A6NEQ0",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q32P51_2_1",
+      "UniProt_ID": "Q32P51",
+      "sequence": "ASSSQRGRRGSGNFGGGRGDGFGGNDNFGRGGNFSGRGGFGGS",
+      "gene": "Q32P51",
+      "biological_class": "dataset_conventional_RGG"
+    },
+    {
+      "parent_id": "Q13595_4_1",
+      "UniProt_ID": "Q13595",
+      "sequence": "DSYYDRGYDRGYDRYE",
+      "gene": "Q13595",
+      "biological_class": "dataset_conventional_RGG"
+    }
+  ],
+  "native_eligible_pool_count": 34,
+  "additional_dataset_parents_eligible_after_status_checks": 21,
+  "additional_nondataset_proteins_eligible": 96,
+  "rejected_candidates": [],
+  "rejection_method": "preselection complete-block eligibility filtering by exact prior-run status only; uniform sampling among viable candidates",
+  "candidate_origins": {
+    "A8MYZ6_430_473": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "O15156_301_316": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "O15391_98_116": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "O43524_600_646": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "O75461_149_164": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "P04198_8_23": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "P04637_16_56": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "P18850_57_75": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "P35716_353_367": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "P48436_267_286": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q03164_2839_2856": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q06945_399_417": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q13129_498_513": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q14494_171_187": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q8IUM7_689_706": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q8IWI9_2920_2942": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q8WTR7_97_112": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q99607_95_115": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q99941_76_91": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q9Y2N7_475_490": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    },
+    "Q9Y4A8_383_401": {
+      "origin": "existing_shuffle_TAD_variants.csv"
+    }
+  },
+  "historical_TAD_A_B_label_rules": {
+    "O14948_55_81": "recovered historical manifest condition labels",
+    "O43313_588_602": "recovered historical manifest condition labels",
+    "P18848_83_99": "recovered historical manifest condition labels",
+    "P19532_512_529": "recovered historical manifest condition labels",
+    "P98177_463_504": "recovered historical manifest condition labels",
+    "Q12778_597_631": "recovered historical manifest condition labels",
+    "Q15329_298_317": "recovered historical manifest condition labels",
+    "Q16665_523_538": "recovered historical manifest condition labels",
+    "Q6P1N0_24_44": "recovered historical manifest condition labels",
+    "Q8IUX7_694_709": "recovered historical manifest condition labels",
+    "Q99814_491_510": "recovered historical manifest condition labels",
+    "Q9UIF9_321_335": "recovered historical manifest condition labels",
+    "Q9Y6Q9_796_812": "recovered historical manifest condition labels"
+  },
+  "seeds": {
+    "additional_dataset_parent_selection": 376163441,
+    "new_TAD_shuffle_selection": {
+      "Q8WTR7_97_112": 470828929,
+      "Q9Y4A8_383_401": 1409158400,
+      "P48436_267_286": 3446376315,
+      "P18850_57_75": 1203889160,
+      "Q14494_171_187": 637592111,
+      "O75461_149_164": 2317115267,
+      "Q9Y2N7_475_490": 3005673738
+    },
+    "additional_nondataset_protein_selection": 1956248543,
+    "additional_nondataset_region_selection": {
+      "Q96E39": 2628793947,
+      "P98179": 632021449,
+      "Q12872": 2465822033,
+      "P0DJD3": 2565541935,
+      "Q16630": 696855178,
+      "Q9NQ39": 1896806176,
+      "Q14011": 3927594503,
+      "Q13405": 3733400094,
+      "O43290": 1235418353,
+      "A2A288": 1695298748,
+      "P16989": 3230815934,
+      "P98175": 2508082242,
+      "Q9BQ48": 3093565235,
+      "P38432": 2534009138,
+      "Q8N7X1": 2160238184,
+      "P09651": 128308992,
+      "O43390": 3033998173,
+      "A6NEQ0": 3904736332,
+      "Q32P51": 1345051664,
+      "Q13595": 1596010075
+    }
+  },
+  "final_counts": {
+    "dataset_reused": 260,
+    "dataset_new": 140,
+    "dataset_total": 400,
+    "nondataset_reused": 35,
+    "nondataset_new": 140,
+    "nondataset_total": 175,
+    "total_new": 280
+  },
+  "output_sha256": {
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/final_dataset_panel_400.txt": "e31bf3fb788ac93468c8fdae357b032b219141eb61aa4db2d0d5aaa1e0e35997",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/dataset_reused_pairs_260.txt": "988ff18f148ef620689892036c7ffbd17fc89795eb6a3c8610d428e19132071d",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/dataset_new_pairs_to_run_140.txt": "32db7fb56aabd6c616a95b9b3b0861e7b00c992ed23663a65a9a46e675062771",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/final_dataset_panel_manifest_400.csv": "5a70c51c561237324589947c3b6eabe1323fe3bb438c43e52b41c61a54000385",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/dataset_new_sequences_to_run.fasta": "e72c1249146a0caef13763457de1d0b4b49d9a364079da337fd24e36e257d4c2",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/additional_dataset_TAD_parents_7.csv": "ac3815d98e5a02c0195082068e19ab50ecdf8726128324e8fb3127fb27159888",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/additional_dataset_TAD_shuffles_14.csv": "dfec31bffeb3099c3dd1e4043ba51f50bdf8b26c657350ebb0774dc8d455491c",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/final_nondataset_WT_panel_175.txt": "c33e858519966598a5cb50ecb10680f34bca696894cbf2efb0152354d1a5bc70",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/nondataset_reused_pairs_35.txt": "ca68fc47dc8ec1aa1245bfe4adff8f384caef030f0b6a244b8137be11bd0cb30",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/nondataset_new_pairs_to_run_140.txt": "c8a2562331c596ff9de1b2612cce606a15e9fab3d47320d6ff6fafe6a40f9522",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/final_nondataset_WT_manifest_175.csv": "034ae19e660ccf833be2de7a75a0f0780eb9cbfac09b7f607f71dd9089601a56",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/nondataset_new_sequences_to_run.fasta": "3d0d55acefb9943490c9992a7cdf85173dd19f4b6e885ba74b0b796e09f57bdc",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/additional_nondataset_RGGs_20.csv": "3a5100a1788db2c36eb96c2714cd04392aa0a18577e9a6066148fb77042d73a2",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/FINAL_CONTROL_PANEL_REPORT.md": "dee4e9b55e49000884f3a3474580bce71688941acde6f2d3f4c73c46285999d5"
+  },
+  "python_version": "3.10.13",
+  "pandas_version": "1.5.3",
+  "numpy_version": "1.26.4",
+  "timestamp_utc": "2026-09-14T10:25:10.231936+00:00",
+  "scientific_rule": "Old pairs were retained solely by sequence identity, dataset membership, and their predefined perturbation condition. No B22, prediction, OCN, simulation outcome, charge, hydropathy, length or other ranking was used. Only dataset_new_pairs_to_run_140.txt and nondataset_new_pairs_to_run_140.txt are new simulation submission lists. Full panel lists also contain already-run pairs and must not be submitted wholesale. No non-dataset TAD was shuffled, no RGG paired with a non-dataset TAD was shuffled, and no RGG shuffle was newly generated. The original simulation_pair_names_400.txt and all biological source inputs are preserved. No simulations, B22 calculations or model fitting were performed."
+}

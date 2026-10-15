@@ -1,0 +1,444 @@
+{
+  "global_random_seed": 20260906,
+  "seed_derivation": "first 32 bits of SHA256(global_seed|namespace|identifier)",
+  "common_RGG_protein_selection_seed": 3815337015,
+  "original_input_sha256": {
+    "all_tads_rggs_dis.fasta": "373cf3468fcc4f7ab5fdd10ff74778b2de6f605011e0bfd68381b725e4a59928",
+    "combined_rg_regions_ll_7_all.fasta": "87a9c4497bfc794839ce016dca07a1da42b3a5c3712777a4bebb41a151ecf580",
+    "conventional_rbp_uniprot_ids.txt": "155eea01796f7d4f4af4c880009b9b34edd4f4cd16317288cae485803d3fe649",
+    "tad_region_selection.xlsx": "9ea1e4836e68b69edca4fb38ebc09bf32cd14f4674a873301cacc6688d7b5838",
+    "ETV4_SPI1_CREB3_core_and_longest_sequences.xlsx": "88bb4a1be04953a3a5ef8a34ebc554d1304c301e8436e05a4cd449bc75d2cd53",
+    "basic_AD_IDR_controls.xlsx": "4e75323d147e723578f214e06de6ac21620c535197c4606013f54fd5ac064467"
+  },
+  "script1_output_sha256": {
+    "reviewer_analysis/control_simulation_manifest/tad_parent_sequences.csv": "f542f51307d37669bb8b47a875d50ad5a7ff9805f477d94f330488be04f8882e",
+    "reviewer_analysis/control_simulation_manifest/tad_shuffles.csv": "865d8d42f06d51e613a8e41fb639c0e71aafbb51446aeef91581110f6bb35145",
+    "reviewer_analysis/control_simulation_manifest/eligible_conventional_RGGs.csv": "63e631dec1550bba2076ceccec1e39ec8231370b6a56447e951f69a71daf8190",
+    "reviewer_analysis/control_simulation_manifest/rgg_shuffles.csv": "cc3db973d66bd264fe1d9ec3e05f5827ee583e78d0538d3a4a5ccd8874ab9147"
+  },
+  "full_candidate_universe_sha256": "452fe774661f38321528a859b882411e2e3a8ef6da92376fd50d4a8475ba0263",
+  "selected_common_RGGs": [
+    {
+      "RGG_parent_id": "Q9UPR6_11_1",
+      "RGG_UniProt_ID": "Q9UPR6",
+      "WT_sequence": "FRKRQRGPGEGEEGAGEKKRGRRGGEGLV",
+      "random_selection_order": 1,
+      "protein_selection_seed": 3815337015,
+      "region_selection_seed": 2452306770
+    },
+    {
+      "RGG_parent_id": "Q8IY67_4_1",
+      "RGG_UniProt_ID": "Q8IY67",
+      "WT_sequence": "APVGLRGSGLRGPLSHF",
+      "random_selection_order": 2,
+      "protein_selection_seed": 3815337015,
+      "region_selection_seed": 2844458009
+    },
+    {
+      "RGG_parent_id": "O60506_3_1",
+      "RGG_UniProt_ID": "O60506",
+      "WT_sequence": "GGRGARGAAPSRGRGAAPPRGRAGYSQRGGPGSARGVRGARGGAQQQRGRGVRGARGGRGGNVGG",
+      "random_selection_order": 3,
+      "protein_selection_seed": 3815337015,
+      "region_selection_seed": 2711466316
+    },
+    {
+      "RGG_parent_id": "A6NNA2_2_1",
+      "RGG_UniProt_ID": "A6NNA2",
+      "WT_sequence": "PASCYRGHRGYRTKH",
+      "random_selection_order": 4,
+      "protein_selection_seed": 3815337015,
+      "region_selection_seed": 2408294390
+    },
+    {
+      "RGG_parent_id": "Q9NZI8_1_1",
+      "RGG_UniProt_ID": "Q9NZI8",
+      "WT_sequence": "PENGRRGGFGSRGQPRQG",
+      "random_selection_order": 5,
+      "protein_selection_seed": 3815337015,
+      "region_selection_seed": 1273051307
+    }
+  ],
+  "selected_TAD_shuffles": [
+    {
+      "TAD_parent_id": "O14948_55_81",
+      "selection_order": 1,
+      "selected_shuffle_number": 15,
+      "selected_variant_id": "O14948_55_81__shuffle_15",
+      "shuffle_seed": 1819686940,
+      "selection_seed": 2182081399
+    },
+    {
+      "TAD_parent_id": "O14948_55_81",
+      "selection_order": 2,
+      "selected_shuffle_number": 19,
+      "selected_variant_id": "O14948_55_81__shuffle_19",
+      "shuffle_seed": 1819686940,
+      "selection_seed": 2182081399
+    },
+    {
+      "TAD_parent_id": "O43151_1419_1523_basic_AD_control",
+      "selection_order": 1,
+      "selected_shuffle_number": 13,
+      "selected_variant_id": "O43151_1419_1523_basic_AD_control__shuffle_13",
+      "shuffle_seed": 3195941178,
+      "selection_seed": 800008998
+    },
+    {
+      "TAD_parent_id": "O43151_1419_1523_basic_AD_control",
+      "selection_order": 2,
+      "selected_shuffle_number": 10,
+      "selected_variant_id": "O43151_1419_1523_basic_AD_control__shuffle_10",
+      "shuffle_seed": 3195941178,
+      "selection_seed": 800008998
+    },
+    {
+      "TAD_parent_id": "O43313_588_602",
+      "selection_order": 1,
+      "selected_shuffle_number": 17,
+      "selected_variant_id": "O43313_588_602__shuffle_17",
+      "shuffle_seed": 3311598323,
+      "selection_seed": 2401154217
+    },
+    {
+      "TAD_parent_id": "O43313_588_602",
+      "selection_order": 2,
+      "selected_shuffle_number": 9,
+      "selected_variant_id": "O43313_588_602__shuffle_09",
+      "shuffle_seed": 3311598323,
+      "selection_seed": 2401154217
+    },
+    {
+      "TAD_parent_id": "O43889_external_AD_core",
+      "selection_order": 1,
+      "selected_shuffle_number": 17,
+      "selected_variant_id": "O43889_external_AD_core__shuffle_17",
+      "shuffle_seed": 1105649275,
+      "selection_seed": 2463265050
+    },
+    {
+      "TAD_parent_id": "O43889_external_AD_core",
+      "selection_order": 2,
+      "selected_shuffle_number": 5,
+      "selected_variant_id": "O43889_external_AD_core__shuffle_05",
+      "shuffle_seed": 1105649275,
+      "selection_seed": 2463265050
+    },
+    {
+      "TAD_parent_id": "O95936_571_686_basic_AD_control",
+      "selection_order": 1,
+      "selected_shuffle_number": 19,
+      "selected_variant_id": "O95936_571_686_basic_AD_control__shuffle_19",
+      "shuffle_seed": 1792697841,
+      "selection_seed": 2701645474
+    },
+    {
+      "TAD_parent_id": "O95936_571_686_basic_AD_control",
+      "selection_order": 2,
+      "selected_shuffle_number": 1,
+      "selected_variant_id": "O95936_571_686_basic_AD_control__shuffle_01",
+      "shuffle_seed": 1792697841,
+      "selection_seed": 2701645474
+    },
+    {
+      "TAD_parent_id": "P17947_external_AD_core",
+      "selection_order": 1,
+      "selected_shuffle_number": 4,
+      "selected_variant_id": "P17947_external_AD_core__shuffle_04",
+      "shuffle_seed": 3915280040,
+      "selection_seed": 1000269578
+    },
+    {
+      "TAD_parent_id": "P17947_external_AD_core",
+      "selection_order": 2,
+      "selected_shuffle_number": 8,
+      "selected_variant_id": "P17947_external_AD_core__shuffle_08",
+      "shuffle_seed": 3915280040,
+      "selection_seed": 1000269578
+    },
+    {
+      "TAD_parent_id": "P18848_83_99",
+      "selection_order": 1,
+      "selected_shuffle_number": 12,
+      "selected_variant_id": "P18848_83_99__shuffle_12",
+      "shuffle_seed": 4283362472,
+      "selection_seed": 1868601731
+    },
+    {
+      "TAD_parent_id": "P18848_83_99",
+      "selection_order": 2,
+      "selected_shuffle_number": 3,
+      "selected_variant_id": "P18848_83_99__shuffle_03",
+      "shuffle_seed": 4283362472,
+      "selection_seed": 1868601731
+    },
+    {
+      "TAD_parent_id": "P19532_512_529",
+      "selection_order": 1,
+      "selected_shuffle_number": 20,
+      "selected_variant_id": "P19532_512_529__shuffle_20",
+      "shuffle_seed": 1239226517,
+      "selection_seed": 3347663262
+    },
+    {
+      "TAD_parent_id": "P19532_512_529",
+      "selection_order": 2,
+      "selected_shuffle_number": 9,
+      "selected_variant_id": "P19532_512_529__shuffle_09",
+      "shuffle_seed": 1239226517,
+      "selection_seed": 3347663262
+    },
+    {
+      "TAD_parent_id": "P43268_external_AD_core",
+      "selection_order": 1,
+      "selected_shuffle_number": 5,
+      "selected_variant_id": "P43268_external_AD_core__shuffle_05",
+      "shuffle_seed": 2655958841,
+      "selection_seed": 2277978993
+    },
+    {
+      "TAD_parent_id": "P43268_external_AD_core",
+      "selection_order": 2,
+      "selected_shuffle_number": 12,
+      "selected_variant_id": "P43268_external_AD_core__shuffle_12",
+      "shuffle_seed": 2655958841,
+      "selection_seed": 2277978993
+    },
+    {
+      "TAD_parent_id": "P98177_463_504",
+      "selection_order": 1,
+      "selected_shuffle_number": 1,
+      "selected_variant_id": "P98177_463_504__shuffle_01",
+      "shuffle_seed": 2853633512,
+      "selection_seed": 1199353475
+    },
+    {
+      "TAD_parent_id": "P98177_463_504",
+      "selection_order": 2,
+      "selected_shuffle_number": 19,
+      "selected_variant_id": "P98177_463_504__shuffle_19",
+      "shuffle_seed": 2853633512,
+      "selection_seed": 1199353475
+    },
+    {
+      "TAD_parent_id": "Q12778_597_631",
+      "selection_order": 1,
+      "selected_shuffle_number": 13,
+      "selected_variant_id": "Q12778_597_631__shuffle_13",
+      "shuffle_seed": 256230302,
+      "selection_seed": 2566605812
+    },
+    {
+      "TAD_parent_id": "Q12778_597_631",
+      "selection_order": 2,
+      "selected_shuffle_number": 16,
+      "selected_variant_id": "Q12778_597_631__shuffle_16",
+      "shuffle_seed": 256230302,
+      "selection_seed": 2566605812
+    },
+    {
+      "TAD_parent_id": "Q15329_298_317",
+      "selection_order": 1,
+      "selected_shuffle_number": 18,
+      "selected_variant_id": "Q15329_298_317__shuffle_18",
+      "shuffle_seed": 2615100456,
+      "selection_seed": 3797707983
+    },
+    {
+      "TAD_parent_id": "Q15329_298_317",
+      "selection_order": 2,
+      "selected_shuffle_number": 8,
+      "selected_variant_id": "Q15329_298_317__shuffle_08",
+      "shuffle_seed": 2615100456,
+      "selection_seed": 3797707983
+    },
+    {
+      "TAD_parent_id": "Q16665_523_538",
+      "selection_order": 1,
+      "selected_shuffle_number": 19,
+      "selected_variant_id": "Q16665_523_538__shuffle_19",
+      "shuffle_seed": 1835837586,
+      "selection_seed": 753678778
+    },
+    {
+      "TAD_parent_id": "Q16665_523_538",
+      "selection_order": 2,
+      "selected_shuffle_number": 1,
+      "selected_variant_id": "Q16665_523_538__shuffle_01",
+      "shuffle_seed": 1835837586,
+      "selection_seed": 753678778
+    },
+    {
+      "TAD_parent_id": "Q6P1N0_24_44",
+      "selection_order": 1,
+      "selected_shuffle_number": 13,
+      "selected_variant_id": "Q6P1N0_24_44__shuffle_13",
+      "shuffle_seed": 241195125,
+      "selection_seed": 4289737154
+    },
+    {
+      "TAD_parent_id": "Q6P1N0_24_44",
+      "selection_order": 2,
+      "selected_shuffle_number": 3,
+      "selected_variant_id": "Q6P1N0_24_44__shuffle_03",
+      "shuffle_seed": 241195125,
+      "selection_seed": 4289737154
+    },
+    {
+      "TAD_parent_id": "Q8IUX7_694_709",
+      "selection_order": 1,
+      "selected_shuffle_number": 10,
+      "selected_variant_id": "Q8IUX7_694_709__shuffle_10",
+      "shuffle_seed": 3789589993,
+      "selection_seed": 3299482807
+    },
+    {
+      "TAD_parent_id": "Q8IUX7_694_709",
+      "selection_order": 2,
+      "selected_shuffle_number": 9,
+      "selected_variant_id": "Q8IUX7_694_709__shuffle_09",
+      "shuffle_seed": 3789589993,
+      "selection_seed": 3299482807
+    },
+    {
+      "TAD_parent_id": "Q99814_491_510",
+      "selection_order": 1,
+      "selected_shuffle_number": 4,
+      "selected_variant_id": "Q99814_491_510__shuffle_04",
+      "shuffle_seed": 1001697791,
+      "selection_seed": 2164209188
+    },
+    {
+      "TAD_parent_id": "Q99814_491_510",
+      "selection_order": 2,
+      "selected_shuffle_number": 1,
+      "selected_variant_id": "Q99814_491_510__shuffle_01",
+      "shuffle_seed": 1001697791,
+      "selection_seed": 2164209188
+    },
+    {
+      "TAD_parent_id": "Q9NQB0_459_505_basic_AD_control",
+      "selection_order": 1,
+      "selected_shuffle_number": 12,
+      "selected_variant_id": "Q9NQB0_459_505_basic_AD_control__shuffle_12",
+      "shuffle_seed": 4062589073,
+      "selection_seed": 2907923705
+    },
+    {
+      "TAD_parent_id": "Q9NQB0_459_505_basic_AD_control",
+      "selection_order": 2,
+      "selected_shuffle_number": 5,
+      "selected_variant_id": "Q9NQB0_459_505_basic_AD_control__shuffle_05",
+      "shuffle_seed": 4062589073,
+      "selection_seed": 2907923705
+    },
+    {
+      "TAD_parent_id": "Q9UIF9_321_335",
+      "selection_order": 1,
+      "selected_shuffle_number": 13,
+      "selected_variant_id": "Q9UIF9_321_335__shuffle_13",
+      "shuffle_seed": 2031388843,
+      "selection_seed": 473550631
+    },
+    {
+      "TAD_parent_id": "Q9UIF9_321_335",
+      "selection_order": 2,
+      "selected_shuffle_number": 12,
+      "selected_variant_id": "Q9UIF9_321_335__shuffle_12",
+      "shuffle_seed": 2031388843,
+      "selection_seed": 473550631
+    },
+    {
+      "TAD_parent_id": "Q9UJU2_174_256_basic_AD_control",
+      "selection_order": 1,
+      "selected_shuffle_number": 19,
+      "selected_variant_id": "Q9UJU2_174_256_basic_AD_control__shuffle_19",
+      "shuffle_seed": 4095768138,
+      "selection_seed": 1643074967
+    },
+    {
+      "TAD_parent_id": "Q9UJU2_174_256_basic_AD_control",
+      "selection_order": 2,
+      "selected_shuffle_number": 12,
+      "selected_variant_id": "Q9UJU2_174_256_basic_AD_control__shuffle_12",
+      "shuffle_seed": 4095768138,
+      "selection_seed": 1643074967
+    },
+    {
+      "TAD_parent_id": "Q9Y6Q9_796_812",
+      "selection_order": 1,
+      "selected_shuffle_number": 11,
+      "selected_variant_id": "Q9Y6Q9_796_812__shuffle_11",
+      "shuffle_seed": 4210184959,
+      "selection_seed": 3411970350
+    },
+    {
+      "TAD_parent_id": "Q9Y6Q9_796_812",
+      "selection_order": 2,
+      "selected_shuffle_number": 18,
+      "selected_variant_id": "Q9Y6Q9_796_812__shuffle_18",
+      "shuffle_seed": 4210184959,
+      "selection_seed": 3411970350
+    }
+  ],
+  "selected_RGG_shuffles": [
+    {
+      "RGG_parent_id": "Q9UPR6_11_1",
+      "RGG_UniProt_ID": "Q9UPR6",
+      "selected_shuffle_number": 18,
+      "selected_variant_id": "Q9UPR6_11_1__shuffle_18",
+      "shuffle_seed": 1578541889,
+      "selection_seed": 418913762
+    },
+    {
+      "RGG_parent_id": "Q8IY67_4_1",
+      "RGG_UniProt_ID": "Q8IY67",
+      "selected_shuffle_number": 15,
+      "selected_variant_id": "Q8IY67_4_1__shuffle_15",
+      "shuffle_seed": 733424877,
+      "selection_seed": 122936977
+    },
+    {
+      "RGG_parent_id": "O60506_3_1",
+      "RGG_UniProt_ID": "O60506",
+      "selected_shuffle_number": 10,
+      "selected_variant_id": "O60506_3_1__shuffle_10",
+      "shuffle_seed": 3154499431,
+      "selection_seed": 578066154
+    },
+    {
+      "RGG_parent_id": "A6NNA2_2_1",
+      "RGG_UniProt_ID": "A6NNA2",
+      "selected_shuffle_number": 12,
+      "selected_variant_id": "A6NNA2_2_1__shuffle_12",
+      "shuffle_seed": 702151744,
+      "selection_seed": 1564300895
+    },
+    {
+      "RGG_parent_id": "Q9NZI8_1_1",
+      "RGG_UniProt_ID": "Q9NZI8",
+      "selected_shuffle_number": 3,
+      "selected_variant_id": "Q9NZI8_1_1__shuffle_03",
+      "shuffle_seed": 946707974,
+      "selection_seed": 3144767255
+    }
+  ],
+  "python_version": "3.10.13",
+  "numpy_version": "1.26.4",
+  "pandas_version": "1.5.3",
+  "timestamp_utc": "2026-09-06T23:02:50.725646+00:00",
+  "selection_exclusions": [
+    "B22",
+    "predicted B22",
+    "ML predictions",
+    "OCN",
+    "Net_Charge_Product",
+    "charge",
+    "NCPR",
+    "lambda",
+    "length",
+    "RG density",
+    "previously observed interaction properties"
+  ],
+  "sampling_method": "uniform identifier-only sampling without replacement; no feature weighting"
+}

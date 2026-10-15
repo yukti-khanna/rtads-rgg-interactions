@@ -1,0 +1,11 @@
+stage,source_file,n_rows,n_unique,duplicates_within_file,n_new_unique,cumulative_unique,n_in_final917,n_not_in_final917
+Initial 5 x 5 pilot,/Users/yuktikhanna/rtads-rgg-interactions/fig4/25_pairs_features_data.csv,25,25,0,25,25,1,24
+Archived initial set,/Users/yuktikhanna/rtads-rgg-interactions/fig4/initial_set_names_sliced.txt,595,595,0,594,619,498,97
+Feature-guided base list,/Users/yuktikhanna/calvados/lists/final_test_names.txt,500,500,0,2,621,419,81
+Outside-filter additions,/Users/yuktikhanna/calvados/lists/200_pairs_outside_filter_less_than_lambda045_names.txt,200,200,0,200,821,180,20
+Initial NCP-directed additions,/Users/yuktikhanna/calvados/lists/ocn_names.txt,166,166,0,165,986,166,0
+NCP-bin deficit additions,/Users/yuktikhanna/calvados/lists/ocn_added_names.txt,74,74,0,74,1060,74,0
+Dated training list 2025-02-14,/Users/yuktikhanna/calvados/lists/simulated_pairs_for_training_140225.txt,746,746,0,0,1060,678,68
+Dated training list 2025-04-09,/Users/yuktikhanna/calvados/lists/sim_pairs_for_training_090425.txt,912,911,1,0,1060,843,68
+Pre-exclusion training list 2025-04-22,/Users/yuktikhanna/calvados/lists/sim_pairs_for_training_220425.txt,1039,1039,0,3,1063,917,122
+Final training list 2025-05-27,/Users/yuktikhanna/calvados/lists/sim_pairs_for_training_270525.txt,917,917,0,0,1063,917,0

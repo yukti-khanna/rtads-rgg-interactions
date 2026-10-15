@@ -1,0 +1,14 @@
+Simulation-control layout note
+
+Current inspected Figure 4 supplementary structure:
+- revised_S4_sampling and final_fig4_revision contain validated S4A-S4H sampling/design panels plus S4I independent validation.
+- rdf_b22_convergence_figure contains the separate 3-panel B22 reproducibility/convergence control figure.
+- task4_ph_sensitivity already contains pH/histidine sensitivity outputs and should be updated/re-exported from final matched data rather than duplicated from scratch.
+
+Placement decision:
+- Add the WT-vs-shuffle and pH7-vs-pH6.5 panels as new standalone Figure 4 supplementary simulation-control panels.
+- Do not overwrite validated S4A-S4I panels or the convergence figure.
+- These panels logically sit after replicate/convergence robustness and alongside pH/histidine sensitivity as simulation robustness controls.
+- Final panel letters should be assigned manually during assembly.
+
+No ML predictions or Figure 5 model outputs were used.

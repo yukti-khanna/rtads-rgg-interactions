@@ -1,0 +1,11 @@
+{
+  "global_seed": 20260906,
+  "original_input_sha256": {
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/all_tads_rggs_dis.fasta": "373cf3468fcc4f7ab5fdd10ff74778b2de6f605011e0bfd68381b725e4a59928",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/combined_rg_regions_ll_7_all.fasta": "87a9c4497bfc794839ce016dca07a1da42b3a5c3712777a4bebb41a151ecf580",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/conventional_rbp_uniprot_ids.txt": "155eea01796f7d4f4af4c880009b9b34edd4f4cd16317288cae485803d3fe649",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/tad_region_selection.xlsx": "9ea1e4836e68b69edca4fb38ebc09bf32cd14f4674a873301cacc6688d7b5838",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/ETV4_SPI1_CREB3_core_and_longest_sequences.xlsx": "88bb4a1be04953a3a5ef8a34ebc554d1304c301e8436e05a4cd449bc75d2cd53",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig4/basic_AD_IDR_controls.xlsx": "4e75323d147e723578f214e06de6ac21620c535197c4606013f54fd5ac064467"
+  }
+}

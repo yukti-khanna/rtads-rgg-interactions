@@ -1,0 +1,13 @@
+{
+  "parameters": "/Users/yuktikhanna/calvados/residues.csv",
+  "parameter_sha256": "2cf55bc77a7ff8a25b7cc841ac947ff5c6ec33a8fdc3a5e575044152c7d0bbc7",
+  "epsilon_kj_mol": 0.8368,
+  "temperature_k": 298,
+  "ionic_molar": 0.15,
+  "AH_cutoff_nm": 2.0,
+  "Yukawa_cutoff_nm": 4.0,
+  "frames": "all stored frames; no additional slicing",
+  "method": "existing calc_per_pair_average_energy; clip after averaging AH+Yukawa",
+  "old_caches_unchanged": true,
+  "B22_recomputed": false
+}

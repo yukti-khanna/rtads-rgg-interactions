@@ -1,0 +1,16 @@
+parameter_family,parameter_name,parameter_value,compact_linker_cutoff,bridge_linker_cutoff,flank_extension,is_baseline,n_pairs_total,n_pairs_any_overlap,fraction_pairs_any_overlap,n_pairs_exact_match,fraction_pairs_exact_match,n_pairs_lost
+Bridge linker,bridge_linker_cutoff,13,7,13,5,False,917,917,1.0,858,0.935659760087241,0
+Bridge linker,bridge_linker_cutoff,14,7,14,5,False,917,917,1.0,895,0.9760087241003272,0
+Bridge linker,bridge_linker_cutoff,15,7,15,5,True,917,917,1.0,917,1.0,0
+Bridge linker,bridge_linker_cutoff,16,7,16,5,False,917,917,1.0,901,0.9825517993456924,0
+Bridge linker,bridge_linker_cutoff,17,7,17,5,False,917,917,1.0,885,0.965103598691385,0
+Compact linker,compact_linker_cutoff,5,5,15,5,False,917,821,0.8953107960741549,801,0.8735005452562704,96
+Compact linker,compact_linker_cutoff,6,6,15,5,False,917,851,0.9280261723009816,839,0.9149400218102508,66
+Compact linker,compact_linker_cutoff,7,7,15,5,True,917,917,1.0,917,1.0,0
+Compact linker,compact_linker_cutoff,8,8,15,5,False,917,917,1.0,914,0.9967284623773172,0
+Compact linker,compact_linker_cutoff,9,9,15,5,False,917,917,1.0,909,0.9912758996728462,0
+Flank extension,flank_extension,3,7,15,3,False,917,917,1.0,0,0.0,0
+Flank extension,flank_extension,4,7,15,4,False,917,917,1.0,0,0.0,0
+Flank extension,flank_extension,5,7,15,5,True,917,917,1.0,917,1.0,0
+Flank extension,flank_extension,6,7,15,6,False,917,917,1.0,0,0.0,0
+Flank extension,flank_extension,7,7,15,7,False,917,917,1.0,0,0.0,0

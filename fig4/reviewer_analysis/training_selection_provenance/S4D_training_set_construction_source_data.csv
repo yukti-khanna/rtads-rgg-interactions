@@ -1,0 +1,5 @@
+stage_number,stage_label,historical_source_file,raw_stage_size,heldout_excluded_from_stage,retained_raw_pairs,overlap_with_previous_retained_set,net_new_retained_pairs,cumulative_retained_pairs
+1,Initial feature-guided + outside-filter sampling,/Users/yuktikhanna/calvados/lists/all_test_names.txt,600,102,498,0,498,498
+2,Low-lambda sampling,/Users/yuktikhanna/calvados/lists/200_pairs_outside_filter_less_than_lambda045_names.txt,200,20,180,0,180,678
+3,First −NCP-directed sampling,/Users/yuktikhanna/calvados/lists/ocn_names.txt,166,0,166,1,165,843
+4,Further −NCP-directed sampling,/Users/yuktikhanna/calvados/lists/ocn_added_names.txt,74,0,74,0,74,917

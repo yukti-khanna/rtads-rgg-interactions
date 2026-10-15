@@ -1,0 +1,7 @@
+feature,comparison,standardized_mean_difference,base_mean,comparison_mean,effect_size_source
+Opposite_Charge_Number,complete candidate landscape vs feature-guided simulation panel,0.2155853938817549,13.440527950310559,16.83969465648855,Task 3 where available; recomputed fallback otherwise
+Total_Length,complete candidate landscape vs feature-guided simulation panel,0.1646830892250114,41.321885783298825,43.344601962922575,Task 3 where available; recomputed fallback otherwise
+Average_lambda,complete candidate landscape vs feature-guided simulation panel,-0.0715713110281811,0.44746045477153656,0.4441592072810909,Task 3 where available; recomputed fallback otherwise
+Opposite_Charge_Number,complete candidate landscape vs independent sequence-exclusive simulation set,-0.0441634313007196,13.440527950310559,12.74581939799331,Task 3 where available; recomputed fallback otherwise
+Total_Length,complete candidate landscape vs independent sequence-exclusive simulation set,-0.013921474726638,41.321885783298825,41.151059085841695,Task 3 where available; recomputed fallback otherwise
+Average_lambda,complete candidate landscape vs independent sequence-exclusive simulation set,0.3043680708469129,0.44746045477153656,0.4615005014021906,Task 3 where available; recomputed fallback otherwise

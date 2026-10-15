@@ -1,0 +1,46 @@
+stage_a,stage_b,n_overlap,n_union
+Initial 5 x 5 pilot,Archived initial set,1,619
+Initial 5 x 5 pilot,Feature-guided base list,1,524
+Initial 5 x 5 pilot,Outside-filter additions,0,225
+Initial 5 x 5 pilot,Initial NCP-directed additions,0,191
+Initial 5 x 5 pilot,NCP-bin deficit additions,0,99
+Initial 5 x 5 pilot,Dated training list 2025-02-14,1,770
+Initial 5 x 5 pilot,Dated training list 2025-04-09,1,935
+Initial 5 x 5 pilot,Pre-exclusion training list 2025-04-22,1,1063
+Initial 5 x 5 pilot,Final training list 2025-05-27,1,941
+Archived initial set,Feature-guided base list,498,597
+Archived initial set,Outside-filter additions,0,795
+Archived initial set,Initial NCP-directed additions,1,760
+Archived initial set,NCP-bin deficit additions,0,669
+Archived initial set,Dated training list 2025-02-14,546,795
+Archived initial set,Dated training list 2025-04-09,546,960
+Archived initial set,Pre-exclusion training list 2025-04-22,595,1039
+Archived initial set,Final training list 2025-05-27,498,1014
+Feature-guided base list,Outside-filter additions,0,700
+Feature-guided base list,Initial NCP-directed additions,1,665
+Feature-guided base list,NCP-bin deficit additions,0,574
+Feature-guided base list,Dated training list 2025-02-14,455,791
+Feature-guided base list,Dated training list 2025-04-09,455,956
+Feature-guided base list,Pre-exclusion training list 2025-04-22,500,1039
+Feature-guided base list,Final training list 2025-05-27,419,998
+Outside-filter additions,Initial NCP-directed additions,0,366
+Outside-filter additions,NCP-bin deficit additions,0,274
+Outside-filter additions,Dated training list 2025-02-14,200,746
+Outside-filter additions,Dated training list 2025-04-09,200,911
+Outside-filter additions,Pre-exclusion training list 2025-04-22,200,1039
+Outside-filter additions,Final training list 2025-05-27,180,937
+Initial NCP-directed additions,NCP-bin deficit additions,0,240
+Initial NCP-directed additions,Dated training list 2025-02-14,1,911
+Initial NCP-directed additions,Dated training list 2025-04-09,166,911
+Initial NCP-directed additions,Pre-exclusion training list 2025-04-22,166,1039
+Initial NCP-directed additions,Final training list 2025-05-27,166,917
+NCP-bin deficit additions,Dated training list 2025-02-14,0,820
+NCP-bin deficit additions,Dated training list 2025-04-09,0,985
+NCP-bin deficit additions,Pre-exclusion training list 2025-04-22,74,1039
+NCP-bin deficit additions,Final training list 2025-05-27,74,917
+Dated training list 2025-02-14,Dated training list 2025-04-09,746,911
+Dated training list 2025-02-14,Pre-exclusion training list 2025-04-22,746,1039
+Dated training list 2025-02-14,Final training list 2025-05-27,678,985
+Dated training list 2025-04-09,Pre-exclusion training list 2025-04-22,911,1039
+Dated training list 2025-04-09,Final training list 2025-05-27,843,985
+Pre-exclusion training list 2025-04-22,Final training list 2025-05-27,917,1039

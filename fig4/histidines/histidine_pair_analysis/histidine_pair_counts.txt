@@ -1,0 +1,7 @@
+total_pairs	917
+pairs_with_any_histidine	390
+fraction_with_any_histidine	0.425300
+first_only	184
+second_only	149
+both	57
+neither	527
