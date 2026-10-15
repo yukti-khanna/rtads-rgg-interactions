@@ -1,0 +1,145 @@
+Git repository: https://github.com/yukti-khanna/idr-interaction-predict
+Local repository: /Users/yuktikhanna/idr-interaction-predict
+Current commit SHA: af534d380250e6e9e89ec0c9f1c544106f67cb2b
+Working tree status at audit: ?? models_old/
+?? sample_rdfs/
+Audit Python: /Users/yuktikhanna/miniconda3/envs/neural_net/bin/python
+Python version: 3.10.13 | packaged by conda-forge | (main, Dec 23 2023, 15:35:25) [Clang 16.0.6 ]
+numpy: 1.26.4; pandas: 2.2.1; matplotlib: 3.8.3
+Original inputs are hashed before computation and rechecked afterward.
+Dataframe loading: pandas CSV C parser float_precision=round_trip; no rows removed, features regenerated, or outcomes used for feature correlation.
+Exact scripts examined (static only):
+/Users/yuktikhanna/idr-interaction-predict/scripts/mlp_with_plateau_residual_calibrated.py
+/Users/yuktikhanna/idr-interaction-predict/scripts/generate_pairs.py
+/Users/yuktikhanna/idr-interaction-predict/scripts/predict_with_hybrid_model.py
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py
+/Users/yuktikhanna/idr-interaction-predict/scripts/compare_models.py
+/Users/yuktikhanna/idr-interaction-predict/scripts/predict_svr.py
+/Users/yuktikhanna/idr-interaction-predict/scripts/mlp_feature_pruning.py
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5.py
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/make_FigS5.py
+
+INPUT INVENTORY
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv
+  bytes: 511738
+  SHA256: f9ddb700b12bf0aeab3ccb88cebfd12d29d61be0a4b21411f06f6a4da7b6dc5c
+  dataframe dimensions: 917 rows x 40 columns
+
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/taken_out_preds_with_hybrid_021125_sel_cols.csv
+  bytes: 794749
+  SHA256: d01d6cc214dd1fd3d4d00aa4bf4b54524055867c858a2bfbeac5afc80007e754
+  dataframe dimensions: 1794 rows x 36 columns
+
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/unsim_preds_with_hybrid_021125_sel_cols.csv
+  bytes: 215086819
+  SHA256: a95b7f32a14c95ace3a47150ca695ab6b30d08c5000964fff387877dfdc9e15e
+  dataframe dimensions: 191386 rows x 178 columns
+
+/Users/yuktikhanna/idr-interaction-predict/scripts/mlp_with_plateau_residual_calibrated.py
+  bytes: 15754
+  SHA256: 2b876909a965425b253a96a60e02cd4e1f51a0a6fc5f91707c7b1304443e5adf
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/scripts/generate_pairs.py
+  bytes: 9516
+  SHA256: 24cb8b83f08781c80969a11353ef0a53e320fdf76370fc79723cc657c5a5faff
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/scripts/predict_with_hybrid_model.py
+  bytes: 8090
+  SHA256: a197aeca5bd5af1b62e4a81352d01345067758ce199f16ee80a9b2ba2aaa1620
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py
+  bytes: 18396
+  SHA256: 0184c71d9f6aac5454c6081b9f16f0740a31de2a142a570c5b9b96ec665e6bc2
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/scripts/compare_models.py
+  bytes: 6234
+  SHA256: a524b8bdf24f06f868444fe16546080fcc95cf42347eae8f2a6b1ed0c86dbedd
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/scripts/predict_svr.py
+  bytes: 2412
+  SHA256: ca8a221b61c49ce833c686baebca5b3ae6888eb806cea64de9a76624680452fb
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/scripts/mlp_feature_pruning.py
+  bytes: 7676
+  SHA256: 46c5e347d5428efdef602d8d967e068a8b6e7b0054083c72e5176ee242bf5f1a
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5.py
+  bytes: 25778
+  SHA256: 94db7424a9d8e00d4c990eeff7a8c43425f4b09b760c12e2fdf256e88614db8f
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/make_FigS5.py
+  bytes: 10004
+  SHA256: 7262bee8c4f68726885a1dc27ef264577a263e491a6eed33d348de73f2351cb3
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/config/config.yaml
+  bytes: 603
+  SHA256: 9a964788a43dcf184d95188ef296bd48b4cc12b657f5e4c87a79885f54db7eb9
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/Snakefile
+  bytes: 2517
+  SHA256: 5787be7af171dca59c88f979e8cc73829f2de381b47b94de8e12f5de2ac3154f
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/README.md
+  bytes: 5813
+  SHA256: 86b8fe02b2646cce96c871df2586b392fdc91e2aded50ec83caf45f84d1c29c6
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/environment-predict.yml
+  bytes: 1855
+  SHA256: 6d81684b765995b85bd31f8d0a92638cdd6e73fc361b5d57dd4c15e4d226aaa8
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/environment-features.yml
+  bytes: 3932
+  SHA256: b3f13a298f97bd8b77794d50c5b55e80263ab17edbf6fe5b4d49fdfbdd72b3c3
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/resources/residues.csv
+  bytes: 2914
+  SHA256: 2cf55bc77a7ff8a25b7cc841ac947ff5c6ec33a8fdc3a5e575044152c7d0bbc7
+  dataframe dimensions: 20 rows x 12 columns
+
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/feature_pruning_results/permutation_importance_test.csv
+  bytes: 868
+  SHA256: 0355f8dff8b7f168e955d07ab44d5f4259e28e4b532182c69f227a9e895b4124
+  dataframe dimensions: 26 rows x 2 columns
+
+/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Cell_Reports_Reviewer_Comments_with_Tentative_Action_Plan.docx
+  bytes: 51364
+  SHA256: b87dc1a83594c2ceff44bb73e70dc49d70b2059bdf28a177407b99e58025a085
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/.codex/attachments/8b0bee21-795d-4d6c-8c70-4cbcc78fbf86/pasted-text.txt
+  bytes: 11561
+  SHA256: ee2521dd2d8d1dbede60f690b39837dd20642e9f406726f653f4cee29b0b3c1e
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/models/pretrained/mlp_plateau_calibrated_bundle.pkl
+  bytes: 505285
+  SHA256: 9fdc18dba39ad8b54cb958957c9bf321ebb214d5bf64023837bf47080c3e4e41
+  dataframe dimensions: not a dataframe
+
+/Users/yuktikhanna/idr-interaction-predict/models/pretrained/mlp_plateau_calibrated_bundle_sel_cols.pkl
+  bytes: 435766
+  SHA256: cebe46dfe93aaf5564a84bcfde1ca576595b0b3b3f1371b178382d89993853fc
+  dataframe dimensions: not a dataframe
+
+FEATURE COLUMNS (28)
+RGG_length, charge_RGG, lambda_RGG, NCPR_RGG, SCD_RGG, SHD_RGG, TAD_length, charge_TAD, lambda_TAD, NCPR_TAD, SCD_TAD, SHD_TAD, Average_lambda, Min_lambda, Average_sigma, Average_charge, Opposite_Charge_Number, Average_NCPR, Charge_Complementarity, Total_Length, Average_Interaction, Average_SCD, Average_Aromatics, Average_SHD, Normalized_OCN, Charge_Asymmetry, Hydropathy_Diff, Lambda_Ratio
+
+EXCLUDED COLUMNS
+training: Unnamed: 0, name, rgg, tad, B22_corr1_log10, B22_corr2_log10, B22_corr2_log10_no_pos, B22, Corrected_B22_Hummer, Corrected_B22_Ganguly, B22_pred_old, B22_pred_hybrid
+heldout: Unnamed: 0, name, rgg, tad, B22_predicted, B22_corr1_log10, B22_pred_base, B22_pred_hybrid
+
+Historical original base-feature generator and exact CSV-producing run manifest were not supplied. No replacement historical datasets were sought or used. Bundle metadata was decoded from serialized data and embedded Keras JSON without instantiating models. The 26-input bundle is documented separately and not substituted for the configured selected bundle.

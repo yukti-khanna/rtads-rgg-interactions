@@ -1,0 +1,1 @@
+Exploratory, not manuscript-final: Panel F correlation of final landscape predictions with -NCP, hybrid correction versus -NCP, and base-vs-hybrid validation RMSE. Generated without modifying accepted Figure 5 panels.

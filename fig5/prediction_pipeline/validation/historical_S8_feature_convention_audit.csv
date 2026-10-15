@@ -1,0 +1,14 @@
+feature,n,max_abs_difference_training_consistent_vs_stored_S8
+minus_NCP,10,0.0
+mean_lambda_RGG,10,0.038056131265801874
+mean_lambda_AHD,10,0.019678115137390706
+SHD_RGG,10,0.29537766608063043
+SHD_AHD,10,0.09313427118996676
+local_charge_complementarity_std,10,1.3322676295501878e-15
+scd_RGG_patch_std,10,0.0
+scd_AHD_patch_std,10,5.551115123125783e-17
+rg_fraction_RGG_patch_std,10,5.551115123125783e-17
+aromatic_fraction_AHD_patch_std,10,6.938893903907228e-17
+shd_RGG_patch_std,10,5.551115123125783e-17
+shd_AHD_patch_std,10,5.551115123125783e-17
+ah_energy_patch_std,10,8.326672684688674e-17

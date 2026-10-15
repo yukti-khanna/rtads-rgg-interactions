@@ -1,0 +1,28 @@
+{
+  "base_model": "StandardScaler + MLPRegressor",
+  "params": {
+    "activation": "tanh",
+    "alpha": 0.01,
+    "hidden_layer_sizes": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "learning_rate_init": 0.01,
+    "solver": "adam",
+    "max_iter": 500
+  },
+  "cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2026
+    ]
+  },
+  "residual_correction_used": false
+}

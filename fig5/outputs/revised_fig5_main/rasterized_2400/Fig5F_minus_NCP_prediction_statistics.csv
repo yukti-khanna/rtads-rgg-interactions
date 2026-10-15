@@ -1,0 +1,2 @@
+n,prediction_min,prediction_max,minus_NCP_min,minus_NCP_max,pearson_minus_NCP_prediction_all,spearman_minus_NCP_prediction_all,linear_fit_slope,linear_fit_intercept,RBP_n,RBP_pearson_minus_NCP_prediction,RBP_spearman_minus_NCP_prediction,non_RBP_n,non_RBP_pearson_minus_NCP_prediction,non_RBP_spearman_minus_NCP_prediction
+191386,0.9418996854684096,4.34011539660318,-98.0,406.0,0.9511168458201026,0.9745983145428705,0.01616203997883055,2.743025748306386,72314,0.9447907152256971,0.9734739104853541,119072,0.9565262703582843,0.9749426530242321

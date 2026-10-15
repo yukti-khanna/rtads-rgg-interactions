@@ -1,0 +1,23 @@
+CONTROL FEATURE INPUT AUDIT
+fig5_root=.
+model_dir=outputs/final_hybrid_model/frozen_model
+feature_order=['Opposite_Charge_Number', 'mean_lambda_RGG', 'mean_lambda_TAD', 'SHD_RGG', 'SHD_TAD', 'opp_charge_std', 'scd_patch1_std', 'scd_patch2_std', 'rg_fraction_patch1_std', 'aromatic_fraction_patch2_std', 'shd_patch1_std', 'shd_patch2_std', 'ah_energy_std']
+
+nonbasic WT input: already equivalent; left unchanged by content; controls/final_prediction_inputs/nonbasic_WT_prediction_input.csv; n=80; sha256=7de424e041d4dd79644cfdce7d365c8c9d0953e5c737b9208d84762ed663784d
+shuffle WT parent input: already equivalent; left unchanged by content; controls/final_prediction_inputs/shuffle_WT_parent_prediction_input.csv; n=80; sha256=1433e2541d14b9ebfa1996225a6f761841685c530e4e71892dd9a0f4d7c132c0
+nonbasic shuffle input: already equivalent; left unchanged by content; controls/final_prediction_inputs/nonbasic_shuffle_prediction_input.csv; n=240; sha256=91a731a755ade7dd654d6471a6a44bf8d6d631dc8962a87c3bf4c4f42d6e0e66
+histidine pH7 input: already equivalent; left unchanged by content; controls/final_prediction_inputs/histidine_pH7_prediction_input.csv; n=390; sha256=4634271143c4c5bd98a5567d3b2a812ff3ebc176f204f308de9a4925edee5c30
+histidine pH6.5 input: already equivalent; left unchanged by content; controls/final_prediction_inputs/histidine_pH6p5_prediction_input.csv; n=390; sha256=d3bc83a6cfe45887daec80a97da6c43a3e022dbf233284dc60566ed1c8faf45f
+basic 78-row table missing IDs: ['RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05', 'RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12']
+basic ALL80 input: generated; controls/final_prediction_inputs/basic_control_prediction_input_ALL80.csv; n=80; sha256=08cc891ff19c2eceb00240dbe28860b40e5b86235698ad2fbea418ba8fc24bfb
+development 917 reference input: generated; controls/final_prediction_inputs/development_917_reference_input.csv; n=917; sha256=745e3813f89979bcb586a8b10101ae1236b7ba8891fb580b1e9b81f9ecad3e24
+development 917 reference predictions copy: generated; controls/final_prediction_inputs/development_917_reference_predictions.csv; n=917; sha256=252548166e44af2fab6b518d826c132cce0dee3c59bc53c4fac7d5cfd7c852b6
+
+Candidate file inspection table: controls/CONTROL_FEATURE_INPUT_AUDIT.csv
+nonbasic WT n=80; overlap with development 917 n=0; overlap IDs=[]
+shuffle WT parent n=80
+nonbasic shuffle n=240; TAD shuffle n=160; RGG shuffle n=80
+basic-control shuffles excluded from nonbasic shuffle table n=58
+histidine pH7 n=390; histidine pH6.5 n=390; feature representations identical by design
+basic ALL80 n=80; target_evaluable n=78; positive_B22_target_undefined n=2
+No local Keras residual model was loaded or run by this preparation script.

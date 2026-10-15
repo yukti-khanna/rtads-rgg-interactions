@@ -1,0 +1,18 @@
+S8 extension preflight identity and input audit
+Model artifacts checked:
+MODEL_MANIFEST.json	True	fdb9ad1c7d2e0cc80edbac563960957b553c16aff46780656d047d30d7b7a6e9
+base_model_ensemble.joblib	True	133946f680c6884036dcdcaddab62ac3248b38321febee02d6f535b229cf1210
+residual_preprocessor.joblib	True	b0f193a6f43b7c7bc95e0088cab69e7af92f7f42c578daf24f9e37d7a96c5ece
+residual_nn.keras	True	d1a329f92c00671e875d29f729682e7c8ded1f06a2c276060e604559a8f519b1
+predict_final_hybrid.py	True	e2ae4ccf45adb414f7f3b8e6ac1678407b43f8e6459b6ed9eff17d575495bd44
+identity_rows_compared=790
+identity_max_abs_diffs={"applied_correction": 0.002964614783292606, "base_prediction": 3.552713678800501e-15, "final_hybrid_prediction": 0.002964614783293129, "gate_value": 1.1102230246251565e-16, "raw_residual_prediction": 0.05613488346889495}
+identity_pass_1e-10=False
+new dataset manifest rows=140 unique=140
+new nondataset manifest rows=140 unique=140
+new supplied total=280 unique=280
+RDF found total=279 missing=1
+missing RDF IDs=["RGG_Q13595_4_1_WT__TAD_Q9UJU2_174_256_basic_AD_control_WT"]
+already duplicated in existing S8=0
+all sequences found rows=280 of 280
+classification counts={"RGG_shuffle": 35, "TAD_shuffle": 70, "WT": 35, "basic_WT": 80, "external_AD_core_WT": 60}

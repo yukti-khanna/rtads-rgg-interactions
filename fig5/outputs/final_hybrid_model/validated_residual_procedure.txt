@@ -1,0 +1,63 @@
+Validated development-only residual procedure audit
+
+Authoritative package: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local
+Nested residual script: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/scripts/run_nested_residual_tuning.py
+Utility implementation: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/scripts/utils.py
+Base config: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/config/base_model.json
+Run config: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/config/run_config.json
+Residual grid: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/config/residual_grid.json
+
+Base OOF prediction generation:
+  Outer CV seeds: [42, 123, 456, 789, 2026]
+  Outer folds per seed: 5
+  Shuffle: True
+  Base model: sklearn MLPRegressor ensemble with seeds [0, 1, 2, 3, 4]
+  Base scaler: StandardScaler fitted on each training fold only.
+  Base features: ['Opposite_Charge_Number', 'mean_lambda_RGG', 'mean_lambda_TAD', 'SHD_RGG', 'SHD_TAD', 'opp_charge_std', 'scd_patch1_std', 'scd_patch2_std', 'rg_fraction_patch1_std', 'aromatic_fraction_patch2_std', 'shd_patch1_std', 'shd_patch2_std', 'ah_energy_std']
+
+Residual target definition:
+  For each outer fold, inner 5-fold OOF base predictions are generated inside the outer-training set.
+  residual_target = true B22_corr1_log10 - inner_OOF_base_prediction.
+  Outer-validation residual predictions are always from models that did not train on those validation examples.
+
+Examples used to train residual NN:
+  Only high−NCP examples in the outer-training set are eligible.
+  High−NCP threshold: 40.0.
+  Eligible high−NCP examples are split by train_test_split(test_size=0.35, random_state=outer_seed*100+outer_fold).
+  65% are residual-fit examples; 35% are calibration examples.
+
+Gate/sample weighting:
+  residual-fit sample weight = sigmoid((−NCP - center) / scale).
+  Gate center: 40.0.
+  Gate scale: 12.0.
+
+Validated fixed residual architecture retained for final hybrid model:
+  Dense 16 tanh; Dense 8 tanh; Dense 1 linear.
+  L2 = 5e-4.
+  Adam learning rate = 2e-4.
+  Huber delta = 0.75.
+
+Optimizer/loss/early stopping from authoritative procedure:
+  TensorFlow/Keras Adam optimizer.
+  Huber loss.
+  max_epochs = 400.
+  validation_split = 0.2 within residual-fit data.
+  EarlyStopping patience = 30, restore_best_weights=True, monitor=val_loss.
+  ReduceLROnPlateau enabled = True; patience = 10; factor = 0.5.
+  Batch size small/large = 8/32 with large_n_threshold = 200.
+
+Lambda equation:
+  lambda_raw = dot(true_residual, predicted_residual) / (dot(predicted_residual, predicted_residual) + epsilon).
+  epsilon = 1e-12.
+  lambda_hat = clip(lambda_raw, 0.0, 0.6).
+
+Cap equation:
+  cap = percentile(abs(true_residual), 85).
+
+Gate equation used during prediction:
+  gate = 1 / (1 + exp(-((−NCP - 40.0) / 12.0))).
+  residual_prediction_clipped = clip(raw_residual_prediction, -cap, cap).
+  applied_correction = lambda_hat * gate * residual_prediction_clipped.
+  hybrid_prediction = base_prediction + applied_correction.
+
+No held-out/test input is read by this build script.

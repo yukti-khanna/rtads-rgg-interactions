@@ -1,0 +1,22 @@
+Parsimonious model confirmation
+
+Mean repeated-CV R2: F2 = 0.9332; F5 = 0.9371; F6 = 0.9373.
+F5-F2 mean delta R2 = 0.0039; delta Pearson = 0.0020; delta RMSE = -0.0026; delta MAE = -0.0018.
+F6-F2 mean delta R2 = 0.0041; delta Pearson = 0.0021; delta RMSE = -0.0027; delta MAE = -0.0013.
+
+Repeat consistency:
+ comparison  positive_delta_r2_repeats  lower_rmse_repeats  lower_mae_repeats
+F5_minus_F2                          5                   5                  5
+F6_minus_F2                          5                   5                  5
+
+Cluster-bootstrap 95% intervals:
+ comparison     metric      mean     ci2.5      ci50   ci97.5  n_bootstrap_repeat_estimates
+F5_minus_F2  delta_mae -0.001779 -0.005004 -0.001795 0.001392                         10000
+F5_minus_F2   delta_r2  0.003999 -0.002658  0.003888 0.011478                         10000
+F5_minus_F2 delta_rmse -0.002577 -0.007238 -0.002557 0.001882                         10000
+F6_minus_F2  delta_mae -0.001326 -0.004967 -0.001304 0.002107                         10000
+F6_minus_F2   delta_r2  0.004113 -0.003394  0.003868 0.013103                         10000
+F6_minus_F2 delta_rmse -0.002711 -0.008606 -0.002550 0.002177                         10000
+
+Interpretation:
+Adding SCD to F2 does not provide clearly resolved additional predictive value if the paired repeated-CV gain is small and the cluster-bootstrap interval includes no gain. Adding SCD plus explicit length to F2 should be judged the same way from the reported interval and repeat consistency. The parsimonious choice should not be based on the highest mean R2 alone. If the added-feature intervals include zero or the accuracy changes are small, F2 is a defensible parsimonious final predictor for revised Figure 5. These conclusions are internal to the 917-pair simulated panel and do not claim causality or external generalization.

@@ -1,0 +1,35 @@
+IMPLEMENTATION AUDIT
+Authoritative interpretation: supplied scripts/plot_features.py. Primary stored schema instead matches scripts/get_features.py, which is named by features/submit_feats.sh and submit_feats_o.sh. A schema match and numerical spot checks support compatibility, not a complete historical run manifest.
+
+A. Local OCN: let P_i=sum positive charges and M_i=-sum negative charges. P1*M2+M1*P2-P1*P2-M1*M2 = -(P1-M1)*(P2-M2) = -Q1*Q2. This is a local net-charge product. Larger positive values indicate stronger charge complementarity. Mean = -mean(Q1)*mean(Q2); variance = E[Q1^2]*E[Q2^2]-E[Q1]^2*E[Q2]^2. Thus dispersion reflects marginal local-charge distributions, not aligned contacts or interchain positional matching.
+For overlapping windows, mean(Q)=sum_i w_i*q_i/(L-4), where w_i counts windows containing residue i. Termini are underweighted; this need not equal 5*Q_global/L. No general exact identity with stored global OCN follows. Fixed global OCN can have different local summary values.
+
+B. calc_ah_between_sequences already divides the sum of 25 integrals by 25. ah_density divides again: density=energy/25. Mean/min/max/std/top10 therefore have the same scaling. Main 917-pair files do not contain density columns; do not invent missing training values. Extended 10-pair stored values checked separately.
+
+C. top10_mean (and get_features top5) selects the numerically largest values, not the 10% tail. With negative AH attraction it selects the LEAST attractive tail. ah_energy_min is the strongest attraction. top_patch_gap is largest minus second largest AH energy, also at the weak-attraction tail; ties yield zero. These historical values were retained. Largest positive OCN instead does select strongest charge complementarity. Single-side original top10 summaries repeat a window for each partner window, which can make them equal to the maximum and can introduce partner-length dependence in the top-k statistic.
+
+D. count_strong_patches counts AH < -1.0. The number of opportunities is max(L_RGG-4,0)*max(L_TAD-4,0); its range and expected magnitude depend on length. Newly derived diagnostic_fraction_strong_patches divides by that opportunity count and is stored separately. Normalization does not prove length independence or remove compositional confounding.
+
+E. rgg_motif_count counts non-overlapping occurrences of the two-letter string RG, not RGG. RG has no self-overlap; local R+G fraction counts either residue and is not motif density.
+
+F. plot_features.calc_aromatics returns int(fraction(F,Y,W)), truncating ordinary fractions to zero (floating-point summation can also affect a nominal all-aromatic case). Local aromatic_fraction returns the actual fraction. get_features uses the untruncated global fraction, so its global aromatic column does not share the plot_features bug. Historical values are unchanged.
+
+Additional issues: get_features omits 27 plot_features descriptors and adds 10 (two top5 and eight custom kappa summaries). Its zero-variance corr_oppcharge_ah returns zero where plot_features would produce NaN. Its Charge_Complementarity is global OCN, unlike plot_features abs(Q1+Q2)-0.5*(abs(Q1)+abs(Q2)); use only Figure 5 globals for comparisons. Its custom kappa is not established as standard kappa. Encoding removes unknown residues; all verification sequences must therefore be checked against the table. Local SCD uses hard-coded charges whereas local OCN uses table q. With these tables R/K/D/E charges agree and H=0.
+
+Window summaries describe distributions, not retained absolute positions. AH and local fractions ignore order within a window; SHD at fixed window length is a linear positional weighting of lambda. Overlapping-window dispersion can reflect local composition/arrangement but is not evidence of order beyond composition unless composition-matched controls support that later.
+
+Recomputation uses AST-extracted unchanged functions with decorators omitted and pure single-window results memoized. Top-level historical code is never executed. No RDFs, B22 calculations, models or outputs are invoked. Three deterministic training pairs span minimum/median/maximum OCN, with exact names and all results recorded. One lexicographically first extended example is checked separately; it is not used to choose candidates.
+
+Shared/optimized spot checks:
+                  count  sum
+source                      
+get_features.py     213  213
+plot_features.py    183  183
+
+Resource provenance:
+original_residues: /Users/yuktikhanna/calvados/residues.csv; SHA256 2cf55bc77a7ff8a25b7cc841ac947ff5c6ec33a8fdc3a5e575044152c7d0bbc7
+Original vs shard residue table maximum absolute differences: {'q': 0.0, 'sigmas': 1.1102230246251565e-16, 'lambdas': 0.2732135325180461}
+original_fasta: /Users/yuktikhanna/calvados/all_tads_rggs_dis.fasta; SHA256 373cf3468fcc4f7ab5fdd10ff74778b2de6f605011e0bfd68381b725e4a59928
+Original vs shard FASTA: 1238 vs 1238 IDs; different shared sequences: 0
+rgg_headers: /Users/yuktikhanna/calvados/rg_tract_headers.txt; SHA256 01d61bbb70e97e21d4e8ca41346ddb676695a480f1621a4e301adb2eb167c793
+tad_headers: /Users/yuktikhanna/calvados/tad_headers.txt; SHA256 c6412a3deee230094ab174e8b4d8a9792bccc9215719f6aeb2f3fc669ee0e31b

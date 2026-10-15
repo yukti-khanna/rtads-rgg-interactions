@@ -1,0 +1,6 @@
+Simulation comparability audit
+
+Source tables: fig4/task4_ph_sensitivity/per_pair_B22_pH7_vs_pH65.csv, per_replica_B22_pH7_vs_pH65.csv, ph7_ph65_pair_mapping.csv, ph65_rdf_inventory.csv.
+Matched pairs use exact same pair_id/canonical construct. pH7 and pH6.5 RDF inventories indicate five historical replicas for both conditions for complete pairs.
+B22 values in per_pair_B22_pH7_vs_pH65.csv were computed with the same corrected B22/Hummer finite-size correction used in the original Figure 4/5 analysis; the per-replica table provides paired pH7 and pH6.5 corrected B22 values.
+The intended simulation/parameter difference is histidine protonation/pH parameterization. No evidence in the metadata tables used here indicates changes to sequence, box size (20 nm RDF file convention), correction procedure, or replicate count for the matched complete set. If full trajectory metadata are needed, use the RDF inventory paths in ph7_ph65_pair_mapping.csv.

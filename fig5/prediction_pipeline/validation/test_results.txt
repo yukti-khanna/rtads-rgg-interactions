@@ -1,0 +1,15 @@
+test_known_twenty_sequence_pairs (test_feature_identity.FeatureIdentityTest) ... [shard 0/1] started
+[shard 0/1] DONE 20 pairs in 0.0 min
+ok
+test_wrong_manifest_stops_before_loading_any_models (test_inference_guards.ArtifactGuardTest) ... ok
+test_known_twenty_predictions (test_prediction_identity.PredictionIdentityTest) ... skipped 'Server inference identity test is opt-in; use the mandatory CLI identity check on the server.'
+test_all_modes_agree (test_sequence_io.InputValidationTests) ... ok
+test_ambiguous_registry_and_missing_name (test_sequence_io.InputValidationTests) ... ok
+test_duplicate_ids_reject_all_instances (test_sequence_io.InputValidationTests) ... ok
+test_inline_normalization_and_rejections (test_sequence_io.InputValidationTests) ... ok
+test_separator_escape (test_sequence_io.InputValidationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.275s
+
+OK (skipped=1)

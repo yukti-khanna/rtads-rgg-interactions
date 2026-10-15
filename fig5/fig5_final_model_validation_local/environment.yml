@@ -1,0 +1,16 @@
+name: fig5-final-validation
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10,<3.12
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - joblib
+  - numba
+  - openpyxl
+  - pip
+  - pip:
+      - tensorflow

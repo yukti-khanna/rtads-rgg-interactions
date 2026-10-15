@@ -1,0 +1,9 @@
+Feature-family decomposition for corrected Figure 5 training-only analysis
+
+Input used: /Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv
+Input SHA256: f9ddb700b12bf0aeab3ccb88cebfd12d29d61be0a4b21411f06f6a4da7b6dc5c
+Rows in input: 917
+Matched finite rows used by all models: 917
+Corrected Task 2 fold assignments reused from: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_reduced_model_ablation_training_only/cv_fold_assignments.csv
+Sealed held-out file was not opened, read, hashed, inspected, summarized, or used.
+Unsimulated prediction landscape was not used.

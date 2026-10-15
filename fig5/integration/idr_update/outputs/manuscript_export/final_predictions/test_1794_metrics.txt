@@ -1,0 +1,25 @@
+Locked 1,794 test final hybrid metrics
+Reporting only; no model parameter was changed.
+
+{
+  "all": {
+    "n": 1794,
+    "R2": 0.9196071943157269,
+    "RMSE": 0.08537342302398805,
+    "MAE": 0.06373194067059186,
+    "Pearson": 0.9593704062429977,
+    "Spearman": 0.9461056616805487,
+    "mean_residual": -0.008097693099892314,
+    "median_residual": -0.010371138935736157
+  },
+  "high_minus_NCP": {
+    "n": 118,
+    "R2": 0.7491340788638783,
+    "RMSE": 0.1375203482741958,
+    "MAE": 0.10492159716326042,
+    "Pearson": 0.8731969994858975,
+    "Spearman": 0.8549479765830713,
+    "mean_residual": 0.0047162858210341016,
+    "median_residual": -0.017225674008880976
+  }
+}

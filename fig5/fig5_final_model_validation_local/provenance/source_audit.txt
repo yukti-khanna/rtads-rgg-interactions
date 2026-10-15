@@ -1,0 +1,4 @@
+Previous validation output was deleted/ignored. No artifact from it was used.
+
+Authoritative development and held-out tabular inputs are packaged. Histidine/control metadata and manifests are packaged. Histidine/control RDF PKLs are intentionally not packaged; provide their paths at runtime with --histidine-rdf-dir and --control-rdf-dir, or set config/run_config.json.
+Previous validation outputs used: NO

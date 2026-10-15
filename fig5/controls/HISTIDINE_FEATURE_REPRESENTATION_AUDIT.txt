@@ -1,0 +1,7 @@
+HISTIDINE FEATURE REPRESENTATION AUDIT
+
+Inspected final feature-generation implementation: fig5_final_model_validation_local/scripts/historical_patch_get_features.py and prepare_validation_features.py. The validated pipeline reads a fixed residue property table and has no pH/protonation-state argument. Charge-dependent features in the final 13-feature model are Opposite_Charge_Number, opp_charge_std, scd_patch1_std, and scd_patch2_std; these use the same fixed charge representation as training. Other final features are sequence hydropathy/length/local-composition/AH descriptors and are also pH-independent in this implementation.
+
+Therefore the matched histidine pH7 and pH6.5 model inputs intentionally use the same sequence-derived feature representation. The simulation target differs by pH, but the predictor input does not. This is an external target-sensitivity/applicability evaluation, not a pH-aware model recalculation.
+
+Feature differences between written pH7 and pH6.5 inputs by column: {"Opposite_Charge_Number": 0, "SHD_RGG": 0, "SHD_TAD": 0, "ah_energy_std": 0, "aromatic_fraction_patch2_std": 0, "mean_lambda_RGG": 0, "mean_lambda_TAD": 0, "opp_charge_std": 0, "rg_fraction_patch1_std": 0, "scd_patch1_std": 0, "scd_patch2_std": 0, "shd_patch1_std": 0, "shd_patch2_std": 0}

@@ -1,0 +1,8 @@
+development_917_cluster_identity_check
+rows_compared=917
+max_abs_diff_base_prediction=8.881784197001252e-16
+max_abs_diff_raw_residual_prediction=0
+max_abs_diff_gate=0
+max_abs_diff_applied_correction=6.776263578034403e-21
+max_abs_diff_final_hybrid_prediction=8.881784197001252e-16
+This is a provenance check only. The model was not modified, retrained, or recalibrated in response to this result.

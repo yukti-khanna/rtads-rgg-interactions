@@ -1,0 +1,3 @@
+Control update completed inside fig5/controls. FINCHES was not updated because writing to the existing supplementary/finches workspace is outside this fig5-only output area and requires explicit approval.
+Generated supported control panels: FigS8B simulation shuffle, FigS8D histidine simulation, FigS8F basic-region frozen-model prediction.
+Not generated: FigS8A, FigS8C, FigS8E, because available tables lack complete frozen-model feature inputs and old prediction columns were not reused.

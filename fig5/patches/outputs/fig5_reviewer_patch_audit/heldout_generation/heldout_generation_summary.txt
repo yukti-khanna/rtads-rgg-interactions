@@ -1,0 +1,7 @@
+HELD-OUT PATCH GENERATION SUMMARY
+
+The historical 917-pair schema is reproduced by get_features.py using patches/features/residues.csv and patches/features/all_tads_rggs_dis.fasta, patch size 5. Prior reproduction checks passed (183 plot_features-shared and 213 get_features checks).
+
+Generated rows: 1794; unique IDs: 1794; exact held-out overlap: 1794; training overlap: 0. Missing values: 0. No candidate is near-zero variance. Candidate classifications distinguish shifted global relationships from patch redundancy; they are not based on B22.
+
+The nine candidate relationships are reported in candidate_feature_stability.csv. No B22 values, predictions, model scores, or outcomes were used. The candidates remain eligible for the locked ablation; this task performed no model training or predictive evaluation.

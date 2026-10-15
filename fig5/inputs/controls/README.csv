@@ -1,0 +1,13 @@
+README
+
+Workbook,"Table S9. Final frozen-model control, shuffle-inventory and replica-uncertainty resources."
+Scope,Frozen-model generalization/applicability controls generated after model freezing.
+Model-use restriction,"No control dataset was used for model fitting, feature selection, or recalibrating lambda/cap/gate."
+Prediction source,Predictions came from authoritative cluster-deployed frozen hybrid model.
+Analyses,Full observed shuffle-control union: 345 pairs (230 AHD + 115 RG/RGG). Frozen-model predictions supplied for 240 of 345. Additional 300-pair simulation-robustness subset includes five-replica uncertainty.
+Omissions,Replica/bootstrap observations from 300 matched WT–shuffle comparisons are distinct from frozen-model inference. Predictor metrics exclude the 105 new rows with no model predictions; 45 original S9 rows lack uploaded bootstrap replication.
+New sheets,Shuffle_WT_115: all 115 unique WT parent contexts (80 have frozen predictions).
+New sheets,Shuffle_300_bootstrap: exact uploaded 300 matched comparison uncertainty source records.
+New sheets,"Shuffle_300_manifest: source sequences, IDs, and replica path manifest."
+New sheets,"Shuffle_replica_B22: 2,000 raw replica B22 records (100 WT + 300 shuffle systems × five replicas)."
+QC,195 overlapping simulations agree numerically; 105 added; 45 older rows lack bootstrap; no invalid resamples in supplied invalid-cases file.

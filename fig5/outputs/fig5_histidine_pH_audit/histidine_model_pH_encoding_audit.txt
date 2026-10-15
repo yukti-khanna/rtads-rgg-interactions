@@ -1,0 +1,6 @@
+Model pH encoding audit
+
+The deployed frozen predictor receives one sequence-derived feature table for the histidine rerun rows. The table does not contain separate pH7 and pH6.5 feature rows for the same pair.
+The model therefore does not encode pH as an independent variable. In this validation package, prediction_pH7 and prediction_pH6p5 are identical for a given pair by construction.
+Condition-specific charge values are available in ph_charge_state_changes.csv for mechanistic audit, but those charges were not used to generate separate deployed pH6.5 model features. Mean absolute difference between deployed Opposite_Charge_Number and pH7 OCN proxy in the matched table is 0.4663, reflecting charge-convention/proxy differences rather than a pH-specific model input.
+Conclusion: CASE B. The histidine reruns test whether pH mismatch materially alters the simulation target and model accuracy, not whether the model predicts pH response itself.

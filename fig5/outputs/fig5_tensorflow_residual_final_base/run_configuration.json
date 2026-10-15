@@ -1,0 +1,61 @@
+{
+  "target": "B22_corr1_log10",
+  "base_file": "/Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv",
+  "patch_file": "/Users/yuktikhanna/rtads-rgg-interactions/fig5/patches/datasets/features_sim_pairs_for_training.csv",
+  "outer_cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2026
+    ]
+  },
+  "inner_cv_for_residual_targets": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": "outer_seed"
+  },
+  "ensemble_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "mlp_params": {
+    "activation": "tanh",
+    "alpha": 0.01,
+    "hidden_layer_sizes": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "learning_rate_init": 0.01,
+    "max_iter": 500,
+    "solver": "adam"
+  },
+  "residual_architecture": [
+    "Dense(16,tanh,l2=5e-4)",
+    "Dense(8,tanh,l2=5e-4)",
+    "Dense(1)"
+  ],
+  "residual_optimizer": "Adam(learning_rate=2e-4)",
+  "residual_loss": "Huber(delta=0.75)",
+  "high_ocn_threshold": 40.0,
+  "gate": {
+    "center": 40.0,
+    "scale": 12.0
+  },
+  "lambda_clip": [
+    0.0,
+    0.6
+  ],
+  "cap_percentile_abs_calibration_residual": 85,
+  "full_917_high_OCN_n": 93,
+  "full_917_high_OCN_fraction": 0.10141766630316248,
+  "heldout_1794_targets_accessed": false
+}

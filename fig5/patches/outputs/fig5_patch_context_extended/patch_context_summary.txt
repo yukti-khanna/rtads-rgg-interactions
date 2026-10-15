@@ -1,0 +1,24 @@
+Patch-context extended CV sensitivity analysis
+
+Data and guardrails
+This analysis used only the 917-pair development dataset. It did not use the 1,794 held-out targets. Patch features were not regenerated. M3 was read from locked_model_definitions.json in the completed corrected ablation. The frozen minimal patch feature is opp_charge_std. Historical code mapping verified: patch1 is RGG and patch2 is TAD.
+
+Primary comparisons
+M4-min - M3: delta_R2=+0.0084, delta_RMSE=-0.0056, delta_MAE=-0.0044, delta_Pearson=+0.0049, delta_Spearman=+0.0047
+M4-panel - M3: delta_R2=+0.0072, delta_RMSE=-0.0048, delta_MAE=-0.0023, delta_Pearson=+0.0042, delta_Spearman=+0.0002
+M4-panel - M4-min: delta_R2=-0.0012, delta_RMSE=+0.0007, delta_MAE=+0.0021, delta_Pearson=-0.0007, delta_Spearman=-0.0045
+M4-panel-AH - M4-panel: delta_R2=-0.0005, delta_RMSE=+0.0004, delta_MAE=-0.0003, delta_Pearson=-0.0007, delta_Spearman=+0.0001
+
+Summary questions
+1. Does opp_charge_std reproducibly improve M3? Yes.
+2. Does the seven-feature balanced patch panel improve M3? Yes.
+3. Does the balanced panel improve over opp_charge_std alone? No.
+4. If not, does this suggest most useful local information is captured by local electrostatic heterogeneity? The balanced panel performs similarly to M4-min, suggesting most useful local signal is captured by opp_charge_std.
+5. Which feature families improve prediction over M3? LOCAL-ELECTROSTATICS.
+6. Do local charge-patterning descriptors contribute? does not improve M3 in this CV comparison.
+7. Do RG-context descriptors contribute? does not improve M3 in this CV comparison.
+8. Do local aromatic descriptors contribute? does not improve M3 in this CV comparison.
+9. Do local hydropathy descriptors contribute? does not improve M3 in this CV comparison.
+10. Does local AH-energy heterogeneity contribute? does not improve M3 in this CV comparison.
+11. Are improvements consistent across R2, RMSE, MAE, Pearson and Spearman? See M4_min_vs_panel_comparisons.csv; consistency is assessed across all five metrics and fold-improvement fractions, not R2 alone.
+12. Does the broader patch panel show evidence of overfitting? Yes, relative to M4-min in CV.

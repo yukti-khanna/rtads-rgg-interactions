@@ -1,0 +1,3 @@
+final_feature,source_column,action,min,max
+mean_lambda_RGG,lambda_RGG/RGG_length,computed_mean_residue_lambda,0.40616691828125007,0.7236090108871579
+mean_lambda_TAD,lambda_TAD/TAD_length,computed_mean_residue_lambda,0.30779882625331245,0.5012456177294572

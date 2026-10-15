@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9in" height="5in" viewBox="0 0 648.00000000 360.00000000">
+<rect width="100%" height="100%" fill="white"/>
+<text font-family="Arial" font-weight="700" fill="#72777B" xml:space="preserve">
+<tspan x="36.240479" y="24.000000" font-size="9.000000">Global descriptors</tspan>
+</text>
+<line x1="24" y1="31" x2="624" y2="31" stroke="#D4D8DA" stroke-width="0.5"/>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="48.081543" y="56.000000" font-size="11.000000">Bulk</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="24.537354" y="69.000000" font-size="11.000000">electrostatics</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="167.257324" y="56.000000" font-size="11.000000">+ hydropathy /</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="178.399658" y="69.000000" font-size="11.000000">stickiness</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="43.828125" y="96.000000" font-size="12.000000">−NCP</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="35.361539" y="123.000000" font-size="9.300000">R</tspan>
+<tspan x="42.077701" y="119.500000" font-size="6.324000">2</tspan>
+<tspan x="45.594809" y="123.000000" font-size="9.300000"> = 0.9195</tspan>
+</text>
+<line x1="108" y1="92" x2="125.5" y2="92.0" stroke="#24556A" stroke-width="1.2"/>
+<polygon points="130,92 125.5,94.025 125.5,89.975" fill="#24556A"/>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="151.271611" y="91.000000" font-size="9.300000">mean λ</tspan>
+<tspan x="181.769072" y="93.300000" font-size="6.696000">RG/RGG</tspan>
+<tspan x="208.925799" y="91.000000" font-size="9.300000">, mean λ</tspan>
+<tspan x="244.590936" y="93.300000" font-size="6.696000">AHD</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="162.133721" y="106.000000" font-size="9.300000">SHD</tspan>
+<tspan x="181.769072" y="108.300000" font-size="6.696000">RG/RGG</tspan>
+<tspan x="208.925799" y="106.000000" font-size="9.300000">, SHD</tspan>
+<tspan x="233.728826" y="108.300000" font-size="6.696000">AHD</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="180.361539" y="123.000000" font-size="9.300000">R</tspan>
+<tspan x="187.077701" y="119.500000" font-size="6.324000">2</tspan>
+<tspan x="190.594809" y="123.000000" font-size="9.300000"> = 0.9334</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#24556A" xml:space="preserve">
+<tspan x="150.989160" y="144.000000" font-size="9.300000">Selected global baseline</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#24556A" xml:space="preserve">
+<tspan x="178.380566" y="158.000000" font-size="9.300000">5 descriptors</tspan>
+</text>
+<line x1="284" y1="88" x2="373.5287774667809" y2="76.44789968170569" stroke="#72777B" stroke-width="0.6" stroke-dasharray="2 1.7"/>
+<polygon points="377,76 373.7303323235485,78.00994982165429 373.32722261001334,74.8858495417571" fill="#72777B"/>
+<rect x="382" y="48" width="166" height="79" fill="none" stroke="#AEB4B8" stroke-width="0.6"/>
+<text font-family="Arial" font-weight="700" fill="#72777B" xml:space="preserve">
+<tspan x="416.516113" y="69.000000" font-size="10.000000">+ full-sequence SCD</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="420.888574" y="92.000000" font-size="9.000000">SCD</tspan>
+<tspan x="439.890527" y="94.300000" font-size="6.480000">RG/RGG</tspan>
+<tspan x="466.171230" y="92.000000" font-size="9.000000"> + SCD</tspan>
+<tspan x="495.430020" y="94.300000" font-size="6.480000">AHD</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="440.361539" y="114.000000" font-size="9.300000">R</tspan>
+<tspan x="447.077701" y="110.500000" font-size="6.324000">2</tspan>
+<tspan x="450.594809" y="114.000000" font-size="9.300000"> = 0.9373</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="419.969238" y="144.000000" font-size="9.000000">modest additional gain</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="430.753906" y="158.000000" font-size="8.000000">tested; not retained</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#72777B" xml:space="preserve">
+<tspan x="32.983887" y="181.000000" font-size="9.000000">Local sequence context</tspan>
+</text>
+<line x1="24" y1="188" x2="179" y2="188" stroke="#D4D8DA" stroke-width="0.5"/>
+<line x1="230" y1="188" x2="624" y2="188" stroke="#D4D8DA" stroke-width="0.5"/>
+<line x1="205" y1="169" x2="205.0" y2="220.5" stroke="#24556A" stroke-width="1.2"/>
+<polygon points="205,225 202.975,220.5 207.025,220.5" fill="#24556A"/>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="154.682324" y="241.000000" font-size="10.200000">+ local electrostatics</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="303.799756" y="241.000000" font-size="10.200000">+ local patterning /</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="318.683887" y="254.000000" font-size="10.200000">composition</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="440.495605" y="241.000000" font-size="10.200000">+ local interaction</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="457.929736" y="254.000000" font-size="10.200000">propensity</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="155.354980" y="278.000000" font-size="9.000000">variation in −NCP across</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="146.965820" y="291.000000" font-size="9.000000">5-residue sequence windows</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="328.993896" y="276.000000" font-size="9.000000">local SCD</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="305.232666" y="289.000000" font-size="9.000000">RG / aromatic content</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="328.993896" y="302.000000" font-size="9.000000">local SHD</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="449.474365" y="278.000000" font-size="9.000000">Ashbaugh–Hatch</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="456.729736" y="291.000000" font-size="9.000000">heterogeneity</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="180.361539" y="320.000000" font-size="9.300000">R</tspan>
+<tspan x="187.077701" y="316.500000" font-size="6.324000">2</tspan>
+<tspan x="190.594809" y="320.000000" font-size="9.300000"> = 0.9472</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="324.361539" y="320.000000" font-size="9.300000">R</tspan>
+<tspan x="331.077701" y="316.500000" font-size="6.324000">2</tspan>
+<tspan x="334.594809" y="320.000000" font-size="9.300000"> = 0.9492</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#72777B" xml:space="preserve">
+<tspan x="459.361539" y="320.000000" font-size="9.300000">R</tspan>
+<tspan x="466.077701" y="316.500000" font-size="6.324000">2</tspan>
+<tspan x="469.594809" y="320.000000" font-size="9.300000"> = 0.9507</tspan>
+</text>
+<line x1="207" y1="334" x2="340.5" y2="334.0" stroke="#24556A" stroke-width="1.2"/>
+<polygon points="345,334 340.5,336.025 340.5,331.975" fill="#24556A"/>
+<line x1="351" y1="334" x2="475.5" y2="334.0" stroke="#24556A" stroke-width="1.2"/>
+<polygon points="480,334 475.5,336.025 475.5,331.975" fill="#24556A"/>
+<line x1="486" y1="334" x2="546.5" y2="334.0" stroke="#24556A" stroke-width="1.2"/>
+<polygon points="551,334 546.5,336.025 546.5,331.975" fill="#24556A"/>
+<circle cx="205" cy="334" r="1.7" fill="#24556A"/>
+<circle cx="349" cy="334" r="1.7" fill="#24556A"/>
+<circle cx="484" cy="334" r="1.7" fill="#24556A"/>
+<rect x="551" y="266" width="85" height="81" fill="none" stroke="#24556A" stroke-width="1.1"/>
+<text font-family="Arial" font-weight="700" fill="#24556A" xml:space="preserve">
+<tspan x="580.252686" y="284.000000" font-size="9.000000">FINAL</tspan>
+</text>
+<text font-family="Arial" font-weight="700" fill="#20262B" xml:space="preserve">
+<tspan x="555.216016" y="309.000000" font-size="11.200000">13 descriptors</tspan>
+</text>
+<text font-family="Arial" font-weight="400" fill="#20262B" xml:space="preserve">
+<tspan x="561.483887" y="326.000000" font-size="8.500000">5 global + 8 local</tspan>
+</text>
+</svg>

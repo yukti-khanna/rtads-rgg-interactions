@@ -1,0 +1,62 @@
+FIGURE 5 HISTORICAL LOCAL-CONTEXT FEATURE AUDIT — diagnostic only
+
+
+1. Files: 88 candidate CSVs: 80 features/features_shard*_of_80.csv; datasets/features_for_training.csv; features_sim_pairs_for_training.csv; features_unsim_pairs_for_training.csv; features_with_b22s_sim_pairs_for_training.csv; features/one_pair_for_training_added_features_data.csv; and three preds/unsim_pred_*.csv. All contain summarized pair rows, not raw patch-patch rows. Full dimensions, IDs and duplicates are in patch_file_inventory.csv.
+
+2. Exact membership: training 917/917; held-out 0/1794; prediction landscape 191386/191386. The full patch table has 192303 = 917 + 191386 unique pairs. The B22-merged subset has only 843 training pairs and was not used as primary input. The extended-schema example contains 10 landscape pairs and no training/held-out pairs. The landscape must not be substituted for the independent held-out panel.
+
+3. Definitions: not the identical complete schema. plot_features expects 88 descriptors; primary files supply 71, with 27 absent and 10 extra. Shared formulas and optimized extra formulas were spot-checked. Results: {'count': {'get_features.py': 213, 'plot_features.py': 183}, 'sum': {'get_features.py': 213, 'plot_features.py': 183}}. Read historical_recomputation_checks.csv for individual matches/mismatches. The exact producing run is not proven. Shard residue lambdas differ from the originally referenced residue table. Extended example agreement: {True: 88}.
+
+4. Exact dependencies: local OCN is a product of local net charges; its mean/variance factorize into marginal charge moments. Local fraction means and AH means are window-coverage-weighted composition summaries, not generally exact functions of unweighted global composition or OCN. Local SHD is a position-weighted linear lambda sum. AH density is redundant scaling. Constant/empirically identical training columns are enumerated separately, with no claim of universal biological identity.
+
+5. Yes: local OCN = -Q_patch1*Q_patch2. Algebra and representative numerical errors are in representative_algebra_checks.csv. It is not an independent residue-pairing mechanism.
+
+6. No: ah_density = ah_energy/25 for fixed 5-aa windows; corresponding summary statistics rescale identically. Density is absent from the training schema and present only in the extended example.
+
+7. Yes, relative to strongest negative AH attraction: top10_mean/top5_mean and top_patch_gap refer to the largest/least-attractive energies. ah_energy_min refers to the strongest-attraction extreme. No historical value was redefined.
+
+8. count_strong_patches has length-dependent opportunities. Training count range: 0–101; opportunity range: 72–5472. The derived fraction is separate. RG motif counts are per fixed window; their raw totals are not full-sequence motif counts. Extreme summaries additionally depend on the number of sampled windows.
+
+9. Strongest local correlations by global reference (actual Pearson and Spearman):
+
+  Opposite_Charge_Number: opp_charge_mean (r=0.573, rho=0.797); opp_charge_top10_mean (r=0.543, rho=0.664); opp_charge_top5_mean (r=0.517, rho=0.630)
+
+  charge_RGG: scd_patch1_mean (r=0.532, rho=0.655); scd_patch1_max (r=0.447, rho=0.577); opp_charge_mean (r=0.439, rho=0.569)
+
+  charge_TAD: scd_patch2_mean (r=-0.578, rho=-0.691); scd_patch2_max (r=-0.509, rho=-0.582); opp_charge_mean (r=-0.447, rho=-0.537)
+
+  RGG_length: rgg_count_patch1_mean (r=-0.209, rho=-0.506); aromatic_fraction_patch1_max (r=0.353, rho=0.384); entropy_patch1_min (r=-0.350, rho=-0.297)
+
+  TAD_length: entropy_patch2_min (r=-0.320, rho=-0.271); entropy_patch2_std (r=0.195, rho=0.309); scd_patch2_max (r=0.227, rho=0.307)
+
+  SCD_RGG: scd_patch1_mean (r=0.464, rho=0.590); kappa_patch1_mean (r=0.386, rho=0.569); shd_patch1_mean (r=0.368, rho=0.531)
+
+  SCD_TAD: scd_patch2_mean (r=0.482, rho=0.565); opp_charge_mean (r=0.395, rho=0.475); kappa_patch2_mean (r=0.414, rho=0.471)
+
+  SHD_RGG: shd_patch1_mean (r=0.628, rho=0.599); shd_patch1_max (r=0.594, rho=0.576); aromatic_fraction_patch1_max (r=0.534, rho=0.541)
+
+  SHD_TAD: shd_patch2_mean (r=0.787, rho=0.818); shd_patch2_max (r=0.626, rho=0.637); shd_patch2_min (r=0.590, rho=0.621)
+
+  lambda_RGG: aromatic_fraction_patch1_max (r=0.434, rho=0.499); shd_patch1_max (r=0.449, rho=0.444); aromatic_fraction_patch1_std (r=0.390, rho=0.443)
+
+  lambda_TAD: shd_patch2_mean (r=0.348, rho=0.538); shd_patch2_max (r=0.371, rho=0.514); aromatic_fraction_patch2_max (r=0.371, rho=0.281)
+
+  Average_lambda: ah_energy_mean (r=-0.741, rho=-0.702); shd_patch1_mean (r=0.647, rho=0.616); ah_energy_top10_mean (r=-0.641, rho=-0.605)
+
+Per-descriptor strongest relationships are in patch_global_relationship_summary.csv; the full table retains every coefficient. Correlation graph groups are transitive components, not proof that all members are interchangeable.
+
+10. Dispersion and extremes with variation at fixed OCN warrant consideration as potentially distinct local context. The proposed panel below spans charge heterogeneity/patterning, RG and aromatic density, and lambda/AH heterogeneity where training redundancy permits. This does not establish independence from all composition or nonlinear global transforms. global_linear_span_diagnostic_training.csv reports in-sample residual variance after descriptive projection on global blocks; this is not predictive evaluation. within_OCN_variation_training.csv tests dependence on OCN alone. No B22 targets or model scores were used.
+
+11. Not assessable: no supplied patch rows match held-out sequence space. Required held-out correlation CSVs are header-only and have an explicit unavailable-data note. No held-out plots were manufactured.
+
+12. RGG aromatic SD is deferred because its Spearman correlation with local aromatic mean is approximately 0.992; a weak correlation with the truncated stored global aromatic column is not evidence for clustering. Proposed next-ablation panel (9): opp_charge_std, scd_patch1_std, scd_patch2_std, rg_fraction_patch1_std, rgg_count_patch1_std, aromatic_fraction_patch2_std, shd_patch1_std, shd_patch2_std, ah_energy_std. Selection uses training feature relationships and mechanistic interpretability only. Candidate table includes alternatives, strongest global/patch coefficients and grouping advice. Hydropathy_diff and charge_mismatch summaries cannot be proposed from this training schema; AH density should not be added as an independent descriptor. Custom kappa is deferred because of its nonstandard definition; local entropy is a possible later alternative, not added simply to increase panel size.
+
+13. Report before use: schema/version and lambda-parameter differences; zero/NaN correlation convention; AH tail names; double-normalized density; RG vs RGG naming; global aromatic integer truncation in plot_features; changed Charge_Complementarity in get_features; custom kappa definition; length/opportunity dependence; global single-side lambda_RGG/TAD columns represent sums in historical code, while Average_lambda averages per-residue means. Numerical spot checks support stored values only for tested examples and parameter tables.
+
+
+Audited 71 training descriptors; 4 near-zero variance at population variance <=1e-12: rg_fraction_patch2_min, aromatic_fraction_patch2_min, rgg_count_patch1_min, rgg_count_patch2_min. 6 unique columns flagged as near-constant/observed redundant for candidate consideration (none removed from historical files). 9 observed duplicate/affine feature-pair relationships; five additional algebraic AH density relationships apply to the absent-density schema. Tolerances: rtol=1e-10, atol=1e-12 for affine checks; numeric spot checks rtol=1e-9, atol=1e-11. Correlations are descriptive without significance tests; repeated sequences make rows non-independent.
+
+
+Scope stop: no retraining, no model comparison, no permutation importance, no B22 recalculation, no panel edits. No predictive value is claimed. Original data and scripts are unchanged; SHA256 verification follows.
+
+Input integrity: 101 source files rehashed unchanged.

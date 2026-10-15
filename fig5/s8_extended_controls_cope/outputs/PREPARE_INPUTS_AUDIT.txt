@@ -1,0 +1,12 @@
+New S8 control input preparation audit
+fig5_root=/Users/yuktikhanna/rtads-rgg-interactions/fig5
+rdf_dir=/Users/yuktikhanna/rtads-rgg-interactions/fig4/controls_rdfs
+total_supplied=280
+dataset_manifest_n=140
+nondataset_manifest_n=140
+rdf_found=280
+rdf_missing=0
+missing_rdf_ids=[]
+all_sequences_found=True
+classification_counts={"RGG_shuffle": 35, "TAD_shuffle": 70, "WT": 35, "basic_WT": 80, "external_AD_core_WT": 60}
+all_13_features_complete=True

@@ -1,0 +1,57 @@
+item,value
+audit provenance,"FINCHES final model audit
+
+source filename: /Users/yuktikhanna/finches/cf/epsilon_values_cf.csv
+pair-ID column: constructed name = rgg + '__' + tad from matrix row/column labels
+epsilon column: epsilon
+FINCHES total rows: 231840
+FINCHES unique n: 231840
+FINCHES duplicate pair IDs: 0
+
+Panel S6A — FINCHES vs definitive 917 simulated target
+simulated-target source: /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/final_hybrid_model/final_predictions/development_917_OOF_final_hybrid.csv
+matched n: 917
+unmatched development IDs: []
+Pearson raw epsilon vs target: -0.846382499774
+Spearman raw epsilon vs target: -0.849661518633
+Pearson scaled convention used in title: 0.846382499774
+
+Panel S6B — FINCHES vs definitive full-landscape final_hybrid_prediction
+final prediction source: /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/final_hybrid_model/final_predictions/full_landscape_final_hybrid_predictions.csv
+FINCHES n: 231840
+final prediction n: 191386
+matched n: 191386
+FINCHES-only IDs: ['A0A0A0MQW5_4_1__O14896_214_231', 'A0A0A0MQW5_4_1__O43313_633_647', 'A0A0A0MQW5_4_1__P14859_345_362', 'A0A0A0MQW5_4_1__P39880_1185_1201', 'A0A0A0MQW5_4_1__P78414_218_234', 'A0A0A0MQW5_4_1__Q07869_360_378', 'A0A0A0MQW5_4_1__Q08050_727_762', 'A0A0A0MQW5_4_1__Q12857_129_144', 'A0A0A0MQW5_4_1__Q12968_519_541', 'A0A0A0MQW5_4_1__Q13285_373_392', 'A0A0A0MQW5_4_1__Q16236_16_33', 'A0A0A0MQW5_4_1__Q49AA0_140_158', 'A0A0A0MQW5_4_1__Q6DD87_20_35', 'A0A0A0MQW5_4_1__Q6PJQ5_246_263', 'A0A0A0MQW5_4_1__Q8NHM5_106_124', 'A0A0A0MQW5_4_1__Q96T25_390_410', 'A0A0A0MQW5_4_1__Q9H0W7_191_210', 'A0A0A0MQW5_4_1__Q9HCK0_172_189', 'A0A0A0MQW5_4_1__Q9NZI6_129_144', 'A0A0A0MQW5_4_1__Q9UGL1_673_687', 'A0A0A0MQW5_4_1__Q9UKS7_373_388', 'A0A0A0MQW5_4_1__Q9Y2K1_320_347', 'A0A0A0MQW5_4_1__Q9Y2N7_475_490', 'A0A0A0MQW5_6_1__O14896_214_231', 'A0A0A0MQW5_6_1__O43313_633_647', 'A0A0A0MQW5_6_1__P14859_345_362', 'A0A0A0MQW5_6_1__P39880_1185_1201', 'A0A0A0MQW5_6_1__P78414_218_234', 'A0A0A0MQW5_6_1__Q00653_10_25', 'A0A0A0MQW5_6_1__Q07869_360_378', 'A0A0A0MQW5_6_1__Q08050_727_762', 'A0A0A0MQW5_6_1__Q12857_129_144', 'A0A0A0MQW5_6_1__Q12968_519_541', 'A0A0A0MQW5_6_1__Q13285_373_392', 'A0A0A0MQW5_6_1__Q16236_16_33', 'A0A0A0MQW5_6_1__Q49AA0_140_158', 'A0A0A0MQW5_6_1__Q6DD87_20_35', 'A0A0A0MQW5_6_1__Q6PJQ5_246_263', 'A0A0A0MQW5_6_1__Q8NHM5_106_124', 'A0A0A0MQW5_6_1__Q96T25_390_410', 'A0A0A0MQW5_6_1__Q9H0W7_191_210', 'A0A0A0MQW5_6_1__Q9HCK0_172_189', 'A0A0A0MQW5_6_1__Q9NZI6_129_144', 'A0A0A0MQW5_6_1__Q9UGL1_673_687', 'A0A0A0MQW5_6_1__Q9UKS7_373_388', 'A0A0A0MQW5_6_1__Q9Y2K1_320_347', 'A0A0A0MQW5_6_1__Q9Y2N7_475_490', 'A0A0G2JMZ2_10_1__O14896_214_231', 'A0A0G2JMZ2_10_1__O43313_633_647', 'A0A0G2JMZ2_10_1__P14859_345_362', 'A0A0G2JMZ2_10_1__P39880_1185_1201', 'A0A0G2JMZ2_10_1__P78414_218_234', 'A0A0G2JMZ2_10_1__Q07869_360_378', 'A0A0G2JMZ2_10_1__Q08050_727_762', 'A0A0G2JMZ2_10_1__Q12857_129_144', 'A0A0G2JMZ2_10_1__Q12968_519_541', 'A0A0G2JMZ2_10_1__Q13285_373_392', 'A0A0G2JMZ2_10_1__Q16236_16_33', 'A0A0G2JMZ2_10_1__Q49AA0_140_158', 'A0A0G2JMZ2_10_1__Q6DD87_20_35', 'A0A0G2JMZ2_10_1__Q6PJQ5_246_263', 'A0A0G2JMZ2_10_1__Q8NHM5_106_124', 'A0A0G2JMZ2_10_1__Q96T25_390_410', 'A0A0G2JMZ2_10_1__Q9H0W7_191_210', 'A0A0G2JMZ2_10_1__Q9HCK0_172_189', 'A0A0G2JMZ2_10_1__Q9NZI6_129_144', 'A0A0G2JMZ2_10_1__Q9UGL1_673_687', 'A0A0G2JMZ2_10_1__Q9UKS7_373_388', 'A0A0G2JMZ2_10_1__Q9Y2K1_320_347', 'A0A0G2JMZ2_10_1__Q9Y2N7_475_490', 'A0A0J9YX57_1_1__O14896_214_231', 'A0A0J9YX57_1_1__O43313_633_647', 'A0A0J9YX57_1_1__P14859_345_362', 'A0A0J9YX57_1_1__P39880_1185_1201', 'A0A0J9YX57_1_1__P78414_218_234', 'A0A0J9YX57_1_1__Q07869_360_378', 'A0A0J9YX57_1_1__Q08050_727_762', 'A0A0J9YX57_1_1__Q12857_129_144', 'A0A0J9YX57_1_1__Q12968_519_541', 'A0A0J9YX57_1_1__Q13285_373_392', 'A0A0J9YX57_1_1__Q16236_16_33', 'A0A0J9YX57_1_1__Q49AA0_140_158', 'A0A0J9YX57_1_1__Q6DD87_20_35', 'A0A0J9YX57_1_1__Q6PJQ5_246_263', 'A0A0J9YX57_1_1__Q8IUM7_743_758', 'A0A0J9YX57_1_1__Q8NHM5_106_124', 'A0A0J9YX57_1_1__Q96T25_390_410', 'A0A0J9YX57_1_1__Q9H0W7_191_210', 'A0A0J9YX57_1_1__Q9HCK0_172_189', 'A0A0J9YX57_1_1__Q9NZI6_129_144', 'A0A0J9YX57_1_1__Q9UGL1_673_687', 'A0A0J9YX57_1_1__Q9UKS7_373_388', 'A0A0J9YX57_1_1__Q9Y2K1_320_347', 'A0A0J9YX57_1_1__Q9Y2N7_475_490', 'A0A0U1RQS6_2_1__O14896_214_231', 'A0A0U1RQS6_2_1__O43313_633_647', 'A0A0U1RQS6_2_1__P14859_345_362', 'A0A0U1RQS6_2_1__P39880_1185_1201', 'A0A0U1RQS6_2_1__P78414_218_234', 'A0A0U1RQS6_2_1__Q07869_360_378']
+prediction-only IDs: []
+Pearson raw epsilon vs final prediction: -0.794204841172
+Spearman raw epsilon vs final prediction: -0.809293422859
+Pearson scaled convention used in title: 0.794204841172
+
+Scaling
+epsilon raw min: -72.7008276636
+epsilon raw max: 22.7839194278
+common y raw min: 0.941899685468
+common y raw max: 4.48997734181
+
+Test 1,794 audit
+{
+  ""Pearson"": -0.7935863015756236,
+  ""Spearman"": -0.7792199207229104,
+  ""matched_n"": 1794,
+  ""possible"": true,
+  ""test_only_examples"": [],
+  ""test_total_n"": 1794,
+  ""unmatched_n"": 0
+}
+
+FINCHES epsilon values were taken from the pre-existing FINCHES output and were not recomputed.
+The 917 simulated targets were taken from the definitive development table.
+The full-landscape hybrid predictions were taken from the already-finalised full-landscape prediction table and were not regenerated.
+No hybrid model inference was performed during the FINCHES update.
+No historical B22_pred_hybrid values were used in the revised FINCHES figure.
+Pair reconciliation was performed using exact pair IDs.
+"
+original FINCHES score file,/Users/yuktikhanna/finches/cf/epsilon_values_cf.csv
+epsilon column,epsilon
+pair-ID mapping,constructed as rgg + __ + tad from FINCHES matrix labels
+FINCHES rerun,No; values were not recomputed

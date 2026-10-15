@@ -1,0 +1,4 @@
+Patch input: /Users/yuktikhanna/rtads-rgg-interactions/fig5/patches/datasets/features_sim_pairs_for_training.csv
+Target input: /Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv
+Rows: 917
+Held-out B22 was not loaded.

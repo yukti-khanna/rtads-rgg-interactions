@@ -1,0 +1,116 @@
+WT pair ID,WT simulated log10(−mean B22),WT mean raw B22 (300-source),WT frozen hybrid prediction,WT prediction availability,n shuffled variants,n AHD shuffles,n RG/RGG shuffles,replica source coverage
+RGG_A6NNA2_2_1_WT__TAD_O14948_55_81_WT,3.275530109535453,-1885.9497174133983,3.272853073727813,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_O43313_588_602_WT,2.986311015037375,-968.9715257508549,2.956214550531372,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_O43889_external_AD_core_WT,3.510346360537584,,3.649702090261705,available: original workbook,3,2,1,prior S9 only
+RGG_A6NNA2_2_1_WT__TAD_O75461_149_164_WT,3.03930959606475,-1094.736494383484,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_P17947_external_AD_core_WT,3.309710855196288,,3.313150613262078,available: original workbook,3,2,1,prior S9 only
+RGG_A6NNA2_2_1_WT__TAD_P18848_83_99_WT,3.066813892936301,-1166.309714345781,3.022132458926551,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_P18850_57_75_WT,3.2992534292274303,-1991.835320207476,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_P19532_512_529_WT,3.21685198525726,-1647.6007662326108,3.233120031397363,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_P43268_external_AD_core_WT,3.358916385554851,,3.396326996043904,available: original workbook,3,2,1,prior S9 only
+RGG_A6NNA2_2_1_WT__TAD_P48436_267_286_WT,3.0446917797458375,-1108.3879094341905,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_P98177_463_504_WT,3.632819354246509,-4293.577972882286,3.605333457800794,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q12778_597_631_WT,3.322202946958655,-2099.9209529861405,3.242130458814514,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q14494_171_187_WT,3.048047284401969,-1116.9848544045208,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q15329_298_317_WT,2.95252114310633,-896.4398269861895,3.009328224007492,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q16665_523_538_WT,2.824356906230015,-667.3549808919909,2.913533405268551,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q6P1N0_24_44_WT,3.24387759442836,-1753.3862416039792,3.209793327101938,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q8IUX7_694_709_WT,3.097888761151636,-1252.8202403314074,3.114800950134272,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q8WTR7_97_112_WT,2.84506456582136,-699.9460480549631,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q99814_491_510_WT,3.044370462781068,-1107.5681612266064,3.003613124778159,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q9UIF9_321_335_WT,2.932526306214529,-856.1035663094495,2.980338883917339,available: original workbook,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q9Y2N7_475_490_WT,3.1472173026432357,-1403.5157890109112,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q9Y4A8_383_401_WT,3.200677050610727,-1587.3659150268054,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_A6NNA2_2_1_WT__TAD_Q9Y6Q9_796_812_WT,3.09533658542284,-1245.479505081873,3.060191112488003,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_O14948_55_81_WT,3.887856137776779,-7724.246731686641,4.121384345572703,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_O43313_588_602_WT,3.339404312112618,-2184.762898895795,3.418189705218403,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_O43889_external_AD_core_WT,4.312334619069179,,4.305319212941951,available: original workbook,3,2,1,prior S9 only
+RGG_O60506_3_1_WT__TAD_O75461_149_164_WT,3.5864537239878826,-3858.8129203300814,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_P17947_external_AD_core_WT,3.9373456281546,,4.145619894852813,available: original workbook,3,2,1,prior S9 only
+RGG_O60506_3_1_WT__TAD_P18848_83_99_WT,3.472285849676712,-2966.7834637477454,3.593687614888212,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_P18850_57_75_WT,4.031783867393203,-10759.296292302775,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_P19532_512_529_WT,3.980755519070405,-9566.553818795303,4.070012920426796,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_P43268_external_AD_core_WT,4.064994586673869,,4.232537255914522,available: original workbook,3,2,1,prior S9 only
+RGG_O60506_3_1_WT__TAD_P48436_267_286_WT,3.445865584800608,-2791.679675857872,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_P98177_463_504_WT,4.441742859201455,-27653.038557968026,4.309423382245666,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q12778_597_631_WT,3.880123877781634,-7587.939819016452,4.047001845671657,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q14494_171_187_WT,3.5174367050520035,-3291.8247412383034,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q15329_298_317_WT,3.343039374992806,-2203.1261988306455,3.463303364983526,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q16665_523_538_WT,3.146680752273608,-1401.7828820662573,3.382788929374097,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q6P1N0_24_44_WT,3.910377217995898,-8135.368283753943,4.027536239461153,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q8IUX7_694_709_WT,3.692185579499344,-4922.498352978493,3.829802820684854,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q8WTR7_97_112_WT,3.183964210267216,-1527.4401783784897,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q99814_491_510_WT,3.464742423633916,-2915.6972258468377,3.567045754025273,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q9UIF9_321_335_WT,3.389675336899162,-2452.8745483867388,3.552639305680397,available: original workbook,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q9Y2N7_475_490_WT,3.733207576353322,-5410.128448574611,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q9Y4A8_383_401_WT,3.766742882740577,-5844.439707818053,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_O60506_3_1_WT__TAD_Q9Y6Q9_796_812_WT,3.602240321014139,-4001.6612426592706,3.757408337126323,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_O14948_55_81_WT,2.96239494460841,-917.0540741129917,2.96708058636906,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_O43313_588_602_WT,2.713152094183472,-516.5972550173924,2.795217619814486,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_O43889_external_AD_core_WT,3.207979720638181,,3.193459854109566,available: original workbook,3,2,1,prior S9 only
+RGG_Q8IY67_4_1_WT__TAD_O75461_149_164_WT,2.927391570112539,-846.0413121119254,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_P17947_external_AD_core_WT,2.986968815350794,,3.010961482660054,available: original workbook,3,2,1,prior S9 only
+RGG_Q8IY67_4_1_WT__TAD_P18848_83_99_WT,2.786145504698744,-611.146747351276,2.823146923342279,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_P18850_57_75_WT,2.984284363671555,-964.4603181030527,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_P19532_512_529_WT,3.023001536702257,-1054.390627227494,2.945316656719849,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_P43268_external_AD_core_WT,3.048395750804994,,3.035760356058074,available: original workbook,3,2,1,prior S9 only
+RGG_Q8IY67_4_1_WT__TAD_P48436_267_286_WT,2.7785050577058583,-600.4890020405136,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_P98177_463_504_WT,3.239774536450897,-1736.8988853162336,3.154017425640296,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q12778_597_631_WT,3.054760471220218,-1134.3849896292077,2.954268888264072,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q14494_171_187_WT,2.871738920377781,-744.2844068303616,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q15329_298_317_WT,2.841592892555453,-694.3731073877782,2.821817843321537,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q16665_523_538_WT,2.712393288686541,-515.6954370085072,2.752645075713937,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q6P1N0_24_44_WT,2.963044575233721,-918.4268573886633,2.917611261084126,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q8IUX7_694_709_WT,2.815658415549332,-654.1214873024203,2.878817049531047,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q8WTR7_97_112_WT,2.8536528379051904,-713.9254071766496,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q99814_491_510_WT,2.889203579496889,-774.8249189308051,2.808877219158969,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q9UIF9_321_335_WT,2.796849048265704,-626.3961045649382,2.79541850437937,available: original workbook,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q9Y2N7_475_490_WT,2.8402076852531053,-692.1618925799883,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q9Y4A8_383_401_WT,2.8654597607584336,-733.6007400226001,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q8IY67_4_1_WT__TAD_Q9Y6Q9_796_812_WT,2.941066255027326,-873.1045571721716,2.854799997266879,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_O14948_55_81_WT,3.054983748525207,-1134.9683439041653,3.132765615936842,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_O43313_588_602_WT,2.859274599531384,-723.2269473531417,2.887994526878417,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_O43889_external_AD_core_WT,3.301151938200098,,3.460281636325334,available: original workbook,3,2,1,prior S9 only
+RGG_Q9NZI8_1_1_WT__TAD_O75461_149_164_WT,2.9514385596923054,-894.208018001357,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_P17947_external_AD_core_WT,3.166475674456155,,3.199781838884404,available: original workbook,3,2,1,prior S9 only
+RGG_Q9NZI8_1_1_WT__TAD_P18848_83_99_WT,2.90640345977488,-806.1269857893418,2.935902613458932,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_P18850_57_75_WT,3.1410196703972977,-1383.6290459358647,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_P19532_512_529_WT,3.092028937457316,-1236.029788549516,3.113886131762373,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_P43268_external_AD_core_WT,3.177199408422548,,3.236702387370602,available: original workbook,3,2,1,prior S9 only
+RGG_Q9NZI8_1_1_WT__TAD_P48436_267_286_WT,2.74971575437176,-561.9733933544394,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_P98177_463_504_WT,3.388852466155527,-2448.2314137520384,3.422376957138394,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q12778_597_631_WT,3.139642712420312,-1379.2491100997217,3.126126471285412,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q14494_171_187_WT,2.8784441672896577,-755.8648804309641,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q15329_298_317_WT,2.930654673223099,-852.4220459509364,2.945604082934364,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q16665_523_538_WT,2.768297374595973,-586.539648520577,2.853891622295247,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q6P1N0_24_44_WT,3.053872678966545,-1132.068428895162,3.075707459885705,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q8IUX7_694_709_WT,3.04324255020989,-1104.6954117488208,3.022078537293714,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q8WTR7_97_112_WT,2.795089479045732,-623.8633587542246,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q99814_491_510_WT,2.875631461527607,-750.9853439980145,2.922420594548064,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q9UIF9_321_335_WT,2.832534178871336,-680.0395618474719,2.892828689624683,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q9Y2N7_475_490_WT,3.0155942083327223,-1036.559433318557,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q9Y4A8_383_401_WT,3.0351931234376894,-1084.409025239748,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9NZI8_1_1_WT__TAD_Q9Y6Q9_796_812_WT,2.98656335731652,-969.534700147263,2.97568301463046,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_O14948_55_81_WT,3.394322936051671,-2479.264923379873,3.462261698664697,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_O43313_588_602_WT,2.980814565364724,-956.7854567428461,3.05056259769936,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_O43889_external_AD_core_WT,3.676264448205097,,3.908433361996231,available: original workbook,3,2,1,prior S9 only
+RGG_Q9UPR6_11_1_WT__TAD_O75461_149_164_WT,3.1761448153490974,-1500.1849882902357,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_P17947_external_AD_core_WT,3.357905889802685,,3.412532128142035,available: original workbook,3,2,1,prior S9 only
+RGG_Q9UPR6_11_1_WT__TAD_P18848_83_99_WT,2.998944081147595,-997.5716103114579,3.162537312930704,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_P18850_57_75_WT,3.466583146653242,-2928.0814054665057,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_P19532_512_529_WT,3.489644543441382,-3087.767156383351,3.447300818889096,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_P43268_external_AD_core_WT,3.462849689578176,,3.627944661786563,available: original workbook,3,2,1,prior S9 only
+RGG_Q9UPR6_11_1_WT__TAD_P48436_267_286_WT,3.0061872687719986,-1014.348680915317,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_P98177_463_504_WT,3.818596710346305,-6585.620647204354,3.935009149758044,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q12778_597_631_WT,3.33825386165576,-2178.9830987255677,3.403143192542756,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q14494_171_187_WT,3.0719076040468165,-1180.0695496843457,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q15329_298_317_WT,3.019691173776302,-1046.3842010280173,3.084112606010613,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q16665_523_538_WT,2.903166126861364,-800.140267118,3.001566978689699,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q6P1N0_24_44_WT,3.439561352227969,-2751.4482711271935,3.419945202836683,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q8IUX7_694_709_WT,3.141473768200298,-1385.0765234586754,3.355540244792892,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q8WTR7_97_112_WT,2.8092129340096643,-644.4851782929452,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q99814_491_510_WT,3.06078161843479,-1150.221863483694,3.067141164571045,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q9UIF9_321_335_WT,3.094886137972607,-1244.188371423613,3.07582717779804,available: original workbook,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q9Y2N7_475_490_WT,3.2393809723100078,-1735.3255946024008,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q9Y4A8_383_401_WT,3.2887805301896265,-1944.3772463217651,,not supplied: frozen-model inference required,3,2,1,300-pair replica source
+RGG_Q9UPR6_11_1_WT__TAD_Q9Y6Q9_796_812_WT,3.110916581162172,-1290.9712813600522,3.233919168892527,available: original workbook,3,2,1,300-pair replica source

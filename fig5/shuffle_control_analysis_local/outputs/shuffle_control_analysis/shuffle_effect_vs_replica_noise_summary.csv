@@ -1,0 +1,3 @@
+shuffle_type,n_with_replica_noise,fraction_gt_0p5_pooled_sd,fraction_gt_1_pooled_sd,fraction_gt_2_pooled_sd,median_abs_delta_over_pooled_sd
+RGG_shuffle,80,0.625,0.4375,0.2625,0.910241001440552
+TAD_shuffle,160,0.6125,0.38125,0.16875,0.7674960974140956

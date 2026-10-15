@@ -1,0 +1,24 @@
+FINAL MODEL BUILD AUDIT
+
+1. Development rows used: 917.
+2. Was the 1,794 test set opened? NO.
+3. Was the 1,794 test set used to estimate lambda? NO.
+4. Was the 1,794 test set used for early stopping? NO.
+5. Was the 1,794 test set used for feature/model selection? NO.
+6. Residual-analysis code defining final procedure: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/scripts/run_nested_residual_tuning.py and /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/scripts/utils.py.
+7. lambda_final: 0.13680294067644683
+8. final cap: 0.16914558161466955
+9. 917 OOF base metrics: {"MAE": 0.05586796789057758, "Pearson": 0.9753228810160751, "R2": 0.9510665993469231, "RMSE": 0.07442386234870829, "Spearman": 0.9678040155026642, "bias": -0.0007281499067030609, "n": 917}
+10. 917 OOF hybrid metrics: {"MAE": 0.05595918491943271, "Pearson": 0.9753494028911555, "R2": 0.9511760313995845, "RMSE": 0.07434059698788362, "Spearman": 0.9678004984230878, "bias": -0.0010005624580095782, "n": 917}
+11. high−NCP base metrics: {"MAE": 0.09062778836723866, "Pearson": 0.906346669300326, "R2": 0.813867254210126, "RMSE": 0.12099992930055688, "Spearman": 0.888096445943123, "bias": 0.01150212344595716, "n": 93}
+12. high−NCP hybrid metrics: {"MAE": 0.09119605752851173, "Pearson": 0.9065252664885345, "R2": 0.8158697260995843, "RMSE": 0.12034729247819616, "Spearman": 0.886902808033183, "bias": 0.008121379572769451, "n": 93}
+13. final model-manifest SHA256: fdb9ad1c7d2e0cc80edbac563960957b553c16aff46780656d047d30d7b7a6e9
+14. Model construction is complete and frozen before any test-set evaluation.
+
+Read-path audit:
+  /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/config/base_model.json
+  /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/config/residual_grid.json
+  /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/config/run_config.json
+  /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/inputs/fig5_917_F2_P8.csv
+  /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs/inner_tuning_results.csv
+  /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs/outer_oof_predictions.csv

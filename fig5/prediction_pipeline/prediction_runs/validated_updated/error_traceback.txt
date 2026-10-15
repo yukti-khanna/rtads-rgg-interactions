@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/gpfs/o_khanna/fig5/prediction_pipeline/predict_pairs.py", line 86, in main
+    requested,registry,paths=resolve_inputs(args)
+  File "/home/gpfs/o_khanna/fig5/prediction_pipeline/sequence_io.py", line 99, in resolve_inputs
+    requests = read_pair_requests(args.pairs); input_paths.append(args.pairs)
+  File "/home/gpfs/o_khanna/fig5/prediction_pipeline/sequence_io.py", line 70, in read_pair_requests
+    lines = name_list(path)
+  File "/home/gpfs/o_khanna/fig5/prediction_pipeline/sequence_io.py", line 64, in name_list
+    return [s.strip() for s in Path(path).read_text().splitlines() if s.strip() and not s.lstrip().startswith('#')]
+  File "/home/gpfs/o_khanna/miniconda3/envs/calvados/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/gpfs/o_khanna/miniconda3/envs/calvados/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gpfs/o_khanna/validated/validated_final_names_updates.txt'

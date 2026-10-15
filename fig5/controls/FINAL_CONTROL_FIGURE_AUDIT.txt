@@ -1,0 +1,16 @@
+Remaining Figure-5 supplementary controls rebuilt from frozen final-model resources
+fig5 root: /Users/yuktikhanna/rtads-rgg-interactions/fig5
+
+Input inventory written to controls/tables/final_control_input_inventory.csv
+
+FigS8B generated from /Users/yuktikhanna/rtads-rgg-interactions/fig5/shuffle_control_analysis_local/outputs/shuffle_control_analysis/shuffle_nonbasic_matched_effects.csv; n=240 non-basic matched shuffle rows. No model predictions used.
+FigS8D generated from /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/fig5_histidine_pH_audit/histidine_matched_b22.csv; n=390 matched pH pairs. No model predictions used.
+FigS8F generated from /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplementary_data/csv/Table_S9_reviewer_controls/S9D_basic_region_controls.csv; n=78 rows with simulated target and full frozen features.
+FigS8F metrics: {"MAE": 0.25921711044265966, "Pearson_r": 0.5324201393944132, "R2": -1.9276989600824002, "RMSE": 0.3704313105258351, "Spearman_rho": 0.45606292441735474, "n": 78}
+Local MODEL_MANIFEST sha256: fdb9ad1c7d2e0cc80edbac563960957b553c16aff46780656d047d30d7b7a6e9
+Definitive final-prediction manifest sha256 expected from final tables: 48b7279b7e76260c04c1f42ee766d3f385f3d27c5ad61b99b2941d0d02b0d516
+WARNING: local frozen-model manifest hash differs from the definitive hash embedded in final prediction tables. Predictions were generated with the local frozen_model artifacts present in this fig5 workspace.
+FigS8A, FigS8C, and FigS8E were not generated because required frozen-model feature inputs are absent from the available control tables. Missing-data notes were written under controls/.
+
+No Figure 5 or Figure S5 files were modified by this script.
+No FINCHES files outside fig5 were modified by this script.

@@ -1,0 +1,1 @@
+Extended S8 outputs generated from cluster-predicted new controls. Existing predictor, RDF B22 function, historical feature generator, and plotting style were reused. S8C is copied unchanged from accepted histidine pH6.5 predictions. S8D is extended only by new rows classified as basic_WT.

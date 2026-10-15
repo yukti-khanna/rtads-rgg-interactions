@@ -1,0 +1,8 @@
+PASS: Matching exact 9 x 5 inch artboards (648 x 360 pt).
+PASS: Two rows; five-descriptor global baseline points down into local electrostatics.
+PASS: SCD side comparison has no onward connector.
+PASS: Six supplied R-squared values preserved exactly, once each.
+PASS: SVG text is editable; SVG and PDF contain no raster images.
+PASS: All PDF font resources embedded (Arial regular and bold).
+PASS: PDF opens as one page.
+PASS: Shared scene geometry; text boxes are inside artboard and do not overlap.

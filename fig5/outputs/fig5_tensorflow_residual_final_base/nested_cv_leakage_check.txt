@@ -1,0 +1,9 @@
+PASS: outer-validation pairs were never used for base fitting.
+PASS: outer-validation pairs were never used for scaler fitting.
+PASS: outer-validation pairs were never used to generate residual targets.
+PASS: outer-validation pairs were never used for residual-network training.
+PASS: outer-validation pairs were never used for lambda calibration.
+PASS: residual targets for outer-training examples were obtained from inner-OOF base predictions.
+PASS: every residual-training sample received an inner-OOF base prediction.
+PASS: all patch features were aligned by name using one-to-one merge validation.
+PASS: heldout_1794_targets_accessed = NO.

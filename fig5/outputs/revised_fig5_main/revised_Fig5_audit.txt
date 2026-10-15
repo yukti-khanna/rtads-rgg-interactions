@@ -1,0 +1,13 @@
+Revised Figure 5 audit
+A PASS: schematic drawn from final model documentation.
+B PASS: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_feature_family_decomposition_training_only/cv_metrics_by_repeat.csv
+C PASS: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_f2_patch_context_training_only/cv_metrics_by_repeat.csv
+D PASS: /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/fig5_tensorflow_residual_final_base/outer_oof_predictions_F2_P8.csv
+E PASS: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_validation_run_model_local/outputs/heldout/heldout_final_predictions.csv; metrics source /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_validation_run_model_local/outputs/heldout/final_model_metrics.csv
+F PASS: /Users/yuktikhanna/rtads-rgg-interactions/fig5/unsim_preds_with_hybrid_021125_sel_cols.csv
+Terminology: labels use negative net-charge product (-NCP). Historical source columns are used only internally.
+
+Scatter-panel data/style separation:
+Fig5D | data source: revised OOF data | plot-style source: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5.py old manuscript scatter function
+Fig5E | data source: revised frozen 1794 data | plot-style source: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5.py old manuscript scatter function
+Fig5F | data source: revised full landscape | plot-style source: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5.py old manuscript landscape/scatter function

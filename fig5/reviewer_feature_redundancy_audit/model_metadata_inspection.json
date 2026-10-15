@@ -1,0 +1,114 @@
+[
+  {
+    "path": "/Users/yuktikhanna/idr-interaction-predict/models/pretrained/mlp_plateau_calibrated_bundle.pkl",
+    "scaler_feature_names_in": [
+      "Opposite_Charge_Number",
+      "Average_SCD",
+      "SCD_RGG",
+      "SCD_TAD",
+      "Average_NCPR",
+      "Charge_Complementarity",
+      "NCPR_RGG",
+      "SHD_RGG",
+      "Average_Interaction",
+      "SHD_TAD",
+      "Average_SHD",
+      "RGG_length",
+      "lambda_RGG",
+      "Total_Length",
+      "TAD_length",
+      "lambda_TAD",
+      "NCPR_TAD",
+      "Min_lambda",
+      "Average_lambda",
+      "charge_RGG",
+      "Average_charge",
+      "charge_TAD",
+      "Normalized_OCN",
+      "Charge_Asymmetry",
+      "Hydropathy_Diff",
+      "Lambda_Ratio"
+    ],
+    "scaler_n_samples_seen": 779,
+    "keras_metadata": {
+      "keras_version": "3.12.0",
+      "date_saved": "2025-11-02@00:19:42"
+    },
+    "residual_layers": [
+      {
+        "type": "InputLayer",
+        "batch_shape": [
+          null,
+          26
+        ],
+        "units": null
+      },
+      {
+        "type": "Dense",
+        "batch_shape": null,
+        "units": 16
+      },
+      {
+        "type": "Dense",
+        "batch_shape": null,
+        "units": 8
+      },
+      {
+        "type": "Dense",
+        "batch_shape": null,
+        "units": 1
+      }
+    ],
+    "threshold": 40.0,
+    "lambda_hat": 0.6,
+    "cap": 0.12836700502532367
+  },
+  {
+    "path": "/Users/yuktikhanna/idr-interaction-predict/models/pretrained/mlp_plateau_calibrated_bundle_sel_cols.pkl",
+    "scaler_feature_names_in": [
+      "Opposite_Charge_Number",
+      "Normalized_OCN",
+      "charge_TAD",
+      "Average_SHD",
+      "lambda_RGG",
+      "Lambda_Ratio",
+      "lambda_TAD",
+      "TAD_length",
+      "Average_Interaction",
+      "SHD_TAD"
+    ],
+    "scaler_n_samples_seen": 779,
+    "keras_metadata": {
+      "keras_version": "3.12.0",
+      "date_saved": "2025-11-02@10:47:43"
+    },
+    "residual_layers": [
+      {
+        "type": "InputLayer",
+        "batch_shape": [
+          null,
+          10
+        ],
+        "units": null
+      },
+      {
+        "type": "Dense",
+        "batch_shape": null,
+        "units": 16
+      },
+      {
+        "type": "Dense",
+        "batch_shape": null,
+        "units": 8
+      },
+      {
+        "type": "Dense",
+        "batch_shape": null,
+        "units": 1
+      }
+    ],
+    "threshold": 40.0,
+    "lambda_hat": 0.3452297774199852,
+    "cap": 0.15552237163193564
+  }
+]

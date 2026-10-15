@@ -1,0 +1,49 @@
+Scatter style provenance
+
+Source script path:
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5.py
+
+Plotting functions/helpers reused:
+identity_limits, clean_figure_axes, save_fig aesthetics, panel_C/panel_D predicted-vs-simulated scatter settings, panel_F full-landscape scatter settings.
+
+Marker type:
+matplotlib Axes.scatter circular marker default.
+
+Marker size:
+s=7 for manuscript scatter points.
+
+Alpha:
+0.50 for grey/background series; 0.80 for blue/highlight or primary series.
+
+Edge/face handling:
+edgecolors="none"; face colour #656565 grey or #0072B2 Okabe-Ito blue.
+
+Density colouring:
+No density colour scale in the original manuscript scatter implementation. Large landscape uses downsampled/rasterised scatter rather than hexbin.
+
+Identity-line styling:
+black line, lw=0.8, zorder=3.
+
+Regression-line styling:
+landscape/scaling panels use a black linear-fit line, lw=1.0.
+
+Axis limits:
+Predicted-vs-simulated plots use shared identity_limits with 5% padding; x and y limits matched.
+
+Tick formatting:
+Matplotlib defaults with rcParams xtick/ytick label size 6 and outward ticks.
+
+Spine widths:
+axes.linewidth=0.6; top and right spines hidden by clean_figure_axes.
+
+Font sizes:
+font.size=6.5; axes labels=7; axes titles=7; tick labels=6; legend=6.
+
+Metric annotation placement:
+Old predicted-vs-simulated panel uses lower-right axes coordinates x=0.97, y=0.03, ha=right, va=bottom.
+
+Rasterisation settings:
+rasterized=True for scatter; zorder=1; save dpi/rasterization dpi=600.
+
+Colourbar treatment:
+No colourbar for manuscript scatter or full-landscape scatter panels.

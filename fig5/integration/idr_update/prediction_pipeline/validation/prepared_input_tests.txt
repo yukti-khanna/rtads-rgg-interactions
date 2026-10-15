@@ -1,0 +1,22 @@
+test_changed_feature_value_is_rejected (test_prepared_io.PreparedRunTests) ... /Users/yuktikhanna/miniconda3/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ok
+test_feature_misalignment_is_rejected (test_prepared_io.PreparedRunTests) ... /Users/yuktikhanna/miniconda3/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ok
+test_legacy_run_reuses_saved_features_without_recalculation (test_prepared_io.PreparedRunTests) ... /Users/yuktikhanna/miniconda3/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ok
+test_new_output_hashes_detect_changes (test_prepared_io.PreparedRunTests) ... /Users/yuktikhanna/miniconda3/lib/python3.10/site-packages/pandas/core/algorithms.py:522: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  common = np.find_common_type([values.dtype, comps_array.dtype], [])
+ok
+test_prediction_mode_cannot_mix_input_options (test_prepared_io.PreparedRunTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.099s
+
+OK

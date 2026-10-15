@@ -1,0 +1,2 @@
+n,mean_delta_abs_error,median_delta_abs_error,fraction_error_increases,fraction_error_decreases,mean_delta_abs_error_CI_low,mean_delta_abs_error_CI_high,median_delta_abs_error_CI_low,median_delta_abs_error_CI_high
+390,0.005736484910924402,0.002773990060761955,0.5384615384615384,0.46153846153846156,0.0012318101363820012,0.010242715679520764,-0.0007825083259120902,0.00822569915209348

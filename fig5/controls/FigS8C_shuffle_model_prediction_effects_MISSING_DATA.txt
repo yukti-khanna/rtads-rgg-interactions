@@ -1,0 +1,9 @@
+FigS8C_shuffle_model_prediction_effects
+
+Status: NOT GENERATED
+
+The available shuffle matched-effect tables contain simulated WT/shuffle B22 values and old/provisional prediction deltas, but not the complete frozen-model feature rows for WT and shuffle sequences. The model-derived shuffle panel was therefore not regenerated.
+
+Checked inputs:
+- /Users/yuktikhanna/rtads-rgg-interactions/fig5/shuffle_control_analysis_local/outputs/shuffle_control_analysis/shuffle_nonbasic_matched_effects.csv :: exists=True
+- /Users/yuktikhanna/rtads-rgg-interactions/fig5/shuffle_control_analysis_local/outputs/shuffle_control_analysis/shuffle_matched_effects.csv :: exists=True

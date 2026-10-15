@@ -1,0 +1,7 @@
+dataset,relationship,max_error,agrees
+10 landscape examples,ah_energy_mean = 25 * ah_density_mean,1.1102230246251565e-16,True
+10 landscape examples,ah_energy_min = 25 * ah_density_min,1.1102230246251565e-16,True
+10 landscape examples,ah_energy_max = 25 * ah_density_max,5.551115123125783e-17,True
+10 landscape examples,ah_energy_std = 25 * ah_density_std,1.3877787807814457e-17,True
+10 landscape examples,ah_energy_top5_mean = 25 * ah_density_top5_mean,5.551115123125783e-17,True
+10 landscape examples,ah_energy_top10_mean = 25 * ah_density_top10_mean,1.6653345369377348e-16,True

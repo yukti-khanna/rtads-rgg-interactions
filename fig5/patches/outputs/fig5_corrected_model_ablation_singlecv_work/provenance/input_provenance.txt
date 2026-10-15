@@ -1,0 +1,122 @@
+Corrected Figure 5 model ablation.
+Development dataset: /Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv; n=917.
+Held-out dataset: /Users/yuktikhanna/rtads-rgg-interactions/fig5/taken_out_preds_with_hybrid_021125_sel_cols.csv; n=1794. Target column read only after locked_model_definitions.json was written.
+Patch training table: /Users/yuktikhanna/rtads-rgg-interactions/fig5/patches/datasets/features_sim_pairs_for_training.csv.
+Patch held-out table: /Users/yuktikhanna/rtads-rgg-interactions/fig5/patches/datasets/features_heldout_sequence_exclusive.csv.
+Frozen previous patch feature: opp_charge_std; prior lock file: /Users/yuktikhanna/rtads-rgg-interactions/fig5/patches/outputs/fig5_reviewer_final_analysis/selected_patch_features_for_M4.lock.txt; sha256=a51bf55db7b9e0ce64df44e74f6824e394201253a307171c7ea633eb40e009c9.
+Python=/Users/yuktikhanna/miniconda3/bin/python3.10; 3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:09:17) [Clang 16.0.6 ]
+Platform=macOS-26.5.1-arm64-arm-64bit
+numpy=1.26.4; pandas=1.5.3; scipy=1.12.0; sklearn=1.2.2; matplotlib=3.7.1
+CV note: single shuffled 5-fold CV with seed 42; repeated exact MLP CV seeds were skipped for runtime practicality.
+Git status snapshot:
+ M ../all_figs.pptx
+ M ../fig2/README.md
+ M ../fig4/fig4.py
+ D ../scripts
+ M ../supplementary/.sync_56d0f1152058.db
+ D ../supplementary/.sync_56d0f1152058.db-shm
+ D ../supplementary/.sync_56d0f1152058.db-wal
+ M ../supplementary/Supplementary_Table_S8.csv
+?? "../all_figs [Auto-saved].pptx"
+?? ../fig1/CLASS_PAIR_EXTENSION_RUN_NOTES.md
+?? ../fig1/RBP_PARTNER_DEGREE_HIGHRES_RUN.md
+?? ../fig1/REVIEWER_ANALYSIS_README.md
+?? ../fig1/TF_PARTNER_LANDSCAPE_RUN.md
+?? ../fig1/input/filter_conventional_rbps.py
+?? ../fig1/requirements_highres.txt
+?? ../fig1/run_tf_partner_landscape.slurm
+?? ../fig1/run_tf_partner_landscape_local.sh
+?? ../fig1/scripts/REVIEWER_ANALYSIS_README.md
+?? ../fig1/scripts/figure1_reviewer_analysis.py
+?? ../fig1/scripts/filter_conventional_rbps.py
+?? ../fig1/scripts/r1_06_final_audit.py
+?? ../fig1/scripts/r1_07_r2_08_absolute_counts.py
+?? ../fig1/scripts/r2_04_class_overlap.py
+?? ../fig1/scripts/r2_04_class_overlap_cleanup.py
+?? ../fig1/scripts/r2_04_exact_replay.cpp
+?? ../fig1/scripts/r2_05_degree_matched_nontf.py
+?? ../fig1/scripts/r2_06_assay_sensitivity.py
+?? ../fig1/scripts/rbp_partner_degree_analysis.py
+?? ../fig1/scripts/rbp_partner_degree_highres.py
+?? ../fig1/scripts/reviewer_class_pair_analysis.py
+?? ../fig1/scripts/reviewer_stats.py
+?? ../fig1/scripts/test_rbp_partner_degree_analysis.py
+?? ../fig1/scripts/test_rbp_partner_degree_highres.py
+?? ../fig1/scripts/test_reviewer_analysis.py
+?? ../fig1/scripts/test_tf_partner_landscape.py
+?? ../fig1/scripts/tf_partner_landscape.py
+?? ../fig2/FIGURE2_REVIEWER_ANALYSIS_REPORT.md
+?? ../fig2/README_RUN_ME.md
+?? ../fig2/README_RUN_YOURSELF.md
+?? ../fig2/RUN_REVIEWER_ANALYSIS.md
+?? ../fig2/inputs/metadata/
+?? ../fig2/outputs/main/
+?? ../fig2/outputs/reviewer_effect_sizes/
+?? ../fig2/outputs/reviewer_external_AD_recovery/
+?? ../fig2/outputs/reviewer_family_bias/
+?? ../fig2/outputs/supplement/
+?? ../fig2/requirements-reviewer-analysis.txt
+?? ../fig2/scripts/analyze_region_level_prediction_universe.py
+?? ../fig2/scripts/benchmark_reviewer_rankings.py
+?? ../fig2/scripts/build_complete_candidate_sequence_similarity.py
+?? ../fig2/scripts/external_AD_catalogue_recovery.py
+?? ../fig2/scripts/external_AD_ensemble_recurrence.py
+?? ../fig2/scripts/fig2B_effect_sizes.py
+?? ../fig2/scripts/reconstruct_prediction_universe_bias.py
+?? ../fig2/scripts/recover_model_scores.py
+?? ../fig2/scripts/reviewer_family_bias_analysis.py
+?? ../fig2/scripts/reviewer_homology_benchmark_fixed.py
+?? ../fig2/scripts_models/
+?? ../fig3/README.md
+?? ../fig3/figure3_rg_threshold_sensitivity/
+?? ../fig3/inputs/README.md
+?? ../fig3/inputs/metadata/conventional_rbp_uniprot_ids.txt
+?? ../fig3/inputs/metadata/eurbpdb_rbp_uniprot_ids.txt
+?? ../fig3/outputs/
+?? ../fig3/requirements.txt
+?? ../fig3/scripts/run_local.sh
+?? ../fig3/scripts/run_rg_threshold_sensitivity.py
+?? ../fig3/scripts/run_task2_feature_stability.py
+?? ../fig3/scripts/run_task2_local.sh
+?? ../fig3/scripts/run_task3_figure3_relationships.py
+?? ../fig3/scripts/run_task3_local.sh
+?? ../fig3/scripts/run_task3b_conventional_rbp.py
+?? ../fig3/scripts/run_task3b_local.sh
+?? ../fig3/scripts/validate_outputs.py
+?? ../fig3/scripts/validate_task2_feature_stability.py
+?? ../fig3/scripts/validate_task3_figure3_relationships.py
+?? ../fig3/scripts/validate_task3b_conventional_rbp.py
+?? ../fig4/01_make_control_shuffles.py
+?? ../fig4/02_build_control_pair_universe.py
+?? ../fig4/03_select_random_400_systems.py
+?? ../fig4/ETV4_SPI1_CREB3_core_and_longest_sequences.xlsx
+?? ../fig4/all_tads_rggs_dis.fasta
+?? ../fig4/basic_AD_IDR_controls.xlsx
+?? ../fig4/combined_rg_regions_ll_7_all.fasta
+?? ../fig4/conventional_rbp_uniprot_ids.txt
+?? ../fig4/out_fig4/
+?? ../fig4/reviewer_analysis/
+?? ../fig4/rg_threshold_recovery_917/
+?? ../fig4/sims_supplementary/
+?? ../fig4/tad_region_selection.xlsx
+?? ../fig4/task2_b22_convergence/
+?? ../fig4/task3_sampling_bias/
+?? ../fig4/task4_ph_sensitivity/
+?? ../fig4/task5_panelC_enrichment/
+?? Fig5_panels/
+?? figS5_panels/
+?? patches/
+?? reviewer_feature_family_decomposition_training_only/
+?? reviewer_feature_redundancy_audit/
+?? reviewer_reduced_model_ablation/
+?? reviewer_reduced_model_ablation_training_only/
+?? ../fig6/FigS7_simB22_panels/
+?? ../panels_suppl_svg/
+?? ../panels_svg/
+?? ../script_folders/
+?? ../scripts_svg/
+?? ../supplementary/finches/figS6_finches_scaled/FigS6A_scaled_FINCHES_vs_simulated_training.svg
+?? ../supplementary/finches/figS6_finches_scaled/FigS6B_scaled_FINCHES_vs_predicted_allpairs.svg
+?? ../supplementary/supplementary_figures.docx
+?? ../~$all_figs.pptx
+

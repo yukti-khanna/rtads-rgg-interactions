@@ -1,0 +1,10 @@
+Development rows: 917
+Held-out global rows: 1794; patch rows: 1794
+Histidine RDF path: /home/gpfs/o_khanna/histidines/histidines_rdfs
+Control RDF path: /home/gpfs/o_khanna/controls/controls_rdfs
+Histidine RDF files: 390
+Control RDF files: 400
+PACKAGE DRY-RUN CHECK PASSED: inputs and required feature workflow are present. No fitting performed.
+Loaded 917 development rows with 13 frozen features.
+Final model artifacts written.
+Prepared heldout features: 1794 rows

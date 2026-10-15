@@ -1,0 +1,9 @@
+name: fig5-make-csvs
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10,<3.12
+  - numpy
+  - pandas
+  - scipy
+  - numba

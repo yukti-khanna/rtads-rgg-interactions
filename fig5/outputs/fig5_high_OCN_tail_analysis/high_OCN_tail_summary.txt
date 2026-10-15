@@ -1,0 +1,54 @@
+High-OCN tail analysis from existing outer-OOF predictions.
+
+Only 917-pair outer-validation predictions were used. The 1,794-pair held-out dataset was not accessed. F2 was rerun only to obtain compatible OOF predictions on the same outer splits used by the TensorFlow residual analysis.
+Region sizes: ALL=917, LOW OCN<40=824, HIGH OCN>=40=93. Each unique pair contributes one repeat-averaged OOF prediction per model.
+
+Primary high-OCN metrics:
+F2: RMSE=0.1431, MAE=0.1063, bias=+0.0157, abs_bias=0.0157, Pearson=0.8623, Spearman=0.8243, R2=0.7396
+F2-P1: RMSE=0.1338, MAE=0.1000, bias=+0.0089, abs_bias=0.0089, Pearson=0.8807, Spearman=0.8586, R2=0.7725
+F2-P8: RMSE=0.1210, MAE=0.0906, bias=+0.0115, abs_bias=0.0115, Pearson=0.9063, Spearman=0.8881, R2=0.8139
+F2-P1 hybrid: RMSE=0.1334, MAE=0.0994, bias=+0.0084, abs_bias=0.0084, Pearson=0.8810, Spearman=0.8594, R2=0.7737
+F2-P8 hybrid: RMSE=0.1206, MAE=0.0905, bias=+0.0096, abs_bias=0.0096, Pearson=0.9065, Spearman=0.8886, R2=0.8150
+
+High-OCN paired comparisons:
+F2-P1_minus_F2: delta_RMSE=-0.00935, delta_MAE=-0.00623, delta_abs_bias=-0.00680, fraction_improved=0.559, median_abs_error_improvement=+0.00785
+F2-P8_minus_F2: delta_RMSE=-0.02212, delta_MAE=-0.01565, delta_abs_bias=-0.00419, fraction_improved=0.591, median_abs_error_improvement=+0.00607
+F2-P8_minus_F2-P1: delta_RMSE=-0.01277, delta_MAE=-0.00942, delta_abs_bias=+0.00261, fraction_improved=0.581, median_abs_error_improvement=+0.00899
+F2-P1 hybrid_minus_F2-P1: delta_RMSE=-0.00034, delta_MAE=-0.00061, delta_abs_bias=-0.00045, fraction_improved=0.430, median_abs_error_improvement=+0.00000
+F2-P8 hybrid_minus_F2-P8: delta_RMSE=-0.00038, delta_MAE=-0.00010, delta_abs_bias=-0.00186, fraction_improved=0.495, median_abs_error_improvement=+0.00000
+
+Residual-vs-OCN slopes in the high tail:
+       model region  n  slope_residual_vs_OCN  slope_ci_95_low  slope_ci_95_high  intercept  Pearson_residual_OCN  p_value
+          F2   HIGH 93               0.000420        -0.000310          0.001150  -0.011401              0.117458 0.262166
+       F2-P1   HIGH 93               0.000451        -0.000232          0.001134  -0.020186              0.134354 0.199151
+       F2-P8   HIGH 93               0.000725         0.000120          0.001329  -0.035230              0.239270 0.020894
+F2-P1 hybrid   HIGH 93               0.000436        -0.000246          0.001118  -0.019657              0.130153 0.213694
+F2-P8 hybrid   HIGH 93               0.000699         0.000095          0.001303  -0.035446              0.231270 0.025717
+
+Patch helped vs residual helped for F2-P8 high-OCN pairs:
+residual_helped  False  True 
+patch_helped                 
+False               19     19
+True                28     27
+
+Required answers:
+1. How many unique pairs have OCN >= 40? 93.
+2. How does plain F2 perform specifically in this tail? F2: RMSE=0.1431, MAE=0.1063, bias=+0.0157, abs_bias=0.0157, Pearson=0.8623, Spearman=0.8243, R2=0.7396.
+3. Does opp_charge_std improve tail RMSE? Yes. F2-P1 minus F2 delta_RMSE=-0.00935; negative means lower RMSE.
+4. Does it improve tail MAE? Yes. F2-P1 minus F2 delta_MAE=-0.00623.
+5. Does it reduce systematic tail bias? Yes if judged by absolute mean bias: delta_abs_bias=-0.00680.
+6. Does the full P8 patch panel improve further? Yes for RMSE/MAE relative to F2 and modestly relative to F2-P1: F2-P8_minus_F2-P1: delta_RMSE=-0.01277, delta_MAE=-0.00942, delta_abs_bias=+0.00261, fraction_improved=0.581, median_abs_error_improvement=+0.00899.
+7. What fraction of high-OCN pairs benefit from P1? 0.559.
+8. What fraction benefit from P8? 0.591.
+9. Does the F2-P1 residual network improve tail RMSE/MAE? No. F2-P1 hybrid_minus_F2-P1: delta_RMSE=-0.00034, delta_MAE=-0.00061, delta_abs_bias=-0.00045, fraction_improved=0.430, median_abs_error_improvement=+0.00000.
+10. Does the F2-P8 residual network improve tail RMSE/MAE? Only negligibly. RMSE and MAE both shift slightly in the favorable direction, but the median per-pair improvement is zero and the fraction improved is 0.495. F2-P8 hybrid_minus_F2-P8: delta_RMSE=-0.00038, delta_MAE=-0.00010, delta_abs_bias=-0.00186, fraction_improved=0.495, median_abs_error_improvement=+0.00000.
+11. Does either residual network reduce systematic high-OCN bias? F2-P1 hybrid does not; F2-P8 hybrid changes absolute bias by -0.00186, a very small shift.
+12. Does either residual network flatten residual-vs-OCN trends? No convincing flattening; slope CIs and trend table should be treated as diagnostic, and the hybrid slopes do not show a robust tail correction pattern.
+13. Are tail improvements supported by paired bootstrap confidence intervals? Patch improvements are supported where the relevant RMSE/MAE CIs exclude zero; residual improvements are not supported as a consistent RMSE/MAE/MAE+bias pattern. See tail_bootstrap_differences.csv. Bootstrap RMSE CI excludes zero for P1 vs F2: False; P8 vs F2: True; P8 hybrid vs base: False.
+14. Are patch gains concentrated in the high-OCN regime or distributed across OCN values? They are visible in the high-OCN bin summaries and should be read alongside performance_by_OCN_bin.csv/pdf; the main improvement is not a residual-network effect.
+15. Does the residual network correct examples that remain poorly predicted after patch features? Not systematically. Among high-OCN pairs, the patch/residual help table is:
+residual_helped  False  True 
+patch_helped                 
+False               19     19
+True                28     27
+16. Based specifically on its intended high-OCN use case, is the residual correction justified? No for F2-P1, and not convincingly for F2-P8. The P8 residual gives tiny high-tail RMSE/MAE/R2 shifts in the favorable direction, but the median per-pair absolute-error improvement is zero, only 49.5% of high-OCN pairs improve, and it does not show a strong calibrated bias/trend correction.

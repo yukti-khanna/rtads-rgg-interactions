@@ -1,0 +1,6 @@
+PASS: all 23 named source/input hashes unchanged.
+PASS: all 59 pre-existing fig5 files unchanged.
+PASS: expected input dimensions, 28 candidate columns, 26 pruning columns, 10 selected columns, 45 selected pairs.
+PASS: source feature order equals selected bundle scaler feature order; residual input dimension 10.
+PASS: strict OCN identities hold for all 917 + 1794 rows.
+No model code was executed; no predictions or feature tables were generated.

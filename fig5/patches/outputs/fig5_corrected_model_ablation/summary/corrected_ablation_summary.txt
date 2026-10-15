@@ -1,0 +1,17 @@
+Corrected Figure 5 M0-M4 ablation summary
+
+1. OCN alone achieves held-out R2=0.8724, RMSE=0.1075, MAE=0.0762, Pearson=0.9373, Spearman=0.9228.
+2. Adding charge_TAD gives M1 held-out R2=0.8785; M1-M0: delta_R2=+0.0061, delta_RMSE=-0.0026, delta_MAE=-0.0023. This is a small improvement.
+3. Non-electrostatic M2, with no explicit charge-product variables, achieves held-out R2=0.2737, RMSE=0.2566, MAE=0.1893, Pearson=0.5356, Spearman=0.5715.
+4. M3 improves over M1 on the independent held-out set: delta_R2=+0.0297, delta_RMSE=-0.0137, delta_MAE=-0.0066, delta_Pearson=+0.0159, delta_Spearman=+0.0095.
+5. For M3 versus M1, all five reported held-out metrics improve.
+6. M4 versus M3: delta_R2=+0.0161, delta_RMSE=-0.0084, delta_MAE=-0.0056, delta_Pearson=+0.0105, delta_Spearman=+0.0192.
+7. For M4 versus M3, R2, RMSE, Pearson, and Spearman improve; MAE worsens if delta_MAE is positive.
+8. The metric that worsens for M4 versus M3 is MAE: delta_MAE=-0.0056.
+9. Pair-bootstrap M4-M3 intervals: delta_R2 [+0.0091, +0.0234], delta_RMSE [-0.0120, -0.0048], delta_MAE [-0.0082, -0.0031]. TAD-cluster delta_R2 CI [-0.0038, +0.0482]; RGG-cluster delta_R2 CI [+0.0061, +0.0259].
+10. M4's improvement is more apparent in ranking and squared-error/RMSE than in uniform absolute-error reduction. Absolute error improves for 52.5% of held-out pairs.
+11. Non-redundant M3 performs comparably to ORIGINAL10_REFERENCE: M3-ORIGINAL10 delta_R2=-0.0041, delta_RMSE=+0.0020, delta_MAE=+0.0015.
+12. Normalized_OCN is not required for strong predictive performance in the corrected non-redundant model; it remains only in ORIGINAL10_REFERENCE.
+13. The frozen local descriptor opp_charge_std provides measurable but modest information beyond M3: M4-M3 delta_R2=+0.0161, delta_Spearman=+0.0192.
+14. The local-patch effect is modest, not a large new sequence grammar.
+15. Were feature sets changed after looking at the 1,794 held-out target? NO.

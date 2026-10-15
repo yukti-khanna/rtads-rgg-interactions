@@ -1,0 +1,25 @@
+{
+  "base_model": "StandardScaler + MLPRegressor",
+  "params": {
+    "activation": "tanh",
+    "alpha": 0.01,
+    "hidden_layer_sizes": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "learning_rate_init": 0.01,
+    "solver": "adam",
+    "max_iter": 500
+  },
+  "cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "seeds": [
+      42
+    ],
+    "note": "Repeated CV seeds were requested if practical. A single fixed shuffled 5-fold CV was used because repeated exact MLP CV was not practical in this runtime."
+  },
+  "residual_correction_used": false
+}

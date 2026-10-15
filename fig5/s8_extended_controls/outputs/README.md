@@ -1,0 +1,1 @@
+Corrected extended S8 outputs generated from cluster-predicted new controls. mean_lambda_RGG and mean_lambda_TAD are computed as lambda sums divided by sequence length. S8B metrics use control_subtype/control_class, not is_shuffle. S8C is copied unchanged from accepted histidine pH6.5 predictions.

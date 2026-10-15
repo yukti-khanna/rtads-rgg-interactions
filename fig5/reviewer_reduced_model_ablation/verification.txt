@@ -1,0 +1,7 @@
+PASS: all 84 pre-existing Figure 5 files retain their original SHA256 hashes.
+PASS: input CSV hashes match pre-run values.
+PASS: target finite 917/917 training and 1794/1794 held-out.
+PASS: all requested features finite and all lengths positive; zero rows dropped.
+PASS: held-out IDs are disjoint and form the complete 78 x 23 Cartesian matrix.
+PASS: 2000 two-axis bootstrap replicates x 5 models; multiplicity preserved by repeated row/column indexing.
+PASS: all 19 user-requested outputs exist and are non-empty.

@@ -1,0 +1,17 @@
+PACKAGE VALIDATION
+python compile checks: PASS
+control manifest feature-name to system-name mapping: PASS (400/400)
+help check: PASS
+dry-run output:
+Development rows: 917
+Held-out global rows: 1794; patch rows: 1794
+Histidine RDF path: /Users/yuktikhanna/rtads-rgg-interactions/fig5/histidines_rdfs; files=390
+Control RDF path: /Users/yuktikhanna/rtads-rgg-interactions/fig5/controls_rdfs; files=400
+CSV package validation passed.
+Prepared heldout features: 1794 rows
+DRY RUN: histidine RDF path=/Users/yuktikhanna/rtads-rgg-interactions/fig5/histidines_rdfs, files=390; control RDF path=/Users/yuktikhanna/rtads-rgg-interactions/fig5/controls_rdfs, files=400
+DRY RUN: would compute histidine/control B22 from packaged RDF PKLs and derive missing frozen features from packaged sequences/manifests.
+dry-run with external RDF paths: PASS
+RDF files bundled: NO
+full expensive workflow executed in Codex: NO
+previous invalid validation outputs used: NO

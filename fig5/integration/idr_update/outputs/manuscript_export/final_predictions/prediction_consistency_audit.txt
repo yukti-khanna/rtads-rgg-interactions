@@ -1,0 +1,19 @@
+PREDICTION CONSISTENCY AUDIT
+
+Frozen model manifest SHA256: 48b7279b7e76260c04c1f42ee766d3f385f3d27c5ad61b99b2941d0d02b0d516
+Feature order: ['Opposite_Charge_Number', 'mean_lambda_RGG', 'mean_lambda_TAD', 'SHD_RGG', 'SHD_TAD', 'opp_charge_std', 'scd_patch1_std', 'scd_patch2_std', 'rg_fraction_patch1_std', 'aromatic_fraction_patch2_std', 'shd_patch1_std', 'shd_patch2_std', 'ah_energy_std']
+lambda_final: 0.1368029406764465
+residual_cap: 0.16914558161466975
+gate_center: 40.0
+gate_scale: 12.0
+
+Development frozen model: same frozen model artifact as test/full landscape.
+Test 1,794: same lambda, cap, gate, feature order, weights.
+Full landscape: same lambda, cap, gate, feature order, weights.
+Full landscape feature source: /home/gpfs/o_khanna/fig5/patches/datasets/features_unsim_pairs_for_training.csv
+No dataset-specific recalibration was performed.
+
+Identity errors:
+Development frozen max abs(final_hybrid - base - applied_correction): 0.0
+Test 1,794 max abs(final_hybrid - base - applied_correction): 0.0
+Full landscape max abs(final_hybrid - base - applied_correction): 0.0

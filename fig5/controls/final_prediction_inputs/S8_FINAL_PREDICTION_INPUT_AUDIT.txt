@@ -1,0 +1,13 @@
+S8 final prediction input preparation audit
+fig5 root: /Users/yuktikhanna/rtads-rgg-interactions/fig5
+manifest: /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/final_hybrid_model/frozen_model/MODEL_MANIFEST.json
+manifest_sha256: fdb9ad1c7d2e0cc80edbac563960957b553c16aff46780656d047d30d7b7a6e9
+feature_order: ['Opposite_Charge_Number', 'mean_lambda_RGG', 'mean_lambda_TAD', 'SHD_RGG', 'SHD_TAD', 'opp_charge_std', 'scd_patch1_std', 'scd_patch2_std', 'rg_fraction_patch1_std', 'aromatic_fraction_patch2_std', 'shd_patch1_std', 'shd_patch2_std', 'ah_energy_std']
+
+non_dataset_WT_prediction_input.csv: n=100, source=/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplementary_data/csv/Table_S9_reviewer_controls/S9E_applicability_domain.csv, filter=condition == WT_WT, sha256=9e28f2b0da2f3a07e30aefc7a910718d51120e431f5a9ff3ca644206f84d2333
+shuffle_WT_parent_prediction_input.csv: n=100, source=/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplementary_data/csv/Table_S9_reviewer_controls/S9E_applicability_domain.csv, filter=condition == WT_WT, sha256=34a6815e8c552fb3b2e0f7552eac037165756bfe3513a01f4189b94dde9a3640
+shuffle_prediction_input.csv: n=298, TAD_shuffle_n=198, RGG_shuffle_n=100, source=/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplementary_data/csv/Table_S9_reviewer_controls/S9E_applicability_domain.csv, sha256=903b4c825a552f348e8598a61ff3881fe7355d15ceb3f43a445f3885cdc2163a
+basic_control_prediction_input.csv: n=78, target_evaluable_n=78, target_undefined_n=0, source=/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplementary_data/csv/Table_S9_reviewer_controls/S9D_basic_region_controls.csv, sha256=74db082a7f8761ce7c16a4ccd6ce725ef8295052858efdd4754da424bfd31730
+histidine_pH_matched_targets_ONLY_not_model_features.csv: n=390, source=/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/fig5_histidine_pH_audit/histidine_matched_b22.csv, sha256=0c3ae4fc75cbca078d83e9f718b9c2cce5289fe808dc1123ce5ebb929c77cd93
+histidine_pH_feature_source_candidates.csv written; no pH7/pH6.5 model-ready inputs were created because no unambiguous pH-specific table with name + all 13 frozen features was identified automatically.
+Histidine pH model-ready inputs: NOT CREATED; see HISTIDINE_PH_INPUTS_MISSING_OR_AMBIGUOUS.txt

@@ -1,0 +1,9 @@
+README,
+,
+Workbook,Table S7. FINCHES resources for Figure S6 only.
+Scope,FINCHES is separate from frozen-model control datasets.
+FINCHES source,FINCHES epsilon values are from the pre-existing FINCHES run and were not recomputed.
+Figure S6A,FINCHES epsilon versus CALVADOS simulations for 917 development pairs.
+Figure S6B,FINCHES epsilon versus final predicted full landscape.
+Scaling,Figure scaling is visual 0–1 transformation. Raw epsilon and interaction values are retained.
+Omissions,Historical B22_pred_hybrid and model-control data are not included.

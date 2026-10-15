@@ -1,0 +1,55 @@
+Nested 917-pair TensorFlow residual analysis for frozen final Figure 5 base models.
+
+Inputs and leakage status:
+Only the 917 simulated pairs were used. The 1,794-pair held-out B22 targets were not accessed.
+Patch descriptors were merged to the authoritative Figure 5 table by name with one-to-one validation. The ID audit found 917 unique base IDs, 917 unique patch IDs, a 917-ID intersection, and zero base-only or patch-only IDs.
+Residual training targets were generated inside each outer-training fold from inner out-of-fold base predictions; outer-validation examples were excluded from base fitting, scaler fitting, residual-target generation, residual-network fitting, and lambda calibration.
+
+High-OCN definition: Opposite_Charge_Number >= 40. Full 917 set high-OCN count = 93 (0.101).
+
+Base reproduction, pooled repeated-OOF by seed:
+F2-P1 base: R2=0.9459, RMSE=0.0783, MAE=0.0578, Pearson=0.9726, Spearman=0.9670
+F2-P8 base: R2=0.9494, RMSE=0.0757, MAE=0.0567, Pearson=0.9745, Spearman=0.9669
+
+Fold-averaged all-validation metrics:
+F2-P1 base: R2=0.9450, RMSE=0.0781, MAE=0.0578, Pearson=0.9731, Spearman=0.9656
+F2-P1 hybrid: R2=0.9448, RMSE=0.0782, MAE=0.0579, Pearson=0.9730, Spearman=0.9656
+F2-P8 base: R2=0.9486, RMSE=0.0755, MAE=0.0567, Pearson=0.9749, Spearman=0.9656
+F2-P8 hybrid: R2=0.9485, RMSE=0.0755, MAE=0.0568, Pearson=0.9748, Spearman=0.9656
+
+Hybrid minus base mean fold deltas, all pairs:
+F2-P1: delta_R2=-0.00016, delta_RMSE=+0.00009, delta_MAE=+0.00009, delta_Pearson=-0.00011, delta_Spearman=-0.00004
+F2-P8: delta_R2=-0.00005, delta_RMSE=+0.00002, delta_MAE=+0.00007, delta_Pearson=-0.00008, delta_Spearman=-0.00003
+
+Hybrid minus base mean fold deltas, high OCN only:
+F2-P1: delta_R2=-0.00290, delta_RMSE=+0.00015, delta_MAE=+0.00019, delta_Pearson=-0.00095, delta_Spearman=-0.00032
+F2-P8: delta_R2=+0.00013, delta_RMSE=-0.00010, delta_MAE=+0.00018, delta_Pearson=-0.00104, delta_Spearman=-0.00212
+
+Lambda_raw distribution:
+       count      mean       std       min       25%       50%       75%       max
+model                                                                             
+F2-P1   25.0 -0.102420  0.271481 -0.473233 -0.295872 -0.122940 -0.002631  0.700341
+F2-P8   25.0  0.013808  0.162018 -0.350435 -0.093234  0.000996  0.097704  0.365057
+
+Calibration residual relationship, mean across folds:
+       calibration_Pearson  calibration_Spearman  calibration_slope  calibration_R2
+model                                                                              
+F2-P1            -0.100880             -0.014096          -0.106451       -1.811072
+F2-P8             0.020179              0.023753           0.005654       -2.573176
+
+Required questions:
+1. Does F2-P1 reproduce its previous base performance? YES. Pooled repeated-OOF R2=0.9459; fold-mean R2=0.9450.
+2. Does F2-P8 reproduce its previous base performance? YES. Pooled repeated-OOF R2=0.9494; fold-mean R2=0.9486.
+3. What fraction of folds have lambda_hat = 0 for F2-P1? 0.76 (19/25).
+4. What fraction have lambda_hat = 0 for F2-P8? 0.48 (12/25).
+5. What is the distribution of lambda_raw? F2-P1 mean=-0.102, median=-0.123, range=-0.473 to 0.700; F2-P8 mean=0.014, median=0.001, range=-0.350 to 0.365.
+6. Does the residual NN predict calibration residuals better than chance? Not reproducibly. Mean calibration Pearson is -0.101 for F2-P1 and 0.020 for F2-P8; mean calibration R2 is negative for both.
+7. Does the hybrid improve overall R2? No. Mean all-pair fold delta is -0.00016 for F2-P1 and -0.00005 for F2-P8.
+8. Does it improve overall RMSE? No. Mean all-pair fold delta is +0.00009 for F2-P1 and +0.00002 for F2-P8; negative would indicate improvement.
+9. Does it improve overall MAE? No. Mean all-pair fold delta is +0.00009 for F2-P1 and +0.00007 for F2-P8; negative would indicate improvement.
+10. Does it improve Pearson? No. Mean all-pair fold delta is -0.00011 for F2-P1 and -0.00008 for F2-P8.
+11. Does it improve Spearman? No clear improvement. Mean all-pair fold delta is -0.00004 for F2-P1 and -0.00003 for F2-P8.
+12. Does it improve high-OCN performance specifically? Not consistently. F2-P1 high-OCN deltas are delta_R2=-0.00290, delta_RMSE=+0.00015, delta_MAE=+0.00019, delta_Pearson=-0.00095, delta_Spearman=-0.00032. F2-P8 high-OCN R2/RMSE shift slightly in the favorable direction, but MAE, Pearson, and Spearman do not: delta_R2=+0.00013, delta_RMSE=-0.00010, delta_MAE=+0.00018, delta_Pearson=-0.00104, delta_Spearman=-0.00212.
+13. Are improvements consistent across outer folds? No. All-pair improvement counts are F2-P1: R2 2/25, RMSE 2/25, MAE 2/25, Pearson 3/25, Spearman 2/25; F2-P8: R2 3/25, RMSE 3/25, MAE 3/25, Pearson 1/25, Spearman 6/25.
+14. Does F2-P8 leave less systematic high-OCN residual structure than F2-P1? Yes. The high-OCN base fold-mean R2 is 0.7244 for F2-P1 versus 0.7749 for F2-P8, with lower F2-P8 high-OCN RMSE/MAE.
+15. Is the residual correction still justified once patch-context features are included? No, not as a retained predictive component from this 917-pair nested-OOF test. The calibrated residual signal is weak, often clipped to lambda_hat = 0, and does not improve overall metrics for F2-P1 or F2-P8; F2-P8 shows only a tiny high-OCN R2/RMSE improvement with MAE and rank metrics worsening.

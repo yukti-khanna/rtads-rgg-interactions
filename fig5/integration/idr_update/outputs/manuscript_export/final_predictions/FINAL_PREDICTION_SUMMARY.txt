@@ -1,0 +1,69 @@
+FINAL PREDICTION SUMMARY
+
+Frozen model
+manifest SHA256: 48b7279b7e76260c04c1f42ee766d3f385f3d27c5ad61b99b2941d0d02b0d516
+lambda_final: 0.1368029406764465
+cap: 0.16914558161466975
+gate centre/scale: 40.0 / 12.0
+
+Development OOF
+n = 917
+{
+  "all": {
+    "n": 917,
+    "R2": 0.9511760313995845,
+    "RMSE": 0.07434059698788362,
+    "MAE": 0.05595918491943271,
+    "Pearson": 0.9753494028911556,
+    "Spearman": 0.9678004984230878,
+    "mean_residual": -0.0010005624580096209,
+    "median_residual": -0.0029565878862629624
+  },
+  "high_minus_NCP": {
+    "n": 93,
+    "R2": 0.8158697260995845,
+    "RMSE": 0.12034729247819607,
+    "MAE": 0.09119605752851169,
+    "Pearson": 0.9065252664885343,
+    "Spearman": 0.886902808033183,
+    "mean_residual": 0.008121379572769427,
+    "median_residual": -0.006812934723815722
+  }
+}
+
+Development frozen-model predictions
+n = 917
+prediction_type = in_sample_frozen_model
+These predictions are provenance/model-consistency only and are not generalisation evidence.
+
+Locked test
+n = 1794
+{
+  "all": {
+    "n": 1794,
+    "R2": 0.9196071943157269,
+    "RMSE": 0.08537342302398805,
+    "MAE": 0.06373194067059186,
+    "Pearson": 0.9593704062429977,
+    "Spearman": 0.9461056616805487,
+    "mean_residual": -0.008097693099892314,
+    "median_residual": -0.010371138935736157
+  },
+  "high_minus_NCP": {
+    "n": 118,
+    "R2": 0.7491340788638783,
+    "RMSE": 0.1375203482741958,
+    "MAE": 0.10492159716326042,
+    "Pearson": 0.8731969994858975,
+    "Spearman": 0.8549479765830713,
+    "mean_residual": 0.0047162858210341016,
+    "median_residual": -0.017225674008880976
+  }
+}
+The test set did not alter the model.
+
+Full landscape
+exact n = 191386
+prediction range = [0.9418996854684097, 4.34011539660318]
+median prediction = 2.898554212526309
+fraction with non-zero applied correction = 1.0

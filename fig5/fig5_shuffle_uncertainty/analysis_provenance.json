@@ -1,0 +1,35 @@
+{
+  "seed": 20261005,
+  "n_bootstrap": 20000,
+  "n_permutations": 20000,
+  "python": "3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:09:17) [Clang 16.0.6 ]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "numpy": "1.26.4",
+  "pandas": "1.5.3",
+  "scipy": "1.12.0",
+  "matplotlib": "3.7.1",
+  "generated_utc": "2026-10-05T03:00:22.302495+00:00",
+  "sources": {
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig5/s8_extended_controls/S8B_absolute_shuffle_prediction/S8B_shuffle_source_audited.csv": "665f63853f2895081b6dd4ec654962ce5122d7ae27ff4016dcf88d5ef0b2a154",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig5/s8_extended_controls/S8B_absolute_shuffle_prediction/S8B_delta_metrics_original_new_combined.csv": "87525f237903f4590fa19288bca770ef0f6ecf63033c67e254c74e31f4b60f19",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_final_model_validation_local/scripts/rdf_b22_functions.py": "183eed2baee4b502c3ed8442848dc53063c55c9e5037fc6eefb494eeda32d72a",
+    "/Users/yuktikhanna/rtads-rgg-interactions/fig5/scripts/run_predictor_shuffle_uncertainty.py": "d2d0f592c5a779d8d6d5fea1bb5949e08fcc7b817ce58e623cb440ff134a935b"
+  },
+  "raw_rdf_inventory_sha256": "8eb24fbd9ddc6dccc8a6a6a208bc3a68cbfffa5bfbc7ebb3b9a0b81768399e01",
+  "replica_calculation": "corrected_rdfs_b22(last=7.5,box_size=20,delta=2,rc_nm=4.0): b22_corr1",
+  "source_predictions_reused_unchanged": true,
+  "model_loaded": false,
+  "simulation_rerun": false,
+  "all_replica_B22_negative": true,
+  "verification_script_sha256": "dbe151808b1b1a8f41e1cc70bbdf5a64e6e64b3c2d72b0899f5bffac8f67bebb",
+  "verification": {
+    "n_bootstrap": 20000,
+    "n_null": 20000,
+    "metric_max_absolute_difference_vs_scipy": 3.3306690738754696e-16,
+    "shared_WT_synthetic_check": "passed",
+    "full_comparison_counts": "passed",
+    "five_replica_counts": "passed",
+    "source_inputs_unchanged": true,
+    "panel_resolution": "1440 x 1380 pixels, 600 dpi, 2.4 x 2.3 inches"
+  }
+}

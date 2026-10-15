@@ -1,0 +1,23 @@
+PACKAGE VALIDATION
+python compile checks: PASS
+help check: PASS
+dry-run output:
+Development rows: 917
+Held-out global rows: 1794; patch rows: 1794
+Histidine RDF path: /Users/yuktikhanna/rtads-rgg-interactions/fig5/histidines_rdfs
+Control RDF path: /Users/yuktikhanna/rtads-rgg-interactions/fig5/controls_rdfs
+Histidine RDF files: 390
+Control RDF files: 400
+PACKAGE DRY-RUN CHECK PASSED: inputs and required feature workflow are present. No fitting performed.
+Loaded 917 development rows with 13 frozen features.
+DRY RUN: would fit base ensemble and historical residual network from 917 rows only.
+Prepared heldout features: 1794 rows
+DRY RUN: histidine RDF path=/Users/yuktikhanna/rtads-rgg-interactions/fig5/histidines_rdfs, files=390; control RDF path=/Users/yuktikhanna/rtads-rgg-interactions/fig5/controls_rdfs, files=400
+DRY RUN: would compute histidine/control B22 from packaged RDF PKLs and derive missing frozen features from packaged sequences/manifests.
+DRY RUN: would load one frozen final model and predict validation sets only.
+DRY RUN: would calculate final-model metrics and delta analyses; no competing model tables.
+DRY RUN: would generate final validation PDF/PNG figures.
+dry-run with external RDF paths: PASS
+RDF files bundled: NO
+full expensive workflow executed in Codex: NO
+previous invalid validation outputs used: NO
