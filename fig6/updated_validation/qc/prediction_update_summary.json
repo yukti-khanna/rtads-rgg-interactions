@@ -1,0 +1,50 @@
+{
+  "predictions": 73,
+  "rejected": 0,
+  "experimental_rows": 20,
+  "positive_numerical_Kd": 9,
+  "rdf_files": 73,
+  "matched_experiments": 20,
+  "untested_pairs": 53,
+  "historical_table_rows": {
+    "validated_final_features_data_pred_b22s.csv": 20,
+    "tables/validated_features_data.csv": 16,
+    "tables/validated_pred_with_hybrid_021125.csv": 16,
+    "tables/validated_pred_with_hybrid_021125_sel_cols.csv": 16
+  },
+  "sequence_status_counts": {
+    "length_match_sequence_unverified": 20
+  },
+  "input_hashes": {
+    "preds_val_updated/feature_matrix.csv": "8a598576ffc9745ec9bd47e02fcc32aaa6a073dba5fc6280fcb7505e075640ab",
+    "preds_val_updated/feature_row_ids.csv": "a33ead0ac1ddbea7c4cfb9ccc29bd83d79811bd5d4a15c5337c36daf0f2ab3ba",
+    "preds_val_updated/pipeline_identity_test.csv": "85f2508b049230bd76e90b3337628458ade2603e9d09a780e2cc9bbb2293ead9",
+    "preds_val_updated/pipeline_identity_test.txt": "e52a081c72a647f2d1930409275daa352acb86491b9f5de802e8eb8f089bf4b0",
+    "preds_val_updated/predictions.csv": "6b4b518a5d9d8bdc073e1f258fd40625c085d60e609d090ddbed171c4cfbf422",
+    "preds_val_updated/predictions_minimal.csv": "fde1a4d59ddc419fa949bc784983a850be76d0479fa233d776d1b63461e42081",
+    "preds_val_updated/prepared_pairs.csv": "e7a3a2d6463c8d0c11b7a88f1f233e6282383a2893fd0562ed98381e3f96f5f4",
+    "preds_val_updated/qc_summary.txt": "f5d6e940175dd423c1edb6a98ed1deecdb71d9b743a4c09dd5c511a68cabfb5e",
+    "preds_val_updated/rejected_pairs.csv": "16e442b4bb0ecd1a3d0fdfef23b4d3b04746e15a149807e8964ca1e8a5fb1e96",
+    "preds_val_updated/resolved_pairs.csv": "a499abe91b81efcf83db074f8a24d1f4562760ae6eee9bb8bc49f8870993c685",
+    "preds_val_updated/run_manifest.json": "ac684ef7531c51fa67c5d1ff15eeba30a03d7992e83184dd769b89ab445d82c3",
+    "preds_val_updated/sequence_registry_audit.csv": "c02b7573532a9177424c6a11a596e20541f52e8bf3cd7f50e32d736e3a63ba0f",
+    "Table_S8.csv": "d338b7b87ada3546fe326101a557a65e3c66d1b8473df1f67a66f907ca5c870f",
+    "validated_final_updated.fasta": "74b726b2d3af66370e9a292e9c07257fdfccdfb93f36188ec3d0f911a3eb6868",
+    "validated_final_names_updated.txt": "f750259be719df9b8b244552c96a6d92bdac1398fc74c22b1cfa9582c6dd4e1a"
+  },
+  "current_reference_git": [
+    {
+      "path": "/Users/yuktikhanna/idr-interaction-analysis",
+      "commit": "80b07345c7a50e12e5118a72ec461f4fe5db5eb0",
+      "status": "?? fig4/"
+    },
+    {
+      "path": "/Users/yuktikhanna/idr-interaction-predict",
+      "commit": "af534d380250e6e9e89ec0c9f1c544106f67cb2b",
+      "status": "?? models_old/\n?? sample_rdfs/"
+    }
+  ],
+  "verified_panel_fasta": null,
+  "frozen_prediction_source": "predictions_minimal.csv; no fitting/retransformation",
+  "old_panel_prediction_source": "Table_S8.csv::Pred_log10_negB22_hybrid"
+}

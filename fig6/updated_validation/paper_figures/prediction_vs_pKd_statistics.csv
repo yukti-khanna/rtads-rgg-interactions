@@ -1,0 +1,2 @@
+n,Spearman_rho,Spearman_two_sided_p,Pearson_r,test,permutations,seed,exclusions,uncertainty
+12,0.6643356643356644,0.0213,0.6366291308747738,two-sided Monte Carlo Spearman permutation; plus-one correction,19999,20261001,see panel membership report,reported Kd error propagated without redefining its type

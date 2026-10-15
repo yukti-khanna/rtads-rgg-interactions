@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "experiments": {
+    "path": "fig6_parent_master.csv",
+    "columns": {
+      "pair_id": "pair_id",
+      "Kd": "Kd_uM",
+      "Kd_error": "Kd_uM_err",
+      "Outcome": "Outcome",
+      "Notes": "Notes"
+    },
+    "kd_units": "uM",
+    "kd_error_units": "uM",
+    "uncertainty_type": "reported Kd error; type not specified in Table_S8",
+    "additional_columns": [
+      "I_ratio_threshold",
+      "I_ratio_mean_below_threshold",
+      "I_ratio_threshold_rank_ascending",
+      "I_ratio_mean_below_threshold_rank_ascending",
+      "I_ratio_rank_direction",
+      "intensity_pair_name_raw",
+      "I_ratio_source",
+      "I_ratio_source_location"
+    ],
+    "measurement_id_column": null,
+    "select_measurements": {}
+  },
+  "predictions": {
+    "path": "preds_val_updated/predictions_minimal.csv",
+    "pair_column": "pair_id",
+    "final_column": "final_hybrid_prediction",
+    "base_column": "base_prediction",
+    "correction_column": "applied_correction",
+    "transformation": "none; already log10(-B22)"
+  },
+  "simulations": {
+    "path": "updated_validation/b22/per_pair_b22.csv",
+    "pair_column": "pair_id",
+    "filters": {
+      "method": "legacy_sum",
+      "integration_boundary_nm": 7.5,
+      "correction": "primary_tail_offset"
+    },
+    "b22_column": "corrected_B22_mean",
+    "log_column": "log10_neg_mean_B22",
+    "sd_column": "corrected_B22_SD",
+    "sem_column": "corrected_B22_SEM",
+    "replicas_column": "n_replicas",
+    "transformation": "log10(-corrected replica mean) only when mean is negative; never mean of logs",
+    "eligibility_path": "updated_validation/b22/per_pair_simulation_eligibility.csv",
+    "eligibility_reference_path": "updated_validation/b22/paired_simulation_accuracy_source.csv"
+  },
+  "features": {
+    "path": "preds_val_updated/feature_matrix.csv",
+    "row_ids_path": "preds_val_updated/feature_row_ids.csv",
+    "pair_column": "pair_id",
+    "feature_row_column": "feature_row",
+    "manifest_path": "preds_val_updated/run_manifest.json"
+  },
+  "sequence_registry": "preds_val_updated/resolved_pairs.csv",
+  "prediction_details": "preds_val_updated/predictions.csv",
+  "prepared_pairs": "preds_val_updated/prepared_pairs.csv",
+  "historical_predictions": "prediction_diagnostics/historical_model/same_construct_predictions.csv",
+  "historical_features": "prediction_diagnostics/historical_model/same_construct_historical_features.csv",
+  "archived_panel": "Table_S8.csv",
+  "additional_features": [
+    {
+      "path": "updated_validation/qc/validated_final_features_data_pred_b22s_mapped.csv",
+      "prefix": "Archived_panel_feature_",
+      "matching": "explicit role mapping; original lengths and historical_length_status retained; sequences unverified"
+    },
+    {
+      "path": "updated_validation/qc/validated_features_data_mapped.csv",
+      "prefix": "Archived_earlier_feature_",
+      "matching": "explicit role mapping; may describe different boundaries; never substitute for current features"
+    }
+  ],
+  "aliases_path": "validation_pair_aliases.csv",
+  "outdir": "updated_validation",
+  "diagnostics_dir": "prediction_diagnostics/figures",
+  "statistics": {
+    "seed": 20261001,
+    "permutations": 19999,
+    "bootstrap": 2000,
+    "exact_spearman_max_n": 9,
+    "exact_pairwise_max_partitions": 200000
+  },
+  "plot_limits": {},
+  "references": [
+    {
+      "path": "/Users/yuktikhanna/idr-interaction-analysis",
+      "commit": "80b07345c7a50e12e5118a72ec461f4fe5db5eb0",
+      "uncommitted": "untracked fig4/; no tracked changes"
+    },
+    {
+      "path": "/Users/yuktikhanna/idr-interaction-predict",
+      "commit": "af534d380250e6e9e89ec0c9f1c544106f67cb2b",
+      "uncommitted": "untracked models_old/ and sample_rdfs/; no tracked changes"
+    }
+  ]
+}

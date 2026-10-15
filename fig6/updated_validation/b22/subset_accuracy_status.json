@@ -1,0 +1,7 @@
+{
+  "total_pairs": 73,
+  "adjacent_topology_matches": 20,
+  "legacy_7_5_reproduction_pairs": 20,
+  "eligible_accuracy_pairs": 20,
+  "conclusion": "Accuracy restricted per pair; prediction agreement never blocked by simulation discrepancies. Adjacent topology is contextual sequence evidence; an RDF generation manifest would strengthen linkage."
+}

@@ -1,0 +1,2 @@
+n,Pearson_r,Spearman_rho,mean_delta,median_delta,mean_absolute_change,minimum_delta,maximum_delta,mean_delta_CI95_low,mean_delta_CI95_high,shift_pvalue,shift_test,permutations
+73,0.864004310275805,0.7728619029988893,0.11948426898644174,0.102294266119483,0.21088515973806907,-0.3220206036107873,0.5547955419936823,0.06474760568296871,0.16963274284954705,5e-05,Monte Carlo two-sided paired sign-flip mean test,19999

@@ -1,0 +1,74 @@
+pair_id,has_new_prediction,has_experiment,has_rdf,sequence_match_status,validation_inclusion
+g3bp1_rgg__atf4_tad,True,True,True,length_match_sequence_unverified,include
+g3bp1_rgg__foxm1,True,False,True,,not in experimental validation
+g3bp1_rgg__foxo4_cr3,True,True,True,length_match_sequence_unverified,include
+g3bp1_rgg__foxo6_cr3,True,True,True,length_match_sequence_unverified,include
+g3bp1_rgg__lef1_nter,True,True,True,length_match_sequence_unverified,include
+g3bp1_rgg__sox12,True,False,True,,not in experimental validation
+g3bp1_rgg__tfe3_cter,True,True,True,length_match_sequence_unverified,include
+g3bp1_rgg__tp53,True,False,True,,not in experimental validation
+q8n319__atf4_tad,True,False,True,,not in experimental validation
+q8n319__foxo4_cr3,True,False,True,,not in experimental validation
+q8n319__foxo6_cr3,True,False,True,,not in experimental validation
+q8n319__lef1_nter,True,False,True,,not in experimental validation
+q8n319__tfe3_cter,True,False,True,,not in experimental validation
+rab44__atf4_tad,True,False,True,,not in experimental validation
+rab44__foxo4_cr3,True,False,True,,not in experimental validation
+rab44__foxo6_cr3,True,False,True,,not in experimental validation
+rab44__lef1_nter,True,False,True,,not in experimental validation
+rab44__tfe3_cter,True,False,True,,not in experimental validation
+rbmx__atf4_tad,True,False,True,,not in experimental validation
+rbmx__foxo4_cr3,True,False,True,,not in experimental validation
+rbmx__foxo6_cr3,True,False,True,,not in experimental validation
+rbmx__lef1_nter,True,False,True,,not in experimental validation
+rbmx__tfe3_cter,True,False,True,,not in experimental validation
+snrnp70_s__atf4_tad,True,False,True,,not in experimental validation
+snrnp70_s__foxo4_cr3,True,False,True,,not in experimental validation
+snrnp70_s__foxo6_cr3,True,False,True,,not in experimental validation
+snrnp70_s__lef1_nter,True,False,True,,not in experimental validation
+snrnp70_s__tfe3_cter,True,False,True,,not in experimental validation
+taf15_rgg__atf4_tad,True,True,True,length_match_sequence_unverified,include
+taf15_rgg__atf4_tad_shuffle_1,True,False,True,,not in experimental validation
+taf15_rgg__foxm1,True,False,True,,not in experimental validation
+taf15_rgg__foxo4_cr3,True,True,True,length_match_sequence_unverified,include
+taf15_rgg__foxo6_cr3,True,True,True,length_match_sequence_unverified,include
+taf15_rgg__lef1_nter,True,True,True,length_match_sequence_unverified,include
+taf15_rgg__sox12,True,False,True,,not in experimental validation
+taf15_rgg__tfe3_cter,True,True,True,length_match_sequence_unverified,include
+taf15_rgg__tfe3_cter_shuffle_2,True,False,True,,not in experimental validation
+taf15_rgg__tp53,True,False,True,,not in experimental validation
+tceal6__atf4_tad,True,False,True,,not in experimental validation
+tceal6__foxo4_cr3,True,False,True,,not in experimental validation
+tceal6__foxo6_cr3,True,False,True,,not in experimental validation
+tceal6__lef1_nter,True,False,True,,not in experimental validation
+tceal6__tfe3_cter,True,False,True,,not in experimental validation
+thoc4_cter__atf4_tad,True,True,True,length_match_sequence_unverified,include
+thoc4_cter__atf4_tad_shuffle_1,True,False,True,,not in experimental validation
+thoc4_cter__foxm1,True,False,True,,not in experimental validation
+thoc4_cter__foxm1_shuffle_1,True,False,True,,not in experimental validation
+thoc4_cter__foxo4_cr3,True,True,True,length_match_sequence_unverified,include
+thoc4_cter__foxo4_cr3_shuffle_2,True,False,True,,not in experimental validation
+thoc4_cter__foxo6_cr3,True,True,True,length_match_sequence_unverified,include
+thoc4_cter__foxo6_cr3_shuffle_1,True,False,True,,not in experimental validation
+thoc4_cter__lef1_nter,True,True,True,length_match_sequence_unverified,include
+thoc4_cter__lef1_nter_shuffle_1,True,False,True,,not in experimental validation
+thoc4_cter__sox12,True,False,True,,not in experimental validation
+thoc4_cter__tfe3_cter,True,True,True,length_match_sequence_unverified,include
+thoc4_cter__tfe3_cter_shuffle_2,True,False,True,,not in experimental validation
+thoc4_cter__tp53,True,False,True,,not in experimental validation
+thoc4_cter__tp53_shuffle_1,True,False,True,,not in experimental validation
+thoc4_nter__atf4_tad,True,True,True,length_match_sequence_unverified,include
+thoc4_nter__atf4_tad_shuffle_1,True,False,True,,not in experimental validation
+thoc4_nter__foxm1,True,False,True,,not in experimental validation
+thoc4_nter__foxm1_shuffle_1,True,False,True,,not in experimental validation
+thoc4_nter__foxo4_cr3,True,True,True,length_match_sequence_unverified,include
+thoc4_nter__foxo4_cr3_shuffle_2,True,False,True,,not in experimental validation
+thoc4_nter__foxo6_cr3,True,True,True,length_match_sequence_unverified,include
+thoc4_nter__foxo6_cr3_shuffle_1,True,False,True,,not in experimental validation
+thoc4_nter__lef1_nter,True,True,True,length_match_sequence_unverified,include
+thoc4_nter__lef1_nter_shuffle_1,True,False,True,,not in experimental validation
+thoc4_nter__sox12,True,False,True,,not in experimental validation
+thoc4_nter__tfe3_cter,True,True,True,length_match_sequence_unverified,include
+thoc4_nter__tfe3_cter_shuffle_2,True,False,True,,not in experimental validation
+thoc4_nter__tp53,True,False,True,,not in experimental validation
+thoc4_nter__tp53_shuffle_1,True,False,True,,not in experimental validation

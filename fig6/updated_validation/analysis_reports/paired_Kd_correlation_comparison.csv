@@ -1,0 +1,3 @@
+metric,n,old,new,difference_new_minus_old,CI95_low,CI95_high,resamples,test
+pearson correlation with pKd,9,0.5208018037728926,0.7072808933656157,0.18647908959272308,-0.10772305768351394,0.6810408431611613,2000,paired row bootstrap; identical rows for both models; shared constructs; exploratory
+spearman correlation with pKd,9,0.5499999999999999,0.7833333333333333,0.2333333333333334,-0.22608695652173905,0.8719298245614026,2000,paired row bootstrap; identical rows for both models; shared constructs; exploratory

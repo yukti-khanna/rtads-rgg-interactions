@@ -1,0 +1,3 @@
+method,classification,rule,rationale
+affinity chromatography technology,complex/proximity-compatible,C02_affinity_capture,Affinity capture or purification can recover complexes containing indirect partners.
+pull down,binary/direct-compatible,B02_pull_down,Pull-down family assay; compatible with pairwise binding when used with purified or defined components.

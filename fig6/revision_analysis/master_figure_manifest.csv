@@ -1,0 +1,7 @@
+panel,path,png,n,visual_inspection
+prediction_vs_pKd,revision_analysis/paper_figures/prediction_vs_pKd,revision_analysis/paper_figures/prediction_vs_pKd.png,12,not executed by agent; local run requested
+prediction_vs_outcome,revision_analysis/paper_figures/prediction_vs_outcome,revision_analysis/paper_figures/prediction_vs_outcome.png,55,not executed by agent; local run requested
+simulation_vs_pKd,revision_analysis/paper_figures/simulation_vs_pKd,revision_analysis/paper_figures/simulation_vs_pKd.png,12,not executed by agent; local run requested
+simulation_vs_outcome,revision_analysis/paper_figures/simulation_vs_outcome,revision_analysis/paper_figures/simulation_vs_outcome.png,55,not executed by agent; local run requested
+prediction_vs_simulation,revision_analysis/paper_figures/prediction_vs_simulation,revision_analysis/paper_figures/prediction_vs_simulation.png,20,not executed by agent; local run requested
+intensity_ratio_vs_predicted_and_simulated,revision_analysis/supplementary_figures/intensity_ratio_vs_predicted_and_simulated,revision_analysis/supplementary_figures/intensity_ratio_vs_predicted_and_simulated.png,20,not executed by agent; local run requested

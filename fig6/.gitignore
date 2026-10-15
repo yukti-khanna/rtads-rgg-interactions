@@ -1,0 +1,14 @@
+# Local runtime state and exploratory/archived copies
+.mplconfig/
+figure_previews/
+workflow_history/
+error1.txt
+
+# Superseded workbook exports; the current workbook is Table S11.
+final_figure_package/Supplementary_Table_S10*
+final_figure_package/tables/Table_S10_*
+final_figure_package/*preview.png
+final_figure_package/*.inspect.ndjson
+
+# Large trajectory caches and raw scientific inputs follow the repository-wide
+# ignore policy. They remain local and are not removed by this file.

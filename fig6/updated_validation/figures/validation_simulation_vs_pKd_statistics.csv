@@ -1,0 +1,3 @@
+predictor,metric,estimate,n,spearman_two_sided_p,permutation_method,permutations
+simulation,pearson_r,0.8515589097677938,9,0.0007495590828924162,exact two-sided Spearman permutation (labelled rows),362880
+simulation,spearman_rho,0.9333333333333332,9,0.0007495590828924162,exact two-sided Spearman permutation (labelled rows),362880

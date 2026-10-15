@@ -1,0 +1,1 @@
+Passed: exact permutation toy checks, independent 20-pair values, counts, preserved annotations, frozen old inference/feature reproduction, identical model axes, editable SVGs and 600-dpi exports. Visual inspection is recorded separately.

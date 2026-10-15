@@ -1,0 +1,7 @@
+metric,n,new_minus_old,method,CI95_low,CI95_high,resamples,degenerate_resamples
+R_squared,20,0.3438663275440801,"paired identical-row bootstrap, exploratory shared-construct subset",-0.060347180618986286,0.7967822241850463,10000,0
+RMSE,20,-0.07125896583733937,"paired identical-row bootstrap, exploratory shared-construct subset",-0.1423921219194168,0.010160623970499159,10000,0
+MAE,20,-0.07809242433106067,"paired identical-row bootstrap, exploratory shared-construct subset",-0.1396285545183664,-0.004657852336709447,10000,0
+mean_signed_error,20,0.09918611754679041,"paired identical-row bootstrap, exploratory shared-construct subset",-0.0015561225545104645,0.20122317677209337,10000,0
+Pearson_r,20,0.20210508825288176,"paired identical-row bootstrap, exploratory shared-construct subset",-0.08033579828239575,0.4711102545896919,10000,0
+Spearman_rho,20,0.1187969924812029,"paired identical-row bootstrap, exploratory shared-construct subset",-0.25861603493054863,0.505743597261048,10000,0

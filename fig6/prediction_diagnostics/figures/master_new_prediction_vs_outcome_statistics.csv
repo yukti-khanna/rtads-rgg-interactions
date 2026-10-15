@@ -1,0 +1,6 @@
+comparison,n,statistic,effect,effect_name,p_raw,p_adjusted,test,permutations,adjustment,counts,n_a,n_b,CI95_low,CI95_high
+omnibus,20,7.042970521541946,0.29664532479658506,bias-adjusted epsilon squared,0.0213,0.0213,Monte Carlo permutation Kruskal–Wallis; plus-one correction,19999.0,none; omnibus,"{'Kd fit': 9, 'LB': 4, 'NB': 7}",NA,NA,NA,NA
+Kd fit vs LB,13,NA,1.0,rank-biserial / Cliff delta; first group minus second,0.002797202797202797,0.008391608391608392,exact two-sided permutation Mann–Whitney rank statistic,715.0,Holm over three planned pairwise comparisons,NA,9.0,4.0,1.0,1.0
+Kd fit vs NB,16,NA,0.4603174603174603,rank-biserial / Cliff delta; first group minus second,0.14160839160839161,0.28321678321678323,exact two-sided permutation Mann–Whitney rank statistic,11440.0,Holm over three planned pairwise comparisons,NA,9.0,7.0,-0.14285714285714285,0.9365079365079365
+LB vs NB,11,NA,-0.21428571428571425,rank-biserial / Cliff delta; first group minus second,0.6484848484848484,0.6484848484848484,exact two-sided permutation Mann–Whitney rank statistic,330.0,Holm over three planned pairwise comparisons,NA,4.0,7.0,-0.8571428571428572,0.5
+Kd fit vs NB AUROC,16,0.7301587301587301,0.7301587301587301,NA,NA,NA,descriptive ranking; LB excluded,NA,none,NA,9.0,7.0,0.4444444444444444,0.9682539682539683

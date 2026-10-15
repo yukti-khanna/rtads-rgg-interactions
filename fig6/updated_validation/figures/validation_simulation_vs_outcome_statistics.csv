@@ -1,0 +1,6 @@
+predictor,comparison,n,statistic,effect,effect_name,p_raw,p_adjusted,test,permutations,adjustment,estimate,n_positive,n_negative,exclusions,CI95_low,CI95_high,resamples,degenerate_resamples
+simulation,Kd-fit / LB / NB omnibus,20,8.566780045351479,0.3862811791383223,bias-adjusted epsilon squared,0.00655,0.00655,permutation Kruskal-Wallis,19999.0,none; omnibus,,,,,,,,
+simulation,Kd_fit vs LB,13,0.8333333333333333,0.8333333333333333,rank-biserial,0.0195804195804195,0.0391608391608391,exact two-sided permutation Mann-Whitney,715.0,Holm across three comparisons,,,,,,,,
+simulation,Kd_fit vs NB,16,0.746031746031746,0.746031746031746,rank-biserial,0.0115384615384615,0.0346153846153846,exact two-sided permutation Mann-Whitney,11440.0,Holm across three comparisons,,,,,,,,
+simulation,LB vs NB,11,0.1428571428571428,0.1428571428571428,rank-biserial,0.7878787878787878,0.7878787878787878,exact two-sided permutation Mann-Whitney,330.0,Holm across three comparisons,,,,,,,,
+simulation,,16,,,,,,,,,0.873015873015873,9.0,7.0,LB excluded from binary diagnostic,0.6666666666666666,1.0,10000.0,0.0

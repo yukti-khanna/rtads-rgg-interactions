@@ -1,0 +1,74 @@
+pair_id,pair_display_name,panel,included,exclusion_reason
+g3bp1_rgg__atf4_tad,ATF4–G3BP1,prediction_vs_outcome,True,
+g3bp1_rgg__foxm1,FOXM1–G3BP1,prediction_vs_outcome,True,
+g3bp1_rgg__foxo4_cr3,FOXO4–G3BP1,prediction_vs_outcome,True,
+g3bp1_rgg__foxo6_cr3,FOXO6–G3BP1,prediction_vs_outcome,True,
+g3bp1_rgg__lef1_nter,LEF1–G3BP1,prediction_vs_outcome,True,
+g3bp1_rgg__sox12,SOX12–G3BP1,prediction_vs_outcome,True,
+g3bp1_rgg__tfe3_cter,TFE3–G3BP1,prediction_vs_outcome,True,
+g3bp1_rgg__tp53,p53–G3BP1,prediction_vs_outcome,True,
+q8n319__atf4_tad,ATF4–Q8N319,prediction_vs_outcome,False,no eligible annotated outcome
+q8n319__foxo4_cr3,FOXO4–Q8N319,prediction_vs_outcome,False,no eligible annotated outcome
+q8n319__foxo6_cr3,FOXO6–Q8N319,prediction_vs_outcome,False,no eligible annotated outcome
+q8n319__lef1_nter,LEF1–Q8N319,prediction_vs_outcome,False,no eligible annotated outcome
+q8n319__tfe3_cter,TFE3–Q8N319,prediction_vs_outcome,False,no eligible annotated outcome
+rab44__atf4_tad,ATF4–RAB44,prediction_vs_outcome,True,
+rab44__foxo4_cr3,FOXO4–RAB44,prediction_vs_outcome,True,
+rab44__foxo6_cr3,FOXO6–RAB44,prediction_vs_outcome,True,
+rab44__lef1_nter,LEF1–RAB44,prediction_vs_outcome,True,
+rab44__tfe3_cter,TFE3–RAB44,prediction_vs_outcome,True,
+rbmx__atf4_tad,ATF4–RBMX,prediction_vs_outcome,True,
+rbmx__foxo4_cr3,FOXO4–RBMX,prediction_vs_outcome,True,
+rbmx__foxo6_cr3,FOXO6–RBMX,prediction_vs_outcome,True,
+rbmx__lef1_nter,LEF1–RBMX,prediction_vs_outcome,True,
+rbmx__tfe3_cter,TFE3–RBMX,prediction_vs_outcome,True,
+snrnp70_s__atf4_tad,ATF4–SNRNP70 short,prediction_vs_outcome,True,
+snrnp70_s__foxo4_cr3,FOXO4–SNRNP70 short,prediction_vs_outcome,True,
+snrnp70_s__foxo6_cr3,FOXO6–SNRNP70 short,prediction_vs_outcome,True,
+snrnp70_s__lef1_nter,LEF1–SNRNP70 short,prediction_vs_outcome,True,
+snrnp70_s__tfe3_cter,TFE3–SNRNP70 short,prediction_vs_outcome,True,
+taf15_rgg__atf4_tad,ATF4–TAF15,prediction_vs_outcome,True,
+taf15_rgg__atf4_tad_shuffle_1,ATF4 shuffle 1–TAF15,prediction_vs_outcome,True,
+taf15_rgg__foxm1,FOXM1–TAF15,prediction_vs_outcome,False,no eligible annotated outcome
+taf15_rgg__foxo4_cr3,FOXO4–TAF15,prediction_vs_outcome,True,
+taf15_rgg__foxo6_cr3,FOXO6–TAF15,prediction_vs_outcome,True,
+taf15_rgg__lef1_nter,LEF1–TAF15,prediction_vs_outcome,True,
+taf15_rgg__sox12,SOX12–TAF15,prediction_vs_outcome,True,
+taf15_rgg__tfe3_cter,TFE3–TAF15,prediction_vs_outcome,True,
+taf15_rgg__tfe3_cter_shuffle_2,TFE3 shuffle 2–TAF15,prediction_vs_outcome,True,
+taf15_rgg__tp53,p53–TAF15,prediction_vs_outcome,False,no eligible annotated outcome
+tceal6__atf4_tad,ATF4–TCEAL6,prediction_vs_outcome,True,
+tceal6__foxo4_cr3,FOXO4–TCEAL6,prediction_vs_outcome,True,
+tceal6__foxo6_cr3,FOXO6–TCEAL6,prediction_vs_outcome,True,
+tceal6__lef1_nter,LEF1–TCEAL6,prediction_vs_outcome,True,
+tceal6__tfe3_cter,TFE3–TCEAL6,prediction_vs_outcome,True,
+thoc4_cter__atf4_tad,ATF4–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 C-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_cter__foxm1,FOXM1–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 C-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_cter__foxo4_cr3,FOXO4–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 C-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_cter__foxo6_cr3,FOXO6–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__lef1_nter,LEF1–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 C-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_cter__sox12,SOX12–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__tfe3_cter,TFE3–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 C-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_cter__tp53,p53–THOC4 C-term,prediction_vs_outcome,True,
+thoc4_cter__tp53_shuffle_1,p53 shuffle 1–THOC4 C-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_nter__atf4_tad,ATF4–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__foxm1,FOXM1–THOC4 N-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_nter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__foxo4_cr3,FOXO4–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 N-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_nter__foxo6_cr3,FOXO6–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 N-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_nter__lef1_nter,LEF1–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__sox12,SOX12–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__tfe3_cter,TFE3–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 N-term,prediction_vs_outcome,True,
+thoc4_nter__tp53,p53–THOC4 N-term,prediction_vs_outcome,False,no eligible annotated outcome
+thoc4_nter__tp53_shuffle_1,p53 shuffle 1–THOC4 N-term,prediction_vs_outcome,False,no eligible annotated outcome

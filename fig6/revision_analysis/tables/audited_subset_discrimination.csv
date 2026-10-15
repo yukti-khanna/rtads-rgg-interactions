@@ -1,0 +1,7 @@
+comparison,series,n,AUROC,scope
+Kd_vs_NB,Predicted,16,0.7301587301587301,existing audited simulation subset
+Kd_vs_NB,Simulated,16,0.873015873015873,existing audited simulation subset
+Kd_LB_vs_NB,Predicted,20,0.6263736263736264,existing audited simulation subset
+Kd_LB_vs_NB,Simulated,20,0.7802197802197802,existing audited simulation subset
+LB_vs_NB,Predicted,11,0.39285714285714285,existing audited simulation subset
+LB_vs_NB,Simulated,11,0.5714285714285714,existing audited simulation subset

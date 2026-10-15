@@ -1,0 +1,4 @@
+predictor,estimate,metric,n,n_positive,n_negative,exclusions,test,adjustment,CI95_low,CI95_high,resamples,degenerate_resamples
+old,0.7619047619047619,Kd-fit versus NB AUROC,16,9,7,LB and No Kd excluded; no ordinal placement of LB,descriptive AUROC; shared constructs,none,0.47619047619047616,1.0,10000,0
+new,0.7301587301587301,Kd-fit versus NB AUROC,16,9,7,LB and No Kd excluded; no ordinal placement of LB,descriptive AUROC; shared constructs,none,0.42857142857142855,0.9682539682539683,10000,0
+new_minus_old,-0.031746031746031744,paired AUROC difference,16,9,7,LB and No Kd excluded,same within-outcome rows resampled for both predictors,none,-0.34920634920634924,0.2857142857142857,10000,0

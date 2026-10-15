@@ -1,0 +1,4 @@
+field,definition,allowed_values,entry_rule
+highest_ligand_equivalents,Highest ligand-to-labelled-protein molar equivalent measured for the pair.,positive number or blank,Enter the actual maximum for each pair; maxima may differ between pairs.
+fraction_bound_highest_ligand,Manually determined fraction of labelled protein bound at the highest ligand equivalent.,0 to 1 or blank,Enter only when supported by the experimental analysis; the build does not infer it from equivalents.
+percent_bound_highest_ligand,The same bound fraction expressed as a percentage.,0 to 100 or blank,"When both forms are supplied, this must equal 100 × fraction_bound_highest_ligand."

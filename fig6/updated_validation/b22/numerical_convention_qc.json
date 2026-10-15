@@ -1,0 +1,20 @@
+{
+  "overlapping_pairs": 20,
+  "historical_pairs": 20,
+  "all_historical_values_reproduced": false,
+  "rtol": 1e-06,
+  "atol": 0.0001,
+  "frozen_target_scale": "legacy radial sum, corr1, not physical nm^3",
+  "simulation_prediction_comparison_allowed": false,
+  "rdf_files": 73,
+  "failed_files": 0,
+  "reference_helper_verified": true,
+  "reference_helper": "/Users/yuktikhanna/idr-interaction-analysis/scripts/rdf_b22_functions.py",
+  "reference_helper_sha256": "183eed2baee4b502c3ed8442848dc53063c55c9e5037fc6eefb494eeda32d72a",
+  "legacy_cutoff_nm": 7.5,
+  "tail_width_nm": 2,
+  "physical_calculation": "Trapezoidal integration over radial coordinates; full 2 nm endpoint-interpolated tail; cutoff 7.5 or L/2",
+  "primary_log_transform": "log10(-mean corrected B22); not mean replica logs",
+  "legacy_tail_bias": "Masked centre samples can span 1.9 nm while divisor stays 2 nm. Preserved only in legacy outputs.",
+  "target_manifest_provenance": "Supplied run manifest is authoritative; full new training RDF provenance was not supplied."
+}

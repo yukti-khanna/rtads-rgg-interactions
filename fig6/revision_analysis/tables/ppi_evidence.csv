@@ -1,0 +1,53 @@
+pair_id,AHD_uniprot,RGG_uniprot,ppi_present,source_records,status,methods,evidence_scope
+g3bp1_rgg__atf4_tad,P18848,Q13283,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+g3bp1_rgg__foxm1,Q08050,Q13283,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+g3bp1_rgg__foxo4_cr3,P98177,Q13283,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+g3bp1_rgg__foxo6_cr3,A8MYZ6,Q13283,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+g3bp1_rgg__lef1_nter,Q9UJU2,Q13283,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+g3bp1_rgg__sox12,O15370,Q13283,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+g3bp1_rgg__tfe3_cter,P19532,Q13283,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+g3bp1_rgg__tp53,P04637,Q13283,True,1,protein-level association in this dataset,affinity chromatography technology;pull down,full protein; no fragment or shuffle attribution
+rab44__atf4_tad,P18848,Q7Z6P3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rab44__foxo4_cr3,P98177,Q7Z6P3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rab44__foxo6_cr3,A8MYZ6,Q7Z6P3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rab44__lef1_nter,Q9UJU2,Q7Z6P3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rab44__tfe3_cter,P19532,Q7Z6P3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rbmx__atf4_tad,P18848,P38159,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rbmx__foxo4_cr3,P98177,P38159,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rbmx__foxo6_cr3,A8MYZ6,P38159,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rbmx__lef1_nter,Q9UJU2,P38159,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+rbmx__tfe3_cter,P19532,P38159,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+snrnp70_s__atf4_tad,P18848,P08621,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+snrnp70_s__foxo4_cr3,P98177,P08621,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+snrnp70_s__foxo6_cr3,A8MYZ6,P08621,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+snrnp70_s__lef1_nter,Q9UJU2,P08621,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+snrnp70_s__tfe3_cter,P19532,P08621,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+taf15_rgg__atf4_tad,P18848,Q92804,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+taf15_rgg__foxm1,Q08050,Q92804,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+taf15_rgg__foxo4_cr3,P98177,Q92804,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+taf15_rgg__foxo6_cr3,A8MYZ6,Q92804,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+taf15_rgg__lef1_nter,Q9UJU2,Q92804,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+taf15_rgg__sox12,O15370,Q92804,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+taf15_rgg__tfe3_cter,P19532,Q92804,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+taf15_rgg__tp53,P04637,Q92804,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+tceal6__atf4_tad,P18848,Q6IPX3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+tceal6__foxo4_cr3,P98177,Q6IPX3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+tceal6__foxo6_cr3,A8MYZ6,Q6IPX3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+tceal6__lef1_nter,Q9UJU2,Q6IPX3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+tceal6__tfe3_cter,P19532,Q6IPX3,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_cter__atf4_tad,P18848,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_cter__foxm1,Q08050,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_cter__foxo4_cr3,P98177,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_cter__foxo6_cr3,A8MYZ6,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_cter__lef1_nter,Q9UJU2,Q86V81,True,1,protein-level association in this dataset,pull down,full protein; no fragment or shuffle attribution
+thoc4_cter__sox12,O15370,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_cter__tfe3_cter,P19532,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_cter__tp53,P04637,Q86V81,True,1,protein-level association in this dataset,affinity chromatography technology,full protein; no fragment or shuffle attribution
+thoc4_nter__atf4_tad,P18848,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_nter__foxm1,Q08050,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_nter__foxo4_cr3,P98177,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_nter__foxo6_cr3,A8MYZ6,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_nter__lef1_nter,Q9UJU2,Q86V81,True,1,protein-level association in this dataset,pull down,full protein; no fragment or shuffle attribution
+thoc4_nter__sox12,O15370,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_nter__tfe3_cter,P19532,Q86V81,False,0,not found in this dataset,,full protein; no fragment or shuffle attribution
+thoc4_nter__tp53,P04637,Q86V81,True,1,protein-level association in this dataset,affinity chromatography technology,full protein; no fragment or shuffle attribution

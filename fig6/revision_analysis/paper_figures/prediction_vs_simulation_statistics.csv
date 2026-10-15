@@ -1,0 +1,2 @@
+n,R_squared,RMSE,MAE,bias,Pearson_r,Spearman_rho,test,exclusions,bias_definition
+20,0.6648861577079861,0.1682947264431503,0.13978784189374216,0.024997304746881353,0.823843594571045,0.7503759398496239,accuracy against simulated values; eligible rows only,see membership,prediction minus simulation

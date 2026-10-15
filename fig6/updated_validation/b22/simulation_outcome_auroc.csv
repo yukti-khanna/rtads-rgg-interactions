@@ -1,0 +1,2 @@
+predictor,estimate,n,n_positive,n_negative,exclusions,CI95_low,CI95_high,resamples,degenerate_resamples
+simulation,0.873015873015873,16,9,7,LB excluded from binary diagnostic,0.6666666666666666,1.0,10000,0

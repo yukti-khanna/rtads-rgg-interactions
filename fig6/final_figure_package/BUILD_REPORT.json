@@ -1,0 +1,7 @@
+{
+  "master_csv": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/fig6_parent_master.csv",
+  "master_sha256": "47fa9978cd50971290def0deee94beae51bdfcbaa5171fed4d83a47cd4978e6e",
+  "with_trajectories": false,
+  "python": "/Users/yuktikhanna/miniconda3/envs/calvados/bin/python",
+  "manifest": "PACKAGE_MANIFEST.csv"
+}

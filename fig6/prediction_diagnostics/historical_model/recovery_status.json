@@ -1,0 +1,16 @@
+{
+  "total_new_pairs": 73,
+  "recovered_same_construct_old_pairs": 73,
+  "archived_old_panel_overlap": 20,
+  "status": "verified old pipeline and feature reproduction",
+  "required": "Frozen old-panel final predictor and exact preprocessing reproducing both old base and final predictions",
+  "model_artifact": "/Users/yuktikhanna/idr-interaction-predict/models/pretrained/mlp_plateau_calibrated_bundle_sel_cols.pkl",
+  "model_sha256": "cebe46dfe93aaf5564a84bcfde1ca576595b0b3b3f1371b178382d89993853fc",
+  "source_hashes": {
+    "/Users/yuktikhanna/calvados/fig6/get_features_all.py": "3b8e4db8480a07a02ffc329b721fd0b3f8364edae91328f5c255227fd115ca14",
+    "/Users/yuktikhanna/calvados/fig6/energy_funcs.py": "c12cb104aa26a69e668114e9f1254dfefc41f9bf84d9baabe2514e4f56517e88",
+    "/Users/yuktikhanna/calvados/fig6/residues.csv": "fb8851e7889ad5efc9f2f54da574617775a70297e9e92645deaf26d8747c8f73"
+  },
+  "recovered_application_convention": "archived_ungated_correction",
+  "convention_evidence": "Exact archived base and final values reproduced on all 20 rows; no model weights, lambda or cap fitted. Public soft-gate application differs from archived panel convention."
+}

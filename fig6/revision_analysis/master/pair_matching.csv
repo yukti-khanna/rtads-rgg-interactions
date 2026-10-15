@@ -1,0 +1,703 @@
+source,source_pair_id,pair_id,rule
+sequence registry,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+sequence registry,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+sequence registry,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+sequence registry,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+sequence registry,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+sequence registry,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+sequence registry,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+sequence registry,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+sequence registry,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+sequence registry,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+sequence registry,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+sequence registry,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+sequence registry,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+sequence registry,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+sequence registry,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+sequence registry,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+sequence registry,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+sequence registry,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+sequence registry,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+sequence registry,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+sequence registry,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+sequence registry,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+sequence registry,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+sequence registry,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+sequence registry,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+sequence registry,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+sequence registry,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+sequence registry,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+sequence registry,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+sequence registry,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+sequence registry,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+sequence registry,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+sequence registry,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+sequence registry,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+sequence registry,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+sequence registry,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+sequence registry,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+sequence registry,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+sequence registry,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+sequence registry,q8n319__atf4_tad,q8n319__atf4_tad,exact pair ID
+sequence registry,q8n319__foxo4_cr3,q8n319__foxo4_cr3,exact pair ID
+sequence registry,q8n319__foxo6_cr3,q8n319__foxo6_cr3,exact pair ID
+sequence registry,q8n319__lef1_nter,q8n319__lef1_nter,exact pair ID
+sequence registry,q8n319__tfe3_cter,q8n319__tfe3_cter,exact pair ID
+sequence registry,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+sequence registry,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+sequence registry,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+sequence registry,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+sequence registry,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+sequence registry,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+sequence registry,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+sequence registry,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+sequence registry,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+sequence registry,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+sequence registry,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+sequence registry,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+sequence registry,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+sequence registry,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+sequence registry,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+sequence registry,thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3_shuffle_2,exact pair ID
+sequence registry,thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad_shuffle_1,exact pair ID
+sequence registry,thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter_shuffle_2,exact pair ID
+sequence registry,thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53_shuffle_1,exact pair ID
+sequence registry,thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1_shuffle_1,exact pair ID
+sequence registry,thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter_shuffle_1,exact pair ID
+sequence registry,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+sequence registry,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+sequence registry,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+sequence registry,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+sequence registry,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+sequence registry,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+sequence registry,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+sequence registry,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+experiments,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+experiments,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+experiments,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+experiments,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+experiments,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+experiments,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+experiments,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+experiments,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+experiments,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+experiments,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+experiments,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+experiments,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+experiments,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+experiments,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+experiments,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+experiments,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+experiments,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+experiments,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+experiments,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+experiments,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+experiments,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+experiments,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+experiments,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+experiments,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+experiments,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+experiments,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+experiments,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+experiments,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+experiments,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+experiments,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+experiments,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+experiments,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+experiments,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+experiments,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+experiments,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+experiments,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+experiments,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+experiments,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+experiments,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+experiments,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+experiments,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+experiments,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+experiments,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+experiments,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+experiments,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+experiments,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+experiments,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+experiments,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+experiments,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+experiments,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+experiments,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+experiments,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+experiments,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+experiments,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+experiments,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+experiments,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+experiments,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+experiments,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+experiments,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+experiments,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+experiments,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+experiments,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+predictions,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+predictions,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+predictions,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+predictions,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+predictions,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+predictions,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+predictions,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+predictions,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+predictions,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+predictions,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+predictions,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+predictions,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+predictions,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+predictions,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+predictions,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+predictions,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+predictions,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+predictions,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+predictions,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+predictions,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+predictions,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+predictions,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+predictions,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+predictions,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+predictions,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+predictions,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+predictions,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+predictions,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+predictions,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+predictions,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+predictions,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+predictions,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+predictions,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+predictions,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+predictions,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+predictions,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+predictions,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+predictions,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+predictions,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+predictions,q8n319__atf4_tad,q8n319__atf4_tad,exact pair ID
+predictions,q8n319__foxo4_cr3,q8n319__foxo4_cr3,exact pair ID
+predictions,q8n319__foxo6_cr3,q8n319__foxo6_cr3,exact pair ID
+predictions,q8n319__lef1_nter,q8n319__lef1_nter,exact pair ID
+predictions,q8n319__tfe3_cter,q8n319__tfe3_cter,exact pair ID
+predictions,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+predictions,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+predictions,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+predictions,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+predictions,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+predictions,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+predictions,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+predictions,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+predictions,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+predictions,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+predictions,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+predictions,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+predictions,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+predictions,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+predictions,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+predictions,thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3_shuffle_2,exact pair ID
+predictions,thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad_shuffle_1,exact pair ID
+predictions,thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter_shuffle_2,exact pair ID
+predictions,thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53_shuffle_1,exact pair ID
+predictions,thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1_shuffle_1,exact pair ID
+predictions,thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter_shuffle_1,exact pair ID
+predictions,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+predictions,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+predictions,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+predictions,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+predictions,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+predictions,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+predictions,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+predictions,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+simulations,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+simulations,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+simulations,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+simulations,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+simulations,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+simulations,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+simulations,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+simulations,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+simulations,q8n319__atf4_tad,q8n319__atf4_tad,exact pair ID
+simulations,q8n319__foxo4_cr3,q8n319__foxo4_cr3,exact pair ID
+simulations,q8n319__foxo6_cr3,q8n319__foxo6_cr3,exact pair ID
+simulations,q8n319__lef1_nter,q8n319__lef1_nter,exact pair ID
+simulations,q8n319__tfe3_cter,q8n319__tfe3_cter,exact pair ID
+simulations,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+simulations,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+simulations,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+simulations,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+simulations,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+simulations,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+simulations,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+simulations,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+simulations,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+simulations,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+simulations,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+simulations,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+simulations,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+simulations,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+simulations,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+simulations,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+simulations,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+simulations,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+simulations,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+simulations,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+simulations,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+simulations,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+simulations,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+simulations,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+simulations,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+simulations,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+simulations,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+simulations,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+simulations,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+simulations,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+simulations,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+simulations,thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad_shuffle_1,exact pair ID
+simulations,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+simulations,thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1_shuffle_1,exact pair ID
+simulations,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+simulations,thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3_shuffle_2,exact pair ID
+simulations,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+simulations,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+simulations,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+simulations,thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter_shuffle_1,exact pair ID
+simulations,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+simulations,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+simulations,thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter_shuffle_2,exact pair ID
+simulations,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+simulations,thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53_shuffle_1,exact pair ID
+simulations,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+simulations,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+simulations,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+simulations,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+simulations,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+simulations,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+simulations,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+simulations,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+simulations,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+simulations,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+simulations,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+simulations,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+simulations,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+simulations,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+simulations,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+feature row identifiers,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+feature row identifiers,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+feature row identifiers,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+feature row identifiers,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+feature row identifiers,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+feature row identifiers,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+feature row identifiers,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+feature row identifiers,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+feature row identifiers,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+feature row identifiers,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+feature row identifiers,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+feature row identifiers,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+feature row identifiers,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+feature row identifiers,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+feature row identifiers,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+feature row identifiers,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+feature row identifiers,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+feature row identifiers,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+feature row identifiers,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+feature row identifiers,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+feature row identifiers,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+feature row identifiers,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+feature row identifiers,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+feature row identifiers,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+feature row identifiers,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+feature row identifiers,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+feature row identifiers,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+feature row identifiers,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+feature row identifiers,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+feature row identifiers,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+feature row identifiers,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+feature row identifiers,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+feature row identifiers,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+feature row identifiers,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+feature row identifiers,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+feature row identifiers,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+feature row identifiers,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+feature row identifiers,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+feature row identifiers,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+feature row identifiers,q8n319__atf4_tad,q8n319__atf4_tad,exact pair ID
+feature row identifiers,q8n319__foxo4_cr3,q8n319__foxo4_cr3,exact pair ID
+feature row identifiers,q8n319__foxo6_cr3,q8n319__foxo6_cr3,exact pair ID
+feature row identifiers,q8n319__lef1_nter,q8n319__lef1_nter,exact pair ID
+feature row identifiers,q8n319__tfe3_cter,q8n319__tfe3_cter,exact pair ID
+feature row identifiers,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+feature row identifiers,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+feature row identifiers,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+feature row identifiers,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+feature row identifiers,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+feature row identifiers,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+feature row identifiers,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+feature row identifiers,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+feature row identifiers,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+feature row identifiers,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+feature row identifiers,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+feature row identifiers,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+feature row identifiers,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+feature row identifiers,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+feature row identifiers,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+feature row identifiers,thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3_shuffle_2,exact pair ID
+feature row identifiers,thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad_shuffle_1,exact pair ID
+feature row identifiers,thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter_shuffle_2,exact pair ID
+feature row identifiers,thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53_shuffle_1,exact pair ID
+feature row identifiers,thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1_shuffle_1,exact pair ID
+feature row identifiers,thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter_shuffle_1,exact pair ID
+feature row identifiers,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+feature row identifiers,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+feature row identifiers,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+feature row identifiers,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+feature row identifiers,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+feature row identifiers,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+feature row identifiers,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+feature row identifiers,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+prediction_details,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+prediction_details,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+prediction_details,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+prediction_details,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+prediction_details,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+prediction_details,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+prediction_details,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+prediction_details,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+prediction_details,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+prediction_details,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+prediction_details,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+prediction_details,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+prediction_details,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+prediction_details,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+prediction_details,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+prediction_details,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+prediction_details,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+prediction_details,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+prediction_details,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+prediction_details,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+prediction_details,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+prediction_details,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+prediction_details,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+prediction_details,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+prediction_details,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+prediction_details,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+prediction_details,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+prediction_details,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+prediction_details,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+prediction_details,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+prediction_details,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+prediction_details,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+prediction_details,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+prediction_details,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+prediction_details,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+prediction_details,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+prediction_details,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+prediction_details,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+prediction_details,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+prediction_details,q8n319__atf4_tad,q8n319__atf4_tad,exact pair ID
+prediction_details,q8n319__foxo4_cr3,q8n319__foxo4_cr3,exact pair ID
+prediction_details,q8n319__foxo6_cr3,q8n319__foxo6_cr3,exact pair ID
+prediction_details,q8n319__lef1_nter,q8n319__lef1_nter,exact pair ID
+prediction_details,q8n319__tfe3_cter,q8n319__tfe3_cter,exact pair ID
+prediction_details,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+prediction_details,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+prediction_details,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+prediction_details,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+prediction_details,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+prediction_details,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+prediction_details,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+prediction_details,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+prediction_details,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+prediction_details,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+prediction_details,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+prediction_details,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+prediction_details,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+prediction_details,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+prediction_details,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+prediction_details,thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3_shuffle_2,exact pair ID
+prediction_details,thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad_shuffle_1,exact pair ID
+prediction_details,thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter_shuffle_2,exact pair ID
+prediction_details,thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53_shuffle_1,exact pair ID
+prediction_details,thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1_shuffle_1,exact pair ID
+prediction_details,thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter_shuffle_1,exact pair ID
+prediction_details,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+prediction_details,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+prediction_details,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+prediction_details,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+prediction_details,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+prediction_details,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+prediction_details,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+prediction_details,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+prepared_pairs,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+prepared_pairs,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+prepared_pairs,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+prepared_pairs,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+prepared_pairs,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+prepared_pairs,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+prepared_pairs,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+prepared_pairs,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+prepared_pairs,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+prepared_pairs,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+prepared_pairs,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+prepared_pairs,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+prepared_pairs,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+prepared_pairs,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+prepared_pairs,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+prepared_pairs,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+prepared_pairs,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+prepared_pairs,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+prepared_pairs,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+prepared_pairs,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+prepared_pairs,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+prepared_pairs,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+prepared_pairs,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+prepared_pairs,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+prepared_pairs,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+prepared_pairs,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+prepared_pairs,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+prepared_pairs,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+prepared_pairs,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+prepared_pairs,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+prepared_pairs,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+prepared_pairs,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+prepared_pairs,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+prepared_pairs,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+prepared_pairs,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+prepared_pairs,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+prepared_pairs,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+prepared_pairs,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+prepared_pairs,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+prepared_pairs,q8n319__atf4_tad,q8n319__atf4_tad,exact pair ID
+prepared_pairs,q8n319__foxo4_cr3,q8n319__foxo4_cr3,exact pair ID
+prepared_pairs,q8n319__foxo6_cr3,q8n319__foxo6_cr3,exact pair ID
+prepared_pairs,q8n319__lef1_nter,q8n319__lef1_nter,exact pair ID
+prepared_pairs,q8n319__tfe3_cter,q8n319__tfe3_cter,exact pair ID
+prepared_pairs,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+prepared_pairs,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+prepared_pairs,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+prepared_pairs,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+prepared_pairs,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+prepared_pairs,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+prepared_pairs,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+prepared_pairs,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+prepared_pairs,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+prepared_pairs,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+prepared_pairs,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+prepared_pairs,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+prepared_pairs,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+prepared_pairs,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+prepared_pairs,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+prepared_pairs,thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3_shuffle_2,exact pair ID
+prepared_pairs,thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad_shuffle_1,exact pair ID
+prepared_pairs,thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter_shuffle_2,exact pair ID
+prepared_pairs,thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53_shuffle_1,exact pair ID
+prepared_pairs,thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1_shuffle_1,exact pair ID
+prepared_pairs,thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter_shuffle_1,exact pair ID
+prepared_pairs,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+prepared_pairs,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+prepared_pairs,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+prepared_pairs,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+prepared_pairs,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+prepared_pairs,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+prepared_pairs,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+prepared_pairs,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+recovered historical predictions,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+recovered historical predictions,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+recovered historical predictions,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+recovered historical predictions,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+recovered historical predictions,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+recovered historical predictions,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+recovered historical predictions,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+recovered historical predictions,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+recovered historical predictions,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+recovered historical predictions,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+recovered historical predictions,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+recovered historical predictions,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+recovered historical predictions,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+recovered historical predictions,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+recovered historical predictions,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+recovered historical predictions,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+recovered historical predictions,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+recovered historical predictions,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+recovered historical predictions,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+recovered historical predictions,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+recovered historical predictions,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+recovered historical predictions,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+recovered historical predictions,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+recovered historical predictions,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+recovered historical predictions,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+recovered historical predictions,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+recovered historical predictions,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+recovered historical predictions,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+recovered historical predictions,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+recovered historical predictions,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+recovered historical predictions,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+recovered historical predictions,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+recovered historical predictions,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+recovered historical predictions,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+recovered historical predictions,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+recovered historical predictions,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+recovered historical predictions,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+recovered historical predictions,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+recovered historical predictions,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+recovered historical predictions,q8n319__atf4_tad,q8n319__atf4_tad,exact pair ID
+recovered historical predictions,q8n319__foxo4_cr3,q8n319__foxo4_cr3,exact pair ID
+recovered historical predictions,q8n319__foxo6_cr3,q8n319__foxo6_cr3,exact pair ID
+recovered historical predictions,q8n319__lef1_nter,q8n319__lef1_nter,exact pair ID
+recovered historical predictions,q8n319__tfe3_cter,q8n319__tfe3_cter,exact pair ID
+recovered historical predictions,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+recovered historical predictions,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+recovered historical predictions,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+recovered historical predictions,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+recovered historical predictions,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+recovered historical predictions,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+recovered historical predictions,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+recovered historical predictions,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+recovered historical predictions,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+recovered historical predictions,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+recovered historical predictions,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+recovered historical predictions,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+recovered historical predictions,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+recovered historical predictions,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+recovered historical predictions,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+recovered historical predictions,thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3_shuffle_2,exact pair ID
+recovered historical predictions,thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad_shuffle_1,exact pair ID
+recovered historical predictions,thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter_shuffle_2,exact pair ID
+recovered historical predictions,thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53_shuffle_1,exact pair ID
+recovered historical predictions,thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1_shuffle_1,exact pair ID
+recovered historical predictions,thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter_shuffle_1,exact pair ID
+recovered historical predictions,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+recovered historical predictions,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+recovered historical predictions,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+recovered historical predictions,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+recovered historical predictions,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+recovered historical predictions,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+recovered historical predictions,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+recovered historical predictions,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+historical features,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+historical features,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+historical features,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+historical features,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+historical features,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+historical features,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+historical features,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+historical features,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+historical features,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+historical features,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+historical features,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+historical features,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+historical features,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+historical features,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+historical features,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+historical features,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+historical features,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+historical features,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+historical features,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+historical features,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+historical features,taf15_rgg__sox12,taf15_rgg__sox12,exact pair ID
+historical features,thoc4_nter__sox12,thoc4_nter__sox12,exact pair ID
+historical features,thoc4_cter__sox12,thoc4_cter__sox12,exact pair ID
+historical features,g3bp1_rgg__sox12,g3bp1_rgg__sox12,exact pair ID
+historical features,rab44__atf4_tad,rab44__atf4_tad,exact pair ID
+historical features,rab44__foxo4_cr3,rab44__foxo4_cr3,exact pair ID
+historical features,rab44__foxo6_cr3,rab44__foxo6_cr3,exact pair ID
+historical features,rab44__lef1_nter,rab44__lef1_nter,exact pair ID
+historical features,rab44__tfe3_cter,rab44__tfe3_cter,exact pair ID
+historical features,tceal6__atf4_tad,tceal6__atf4_tad,exact pair ID
+historical features,tceal6__foxo4_cr3,tceal6__foxo4_cr3,exact pair ID
+historical features,tceal6__foxo6_cr3,tceal6__foxo6_cr3,exact pair ID
+historical features,tceal6__lef1_nter,tceal6__lef1_nter,exact pair ID
+historical features,tceal6__tfe3_cter,tceal6__tfe3_cter,exact pair ID
+historical features,snrnp70_s__atf4_tad,snrnp70_s__atf4_tad,exact pair ID
+historical features,snrnp70_s__foxo4_cr3,snrnp70_s__foxo4_cr3,exact pair ID
+historical features,snrnp70_s__foxo6_cr3,snrnp70_s__foxo6_cr3,exact pair ID
+historical features,snrnp70_s__lef1_nter,snrnp70_s__lef1_nter,exact pair ID
+historical features,snrnp70_s__tfe3_cter,snrnp70_s__tfe3_cter,exact pair ID
+historical features,q8n319__atf4_tad,q8n319__atf4_tad,exact pair ID
+historical features,q8n319__foxo4_cr3,q8n319__foxo4_cr3,exact pair ID
+historical features,q8n319__foxo6_cr3,q8n319__foxo6_cr3,exact pair ID
+historical features,q8n319__lef1_nter,q8n319__lef1_nter,exact pair ID
+historical features,q8n319__tfe3_cter,q8n319__tfe3_cter,exact pair ID
+historical features,rbmx__atf4_tad,rbmx__atf4_tad,exact pair ID
+historical features,rbmx__foxo4_cr3,rbmx__foxo4_cr3,exact pair ID
+historical features,rbmx__foxo6_cr3,rbmx__foxo6_cr3,exact pair ID
+historical features,rbmx__lef1_nter,rbmx__lef1_nter,exact pair ID
+historical features,rbmx__tfe3_cter,rbmx__tfe3_cter,exact pair ID
+historical features,thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3_shuffle_2,exact pair ID
+historical features,thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3_shuffle_1,exact pair ID
+historical features,thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3_shuffle_1,exact pair ID
+historical features,taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad_shuffle_1,exact pair ID
+historical features,taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter_shuffle_2,exact pair ID
+historical features,thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad_shuffle_1,exact pair ID
+historical features,thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter_shuffle_2,exact pair ID
+historical features,thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53_shuffle_1,exact pair ID
+historical features,thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1_shuffle_1,exact pair ID
+historical features,thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter_shuffle_1,exact pair ID
+historical features,thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3_shuffle_2,exact pair ID
+historical features,thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad_shuffle_1,exact pair ID
+historical features,thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter_shuffle_2,exact pair ID
+historical features,thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53_shuffle_1,exact pair ID
+historical features,thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1_shuffle_1,exact pair ID
+historical features,thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter_shuffle_1,exact pair ID
+historical features,taf15_rgg__tp53,taf15_rgg__tp53,exact pair ID
+historical features,thoc4_nter__tp53,thoc4_nter__tp53,exact pair ID
+historical features,thoc4_cter__tp53,thoc4_cter__tp53,exact pair ID
+historical features,g3bp1_rgg__tp53,g3bp1_rgg__tp53,exact pair ID
+historical features,taf15_rgg__foxm1,taf15_rgg__foxm1,exact pair ID
+historical features,thoc4_nter__foxm1,thoc4_nter__foxm1,exact pair ID
+historical features,thoc4_cter__foxm1,thoc4_cter__foxm1,exact pair ID
+historical features,g3bp1_rgg__foxm1,g3bp1_rgg__foxm1,exact pair ID
+archived panel predictions,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+archived panel predictions,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+archived panel predictions,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+archived panel predictions,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+archived panel predictions,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+archived panel predictions,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+archived panel predictions,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+archived panel predictions,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+archived panel predictions,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+archived panel predictions,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+archived panel predictions,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+archived panel predictions,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+archived panel predictions,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+archived panel predictions,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+archived panel predictions,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+archived panel predictions,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+archived panel predictions,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+archived panel predictions,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+archived panel predictions,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+archived panel predictions,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+Archived_panel_feature_,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+Archived_panel_feature_,thoc4_cter__foxo6_cr3,thoc4_cter__foxo6_cr3,exact pair ID
+Archived_panel_feature_,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+Archived_panel_feature_,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+Archived_panel_feature_,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+Archived_panel_feature_,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+Archived_panel_feature_,thoc4_nter__foxo6_cr3,thoc4_nter__foxo6_cr3,exact pair ID
+Archived_panel_feature_,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+Archived_panel_feature_,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+Archived_panel_feature_,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+Archived_panel_feature_,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+Archived_panel_feature_,g3bp1_rgg__foxo6_cr3,g3bp1_rgg__foxo6_cr3,exact pair ID
+Archived_panel_feature_,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+Archived_panel_feature_,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+Archived_panel_feature_,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+Archived_panel_feature_,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+Archived_panel_feature_,taf15_rgg__foxo6_cr3,taf15_rgg__foxo6_cr3,exact pair ID
+Archived_panel_feature_,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+Archived_panel_feature_,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+Archived_panel_feature_,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID
+Archived_earlier_feature_,thoc4_cter__foxo4_cr3,thoc4_cter__foxo4_cr3,exact pair ID
+Archived_earlier_feature_,thoc4_nter__foxo4_cr3,thoc4_nter__foxo4_cr3,exact pair ID
+Archived_earlier_feature_,g3bp1_rgg__foxo4_cr3,g3bp1_rgg__foxo4_cr3,exact pair ID
+Archived_earlier_feature_,taf15_rgg__foxo4_cr3,taf15_rgg__foxo4_cr3,exact pair ID
+Archived_earlier_feature_,thoc4_cter__lef1_nter,thoc4_cter__lef1_nter,exact pair ID
+Archived_earlier_feature_,thoc4_nter__lef1_nter,thoc4_nter__lef1_nter,exact pair ID
+Archived_earlier_feature_,g3bp1_rgg__lef1_nter,g3bp1_rgg__lef1_nter,exact pair ID
+Archived_earlier_feature_,taf15_rgg__lef1_nter,taf15_rgg__lef1_nter,exact pair ID
+Archived_earlier_feature_,thoc4_cter__tfe3_cter,thoc4_cter__tfe3_cter,exact pair ID
+Archived_earlier_feature_,thoc4_nter__tfe3_cter,thoc4_nter__tfe3_cter,exact pair ID
+Archived_earlier_feature_,g3bp1_rgg__tfe3_cter,g3bp1_rgg__tfe3_cter,exact pair ID
+Archived_earlier_feature_,taf15_rgg__tfe3_cter,taf15_rgg__tfe3_cter,exact pair ID
+Archived_earlier_feature_,thoc4_cter__atf4_tad,thoc4_cter__atf4_tad,exact pair ID
+Archived_earlier_feature_,thoc4_nter__atf4_tad,thoc4_nter__atf4_tad,exact pair ID
+Archived_earlier_feature_,g3bp1_rgg__atf4_tad,g3bp1_rgg__atf4_tad,exact pair ID
+Archived_earlier_feature_,taf15_rgg__atf4_tad,taf15_rgg__atf4_tad,exact pair ID

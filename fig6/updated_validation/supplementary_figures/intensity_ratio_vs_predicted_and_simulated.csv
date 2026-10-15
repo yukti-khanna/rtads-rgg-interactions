@@ -1,0 +1,21 @@
+pair_id,pair_display_name,Outcome,series,log10_negB22,I_ratio_mean_below_threshold
+rab44__lef1_nter,LEF1–RAB44,LB,Predicted,3.3585294807364514,0.515403
+rab44__tfe3_cter,TFE3–RAB44,LB,Predicted,3.2299115165125034,0.598172
+rbmx__atf4_tad,ATF4–RBMX,LB,Predicted,3.999753087982936,0.434534
+snrnp70_s__atf4_tad,ATF4–SNRNP70 short,Ambiguous,Predicted,2.869391609791332,0.543737
+taf15_rgg__foxo4_cr3,FOXO4–TAF15,LB,Predicted,3.5528487703570706,0.057253
+taf15_rgg__foxo6_cr3,FOXO6–TAF15,LB,Predicted,3.432927318891617,0.057534
+taf15_rgg__tfe3_cter_shuffle_2,TFE3 shuffle 2–TAF15,LB,Predicted,3.3861638563145453,0.444966
+tceal6__atf4_tad,ATF4–TCEAL6,Ambiguous,Predicted,3.414127816928437,0.491254
+thoc4_cter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 C-term,LB,Predicted,3.8788416999470168,0.15443
+thoc4_nter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 N-term,LB,Predicted,4.020579894300759,0.37965
+rab44__lef1_nter,LEF1–RAB44,LB,Simulated,3.170995425308102,0.515403
+rab44__tfe3_cter,TFE3–RAB44,LB,Simulated,3.1979124740180684,0.598172
+rbmx__atf4_tad,ATF4–RBMX,LB,Simulated,3.6345632474103273,0.434534
+snrnp70_s__atf4_tad,ATF4–SNRNP70 short,Ambiguous,Simulated,2.877170464991277,0.543737
+taf15_rgg__foxo4_cr3,FOXO4–TAF15,LB,Simulated,3.4986080892951663,0.057253
+taf15_rgg__foxo6_cr3,FOXO6–TAF15,LB,Simulated,3.4826525162829878,0.057534
+taf15_rgg__tfe3_cter_shuffle_2,TFE3 shuffle 2–TAF15,LB,Simulated,3.3720605521211517,0.444966
+tceal6__atf4_tad,ATF4–TCEAL6,Ambiguous,Simulated,3.4860434630711747,0.491254
+thoc4_cter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 C-term,LB,Simulated,3.9117714553069542,0.15443
+thoc4_nter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 N-term,LB,Simulated,3.76156322389096,0.37965

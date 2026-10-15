@@ -1,0 +1,3 @@
+series,n,Pearson_r,Spearman_rho,Spearman_two_sided_p,test,permutations,seed
+Predicted,10,-0.3788701336570859,-0.7575757575757575,0.0148,two-sided Monte Carlo Spearman permutation; plus-one correction,19999,20261001
+Simulated,10,-0.5605489694368117,-0.709090909090909,0.0267,two-sided Monte Carlo Spearman permutation; plus-one correction,19999,20261001
