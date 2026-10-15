@@ -1,0 +1,2 @@
+n,mean_old_shuffle_effect,mean_new_shuffle_effect,mean_difference,interpretation
+16,0.0001302064770432,-0.0059024132882166,-0.0060326197652599,Same exact WT/shuffle constructs in both models; no inferred experimental affinity ordering

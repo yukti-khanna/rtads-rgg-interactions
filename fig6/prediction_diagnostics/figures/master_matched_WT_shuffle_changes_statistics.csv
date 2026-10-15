@@ -1,0 +1,2 @@
+n,Pearson_r,Spearman_rho,mean_delta,median_delta,mean_absolute_change,minimum_delta,maximum_delta,mean_delta_CI95_low,mean_delta_CI95_high,shift_pvalue,shift_test,permutations
+16,-0.21974203889379498,-0.2029411764705882,-0.0060326197652599,-0.00908383852161787,0.014116403187379084,-0.026047510639801708,0.022415745988469737,-0.013313110809221724,0.0010142250459797858,0.137847900390625,exact two-sided paired sign-flip mean test,65536

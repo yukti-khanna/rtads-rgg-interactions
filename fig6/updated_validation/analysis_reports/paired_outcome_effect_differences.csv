@@ -1,0 +1,5 @@
+comparison,metric,n,estimate,CI95_low,CI95_high,test
+Kd fit vs LB,paired rank-biserial difference,13,0.38888888888888884,0.0,0.8888888888888888,same within-category rows resampled for both predictors; shared constructs
+Kd fit vs NB,paired rank-biserial difference,16,-0.06349206349206343,-0.7301587301587302,0.5722222222222179,same within-category rows resampled for both predictors; shared constructs
+Kd fit vs NB,paired AUROC difference,16,-0.031746031746031717,-0.3650793650793651,0.28611111111110893,same within-category rows resampled; LB excluded
+LB vs NB,paired rank-biserial difference,11,0.0,-1.0,1.1428571428571428,same within-category rows resampled for both predictors; shared constructs

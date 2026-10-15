@@ -1,0 +1,38 @@
+{
+  "inspection_date": "2026-10-01",
+  "execution_status": "Prepared only; workflow and tests have not been run at user request",
+  "repositories": [
+    {
+      "path": "/Users/yuktikhanna/idr-interaction-analysis",
+      "commit": "80b07345c7a50e12e5118a72ec461f4fe5db5eb0",
+      "git_status_short": ["?? fig4/"],
+      "relevant_untracked_content": "fig4/task2_b22_convergence/run_task2_b22_convergence.py uses existing RDF helpers, cutoff 7.5 nm, delta 2 nm and per-replica Hummer means. This is supplemental local provenance, not tracked source.",
+      "tracked_changes": "None reported",
+      "AGENTS_md": "None found in repository or applicable inspected ancestors"
+    },
+    {
+      "path": "/Users/yuktikhanna/idr-interaction-predict",
+      "commit": "af534d380250e6e9e89ec0c9f1c544106f67cb2b",
+      "git_status_short": ["?? models_old/", "?? sample_rdfs/"],
+      "relevant_untracked_content": "Historical model directory and sample RDFs exist; neither is assumed to be the supplied new model run.",
+      "tracked_changes": "None reported",
+      "AGENTS_md": "None found in repository or applicable inspected ancestors"
+    }
+  ],
+  "reference_files_read": [
+    "/Users/yuktikhanna/idr-interaction-analysis/scripts/compute_b22.py",
+    "/Users/yuktikhanna/idr-interaction-analysis/scripts/rdf_b22_functions.py",
+    "/Users/yuktikhanna/idr-interaction-predict/scripts/predict_with_hybrid_model.py",
+    "/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py",
+    "/Users/yuktikhanna/calvados/fig6/get_features_all.py",
+    "/Users/yuktikhanna/calvados/validated/plot_rdfs_b22s.py",
+    "/Users/yuktikhanna/calvados/fig6/validated_final.fasta"
+  ],
+  "context_documents": [
+    "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/final_cell_reports.docx",
+    "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/ptp_response.docx",
+    "/Users/yuktikhanna/rtads-rgg-interactions/supplementary/supplementary_figures.docx"
+  ],
+  "convention_evidence": "Analysis helpers sum radial integrands without dr; compute_b22 defaults to 7.5. Predictor training target is B22_corr1_log10. CALVADOS fig6/get_features_all.py preserves a commented block using 7.5, delta=2, per-replica means then log10(-mean); this is corroboration, not proof of the precise run that produced Table_S8. Numerical reproduction must be checked locally.",
+  "panel_mapping": "Reviewer response names validation outcomes Figure 5C and affinity Figure 5D. The final assembled layout was not verified, so exports use descriptive names and no panel letters. Supplementary S7/S8 labels are not reused."
+}

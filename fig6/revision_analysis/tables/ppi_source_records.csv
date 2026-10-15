@@ -1,0 +1,6 @@
+pair_id,proteinA,proteinB,methods,evidence,source
+g3bp1_rgg__tp53,P04637,Q13283,affinity chromatography technology;pull down,exp,/Users/yuktikhanna/Documents/pendrive/Documents/RBP-TF-main/human_annotated_PPIs_unids_w_methods_evidence_nopred.txt
+thoc4_cter__lef1_nter,Q86V81,Q9UJU2,pull down,exp;pred,/Users/yuktikhanna/Documents/pendrive/Documents/RBP-TF-main/human_annotated_PPIs_unids_w_methods_evidence_nopred.txt
+thoc4_cter__tp53,P04637,Q86V81,affinity chromatography technology,exp,/Users/yuktikhanna/Documents/pendrive/Documents/RBP-TF-main/human_annotated_PPIs_unids_w_methods_evidence_nopred.txt
+thoc4_nter__lef1_nter,Q86V81,Q9UJU2,pull down,exp;pred,/Users/yuktikhanna/Documents/pendrive/Documents/RBP-TF-main/human_annotated_PPIs_unids_w_methods_evidence_nopred.txt
+thoc4_nter__tp53,P04637,Q86V81,affinity chromatography technology,exp,/Users/yuktikhanna/Documents/pendrive/Documents/RBP-TF-main/human_annotated_PPIs_unids_w_methods_evidence_nopred.txt

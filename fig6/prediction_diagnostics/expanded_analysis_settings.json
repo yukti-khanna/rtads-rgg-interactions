@@ -1,0 +1,15 @@
+{
+  "seed": 20261001,
+  "Monte_Carlo_permutations": 19999,
+  "bootstrap": 10000,
+  "outcome_counts": {
+    "Kd_fit": 9,
+    "NB": 7,
+    "LB": 4
+  },
+  "expected_checks_passed": true,
+  "limitations": "All p-values exploratory; shared constructs violate independent-row exchangeability. Paired resampling compares models on identical rows, not independent constructs.",
+  "category_order": "display only; no ordinal affinity interpretation",
+  "TAF15_all_decrease": true,
+  "LEF1_THOC4_G3BP1_increase": true
+}

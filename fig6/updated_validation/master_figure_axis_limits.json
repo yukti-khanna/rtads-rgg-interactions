@@ -1,0 +1,80 @@
+[
+  {
+    "panel": "updated_validation/paper_figures/prediction_vs_pKd",
+    "axes": 0,
+    "xlim": [
+      3.824308737446777,
+      4.2513398747389335
+    ],
+    "ylim": [
+      3.0018993745177296,
+      4.416095127141496
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "updated_validation/paper_figures/prediction_vs_outcome",
+    "axes": 0,
+    "xlim": [
+      2.7707911570733534,
+      4.320261585604484
+    ],
+    "ylim": [
+      -0.45,
+      2.45
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "updated_validation/paper_figures/simulation_vs_pKd",
+    "axes": 0,
+    "xlim": [
+      3.6252780033723853,
+      4.396528882071975
+    ],
+    "ylim": [
+      3.0018993745177296,
+      4.416095127141496
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "updated_validation/paper_figures/simulation_vs_outcome",
+    "axes": 0,
+    "xlim": [
+      2.687561219743535,
+      4.456240038684186
+    ],
+    "ylim": [
+      -0.45,
+      2.45
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "updated_validation/paper_figures/prediction_vs_simulation",
+    "axes": 0,
+    "xlim": [
+      3.271679746616289,
+      4.418026677113071
+    ],
+    "ylim": [
+      3.271679746616289,
+      4.418026677113071
+    ],
+    "aspect": "1.0"
+  },
+  {
+    "panel": "updated_validation/supplementary_figures/intensity_ratio_vs_predicted_and_simulated",
+    "axes": 0,
+    "xlim": [
+      2.8118321955658607,
+      4.0781393085262305
+    ],
+    "ylim": [
+      0.030207049999999996,
+      0.62521795
+    ],
+    "aspect": "auto"
+  }
+]

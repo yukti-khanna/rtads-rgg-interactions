@@ -1,0 +1,4 @@
+comparison,n,new_minus_old_rank_biserial,method,CI95_low,CI95_high,resamples,degenerate_resamples
+Kd_fit vs LB,13,0.38888888888888884,paired within-category row bootstrap; exploratory shared constructs,0.0,0.8888888888888888,10000,0
+Kd_fit vs NB,16,-0.06349206349206349,paired within-category row bootstrap; exploratory shared constructs,-0.6984126984126985,0.5714285714285714,10000,0
+LB vs NB,11,0.0,paired within-category row bootstrap; exploratory shared constructs,-1.0,1.1428571428571428,10000,0

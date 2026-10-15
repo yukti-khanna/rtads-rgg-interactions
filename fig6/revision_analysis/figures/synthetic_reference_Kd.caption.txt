@@ -1,0 +1,1 @@
+Five WT reference constructs. Error bars are supplied TITAN fit errors. LEF1 is weakest among these five. Figure 1 Methods report different initial-screen buffers for FOXM1 versus the other original seeds; quantitative-run condition equivalence requires laboratory confirmation.

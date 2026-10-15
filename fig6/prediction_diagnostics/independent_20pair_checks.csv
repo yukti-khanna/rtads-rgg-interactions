@@ -1,0 +1,6 @@
+quantity,independently_supplied,recalculated,passed
+n,20.0,20.0,True
+pearson_r,0.503565,0.5035651498510512,True
+spearman_rho,0.518797,0.5187969924812029,True
+mean_delta,0.099186,0.0991860631971965,True
+median_delta,0.093941,0.09394118030922671,True

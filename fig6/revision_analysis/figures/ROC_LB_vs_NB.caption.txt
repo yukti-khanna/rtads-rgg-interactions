@@ -1,0 +1,1 @@
+Curated outcomes only; all fits retained. AUROC equals positive-negative concordance with half credit for ties. Cluster-bootstrap intervals use 2000 AHD-parent and RGG-parent resamples separately. Selected panel; shared constructs limit generalization. Simulation associations outside the audited subset are exploratory.

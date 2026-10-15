@@ -1,0 +1,220 @@
+pair_id,Outcome,panel,included,reason
+g3bp1_rgg__atf4_tad,Kd_fit,Kd_vs_NB,True,included
+g3bp1_rgg__foxm1,NB,Kd_vs_NB,True,included
+g3bp1_rgg__foxo4_cr3,Kd_fit,Kd_vs_NB,True,included
+g3bp1_rgg__foxo6_cr3,Kd_fit,Kd_vs_NB,True,included
+g3bp1_rgg__lef1_nter,NB,Kd_vs_NB,True,included
+g3bp1_rgg__sox12,NB,Kd_vs_NB,True,included
+g3bp1_rgg__tfe3_cter,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__tp53,Kd_fit,Kd_vs_NB,True,included
+q8n319__atf4_tad,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo4_cr3,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo6_cr3,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__lef1_nter,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__tfe3_cter,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+rab44__atf4_tad,NB,Kd_vs_NB,True,included
+rab44__foxo4_cr3,NB,Kd_vs_NB,True,included
+rab44__foxo6_cr3,NB,Kd_vs_NB,True,included
+rab44__lef1_nter,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+rab44__tfe3_cter,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+rbmx__atf4_tad,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+rbmx__foxo4_cr3,Kd_fit,Kd_vs_NB,True,included
+rbmx__foxo6_cr3,Kd_fit,Kd_vs_NB,True,included
+rbmx__lef1_nter,NB,Kd_vs_NB,True,included
+rbmx__tfe3_cter,NB,Kd_vs_NB,True,included
+snrnp70_s__atf4_tad,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+snrnp70_s__foxo4_cr3,NB,Kd_vs_NB,True,included
+snrnp70_s__foxo6_cr3,NB,Kd_vs_NB,True,included
+snrnp70_s__lef1_nter,NB,Kd_vs_NB,True,included
+snrnp70_s__tfe3_cter,NB,Kd_vs_NB,True,included
+taf15_rgg__atf4_tad,NB,Kd_vs_NB,True,included
+taf15_rgg__atf4_tad_shuffle_1,NB,Kd_vs_NB,True,included
+taf15_rgg__foxm1,Kd_pending,Kd_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__foxo4_cr3,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__foxo6_cr3,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__lef1_nter,NB,Kd_vs_NB,True,included
+taf15_rgg__sox12,NB,Kd_vs_NB,True,included
+taf15_rgg__tfe3_cter,NB,Kd_vs_NB,True,included
+taf15_rgg__tfe3_cter_shuffle_2,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__tp53,Kd_pending,Kd_vs_NB,False,outcome outside comparison or score unavailable
+tceal6__atf4_tad,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+tceal6__foxo4_cr3,NB,Kd_vs_NB,True,included
+tceal6__foxo6_cr3,NB,Kd_vs_NB,True,included
+tceal6__lef1_nter,NB,Kd_vs_NB,True,included
+tceal6__tfe3_cter,NB,Kd_vs_NB,True,included
+thoc4_cter__atf4_tad,Kd_fit,Kd_vs_NB,True,included
+thoc4_cter__atf4_tad_shuffle_1,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxm1,NB,Kd_vs_NB,True,included
+thoc4_cter__foxm1_shuffle_1,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo4_cr3,Kd_fit,Kd_vs_NB,True,included
+thoc4_cter__foxo4_cr3_shuffle_2,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo6_cr3,NB,Kd_vs_NB,True,included
+thoc4_cter__foxo6_cr3_shuffle_1,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__lef1_nter,NB,Kd_vs_NB,True,included
+thoc4_cter__lef1_nter_shuffle_1,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__sox12,NB,Kd_vs_NB,True,included
+thoc4_cter__tfe3_cter,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tfe3_cter_shuffle_2,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tp53,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tp53_shuffle_1,,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__atf4_tad,Kd_fit,Kd_vs_NB,True,included
+thoc4_nter__atf4_tad_shuffle_1,NB,Kd_vs_NB,True,included
+thoc4_nter__foxm1,Kd_pending,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxm1_shuffle_1,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo4_cr3,Kd_fit,Kd_vs_NB,True,included
+thoc4_nter__foxo4_cr3_shuffle_2,Kd_pending,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo6_cr3,Kd_fit,Kd_vs_NB,True,included
+thoc4_nter__foxo6_cr3_shuffle_1,Kd_pending,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__lef1_nter,NB,Kd_vs_NB,True,included
+thoc4_nter__lef1_nter_shuffle_1,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__sox12,NB,Kd_vs_NB,True,included
+thoc4_nter__tfe3_cter,Kd_fit,Kd_vs_NB,True,included
+thoc4_nter__tfe3_cter_shuffle_2,LB,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tp53,Kd_pending,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tp53_shuffle_1,Kd_pending,Kd_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__atf4_tad,Kd_fit,Kd_LB_vs_NB,True,included
+g3bp1_rgg__foxm1,NB,Kd_LB_vs_NB,True,included
+g3bp1_rgg__foxo4_cr3,Kd_fit,Kd_LB_vs_NB,True,included
+g3bp1_rgg__foxo6_cr3,Kd_fit,Kd_LB_vs_NB,True,included
+g3bp1_rgg__lef1_nter,NB,Kd_LB_vs_NB,True,included
+g3bp1_rgg__sox12,NB,Kd_LB_vs_NB,True,included
+g3bp1_rgg__tfe3_cter,LB,Kd_LB_vs_NB,True,included
+g3bp1_rgg__tp53,Kd_fit,Kd_LB_vs_NB,True,included
+q8n319__atf4_tad,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo4_cr3,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo6_cr3,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__lef1_nter,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__tfe3_cter,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+rab44__atf4_tad,NB,Kd_LB_vs_NB,True,included
+rab44__foxo4_cr3,NB,Kd_LB_vs_NB,True,included
+rab44__foxo6_cr3,NB,Kd_LB_vs_NB,True,included
+rab44__lef1_nter,LB,Kd_LB_vs_NB,True,included
+rab44__tfe3_cter,LB,Kd_LB_vs_NB,True,included
+rbmx__atf4_tad,LB,Kd_LB_vs_NB,True,included
+rbmx__foxo4_cr3,Kd_fit,Kd_LB_vs_NB,True,included
+rbmx__foxo6_cr3,Kd_fit,Kd_LB_vs_NB,True,included
+rbmx__lef1_nter,NB,Kd_LB_vs_NB,True,included
+rbmx__tfe3_cter,NB,Kd_LB_vs_NB,True,included
+snrnp70_s__atf4_tad,LB,Kd_LB_vs_NB,True,included
+snrnp70_s__foxo4_cr3,NB,Kd_LB_vs_NB,True,included
+snrnp70_s__foxo6_cr3,NB,Kd_LB_vs_NB,True,included
+snrnp70_s__lef1_nter,NB,Kd_LB_vs_NB,True,included
+snrnp70_s__tfe3_cter,NB,Kd_LB_vs_NB,True,included
+taf15_rgg__atf4_tad,NB,Kd_LB_vs_NB,True,included
+taf15_rgg__atf4_tad_shuffle_1,NB,Kd_LB_vs_NB,True,included
+taf15_rgg__foxm1,Kd_pending,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__foxo4_cr3,LB,Kd_LB_vs_NB,True,included
+taf15_rgg__foxo6_cr3,LB,Kd_LB_vs_NB,True,included
+taf15_rgg__lef1_nter,NB,Kd_LB_vs_NB,True,included
+taf15_rgg__sox12,NB,Kd_LB_vs_NB,True,included
+taf15_rgg__tfe3_cter,NB,Kd_LB_vs_NB,True,included
+taf15_rgg__tfe3_cter_shuffle_2,LB,Kd_LB_vs_NB,True,included
+taf15_rgg__tp53,Kd_pending,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+tceal6__atf4_tad,LB,Kd_LB_vs_NB,True,included
+tceal6__foxo4_cr3,NB,Kd_LB_vs_NB,True,included
+tceal6__foxo6_cr3,NB,Kd_LB_vs_NB,True,included
+tceal6__lef1_nter,NB,Kd_LB_vs_NB,True,included
+tceal6__tfe3_cter,NB,Kd_LB_vs_NB,True,included
+thoc4_cter__atf4_tad,Kd_fit,Kd_LB_vs_NB,True,included
+thoc4_cter__atf4_tad_shuffle_1,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxm1,NB,Kd_LB_vs_NB,True,included
+thoc4_cter__foxm1_shuffle_1,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo4_cr3,Kd_fit,Kd_LB_vs_NB,True,included
+thoc4_cter__foxo4_cr3_shuffle_2,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo6_cr3,NB,Kd_LB_vs_NB,True,included
+thoc4_cter__foxo6_cr3_shuffle_1,LB,Kd_LB_vs_NB,True,included
+thoc4_cter__lef1_nter,NB,Kd_LB_vs_NB,True,included
+thoc4_cter__lef1_nter_shuffle_1,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__sox12,NB,Kd_LB_vs_NB,True,included
+thoc4_cter__tfe3_cter,LB,Kd_LB_vs_NB,True,included
+thoc4_cter__tfe3_cter_shuffle_2,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tp53,LB,Kd_LB_vs_NB,True,included
+thoc4_cter__tp53_shuffle_1,,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__atf4_tad,Kd_fit,Kd_LB_vs_NB,True,included
+thoc4_nter__atf4_tad_shuffle_1,NB,Kd_LB_vs_NB,True,included
+thoc4_nter__foxm1,Kd_pending,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxm1_shuffle_1,LB,Kd_LB_vs_NB,True,included
+thoc4_nter__foxo4_cr3,Kd_fit,Kd_LB_vs_NB,True,included
+thoc4_nter__foxo4_cr3_shuffle_2,Kd_pending,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo6_cr3,Kd_fit,Kd_LB_vs_NB,True,included
+thoc4_nter__foxo6_cr3_shuffle_1,Kd_pending,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__lef1_nter,NB,Kd_LB_vs_NB,True,included
+thoc4_nter__lef1_nter_shuffle_1,LB,Kd_LB_vs_NB,True,included
+thoc4_nter__sox12,NB,Kd_LB_vs_NB,True,included
+thoc4_nter__tfe3_cter,Kd_fit,Kd_LB_vs_NB,True,included
+thoc4_nter__tfe3_cter_shuffle_2,LB,Kd_LB_vs_NB,True,included
+thoc4_nter__tp53,Kd_pending,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tp53_shuffle_1,Kd_pending,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__atf4_tad,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__foxm1,NB,LB_vs_NB,True,included
+g3bp1_rgg__foxo4_cr3,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__foxo6_cr3,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__lef1_nter,NB,LB_vs_NB,True,included
+g3bp1_rgg__sox12,NB,LB_vs_NB,True,included
+g3bp1_rgg__tfe3_cter,LB,LB_vs_NB,True,included
+g3bp1_rgg__tp53,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__atf4_tad,,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo4_cr3,,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo6_cr3,,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__lef1_nter,,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__tfe3_cter,,LB_vs_NB,False,outcome outside comparison or score unavailable
+rab44__atf4_tad,NB,LB_vs_NB,True,included
+rab44__foxo4_cr3,NB,LB_vs_NB,True,included
+rab44__foxo6_cr3,NB,LB_vs_NB,True,included
+rab44__lef1_nter,LB,LB_vs_NB,True,included
+rab44__tfe3_cter,LB,LB_vs_NB,True,included
+rbmx__atf4_tad,LB,LB_vs_NB,True,included
+rbmx__foxo4_cr3,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+rbmx__foxo6_cr3,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+rbmx__lef1_nter,NB,LB_vs_NB,True,included
+rbmx__tfe3_cter,NB,LB_vs_NB,True,included
+snrnp70_s__atf4_tad,LB,LB_vs_NB,True,included
+snrnp70_s__foxo4_cr3,NB,LB_vs_NB,True,included
+snrnp70_s__foxo6_cr3,NB,LB_vs_NB,True,included
+snrnp70_s__lef1_nter,NB,LB_vs_NB,True,included
+snrnp70_s__tfe3_cter,NB,LB_vs_NB,True,included
+taf15_rgg__atf4_tad,NB,LB_vs_NB,True,included
+taf15_rgg__atf4_tad_shuffle_1,NB,LB_vs_NB,True,included
+taf15_rgg__foxm1,Kd_pending,LB_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__foxo4_cr3,LB,LB_vs_NB,True,included
+taf15_rgg__foxo6_cr3,LB,LB_vs_NB,True,included
+taf15_rgg__lef1_nter,NB,LB_vs_NB,True,included
+taf15_rgg__sox12,NB,LB_vs_NB,True,included
+taf15_rgg__tfe3_cter,NB,LB_vs_NB,True,included
+taf15_rgg__tfe3_cter_shuffle_2,LB,LB_vs_NB,True,included
+taf15_rgg__tp53,Kd_pending,LB_vs_NB,False,outcome outside comparison or score unavailable
+tceal6__atf4_tad,LB,LB_vs_NB,True,included
+tceal6__foxo4_cr3,NB,LB_vs_NB,True,included
+tceal6__foxo6_cr3,NB,LB_vs_NB,True,included
+tceal6__lef1_nter,NB,LB_vs_NB,True,included
+tceal6__tfe3_cter,NB,LB_vs_NB,True,included
+thoc4_cter__atf4_tad,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__atf4_tad_shuffle_1,,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxm1,NB,LB_vs_NB,True,included
+thoc4_cter__foxm1_shuffle_1,,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo4_cr3,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo4_cr3_shuffle_2,,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo6_cr3,NB,LB_vs_NB,True,included
+thoc4_cter__foxo6_cr3_shuffle_1,LB,LB_vs_NB,True,included
+thoc4_cter__lef1_nter,NB,LB_vs_NB,True,included
+thoc4_cter__lef1_nter_shuffle_1,,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__sox12,NB,LB_vs_NB,True,included
+thoc4_cter__tfe3_cter,LB,LB_vs_NB,True,included
+thoc4_cter__tfe3_cter_shuffle_2,,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tp53,LB,LB_vs_NB,True,included
+thoc4_cter__tp53_shuffle_1,,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__atf4_tad,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__atf4_tad_shuffle_1,NB,LB_vs_NB,True,included
+thoc4_nter__foxm1,Kd_pending,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxm1_shuffle_1,LB,LB_vs_NB,True,included
+thoc4_nter__foxo4_cr3,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo4_cr3_shuffle_2,Kd_pending,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo6_cr3,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo6_cr3_shuffle_1,Kd_pending,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__lef1_nter,NB,LB_vs_NB,True,included
+thoc4_nter__lef1_nter_shuffle_1,LB,LB_vs_NB,True,included
+thoc4_nter__sox12,NB,LB_vs_NB,True,included
+thoc4_nter__tfe3_cter,Kd_fit,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tfe3_cter_shuffle_2,LB,LB_vs_NB,True,included
+thoc4_nter__tp53,Kd_pending,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tp53_shuffle_1,Kd_pending,LB_vs_NB,False,outcome outside comparison or score unavailable

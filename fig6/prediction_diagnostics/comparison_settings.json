@@ -1,0 +1,21 @@
+{
+  "seed": 20261001,
+  "bootstrap": 10000,
+  "primary_n": 9,
+  "pair_ids": [
+    "thoc4_cter__foxo4_cr3",
+    "thoc4_cter__atf4_tad",
+    "thoc4_nter__foxo4_cr3",
+    "thoc4_nter__foxo6_cr3",
+    "thoc4_nter__tfe3_cter",
+    "thoc4_nter__atf4_tad",
+    "g3bp1_rgg__foxo4_cr3",
+    "g3bp1_rgg__foxo6_cr3",
+    "g3bp1_rgg__atf4_tad"
+  ],
+  "old_column": "Pred_log10_negB22_hybrid",
+  "new_column": "New_final_log10_negB22",
+  "primary_includes_FOXO4_G3BP1": true,
+  "tie_rule": "Exact pKd ties excluded; exact prediction ties count 0.5",
+  "interpretation": "Descriptive paired row resampling; small sample and shared constructs; not independent-population or calibrated Kd inference"
+}

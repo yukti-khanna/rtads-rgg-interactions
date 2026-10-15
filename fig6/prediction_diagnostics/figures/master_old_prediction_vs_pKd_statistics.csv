@@ -1,0 +1,2 @@
+n,Spearman_rho,Spearman_two_sided_p,Pearson_r,test,permutations,seed,exclusions,uncertainty
+9,0.5499999999999999,0.13277667548500882,0.5208018037728926,exact two-sided Spearman permutation of labelled rows,362880,20261001,see panel membership report,reported Kd error propagated without redefining its type

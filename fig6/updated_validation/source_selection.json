@@ -1,0 +1,223 @@
+{
+  "sources": [
+    {
+      "role": "explicit aliases",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/validation_pair_aliases.csv",
+      "status": "available",
+      "sha256": "51064243f24fba9e7eb5c776c2ee98df60e67b997c63e512b2da723dfed5e0d8"
+    },
+    {
+      "role": "sequence registry",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/preds_val_updated/resolved_pairs.csv",
+      "status": "available",
+      "sha256": "a499abe91b81efcf83db074f8a24d1f4562760ae6eee9bb8bc49f8870993c685"
+    },
+    {
+      "role": "experiments",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/fig6_parent_master.csv",
+      "status": "available",
+      "sha256": "71e663fd818086f47113896f2dad47477c7ec42dcd617fd8051dd78934c0d928"
+    },
+    {
+      "role": "predictions",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/preds_val_updated/predictions_minimal.csv",
+      "status": "available",
+      "sha256": "fde1a4d59ddc419fa949bc784983a850be76d0479fa233d776d1b63461e42081"
+    },
+    {
+      "role": "simulations",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/updated_validation/b22/per_pair_b22.csv",
+      "status": "available",
+      "sha256": "62bc02a579f8006ee9f774848c8871585048787899713b050b11d3822b3f0d46"
+    },
+    {
+      "role": "features",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/preds_val_updated/feature_matrix.csv",
+      "status": "available",
+      "sha256": "8a598576ffc9745ec9bd47e02fcc32aaa6a073dba5fc6280fcb7505e075640ab"
+    },
+    {
+      "role": "feature row identifiers",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/preds_val_updated/feature_row_ids.csv",
+      "status": "available",
+      "sha256": "a33ead0ac1ddbea7c4cfb9ccc29bd83d79811bd5d4a15c5337c36daf0f2ab3ba"
+    },
+    {
+      "role": "prediction manifest",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/preds_val_updated/run_manifest.json",
+      "status": "available",
+      "sha256": "ac684ef7531c51fa67c5d1ff15eeba30a03d7992e83184dd769b89ab445d82c3"
+    },
+    {
+      "role": "prediction_details",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/preds_val_updated/predictions.csv",
+      "status": "available",
+      "sha256": "6b4b518a5d9d8bdc073e1f258fd40625c085d60e609d090ddbed171c4cfbf422"
+    },
+    {
+      "role": "prepared_pairs",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/preds_val_updated/prepared_pairs.csv",
+      "status": "available",
+      "sha256": "e7a3a2d6463c8d0c11b7a88f1f233e6282383a2893fd0562ed98381e3f96f5f4"
+    },
+    {
+      "role": "recovered historical predictions",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/prediction_diagnostics/historical_model/same_construct_predictions.csv",
+      "status": "available",
+      "sha256": "be705e22c32b7ee71fd29bf4f0e15ff543a5bf8cda3b2d0179df731d93dafdd8"
+    },
+    {
+      "role": "historical features",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/prediction_diagnostics/historical_model/same_construct_historical_features.csv",
+      "status": "available",
+      "sha256": "6a64efe8c837d51bd43c468fdf629029c42699c6cbd38640059da56f39cc4a41"
+    },
+    {
+      "role": "archived panel predictions",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/Table_S8.csv",
+      "status": "available",
+      "sha256": "d338b7b87ada3546fe326101a557a65e3c66d1b8473df1f67a66f907ca5c870f"
+    },
+    {
+      "role": "Archived_panel_feature_",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/updated_validation/qc/validated_final_features_data_pred_b22s_mapped.csv",
+      "status": "available",
+      "sha256": "a281377bd08649ca418e21da5d4c67ac814129aba72640c9947bf5af67d48cb2"
+    },
+    {
+      "role": "Archived_earlier_feature_",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/updated_validation/qc/validated_features_data_mapped.csv",
+      "status": "available",
+      "sha256": "688a8dcbbb2d228dd4ca92bd5beab2fc2861769cc114081e629a46435a82a84a"
+    },
+    {
+      "role": "simulation eligibility",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/updated_validation/b22/per_pair_simulation_eligibility.csv",
+      "status": "available",
+      "sha256": "b9f3a725bb15aeae5c2ce452518dbc68e4a02f51087619c9329fb785f8e92a58"
+    },
+    {
+      "role": "eligibility quantity/sequence reference",
+      "path": "/Users/yuktikhanna/rtads-rgg-interactions/fig6/updated_validation/b22/paired_simulation_accuracy_source.csv",
+      "status": "available",
+      "sha256": "cff0fa03b81b2781e6f7feb6b17b1eb505add9e8c912526f75af699a4141ecb9"
+    }
+  ],
+  "resolved_config": {
+    "schema_version": 1,
+    "experiments": {
+      "path": "fig6_parent_master.csv",
+      "columns": {
+        "pair_id": "pair_id",
+        "Kd": "Kd_uM",
+        "Kd_error": "Kd_uM_err",
+        "Outcome": "Outcome",
+        "Notes": "Notes"
+      },
+      "kd_units": "uM",
+      "kd_error_units": "uM",
+      "uncertainty_type": "reported Kd error; type not specified in Table_S8",
+      "additional_columns": [
+        "I_ratio_threshold",
+        "I_ratio_mean_below_threshold",
+        "I_ratio_threshold_rank_ascending",
+        "I_ratio_mean_below_threshold_rank_ascending",
+        "I_ratio_rank_direction",
+        "intensity_pair_name_raw",
+        "I_ratio_source",
+        "I_ratio_source_location"
+      ],
+      "measurement_id_column": null,
+      "select_measurements": {}
+    },
+    "predictions": {
+      "path": "preds_val_updated/predictions_minimal.csv",
+      "pair_column": "pair_id",
+      "final_column": "final_hybrid_prediction",
+      "base_column": "base_prediction",
+      "correction_column": "applied_correction",
+      "transformation": "none; already log10(-B22)"
+    },
+    "simulations": {
+      "path": "updated_validation/b22/per_pair_b22.csv",
+      "pair_column": "pair_id",
+      "filters": {
+        "method": "legacy_sum",
+        "integration_boundary_nm": 7.5,
+        "correction": "primary_tail_offset"
+      },
+      "b22_column": "corrected_B22_mean",
+      "log_column": "log10_neg_mean_B22",
+      "sd_column": "corrected_B22_SD",
+      "sem_column": "corrected_B22_SEM",
+      "replicas_column": "n_replicas",
+      "transformation": "log10(-corrected replica mean) only when mean is negative; never mean of logs",
+      "eligibility_path": "updated_validation/b22/per_pair_simulation_eligibility.csv",
+      "eligibility_reference_path": "updated_validation/b22/paired_simulation_accuracy_source.csv"
+    },
+    "features": {
+      "path": "preds_val_updated/feature_matrix.csv",
+      "row_ids_path": "preds_val_updated/feature_row_ids.csv",
+      "pair_column": "pair_id",
+      "feature_row_column": "feature_row",
+      "manifest_path": "preds_val_updated/run_manifest.json"
+    },
+    "sequence_registry": "preds_val_updated/resolved_pairs.csv",
+    "prediction_details": "preds_val_updated/predictions.csv",
+    "prepared_pairs": "preds_val_updated/prepared_pairs.csv",
+    "historical_predictions": "prediction_diagnostics/historical_model/same_construct_predictions.csv",
+    "historical_features": "prediction_diagnostics/historical_model/same_construct_historical_features.csv",
+    "archived_panel": "Table_S8.csv",
+    "additional_features": [
+      {
+        "path": "updated_validation/qc/validated_final_features_data_pred_b22s_mapped.csv",
+        "prefix": "Archived_panel_feature_",
+        "matching": "explicit role mapping; original lengths and historical_length_status retained; sequences unverified"
+      },
+      {
+        "path": "updated_validation/qc/validated_features_data_mapped.csv",
+        "prefix": "Archived_earlier_feature_",
+        "matching": "explicit role mapping; may describe different boundaries; never substitute for current features"
+      }
+    ],
+    "aliases_path": "validation_pair_aliases.csv",
+    "outdir": "updated_validation",
+    "diagnostics_dir": "prediction_diagnostics/figures",
+    "statistics": {
+      "seed": 20261001,
+      "permutations": 19999,
+      "bootstrap": 2000,
+      "exact_spearman_max_n": 9,
+      "exact_pairwise_max_partitions": 200000
+    },
+    "plot_limits": {},
+    "references": [
+      {
+        "path": "/Users/yuktikhanna/idr-interaction-analysis",
+        "commit": "80b07345c7a50e12e5118a72ec461f4fe5db5eb0",
+        "uncommitted": "untracked fig4/; no tracked changes"
+      },
+      {
+        "path": "/Users/yuktikhanna/idr-interaction-predict",
+        "commit": "af534d380250e6e9e89ec0c9f1c544106f67cb2b",
+        "uncommitted": "untracked models_old/ and sample_rdfs/; no tracked changes"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "model_input_columns": [
+    "minus_NCP",
+    "mean_lambda_RGG",
+    "mean_lambda_AHD",
+    "SHD_RGG",
+    "SHD_AHD",
+    "local_charge_complementarity_std",
+    "scd_RGG_patch_std",
+    "scd_AHD_patch_std",
+    "rg_fraction_RGG_patch_std",
+    "aromatic_fraction_AHD_patch_std",
+    "shd_RGG_patch_std",
+    "shd_AHD_patch_std",
+    "ah_energy_patch_std"
+  ]
+}

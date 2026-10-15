@@ -1,0 +1,1 @@
+Construct-relative residue indices; energies are all-frame means in kJ/mol. Contact occupancy is fraction of frames below 0.8 nm. No experimental binding interface is inferred.

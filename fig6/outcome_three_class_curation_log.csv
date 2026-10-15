@@ -1,0 +1,13 @@
+pair_id,previous_outcome,new_outcome,basis,I_ratio_threshold,I_ratio_mean_below_threshold
+taf15_rgg__sox12,Ambiguous,NB,no intensity-ratio measurement; user curation rule,,
+thoc4_nter__sox12,Ambiguous,NB,no intensity-ratio measurement; user curation rule,,
+thoc4_cter__sox12,Ambiguous,NB,no intensity-ratio measurement; user curation rule,,
+g3bp1_rgg__sox12,Ambiguous,NB,no intensity-ratio measurement; user curation rule,,
+tceal6__atf4_tad,Ambiguous,LB,intensity-ratio measurement available,0.55374,0.491254
+tceal6__foxo4_cr3,Ambiguous,NB,no intensity-ratio measurement; user curation rule,,
+tceal6__foxo6_cr3,Ambiguous,NB,no intensity-ratio measurement; user curation rule,,
+snrnp70_s__atf4_tad,Ambiguous,LB,intensity-ratio measurement available,0.598228,0.543737
+rbmx__tfe3_cter,Ambiguous,NB,no intensity-ratio measurement; user curation rule,,
+thoc4_nter__atf4_tad_shuffle_1,Ambiguous,NB,no intensity-ratio measurement; user curation rule,,
+thoc4_nter__lef1_nter_shuffle_1,Binding_qualitative,LB,interaction observed without extractable Kd; three-class curation,,
+thoc4_cter__tp53,Binding_qualitative,LB,interaction observed without extractable Kd; three-class curation,,

@@ -1,0 +1,17 @@
+pair_id,parent_pair_id,AHD_name,RGG_name,old_shuffle_minus_WT,new_shuffle_minus_WT,difference_in_shuffle_effect,pair_label
+taf15_rgg__atf4_tad_shuffle_1,taf15_rgg__atf4_tad,atf4_tad_shuffle_1,taf15_rgg,0.0009217305121418,-0.0154118792156494,-0.0163336097277913,ATF4 shuffle 1–TAF15
+taf15_rgg__tfe3_cter_shuffle_2,taf15_rgg__tfe3_cter,tfe3_cter_shuffle_2,taf15_rgg,0.0002261698492693,-0.0059733231445799,-0.0061994929938493,TFE3 shuffle 2–TAF15
+thoc4_cter__atf4_tad_shuffle_1,thoc4_cter__atf4_tad,atf4_tad_shuffle_1,thoc4_cter,0.0005235045640139,-0.0255240060757877,-0.0260475106398017,ATF4 shuffle 1–THOC4 C
+thoc4_cter__foxm1_shuffle_1,thoc4_cter__foxm1,foxm1_shuffle_1,thoc4_cter,-0.0004055100094402,0.003386024332511,0.0037915343419512,FOXM1 shuffle 1–THOC4 C
+thoc4_cter__foxo4_cr3_shuffle_2,thoc4_cter__foxo4_cr3,foxo4_cr3_shuffle_2,thoc4_cter,0.002625472600267,-0.0146214362657035,-0.0172469088659705,FOXO4 shuffle 2–THOC4 C
+thoc4_cter__foxo6_cr3_shuffle_1,thoc4_cter__foxo6_cr3,foxo6_cr3_shuffle_1,thoc4_cter,-0.0016561005148605,0.0125196311185096,0.0141757316333701,FOXO6 shuffle 1–THOC4 C
+thoc4_cter__lef1_nter_shuffle_1,thoc4_cter__lef1_nter,lef1_nter_shuffle_1,thoc4_cter,0.0001847751976367,0.0226005211861064,0.0224157459884697,LEF1 shuffle 1–THOC4 C
+thoc4_cter__tfe3_cter_shuffle_2,thoc4_cter__tfe3_cter,tfe3_cter_shuffle_2,thoc4_cter,-0.0009240528513441,-0.0259968610061203,-0.0250728081547761,TFE3 shuffle 2–THOC4 C
+thoc4_cter__tp53_shuffle_1,thoc4_cter__tp53,tp53_shuffle_1,thoc4_cter,6.291401847091649e-05,-0.0125039694042019,-0.0125668834226728,p53 shuffle 1–THOC4 C
+thoc4_nter__atf4_tad_shuffle_1,thoc4_nter__atf4_tad,atf4_tad_shuffle_1,thoc4_nter,3.223997056034378e-05,-0.019706439892122,-0.0197386798626824,ATF4 shuffle 1–THOC4 N
+thoc4_nter__foxm1_shuffle_1,thoc4_nter__foxm1,foxm1_shuffle_1,thoc4_nter,-0.000114736042414,0.0044028560655453,0.0045175921079594,FOXM1 shuffle 1–THOC4 N
+thoc4_nter__foxo4_cr3_shuffle_2,thoc4_nter__foxo4_cr3,foxo4_cr3_shuffle_2,thoc4_nter,0.0014891656627691,0.0040880358479498,0.0025988701851806,FOXO4 shuffle 2–THOC4 N
+thoc4_nter__foxo6_cr3_shuffle_1,thoc4_nter__foxo6_cr3,foxo6_cr3_shuffle_1,thoc4_nter,-0.0008164160455801,0.0082880395073425,0.0091044555529227,FOXO6 shuffle 1–THOC4 N
+thoc4_nter__lef1_nter_shuffle_1,thoc4_nter__lef1_nter,lef1_nter_shuffle_1,thoc4_nter,2.8075084216094837e-05,0.0080944126513156,0.0080663375670995,LEF1 shuffle 1–THOC4 N
+thoc4_nter__tfe3_cter_shuffle_2,thoc4_nter__tfe3_cter,tfe3_cter_shuffle_2,thoc4_nter,-6.000635934277909e-05,-0.0260781122635238,-0.026018105904181,TFE3 shuffle 2–THOC4 N
+thoc4_nter__tp53_shuffle_1,thoc4_nter__tp53,tp53_shuffle_1,thoc4_nter,-3.3922003672248735e-05,-0.0120021060530586,-0.0119681840493863,p53 shuffle 1–THOC4 N

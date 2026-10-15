@@ -1,0 +1,1 @@
+All LEF1 computational pairs retained, including unmeasured and shuffle rows. NB is an assay outcome, not zero simulated attraction.

@@ -1,0 +1,275 @@
+[
+  {
+    "panel": "prediction_diagnostics/figures/old_prediction_vs_pKd",
+    "axes": 0,
+    "xlim": [
+      3.465993744021197,
+      4.27478104253313
+    ],
+    "ylim": [
+      3.0018993745177296,
+      4.416095127141496
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/new_prediction_vs_pKd",
+    "axes": 0,
+    "xlim": [
+      3.465993744021197,
+      4.27478104253313
+    ],
+    "ylim": [
+      3.0018993745177296,
+      4.416095127141496
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "updated_validation/figures/validation_prediction_vs_pKd",
+    "axes": 0,
+    "xlim": [
+      3.465993744021197,
+      4.27478104253313
+    ],
+    "ylim": [
+      3.0018993745177296,
+      4.416095127141496
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/old_prediction_vs_outcome",
+    "axes": 0,
+    "xlim": [
+      3.333828475502461,
+      4.283427368510991
+    ],
+    "ylim": [
+      -0.45,
+      2.45
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/new_prediction_vs_outcome",
+    "axes": 0,
+    "xlim": [
+      3.333828475502461,
+      4.283427368510991
+    ],
+    "ylim": [
+      -0.45,
+      2.45
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "updated_validation/figures/validation_prediction_vs_outcome",
+    "axes": 0,
+    "xlim": [
+      3.333828475502461,
+      4.283427368510991
+    ],
+    "ylim": [
+      -0.45,
+      2.45
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/all20_named_paired_predictions",
+    "axes": 0,
+    "xlim": [
+      3.333828475502461,
+      4.283427368510991
+    ],
+    "ylim": [
+      19.6,
+      -0.6
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/all20_named_prediction_deltas",
+    "axes": 0,
+    "xlim": [
+      -0.37254074630820594,
+      0.5511791790134987
+    ],
+    "ylim": [
+      19.6,
+      -0.6
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/old_vs_new_predictions",
+    "axes": 0,
+    "xlim": [
+      3.333828475502461,
+      4.283427368510991
+    ],
+    "ylim": [
+      3.333828475502461,
+      4.283427368510991
+    ],
+    "aspect": "1.0"
+  },
+  {
+    "panel": "updated_validation/figures/validation_simulation_vs_pKd",
+    "axes": 0,
+    "xlim": [
+      3.7498013414022244,
+      4.388382495471892
+    ],
+    "ylim": [
+      3.0018993745177296,
+      4.416095127141496
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "updated_validation/figures/validation_simulation_vs_outcome",
+    "axes": 0,
+    "xlim": [
+      3.271679746616289,
+      4.418026677113071
+    ],
+    "ylim": [
+      -0.45,
+      2.45
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/complete_same_construct_agreement",
+    "axes": 0,
+    "xlim": [
+      2.7413471530652616,
+      4.352383728079435
+    ],
+    "ylim": [
+      2.7413471530652616,
+      4.352383728079435
+    ],
+    "aspect": "1.0"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/complete_same_construct_heatmaps",
+    "axes": 0,
+    "xlim": [
+      -0.5,
+      8.5
+    ],
+    "ylim": [
+      14.5,
+      -0.5
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/complete_same_construct_heatmaps",
+    "axes": 1,
+    "xlim": [
+      -0.5,
+      8.5
+    ],
+    "ylim": [
+      14.5,
+      -0.5
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/complete_same_construct_heatmaps",
+    "axes": 2,
+    "xlim": [
+      -0.5,
+      8.5
+    ],
+    "ylim": [
+      14.5,
+      -0.5
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/complete_same_construct_heatmaps",
+    "axes": 3,
+    "xlim": [
+      0.0,
+      1.0
+    ],
+    "ylim": [
+      2.840270451531044,
+      4.253460429613652
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/complete_same_construct_heatmaps",
+    "axes": 4,
+    "xlim": [
+      0.0,
+      1.0
+    ],
+    "ylim": [
+      2.840270451531044,
+      4.253460429613652
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/complete_same_construct_heatmaps",
+    "axes": 5,
+    "xlim": [
+      0.0,
+      1.0
+    ],
+    "ylim": [
+      -0.5547955419936823,
+      0.5547955419936823
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/matched_WT_shuffle_effects",
+    "axes": 0,
+    "xlim": [
+      -0.029485616604997916,
+      0.026008025527580515
+    ],
+    "ylim": [
+      15.6,
+      -0.6
+    ],
+    "aspect": "auto"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/old_vs_simulation_verified_subset",
+    "axes": 0,
+    "xlim": [
+      3.271679746616289,
+      4.418026677113071
+    ],
+    "ylim": [
+      3.271679746616289,
+      4.418026677113071
+    ],
+    "aspect": "1.0"
+  },
+  {
+    "panel": "prediction_diagnostics/figures/new_vs_simulation_verified_subset",
+    "axes": 0,
+    "xlim": [
+      3.271679746616289,
+      4.418026677113071
+    ],
+    "ylim": [
+      3.271679746616289,
+      4.418026677113071
+    ],
+    "aspect": "1.0"
+  }
+]

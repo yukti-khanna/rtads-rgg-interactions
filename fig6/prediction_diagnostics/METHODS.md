@@ -1,0 +1,13 @@
+# Statistical and provenance methods
+
+All old/new comparisons use identical eligible rows. Archived old values remain separate from newly generated same-construct old inference. Kd fits use positive numeric Kd and retain all nine pairs. Spearman p-values enumerate all 9! labelled-row permutations, use |rho| for a two-sided test and count ties inclusively. Pearson and Spearman confidence intervals are row-bootstrap descriptive intervals; degenerate draws are recorded. Primary old/new metric differences use paired row draws.
+
+Kruskal–Wallis uses average ranks, standard tie correction and 19,999 random label permutations, with (extreme+1)/(B+1). Pairwise tests enumerate all assignments to the two observed group sizes using |U−n1*n2/2|. Holm adjustment applies to the three pairwise comparisons per predictor. Rank-biserial effects equal 2*AUROC−1, so positive means the first named group has higher predictions. Pairwise effects have descriptive bootstrap intervals; differences use the same within-category rows for old/new. Omnibus epsilon squared is bias adjusted and can be negative.
+
+The binary diagnostic includes only Kd-fit (positive, n=9) and NB (negative, n=7), where higher prediction is expected for Kd-fit; LB is excluded, not ordered. AUROC confidence intervals and new−old differences use paired outcome-stratified bootstrap draws. Outcome plots show counts and numeric adjusted p-values.
+
+Mean/median paired changes use 10,000 paired bootstrap draws. The systematic shift test enumerates sign flips for n<=20, otherwise uses 19,999 Monte Carlo sign flips; its symmetric-difference/exchangeability assumption is exploratory with shared constructs. It tests prediction shifts, not prediction quality. No old/new correlation significance is used to claim superiority.
+
+Simulation accuracy uses only per-pair eligible, negative-mean legacy 7.5 nm corr1 targets with supported exact topology sequences. R²=1−SSE/SST, RMSE, MAE, signed prediction-minus-target error, Pearson and Spearman are calculated against the simulation target (the same quantity), never pKd. Paired bootstrap differences use identical rows. RDF/adjacent topology matching is contextual evidence, not an embedded generator manifest; full new training target provenance remains incomplete. Physical integrated nm³ outputs are separate.
+
+Seed=20261001. Every resampling confidence interval assumes row-level resampling; shared AHD/RGG constructs reduce effective independence. Results are descriptive and exploratory, not decisive model selection. Short plot axes omit implementation details; companion captions explain the legacy target convention.

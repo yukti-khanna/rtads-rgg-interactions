@@ -1,0 +1,2 @@
+predictor,n,R_squared,RMSE,MAE,mean_signed_error,Pearson_r,Spearman_rho,convention,eligibility
+old_same_construct,20,0.3210198301639059,0.2395536922804896,0.2178802662248029,-0.074188812799909,0.6217385063181631,0.631578947368421,"legacy_sum 7.5 nm corr1, log after replica mean",see per-pair audit; identical rows

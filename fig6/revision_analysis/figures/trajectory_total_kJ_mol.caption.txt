@@ -1,0 +1,1 @@
+All supplied combined-trajectory frames; exact sequences and serialized System parameters verified. LEF1 highlighted. Signed energy is a model-dependent ensemble observable, not a B22 decomposition. Uncertainty uses contiguous-block sensitivity because replica boundaries are unresolved.

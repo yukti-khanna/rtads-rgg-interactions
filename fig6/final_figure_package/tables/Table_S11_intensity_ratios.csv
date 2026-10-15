@@ -1,0 +1,11 @@
+pair_id,pair_display_name,Experimental_description,I_ratio_threshold,I_ratio_mean_below_threshold,I_ratio_threshold_rank_ascending,I_ratio_mean_below_threshold_rank_ascending,Pred_log10_negB22_final,Sim_log10_negB22_final,I_ratio_source,I_ratio_source_location
+rab44__lef1_nter,LEF1–RAB44,Line broadening without an extractable Kd,0.580349,0.515403,7.0,8.0,3.3585294807364514,3.170995425308102,i ratios.xlsx,new
+rab44__tfe3_cter,TFE3–RAB44,Line broadening without an extractable Kd,0.690638,0.598172,10.0,10.0,3.2299115165125034,3.1979124740180684,i ratios.xlsx,new
+rbmx__atf4_tad,ATF4–RBMX,Line broadening without an extractable Kd,0.546862,0.434534,5.0,5.0,3.999753087982936,3.6345632474103273,i ratios.xlsx,new
+snrnp70_s__atf4_tad,ATF4–SNRNP70 short,Line broadening without an extractable Kd,0.598228,0.543737,8.0,9.0,2.869391609791332,2.877170464991277,i ratios.xlsx,new
+taf15_rgg__foxo4_cr3,FOXO4–TAF15,Line broadening without an extractable Kd,0.095042,0.057253,2.0,1.0,3.5528487703570706,3.4986080892951663,i ratios.xlsx,new
+taf15_rgg__foxo6_cr3,FOXO6–TAF15,Line broadening without an extractable Kd,0.093754,0.057534,1.0,2.0,3.432927318891617,3.4826525162829878,i ratios.xlsx,new
+taf15_rgg__tfe3_cter_shuffle_2,TFE3 shuffle 2–TAF15,Line broadening without an extractable Kd,0.632791,0.444966,9.0,6.0,3.3861638563145453,3.3720605521211517,i ratios.xlsx,new
+tceal6__atf4_tad,ATF4–TCEAL6,Line broadening without an extractable Kd,0.55374,0.491254,6.0,7.0,3.414127816928437,3.4860434630711747,i ratios.xlsx,new
+thoc4_cter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 C-term,Line broadening without an extractable Kd,0.22676,0.15443,3.0,3.0,3.8788416999470168,3.9117714553069542,i ratios.xlsx,new
+thoc4_nter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 N-term,Line broadening without an extractable Kd,0.454088,0.37965,4.0,4.0,4.020579894300759,3.76156322389096,i ratios.xlsx,new

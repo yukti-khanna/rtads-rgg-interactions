@@ -1,0 +1,220 @@
+pair_id,pair_display_name,Outcome,Pred_log10_negB22_final,Sim_log10_negB22_final,comparison,included,reason
+g3bp1_rgg__atf4_tad,ATF4–G3BP1,Kd_fit,3.913951789433125,3.793192001521941,Kd_vs_NB,True,included
+g3bp1_rgg__foxm1,FOXM1–G3BP1,NB,3.9840430425467854,3.6342884938644664,Kd_vs_NB,True,included
+g3bp1_rgg__foxo4_cr3,FOXO4–G3BP1,Kd_fit,4.083035222714828,3.906845223087274,Kd_vs_NB,True,included
+g3bp1_rgg__foxo6_cr3,FOXO6–G3BP1,Kd_fit,3.939249852248468,3.815554489632772,Kd_vs_NB,True,included
+g3bp1_rgg__lef1_nter,LEF1–G3BP1,NB,4.061071165509613,3.62279840708991,Kd_vs_NB,True,included
+g3bp1_rgg__sox12,SOX12–G3BP1,NB,2.851105637145337,2.8067080829002666,Kd_vs_NB,True,included
+g3bp1_rgg__tfe3_cter,TFE3–G3BP1,LB,3.827033907558424,3.7190774154741,Kd_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__tp53,p53–G3BP1,Kd_fit,4.09605757643346,3.750990632010813,Kd_vs_NB,True,included
+q8n319__atf4_tad,ATF4–Q8N319,,4.174923415524577,4.267668880960398,Kd_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo4_cr3,FOXO4–Q8N319,,4.253460429613652,4.401795018189266,Kd_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo6_cr3,FOXO6–Q8N319,,4.188500292356271,4.288835204475778,Kd_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__lef1_nter,LEF1–Q8N319,,4.234726830334949,4.04704359094119,Kd_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__tfe3_cter,TFE3–Q8N319,,4.097235905156904,4.174581409589598,Kd_vs_NB,False,outcome outside comparison or score unavailable
+rab44__atf4_tad,ATF4–RAB44,NB,3.263430921864481,3.2445147549603357,Kd_vs_NB,True,included
+rab44__foxo4_cr3,FOXO4–RAB44,NB,3.391019612997953,3.339661054338755,Kd_vs_NB,True,included
+rab44__foxo6_cr3,FOXO6–RAB44,NB,3.2752216206845897,3.266246801724983,Kd_vs_NB,True,included
+rab44__lef1_nter,LEF1–RAB44,LB,3.3585294807364514,3.170995425308102,Kd_vs_NB,False,outcome outside comparison or score unavailable
+rab44__tfe3_cter,TFE3–RAB44,LB,3.2299115165125034,3.1979124740180684,Kd_vs_NB,False,outcome outside comparison or score unavailable
+rbmx__atf4_tad,ATF4–RBMX,LB,3.999753087982936,3.6345632474103273,Kd_vs_NB,False,outcome outside comparison or score unavailable
+rbmx__foxo4_cr3,FOXO4–RBMX,Kd_fit,4.171614930616354,3.7449081903402917,Kd_vs_NB,True,included
+rbmx__foxo6_cr3,FOXO6–RBMX,Kd_fit,4.0297812276899645,3.6892383423865462,Kd_vs_NB,True,included
+rbmx__lef1_nter,LEF1–RBMX,NB,4.124977510182793,3.4107277353858754,Kd_vs_NB,True,included
+rbmx__tfe3_cter,TFE3–RBMX,NB,3.914586558863298,3.607933082030968,Kd_vs_NB,True,included
+snrnp70_s__atf4_tad,ATF4–SNRNP70 short,LB,2.869391609791332,2.877170464991277,Kd_vs_NB,False,outcome outside comparison or score unavailable
+snrnp70_s__foxo4_cr3,FOXO4–SNRNP70 short,NB,2.9286652787677543,2.9714484934661898,Kd_vs_NB,True,included
+snrnp70_s__foxo6_cr3,FOXO6–SNRNP70 short,NB,2.877909644708341,2.9187127109199014,Kd_vs_NB,True,included
+snrnp70_s__lef1_nter,LEF1–SNRNP70 short,NB,2.902978394938146,2.7961643051170837,Kd_vs_NB,True,included
+snrnp70_s__tfe3_cter,TFE3–SNRNP70 short,NB,2.8659340781235105,2.865342295992435,Kd_vs_NB,True,included
+taf15_rgg__atf4_tad,ATF4–TAF15,NB,3.4217008216268345,3.45158319938811,Kd_vs_NB,True,included
+taf15_rgg__atf4_tad_shuffle_1,ATF4 shuffle 1–TAF15,NB,3.406288942411185,3.358711384242422,Kd_vs_NB,True,included
+taf15_rgg__foxm1,FOXM1–TAF15,Kd_pending,3.5080900454032937,3.4394721755886986,Kd_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__foxo4_cr3,FOXO4–TAF15,LB,3.5528487703570706,3.4986080892951663,Kd_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__foxo6_cr3,FOXO6–TAF15,LB,3.432927318891617,3.4826525162829878,Kd_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__lef1_nter,LEF1–TAF15,NB,3.5164330901691216,3.342069470418723,Kd_vs_NB,True,included
+taf15_rgg__sox12,SOX12–TAF15,NB,2.840270451531044,2.802762860757563,Kd_vs_NB,True,included
+taf15_rgg__tfe3_cter,TFE3–TAF15,NB,3.3921371794591253,3.441385406436418,Kd_vs_NB,True,included
+taf15_rgg__tfe3_cter_shuffle_2,TFE3 shuffle 2–TAF15,LB,3.3861638563145453,3.3720605521211517,Kd_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__tp53,p53–TAF15,Kd_pending,3.581327992415395,3.444621492885809,Kd_vs_NB,False,outcome outside comparison or score unavailable
+tceal6__atf4_tad,ATF4–TCEAL6,LB,3.414127816928437,3.4860434630711747,Kd_vs_NB,False,outcome outside comparison or score unavailable
+tceal6__foxo4_cr3,FOXO4–TCEAL6,NB,3.549723838296237,3.6476682060772427,Kd_vs_NB,True,included
+tceal6__foxo6_cr3,FOXO6–TCEAL6,NB,3.428387133983754,3.525551823151927,Kd_vs_NB,True,included
+tceal6__lef1_nter,LEF1–TCEAL6,NB,3.518194770761022,3.403212214425487,Kd_vs_NB,True,included
+tceal6__tfe3_cter,TFE3–TCEAL6,NB,3.3762216855935474,3.438334366074998,Kd_vs_NB,True,included
+thoc4_cter__atf4_tad,ATF4–THOC4 C-term,Kd_fit,3.850529947631383,4.037324405808773,Kd_vs_NB,True,included
+thoc4_cter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 C-term,,3.8250059415555953,3.7949557800523257,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxm1,FOXM1–THOC4 C-term,NB,3.9387061094600138,3.7640256504426137,Kd_vs_NB,True,included
+thoc4_cter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 C-term,,3.9420921337925248,3.9038230869454793,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo4_cr3,FOXO4–THOC4 C-term,Kd_fit,4.0435303938213805,4.200674884108648,Kd_vs_NB,True,included
+thoc4_cter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 C-term,,4.028908957555677,4.264655862156775,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo6_cr3,FOXO6–THOC4 C-term,NB,3.866322068828507,4.081280408517786,Kd_vs_NB,True,included
+thoc4_cter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 C-term,LB,3.8788416999470168,3.9117714553069542,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__lef1_nter,LEF1–THOC4 C-term,NB,3.986222362131916,3.8094215643490354,Kd_vs_NB,True,included
+thoc4_cter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 C-term,,4.008822883318023,3.7976614994907747,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__sox12,SOX12–THOC4 C-term,NB,2.8793151682602014,2.846125846783817,Kd_vs_NB,True,included
+thoc4_cter__tfe3_cter,TFE3–THOC4 C-term,LB,3.793754401251232,3.938785698453726,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 C-term,,3.767757540245112,3.573084641434714,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tp53,p53–THOC4 C-term,LB,4.018484626427419,3.9905942677201303,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tp53_shuffle_1,p53 shuffle 1–THOC4 C-term,,4.005980657023217,3.8750123632759155,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__atf4_tad,ATF4–THOC4 N-term,Kd_fit,4.107048874011658,4.188447575202522,Kd_vs_NB,True,included
+thoc4_nter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 N-term,NB,4.087342434119536,3.9466546742191224,Kd_vs_NB,True,included
+thoc4_nter__foxm1,FOXM1–THOC4 N-term,Kd_pending,4.160102546112894,3.9038203023147577,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 N-term,LB,4.164505402178439,4.040169118664857,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo4_cr3,FOXO4–THOC4 N-term,Kd_fit,4.225118664554327,4.347636953310637,Kd_vs_NB,True,included
+thoc4_nter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 N-term,Kd_pending,4.229206700402277,4.380564672126015,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo6_cr3,FOXO6–THOC4 N-term,Kd_fit,4.133097503603028,4.208908849767933,Kd_vs_NB,True,included
+thoc4_nter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 N-term,Kd_pending,4.1413855431103705,4.012259652850248,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__lef1_nter,LEF1–THOC4 N-term,NB,4.205672713585686,3.9301007464330953,Kd_vs_NB,True,included
+thoc4_nter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 N-term,LB,4.213767126237002,3.9779014263622483,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__sox12,SOX12–THOC4 N-term,NB,2.9254075117775273,2.942610916131089,Kd_vs_NB,True,included
+thoc4_nter__tfe3_cter,TFE3–THOC4 N-term,Kd_fit,4.046658006564283,4.082050654434443,Kd_vs_NB,True,included
+thoc4_nter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 N-term,LB,4.020579894300759,3.76156322389096,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tp53,p53–THOC4 N-term,Kd_pending,4.2190663804747865,4.120323971248079,Kd_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tp53_shuffle_1,p53 shuffle 1–THOC4 N-term,Kd_pending,4.207064274421728,4.019565264267354,Kd_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__atf4_tad,ATF4–G3BP1,Kd_fit,3.913951789433125,3.793192001521941,Kd_LB_vs_NB,True,included
+g3bp1_rgg__foxm1,FOXM1–G3BP1,NB,3.9840430425467854,3.6342884938644664,Kd_LB_vs_NB,True,included
+g3bp1_rgg__foxo4_cr3,FOXO4–G3BP1,Kd_fit,4.083035222714828,3.906845223087274,Kd_LB_vs_NB,True,included
+g3bp1_rgg__foxo6_cr3,FOXO6–G3BP1,Kd_fit,3.939249852248468,3.815554489632772,Kd_LB_vs_NB,True,included
+g3bp1_rgg__lef1_nter,LEF1–G3BP1,NB,4.061071165509613,3.62279840708991,Kd_LB_vs_NB,True,included
+g3bp1_rgg__sox12,SOX12–G3BP1,NB,2.851105637145337,2.8067080829002666,Kd_LB_vs_NB,True,included
+g3bp1_rgg__tfe3_cter,TFE3–G3BP1,LB,3.827033907558424,3.7190774154741,Kd_LB_vs_NB,True,included
+g3bp1_rgg__tp53,p53–G3BP1,Kd_fit,4.09605757643346,3.750990632010813,Kd_LB_vs_NB,True,included
+q8n319__atf4_tad,ATF4–Q8N319,,4.174923415524577,4.267668880960398,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo4_cr3,FOXO4–Q8N319,,4.253460429613652,4.401795018189266,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo6_cr3,FOXO6–Q8N319,,4.188500292356271,4.288835204475778,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__lef1_nter,LEF1–Q8N319,,4.234726830334949,4.04704359094119,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__tfe3_cter,TFE3–Q8N319,,4.097235905156904,4.174581409589598,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+rab44__atf4_tad,ATF4–RAB44,NB,3.263430921864481,3.2445147549603357,Kd_LB_vs_NB,True,included
+rab44__foxo4_cr3,FOXO4–RAB44,NB,3.391019612997953,3.339661054338755,Kd_LB_vs_NB,True,included
+rab44__foxo6_cr3,FOXO6–RAB44,NB,3.2752216206845897,3.266246801724983,Kd_LB_vs_NB,True,included
+rab44__lef1_nter,LEF1–RAB44,LB,3.3585294807364514,3.170995425308102,Kd_LB_vs_NB,True,included
+rab44__tfe3_cter,TFE3–RAB44,LB,3.2299115165125034,3.1979124740180684,Kd_LB_vs_NB,True,included
+rbmx__atf4_tad,ATF4–RBMX,LB,3.999753087982936,3.6345632474103273,Kd_LB_vs_NB,True,included
+rbmx__foxo4_cr3,FOXO4–RBMX,Kd_fit,4.171614930616354,3.7449081903402917,Kd_LB_vs_NB,True,included
+rbmx__foxo6_cr3,FOXO6–RBMX,Kd_fit,4.0297812276899645,3.6892383423865462,Kd_LB_vs_NB,True,included
+rbmx__lef1_nter,LEF1–RBMX,NB,4.124977510182793,3.4107277353858754,Kd_LB_vs_NB,True,included
+rbmx__tfe3_cter,TFE3–RBMX,NB,3.914586558863298,3.607933082030968,Kd_LB_vs_NB,True,included
+snrnp70_s__atf4_tad,ATF4–SNRNP70 short,LB,2.869391609791332,2.877170464991277,Kd_LB_vs_NB,True,included
+snrnp70_s__foxo4_cr3,FOXO4–SNRNP70 short,NB,2.9286652787677543,2.9714484934661898,Kd_LB_vs_NB,True,included
+snrnp70_s__foxo6_cr3,FOXO6–SNRNP70 short,NB,2.877909644708341,2.9187127109199014,Kd_LB_vs_NB,True,included
+snrnp70_s__lef1_nter,LEF1–SNRNP70 short,NB,2.902978394938146,2.7961643051170837,Kd_LB_vs_NB,True,included
+snrnp70_s__tfe3_cter,TFE3–SNRNP70 short,NB,2.8659340781235105,2.865342295992435,Kd_LB_vs_NB,True,included
+taf15_rgg__atf4_tad,ATF4–TAF15,NB,3.4217008216268345,3.45158319938811,Kd_LB_vs_NB,True,included
+taf15_rgg__atf4_tad_shuffle_1,ATF4 shuffle 1–TAF15,NB,3.406288942411185,3.358711384242422,Kd_LB_vs_NB,True,included
+taf15_rgg__foxm1,FOXM1–TAF15,Kd_pending,3.5080900454032937,3.4394721755886986,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__foxo4_cr3,FOXO4–TAF15,LB,3.5528487703570706,3.4986080892951663,Kd_LB_vs_NB,True,included
+taf15_rgg__foxo6_cr3,FOXO6–TAF15,LB,3.432927318891617,3.4826525162829878,Kd_LB_vs_NB,True,included
+taf15_rgg__lef1_nter,LEF1–TAF15,NB,3.5164330901691216,3.342069470418723,Kd_LB_vs_NB,True,included
+taf15_rgg__sox12,SOX12–TAF15,NB,2.840270451531044,2.802762860757563,Kd_LB_vs_NB,True,included
+taf15_rgg__tfe3_cter,TFE3–TAF15,NB,3.3921371794591253,3.441385406436418,Kd_LB_vs_NB,True,included
+taf15_rgg__tfe3_cter_shuffle_2,TFE3 shuffle 2–TAF15,LB,3.3861638563145453,3.3720605521211517,Kd_LB_vs_NB,True,included
+taf15_rgg__tp53,p53–TAF15,Kd_pending,3.581327992415395,3.444621492885809,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+tceal6__atf4_tad,ATF4–TCEAL6,LB,3.414127816928437,3.4860434630711747,Kd_LB_vs_NB,True,included
+tceal6__foxo4_cr3,FOXO4–TCEAL6,NB,3.549723838296237,3.6476682060772427,Kd_LB_vs_NB,True,included
+tceal6__foxo6_cr3,FOXO6–TCEAL6,NB,3.428387133983754,3.525551823151927,Kd_LB_vs_NB,True,included
+tceal6__lef1_nter,LEF1–TCEAL6,NB,3.518194770761022,3.403212214425487,Kd_LB_vs_NB,True,included
+tceal6__tfe3_cter,TFE3–TCEAL6,NB,3.3762216855935474,3.438334366074998,Kd_LB_vs_NB,True,included
+thoc4_cter__atf4_tad,ATF4–THOC4 C-term,Kd_fit,3.850529947631383,4.037324405808773,Kd_LB_vs_NB,True,included
+thoc4_cter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 C-term,,3.8250059415555953,3.7949557800523257,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxm1,FOXM1–THOC4 C-term,NB,3.9387061094600138,3.7640256504426137,Kd_LB_vs_NB,True,included
+thoc4_cter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 C-term,,3.9420921337925248,3.9038230869454793,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo4_cr3,FOXO4–THOC4 C-term,Kd_fit,4.0435303938213805,4.200674884108648,Kd_LB_vs_NB,True,included
+thoc4_cter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 C-term,,4.028908957555677,4.264655862156775,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo6_cr3,FOXO6–THOC4 C-term,NB,3.866322068828507,4.081280408517786,Kd_LB_vs_NB,True,included
+thoc4_cter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 C-term,LB,3.8788416999470168,3.9117714553069542,Kd_LB_vs_NB,True,included
+thoc4_cter__lef1_nter,LEF1–THOC4 C-term,NB,3.986222362131916,3.8094215643490354,Kd_LB_vs_NB,True,included
+thoc4_cter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 C-term,,4.008822883318023,3.7976614994907747,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__sox12,SOX12–THOC4 C-term,NB,2.8793151682602014,2.846125846783817,Kd_LB_vs_NB,True,included
+thoc4_cter__tfe3_cter,TFE3–THOC4 C-term,LB,3.793754401251232,3.938785698453726,Kd_LB_vs_NB,True,included
+thoc4_cter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 C-term,,3.767757540245112,3.573084641434714,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tp53,p53–THOC4 C-term,LB,4.018484626427419,3.9905942677201303,Kd_LB_vs_NB,True,included
+thoc4_cter__tp53_shuffle_1,p53 shuffle 1–THOC4 C-term,,4.005980657023217,3.8750123632759155,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__atf4_tad,ATF4–THOC4 N-term,Kd_fit,4.107048874011658,4.188447575202522,Kd_LB_vs_NB,True,included
+thoc4_nter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 N-term,NB,4.087342434119536,3.9466546742191224,Kd_LB_vs_NB,True,included
+thoc4_nter__foxm1,FOXM1–THOC4 N-term,Kd_pending,4.160102546112894,3.9038203023147577,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 N-term,LB,4.164505402178439,4.040169118664857,Kd_LB_vs_NB,True,included
+thoc4_nter__foxo4_cr3,FOXO4–THOC4 N-term,Kd_fit,4.225118664554327,4.347636953310637,Kd_LB_vs_NB,True,included
+thoc4_nter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 N-term,Kd_pending,4.229206700402277,4.380564672126015,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo6_cr3,FOXO6–THOC4 N-term,Kd_fit,4.133097503603028,4.208908849767933,Kd_LB_vs_NB,True,included
+thoc4_nter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 N-term,Kd_pending,4.1413855431103705,4.012259652850248,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__lef1_nter,LEF1–THOC4 N-term,NB,4.205672713585686,3.9301007464330953,Kd_LB_vs_NB,True,included
+thoc4_nter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 N-term,LB,4.213767126237002,3.9779014263622483,Kd_LB_vs_NB,True,included
+thoc4_nter__sox12,SOX12–THOC4 N-term,NB,2.9254075117775273,2.942610916131089,Kd_LB_vs_NB,True,included
+thoc4_nter__tfe3_cter,TFE3–THOC4 N-term,Kd_fit,4.046658006564283,4.082050654434443,Kd_LB_vs_NB,True,included
+thoc4_nter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 N-term,LB,4.020579894300759,3.76156322389096,Kd_LB_vs_NB,True,included
+thoc4_nter__tp53,p53–THOC4 N-term,Kd_pending,4.2190663804747865,4.120323971248079,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tp53_shuffle_1,p53 shuffle 1–THOC4 N-term,Kd_pending,4.207064274421728,4.019565264267354,Kd_LB_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__atf4_tad,ATF4–G3BP1,Kd_fit,3.913951789433125,3.793192001521941,LB_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__foxm1,FOXM1–G3BP1,NB,3.9840430425467854,3.6342884938644664,LB_vs_NB,True,included
+g3bp1_rgg__foxo4_cr3,FOXO4–G3BP1,Kd_fit,4.083035222714828,3.906845223087274,LB_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__foxo6_cr3,FOXO6–G3BP1,Kd_fit,3.939249852248468,3.815554489632772,LB_vs_NB,False,outcome outside comparison or score unavailable
+g3bp1_rgg__lef1_nter,LEF1–G3BP1,NB,4.061071165509613,3.62279840708991,LB_vs_NB,True,included
+g3bp1_rgg__sox12,SOX12–G3BP1,NB,2.851105637145337,2.8067080829002666,LB_vs_NB,True,included
+g3bp1_rgg__tfe3_cter,TFE3–G3BP1,LB,3.827033907558424,3.7190774154741,LB_vs_NB,True,included
+g3bp1_rgg__tp53,p53–G3BP1,Kd_fit,4.09605757643346,3.750990632010813,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__atf4_tad,ATF4–Q8N319,,4.174923415524577,4.267668880960398,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo4_cr3,FOXO4–Q8N319,,4.253460429613652,4.401795018189266,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__foxo6_cr3,FOXO6–Q8N319,,4.188500292356271,4.288835204475778,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__lef1_nter,LEF1–Q8N319,,4.234726830334949,4.04704359094119,LB_vs_NB,False,outcome outside comparison or score unavailable
+q8n319__tfe3_cter,TFE3–Q8N319,,4.097235905156904,4.174581409589598,LB_vs_NB,False,outcome outside comparison or score unavailable
+rab44__atf4_tad,ATF4–RAB44,NB,3.263430921864481,3.2445147549603357,LB_vs_NB,True,included
+rab44__foxo4_cr3,FOXO4–RAB44,NB,3.391019612997953,3.339661054338755,LB_vs_NB,True,included
+rab44__foxo6_cr3,FOXO6–RAB44,NB,3.2752216206845897,3.266246801724983,LB_vs_NB,True,included
+rab44__lef1_nter,LEF1–RAB44,LB,3.3585294807364514,3.170995425308102,LB_vs_NB,True,included
+rab44__tfe3_cter,TFE3–RAB44,LB,3.2299115165125034,3.1979124740180684,LB_vs_NB,True,included
+rbmx__atf4_tad,ATF4–RBMX,LB,3.999753087982936,3.6345632474103273,LB_vs_NB,True,included
+rbmx__foxo4_cr3,FOXO4–RBMX,Kd_fit,4.171614930616354,3.7449081903402917,LB_vs_NB,False,outcome outside comparison or score unavailable
+rbmx__foxo6_cr3,FOXO6–RBMX,Kd_fit,4.0297812276899645,3.6892383423865462,LB_vs_NB,False,outcome outside comparison or score unavailable
+rbmx__lef1_nter,LEF1–RBMX,NB,4.124977510182793,3.4107277353858754,LB_vs_NB,True,included
+rbmx__tfe3_cter,TFE3–RBMX,NB,3.914586558863298,3.607933082030968,LB_vs_NB,True,included
+snrnp70_s__atf4_tad,ATF4–SNRNP70 short,LB,2.869391609791332,2.877170464991277,LB_vs_NB,True,included
+snrnp70_s__foxo4_cr3,FOXO4–SNRNP70 short,NB,2.9286652787677543,2.9714484934661898,LB_vs_NB,True,included
+snrnp70_s__foxo6_cr3,FOXO6–SNRNP70 short,NB,2.877909644708341,2.9187127109199014,LB_vs_NB,True,included
+snrnp70_s__lef1_nter,LEF1–SNRNP70 short,NB,2.902978394938146,2.7961643051170837,LB_vs_NB,True,included
+snrnp70_s__tfe3_cter,TFE3–SNRNP70 short,NB,2.8659340781235105,2.865342295992435,LB_vs_NB,True,included
+taf15_rgg__atf4_tad,ATF4–TAF15,NB,3.4217008216268345,3.45158319938811,LB_vs_NB,True,included
+taf15_rgg__atf4_tad_shuffle_1,ATF4 shuffle 1–TAF15,NB,3.406288942411185,3.358711384242422,LB_vs_NB,True,included
+taf15_rgg__foxm1,FOXM1–TAF15,Kd_pending,3.5080900454032937,3.4394721755886986,LB_vs_NB,False,outcome outside comparison or score unavailable
+taf15_rgg__foxo4_cr3,FOXO4–TAF15,LB,3.5528487703570706,3.4986080892951663,LB_vs_NB,True,included
+taf15_rgg__foxo6_cr3,FOXO6–TAF15,LB,3.432927318891617,3.4826525162829878,LB_vs_NB,True,included
+taf15_rgg__lef1_nter,LEF1–TAF15,NB,3.5164330901691216,3.342069470418723,LB_vs_NB,True,included
+taf15_rgg__sox12,SOX12–TAF15,NB,2.840270451531044,2.802762860757563,LB_vs_NB,True,included
+taf15_rgg__tfe3_cter,TFE3–TAF15,NB,3.3921371794591253,3.441385406436418,LB_vs_NB,True,included
+taf15_rgg__tfe3_cter_shuffle_2,TFE3 shuffle 2–TAF15,LB,3.3861638563145453,3.3720605521211517,LB_vs_NB,True,included
+taf15_rgg__tp53,p53–TAF15,Kd_pending,3.581327992415395,3.444621492885809,LB_vs_NB,False,outcome outside comparison or score unavailable
+tceal6__atf4_tad,ATF4–TCEAL6,LB,3.414127816928437,3.4860434630711747,LB_vs_NB,True,included
+tceal6__foxo4_cr3,FOXO4–TCEAL6,NB,3.549723838296237,3.6476682060772427,LB_vs_NB,True,included
+tceal6__foxo6_cr3,FOXO6–TCEAL6,NB,3.428387133983754,3.525551823151927,LB_vs_NB,True,included
+tceal6__lef1_nter,LEF1–TCEAL6,NB,3.518194770761022,3.403212214425487,LB_vs_NB,True,included
+tceal6__tfe3_cter,TFE3–TCEAL6,NB,3.3762216855935474,3.438334366074998,LB_vs_NB,True,included
+thoc4_cter__atf4_tad,ATF4–THOC4 C-term,Kd_fit,3.850529947631383,4.037324405808773,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 C-term,,3.8250059415555953,3.7949557800523257,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxm1,FOXM1–THOC4 C-term,NB,3.9387061094600138,3.7640256504426137,LB_vs_NB,True,included
+thoc4_cter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 C-term,,3.9420921337925248,3.9038230869454793,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo4_cr3,FOXO4–THOC4 C-term,Kd_fit,4.0435303938213805,4.200674884108648,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 C-term,,4.028908957555677,4.264655862156775,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__foxo6_cr3,FOXO6–THOC4 C-term,NB,3.866322068828507,4.081280408517786,LB_vs_NB,True,included
+thoc4_cter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 C-term,LB,3.8788416999470168,3.9117714553069542,LB_vs_NB,True,included
+thoc4_cter__lef1_nter,LEF1–THOC4 C-term,NB,3.986222362131916,3.8094215643490354,LB_vs_NB,True,included
+thoc4_cter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 C-term,,4.008822883318023,3.7976614994907747,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__sox12,SOX12–THOC4 C-term,NB,2.8793151682602014,2.846125846783817,LB_vs_NB,True,included
+thoc4_cter__tfe3_cter,TFE3–THOC4 C-term,LB,3.793754401251232,3.938785698453726,LB_vs_NB,True,included
+thoc4_cter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 C-term,,3.767757540245112,3.573084641434714,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_cter__tp53,p53–THOC4 C-term,LB,4.018484626427419,3.9905942677201303,LB_vs_NB,True,included
+thoc4_cter__tp53_shuffle_1,p53 shuffle 1–THOC4 C-term,,4.005980657023217,3.8750123632759155,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__atf4_tad,ATF4–THOC4 N-term,Kd_fit,4.107048874011658,4.188447575202522,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 N-term,NB,4.087342434119536,3.9466546742191224,LB_vs_NB,True,included
+thoc4_nter__foxm1,FOXM1–THOC4 N-term,Kd_pending,4.160102546112894,3.9038203023147577,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 N-term,LB,4.164505402178439,4.040169118664857,LB_vs_NB,True,included
+thoc4_nter__foxo4_cr3,FOXO4–THOC4 N-term,Kd_fit,4.225118664554327,4.347636953310637,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 N-term,Kd_pending,4.229206700402277,4.380564672126015,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo6_cr3,FOXO6–THOC4 N-term,Kd_fit,4.133097503603028,4.208908849767933,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 N-term,Kd_pending,4.1413855431103705,4.012259652850248,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__lef1_nter,LEF1–THOC4 N-term,NB,4.205672713585686,3.9301007464330953,LB_vs_NB,True,included
+thoc4_nter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 N-term,LB,4.213767126237002,3.9779014263622483,LB_vs_NB,True,included
+thoc4_nter__sox12,SOX12–THOC4 N-term,NB,2.9254075117775273,2.942610916131089,LB_vs_NB,True,included
+thoc4_nter__tfe3_cter,TFE3–THOC4 N-term,Kd_fit,4.046658006564283,4.082050654434443,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 N-term,LB,4.020579894300759,3.76156322389096,LB_vs_NB,True,included
+thoc4_nter__tp53,p53–THOC4 N-term,Kd_pending,4.2190663804747865,4.120323971248079,LB_vs_NB,False,outcome outside comparison or score unavailable
+thoc4_nter__tp53_shuffle_1,p53 shuffle 1–THOC4 N-term,Kd_pending,4.207064274421728,4.019565264267354,LB_vs_NB,False,outcome outside comparison or score unavailable
