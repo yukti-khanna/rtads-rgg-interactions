@@ -1,0 +1,2 @@
+dataset,n,Pearson_r,Spearman_rho,x_descriptor_name,formula,historical_name,sampling_description
+original 917 feature-guided panel,917,0.8747799627112726,0.9559366710712488,Negative net-charge product (−NCP),−NCP = −Q_RGG × Q_TAD,Opposite Charge Number (OCN),feature-guided 917-pair simulation panel

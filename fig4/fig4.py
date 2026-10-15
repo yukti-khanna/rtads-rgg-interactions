@@ -636,7 +636,7 @@ def panel_d(ax: plt.Axes, df: pd.DataFrame, cache: Path):
             transform=ax.transAxes,
             ha="left", va="top",
             fontsize=_fs(5.4),
-            bbox=dict(boxstyle="round,pad=0.2", fc="white", ec=C("grey","grey"), lw=0.5, alpha=0.9),
+            #bbox=dict(boxstyle="round,pad=0.2", fc="white", ec=C("grey","grey"), lw=0.5, alpha=0.9),
         )
 
     divider = make_axes_locatable(ax)

@@ -1,0 +1,16 @@
+{
+  "exclusion_filename": "/Users/yuktikhanna/rtads-rgg-interactions/fig4/reviewer_analysis/control_simulation_manifest/simulation_pair_names_400.txt",
+  "exclusion_sha256": "358e5034e1f139a3c153693d4c2745448f293a478c68093dc67130d5934fff71",
+  "number_loaded": 400,
+  "shuffle_candidates_removed": 240,
+  "basic_control_candidates_removed": 20,
+  "unmatched": 60,
+  "original_line_count": 400,
+  "non_empty_count": 400,
+  "existing_pair_category_counts": {
+    "EXISTING_SHUFFLE": 240,
+    "OTHER_EXISTING": 80,
+    "EXISTING_UNWANTED_BASIC_SHUFFLE": 60,
+    "EXISTING_BASIC_WT": 20
+  }
+}

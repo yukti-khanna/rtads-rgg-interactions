@@ -1,0 +1,4 @@
+dataset,n,Pearson_r,Spearman_rho,matching_algorithm,random_seed
+full 917,917,0.87477996271127267,0.9559366710712488,5x5x5 quantile-bin coarsened exact matching to held-out; min available per occupied cell,20260910
+matched 917 subset,789,0.92828122987582595,0.95476773296938333,5x5x5 quantile-bin coarsened exact matching to held-out; min available per occupied cell,20260910
+held-out,1794,0.92427706454733483,0.92281486434388926,5x5x5 quantile-bin coarsened exact matching to held-out; min available per occupied cell,20260910

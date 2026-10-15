@@ -1,0 +1,6 @@
+factor,factor_value,compact_linker_cutoff,bridge_linker_cutoff,flank_extension,condition_id,is_baseline,total_downstream_RG_RGG_regions,unique_exact_percent,unique_recovered_percent,unique_merged_percent,unique_split_percent,unique_lost_percent,pair_total_pairs,pair_exact_percent,pair_recovered_percent,pair_potentially_affected_percent,pair_lost_percent,median_baseline_residue_recovery_fraction,median_Jaccard_overlap,median_absolute_start_shift,median_absolute_end_shift,median_absolute_length_change,median_baseline_RG_motif_recovery_fraction
+flank,3,7,15,3,c07_b15_f03,False,627,0.0,100.0,0.0,0.0,0.0,917,0.0,100.0,100.0,0.0,0.8,0.8,2.0,2.0,4.0,1.0
+flank,4,7,15,4,c07_b15_f04,False,627,0.0,100.0,0.0,0.0,0.0,917,0.0,100.0,100.0,0.0,0.9,0.9,1.0,1.0,2.0,1.0
+flank,5,7,15,5,c07_b15_f05,True,627,100.0,100.0,0.0,0.0,0.0,917,100.0,100.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0
+flank,6,7,15,6,c07_b15_f06,False,627,0.0,100.0,0.0,0.0,0.0,917,0.0,100.0,100.0,0.0,1.0,0.9130434782608695,1.0,1.0,2.0,1.0
+flank,7,7,15,7,c07_b15_f07,False,627,0.0,100.0,0.0,0.0,0.0,917,0.0,100.0,100.0,0.0,1.0,0.84,2.0,2.0,4.0,1.0

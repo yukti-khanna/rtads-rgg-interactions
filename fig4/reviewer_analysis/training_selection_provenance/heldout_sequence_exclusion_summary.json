@@ -1,0 +1,16 @@
+{
+  "heldout_AHD_count": 23,
+  "heldout_RG_RGG_count": 78,
+  "heldout_cross_product_expected": 1794,
+  "heldout_cross_product_unique": 1794,
+  "AHD_identity_overlap_with_final917": 0,
+  "RG_RGG_identity_overlap_with_final917": 0,
+  "exact_pair_overlap_with_final917": 0,
+  "heldout_AHD_identifiers_with_exact_sequence_match_in_final917": 1,
+  "heldout_RG_RGG_identifiers_with_exact_sequence_match_in_final917": 2,
+  "final917_pairs_with_reserved_AHD": 0,
+  "final917_pairs_with_reserved_RG_RGG": 0,
+  "independence_basis": "identifier-exclusive identities and no use of held-out outcomes; chronological timing is not required",
+  "sequence_string_caveat": "FASTA contains identical amino-acid strings under distinct identifiers; see heldout_sequence_exclusion_audit.csv",
+  "unix_shuf_status": "reported historical context; archived lists exist, but no executable shuf command plus seed was recovered"
+}

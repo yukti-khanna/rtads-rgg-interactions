@@ -1,0 +1,8 @@
+accounting_item,count,status
+pre_exclusion_pair_count,1039,directly documented
+final_training_pair_count,917,directly documented
+reserved_AHD_only,56,reconstructed by exact identity matching
+reserved_RG_RGG_only,59,reconstructed by exact identity matching
+both_reserved_categories,7,reconstructed by exact identity matching
+other_or_unresolved,0,reconstructed by exact identity matching
+total_removed,122,exact set difference

@@ -1,0 +1,6 @@
+factor,factor_value,compact_linker_cutoff,bridge_linker_cutoff,flank_extension,condition_id,is_baseline,total_downstream_RG_RGG_regions,unique_exact_percent,unique_recovered_percent,unique_merged_percent,unique_split_percent,unique_lost_percent,pair_total_pairs,pair_exact_percent,pair_recovered_percent,pair_potentially_affected_percent,pair_lost_percent,median_baseline_residue_recovery_fraction,median_Jaccard_overlap,median_absolute_start_shift,median_absolute_end_shift,median_absolute_length_change,median_baseline_RG_motif_recovery_fraction
+compact,5,5,15,5,c05_b15_f05,False,627,87.08133971291866,89.31419457735247,0.1594896331738437,0.0,10.685805422647528,917,87.35005452562704,89.53107960741549,12.649945474372956,10.468920392584515,1.0,1.0,0.0,0.0,0.0,1.0
+compact,6,6,15,5,c06_b15_f05,False,627,91.70653907496012,92.98245614035088,0.0,0.0,7.017543859649122,917,91.49400218102508,92.80261723009815,8.505997818974919,7.197382769901854,1.0,1.0,0.0,0.0,0.0,1.0
+compact,7,7,15,5,c07_b15_f05,True,627,100.0,100.0,0.0,0.0,0.0,917,100.0,100.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0
+compact,8,8,15,5,c08_b15_f05,False,627,99.68102073365232,100.0,0.0,0.0,0.0,917,99.67284623773173,100.0,0.3271537622682661,0.0,1.0,1.0,0.0,0.0,0.0,1.0
+compact,9,9,15,5,c09_b15_f05,False,627,99.36204146730464,100.0,0.0,0.0,0.0,917,99.12758996728462,100.0,0.8724100327153763,0.0,1.0,1.0,0.0,0.0,0.0,1.0

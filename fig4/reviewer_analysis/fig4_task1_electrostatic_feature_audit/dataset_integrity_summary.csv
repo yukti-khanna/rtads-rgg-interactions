@@ -1,0 +1,15 @@
+check,value
+master_rows,1039
+master_unique_names,1039
+master_duplicate_rows_by_name,0
+master_duplicate_name_count,0
+figure4_cache_rows,917
+expected_figure4_rows,917
+figure4_cache_unique_names,917
+figure4_cache_duplicate_rows_by_name,0
+figure4_names_missing_from_master,0
+master_duplicate_names_for_figure4_names,0
+all_917_mapped_uniquely_and_completely,True
+missing_values_in_used_columns,0
+nonfinite_values_in_used_columns,0
+cache_vs_master_ocn_max_abs_difference,0

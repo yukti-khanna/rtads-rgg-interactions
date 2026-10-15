@@ -1,0 +1,14 @@
+Trajectory-duration provenance
+
+Evidence source: simulation configuration files for all 15 selected pairs and job_0 through job_4.
+Configurations found: 75/75.
+Representative path: /Users/yuktikhanna/calvados/run_ocn/test_P53814_1_2__P32242_63_78/298k_20.0nm/job_0/config.yaml
+Relevant parameters: steps=[100000000]; wfreq=[10000].
+Derived saved-frame count: steps / wfreq = 10000 frames.
+Trajectory analysis output independently contains 10,000 frames at the 100% window.
+
+The local configuration does not specify the molecular-dynamics integrator timestep. DCD timing metadata available to the analysis stores frame indices rather than physical time. Therefore steps × timestep cannot be calculated from these local files, and the 1-µs duration is not independently inferred here.
+
+Conclusion: Historical simulation duration supplied externally: 1 µs per replica
+Confidence/status: configuration and frame-count provenance directly verified; physical-duration conversion relies on the documented historical simulation design.
+Missing configuration files: 0.

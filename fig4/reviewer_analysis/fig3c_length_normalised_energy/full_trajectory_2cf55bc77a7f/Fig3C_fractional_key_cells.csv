@@ -1,0 +1,3 @@
+RGG_class,AHD_class,observed_mean_fraction,observed_mean_percentage,bootstrap_q025_fraction,bootstrap_q975_fraction,rank,bootstrap_fraction_rank1,bootstrap_q025_percentage,bootstrap_q975_percentage,ratio_basic_acidic_to_acidic_basic,basic_acidic_is_top
+Basic,Acidic,0.5422520991288546,54.22520991288546,0.5341495238922239,0.5502273824391006,1,1.0,53.41495238922239,55.02273824391006,14.745239689145132,True
+Acidic,Basic,0.03677472259254215,3.677472259254215,0.0330304828837109,0.04065580288466351,4,0.0,3.30304828837109,4.065580288466351,14.745239689145132,True

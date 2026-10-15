@@ -1,0 +1,16 @@
+pair_id,corrected_B22,percentile,regime,historical_replicates,trajectory_availability,selection_reason
+O00144_1_1__Q13285_373_392,-446.44359379204616,0.12,weak,5,True,nearest unused available pair to 10th percentile of interaction strength
+Q02388_5_13__Q13285_373_392,-452.27193568613632,0.16,weak,5,True,nearest unused available pair to 10th percentile of interaction strength
+O00144_1_1__P49910_193_208,-424.95848292663823,0.080000000000000002,weak,5,True,nearest unused available pair to 10th percentile of interaction strength
+O00144_1_1__P35716_353_367,-538.67656964078856,0.20000000000000001,weak,5,True,nearest unused available pair to 10th percentile of interaction strength
+Q14152_5_3__Q9UJU2_14_65,-314.49145947930054,0.040000000000000001,weak,5,True,nearest unused available pair to 10th percentile of interaction strength
+Q02388_5_13__P49910_193_208,-7297.122747939291,0.52000000000000002,intermediate,5,True,nearest unused available pair to 50th percentile of interaction strength
+Q02388_5_13__P35716_353_367,-8440.3565458745234,0.56000000000000005,intermediate,5,True,nearest unused available pair to 50th percentile of interaction strength
+P19338_5_1__Q9UJU2_14_65,-8780.8794692724587,0.59999999999999998,intermediate,5,True,nearest unused available pair to 50th percentile of interaction strength
+P19338_5_1__P35716_353_367,-3356.2452335978305,0.47999999999999998,intermediate,5,True,nearest unused available pair to 50th percentile of interaction strength
+Q02388_5_13__P98177_463_504,-1736.906612627281,0.44,intermediate,5,True,nearest unused available pair to 50th percentile of interaction strength
+Q14152_5_3__P49910_193_208,-24499.440043812407,0.92000000000000004,strong,5,True,nearest unused available pair to 90th percentile of interaction strength
+Q14152_5_3__P35716_353_367,-24540.750371874008,0.95999999999999996,strong,5,True,nearest unused available pair to 90th percentile of interaction strength
+Q14152_5_3__Q13285_373_392,-23464.557386780227,0.88,strong,5,True,nearest unused available pair to 90th percentile of interaction strength
+Q9Y3Y2_3_1__Q9UJU2_14_65,-22350.48247044794,0.83999999999999997,strong,5,True,nearest unused available pair to 90th percentile of interaction strength
+P19338_5_1__P98177_463_504,-21745.187649402775,0.80000000000000004,strong,5,True,nearest unused available pair to 90th percentile of interaction strength
