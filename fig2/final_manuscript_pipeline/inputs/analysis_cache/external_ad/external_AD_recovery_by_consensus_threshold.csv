@@ -1,0 +1,85 @@
+population,dataset,threshold_label,threshold,comparison,N_eligible,N_recognized,recovery_fraction,CI_95_low,CI_95_high,family_filter
+external_AD,Soto 2022,>0,0.0,gt,403,403,1.0,0.990557848180396,1.0,all_families
+external_AD,Soto 2022,0.25,0.25,ge,403,305,0.7568238213399504,0.7126420739908936,0.7961556296650418,all_families
+external_AD,Soto 2022,0.50,0.5,ge,403,255,0.6327543424317618,0.5846425226114759,0.6783591889401429,all_families
+external_AD,Soto 2022,0.75,0.75,ge,403,190,0.47146401985111663,0.42322653574536834,0.5202403860706387,all_families
+external_AD,Soto 2022,0.85,0.85,ge,403,159,0.3945409429280397,0.34803388725005724,0.4430395194612735,all_families
+external_AD,Soto 2022,0.90,0.9,ge,403,141,0.34987593052109184,0.3049280579744676,0.3976587915793092,all_families
+external_AD,Soto 2022,manuscript final (0.85),0.85,ge,403,159,0.3945409429280397,0.34803388725005724,0.4430395194612735,all_families
+external_AD,Kotha & Staller 2023 high-confidence,>0,0.0,gt,515,515,1.0,0.9925960835330591,0.9999999999999999,all_families
+external_AD,Kotha & Staller 2023 high-confidence,0.25,0.25,ge,515,505,0.9805825242718447,0.9646293911403052,0.9894192716730235,all_families
+external_AD,Kotha & Staller 2023 high-confidence,0.50,0.5,ge,515,463,0.8990291262135922,0.8699821345898731,0.9221673612005876,all_families
+external_AD,Kotha & Staller 2023 high-confidence,0.75,0.75,ge,515,377,0.7320388349514563,0.6921725911058276,0.7684690864949513,all_families
+external_AD,Kotha & Staller 2023 high-confidence,0.85,0.85,ge,515,312,0.6058252427184466,0.5629860833721887,0.6470973595503422,all_families
+external_AD,Kotha & Staller 2023 high-confidence,0.90,0.9,ge,515,278,0.5398058252427185,0.4966236437012367,0.5823985687742107,all_families
+external_AD,Kotha & Staller 2023 high-confidence,manuscript final (0.85),0.85,ge,515,312,0.6058252427184466,0.5629860833721887,0.6470973595503422,all_families
+external_AD,Kotha & Staller 2023 GSL,>0,0.0,gt,160,160,1.0,0.9765538048284949,1.0,all_families
+external_AD,Kotha & Staller 2023 GSL,0.25,0.25,ge,160,129,0.80625,0.738126102390117,0.8600131030673362,all_families
+external_AD,Kotha & Staller 2023 GSL,0.50,0.5,ge,160,111,0.69375,0.6184822211553903,0.7599323782156514,all_families
+external_AD,Kotha & Staller 2023 GSL,0.75,0.75,ge,160,91,0.56875,0.4912873839652816,0.6429887641986365,all_families
+external_AD,Kotha & Staller 2023 GSL,0.85,0.85,ge,160,74,0.4625,0.38702904809919947,0.5397294165386636,all_families
+external_AD,Kotha & Staller 2023 GSL,0.90,0.9,ge,160,65,0.40625,0.3332130472204216,0.48368311437423567,all_families
+external_AD,Kotha & Staller 2023 GSL,manuscript final (0.85),0.85,ge,160,74,0.4625,0.38702904809919947,0.5397294165386636,all_families
+external_AD,Staller 2022,>0,0.0,gt,136,136,1.0,0.9725299002664176,1.0,all_families
+external_AD,Staller 2022,0.25,0.25,ge,136,136,1.0,0.9725299002664176,1.0,all_families
+external_AD,Staller 2022,0.50,0.5,ge,136,130,0.9558823529411765,0.9070924554902227,0.9796259829879816,all_families
+external_AD,Staller 2022,0.75,0.75,ge,136,106,0.7794117647058824,0.7025855804955782,0.8408870108297729,all_families
+external_AD,Staller 2022,0.85,0.85,ge,136,87,0.6397058823529411,0.5562057410632959,0.7155305545993795,all_families
+external_AD,Staller 2022,0.90,0.9,ge,136,79,0.5808823529411765,0.4968512566878156,0.6604697565905755,all_families
+external_AD,Staller 2022,manuscript final (0.85),0.85,ge,136,87,0.6397058823529411,0.5562057410632959,0.7155305545993795,all_families
+external_AD,Union of >=1 external dataset,>0,0.0,gt,850,850,1.0,0.9955009694352391,0.9999999999999999,all_families
+external_AD,Union of >=1 external dataset,0.25,0.25,ge,850,740,0.8705882352941177,0.8463452914224835,0.8914966035706938,all_families
+external_AD,Union of >=1 external dataset,0.50,0.5,ge,850,647,0.7611764705882353,0.7313789678371726,0.7886238914913525,all_families
+external_AD,Union of >=1 external dataset,0.75,0.75,ge,850,503,0.591764705882353,0.5583815211543047,0.6243221861773393,all_families
+external_AD,Union of >=1 external dataset,0.85,0.85,ge,850,408,0.48,0.44657929387594664,0.5136006673466438,all_families
+external_AD,Union of >=1 external dataset,0.90,0.9,ge,850,359,0.4223529411764706,0.3895698958315537,0.45583465950320917,all_families
+external_AD,Union of >=1 external dataset,manuscript final (0.85),0.85,ge,850,408,0.48,0.44657929387594664,0.5136006673466438,all_families
+external_AD,External regions supported by >=2 datasets,>0,0.0,gt,256,256,1.0,0.9852161435741286,0.9999999999999999,all_families
+external_AD,External regions supported by >=2 datasets,0.25,0.25,ge,256,241,0.94140625,0.9055877343822104,0.9641733923668249,all_families
+external_AD,External regions supported by >=2 datasets,0.50,0.5,ge,256,230,0.8984375,0.8553490986352725,0.9297450157753611,all_families
+external_AD,External regions supported by >=2 datasets,0.75,0.75,ge,256,191,0.74609375,0.6894097171973202,0.7955013534680712,all_families
+external_AD,External regions supported by >=2 datasets,0.85,0.85,ge,256,159,0.62109375,0.5602917977137302,0.678315237058129,all_families
+external_AD,External regions supported by >=2 datasets,0.90,0.9,ge,256,147,0.57421875,0.5129905510088384,0.6332524703029463,all_families
+external_AD,External regions supported by >=2 datasets,manuscript final (0.85),0.85,ge,256,159,0.62109375,0.5602917977137302,0.678315237058129,all_families
+matched_non_AD_control,Soto 2022,>0,0.0,gt,403,403,1.0,0.990557848180396,1.0,all_families
+matched_non_AD_control,Soto 2022,0.25,0.25,ge,403,305,0.7568238213399504,0.7126420739908936,0.7961556296650418,all_families
+matched_non_AD_control,Soto 2022,0.50,0.5,ge,403,232,0.575682382133995,0.5269368954375522,0.622998659746081,all_families
+matched_non_AD_control,Soto 2022,0.75,0.75,ge,403,159,0.3945409429280397,0.34803388725005724,0.4430395194612735,all_families
+matched_non_AD_control,Soto 2022,0.85,0.85,ge,403,116,0.2878411910669975,0.24580414051858449,0.33388471298303396,all_families
+matched_non_AD_control,Soto 2022,0.90,0.9,ge,403,88,0.21836228287841192,0.18078897481932077,0.2612541231038804,all_families
+matched_non_AD_control,Soto 2022,manuscript final (0.85),0.85,ge,403,116,0.2878411910669975,0.24580414051858449,0.33388471298303396,all_families
+matched_non_AD_control,Kotha & Staller 2023 high-confidence,>0,0.0,gt,515,515,1.0,0.9925960835330591,0.9999999999999999,all_families
+matched_non_AD_control,Kotha & Staller 2023 high-confidence,0.25,0.25,ge,515,339,0.658252427184466,0.6162526910061767,0.6979087878596264,all_families
+matched_non_AD_control,Kotha & Staller 2023 high-confidence,0.50,0.5,ge,515,237,0.4601941747572815,0.4176014312257892,0.5033763562987632,all_families
+matched_non_AD_control,Kotha & Staller 2023 high-confidence,0.75,0.75,ge,515,144,0.2796116504854369,0.2425907565441501,0.31989601828690917,all_families
+matched_non_AD_control,Kotha & Staller 2023 high-confidence,0.85,0.85,ge,515,96,0.18640776699029127,0.1551398750953234,0.22231928028102976,all_families
+matched_non_AD_control,Kotha & Staller 2023 high-confidence,0.90,0.9,ge,515,66,0.12815533980582525,0.10201501049839089,0.15980188271877088,all_families
+matched_non_AD_control,Kotha & Staller 2023 high-confidence,manuscript final (0.85),0.85,ge,515,96,0.18640776699029127,0.1551398750953234,0.22231928028102976,all_families
+matched_non_AD_control,Kotha & Staller 2023 GSL,>0,0.0,gt,160,160,1.0,0.9765538048284949,1.0,all_families
+matched_non_AD_control,Kotha & Staller 2023 GSL,0.25,0.25,ge,160,118,0.7375,0.6643294227646624,0.7995336345288727,all_families
+matched_non_AD_control,Kotha & Staller 2023 GSL,0.50,0.5,ge,160,91,0.56875,0.4912873839652816,0.6429887641986365,all_families
+matched_non_AD_control,Kotha & Staller 2023 GSL,0.75,0.75,ge,160,66,0.4125,0.3391443296506424,0.48995875450437104,all_families
+matched_non_AD_control,Kotha & Staller 2023 GSL,0.85,0.85,ge,160,45,0.28125,0.217343234860214,0.35541447552731964,all_families
+matched_non_AD_control,Kotha & Staller 2023 GSL,0.90,0.9,ge,160,38,0.2375,0.1782035847518699,0.3091056677131703,all_families
+matched_non_AD_control,Kotha & Staller 2023 GSL,manuscript final (0.85),0.85,ge,160,45,0.28125,0.217343234860214,0.35541447552731964,all_families
+matched_non_AD_control,Staller 2022,>0,0.0,gt,136,136,1.0,0.9725299002664176,1.0,all_families
+matched_non_AD_control,Staller 2022,0.25,0.25,ge,136,91,0.6691176470588235,0.5863474458739514,0.7425964909808663,all_families
+matched_non_AD_control,Staller 2022,0.50,0.5,ge,136,66,0.4852941176470588,0.4028624249113476,0.5685337544925811,all_families
+matched_non_AD_control,Staller 2022,0.75,0.75,ge,136,42,0.3088235294117647,0.2373215652339945,0.390828767017081,all_families
+matched_non_AD_control,Staller 2022,0.85,0.85,ge,136,24,0.17647058823529413,0.12155217401413998,0.24916377287229574,all_families
+matched_non_AD_control,Staller 2022,0.90,0.9,ge,136,17,0.125,0.07952800813071656,0.19107456666947023,all_families
+matched_non_AD_control,Staller 2022,manuscript final (0.85),0.85,ge,136,24,0.17647058823529413,0.12155217401413998,0.24916377287229574,all_families
+matched_non_AD_control,Union of >=1 external dataset,>0,0.0,gt,850,850,1.0,0.9955009694352391,0.9999999999999999,all_families
+matched_non_AD_control,Union of >=1 external dataset,0.25,0.25,ge,850,586,0.6894117647058824,0.6575100714093487,0.7196091193649421,all_families
+matched_non_AD_control,Union of >=1 external dataset,0.50,0.5,ge,850,434,0.5105882352941177,0.4770106787137098,0.5440705182860952,all_families
+matched_non_AD_control,Union of >=1 external dataset,0.75,0.75,ge,850,278,0.3270588235294118,0.2963598662515846,0.3593139160849327,all_families
+matched_non_AD_control,Union of >=1 external dataset,0.85,0.85,ge,850,202,0.2376470588235294,0.21025316029781008,0.2674016251514644,all_families
+matched_non_AD_control,Union of >=1 external dataset,0.90,0.9,ge,850,144,0.16941176470588235,0.1456943870806976,0.19610379548094414,all_families
+matched_non_AD_control,Union of >=1 external dataset,manuscript final (0.85),0.85,ge,850,202,0.2376470588235294,0.21025316029781008,0.2674016251514644,all_families
+matched_non_AD_control,External regions supported by >=2 datasets,>0,0.0,gt,256,256,1.0,0.9852161435741286,0.9999999999999999,all_families
+matched_non_AD_control,External regions supported by >=2 datasets,0.25,0.25,ge,256,207,0.80859375,0.7559804291899548,0.8520826594222026,all_families
+matched_non_AD_control,External regions supported by >=2 datasets,0.50,0.5,ge,256,161,0.62890625,0.5682303286253407,0.6857707083898643,all_families
+matched_non_AD_control,External regions supported by >=2 datasets,0.75,0.75,ge,256,109,0.42578125,0.36674752969705376,0.48700944899116155,all_families
+matched_non_AD_control,External regions supported by >=2 datasets,0.85,0.85,ge,256,78,0.3046875,0.25153621542356636,0.36361372849278967,all_families
+matched_non_AD_control,External regions supported by >=2 datasets,0.90,0.9,ge,256,58,0.2265625,0.1795467073799799,0.28166321410291856,all_families
+matched_non_AD_control,External regions supported by >=2 datasets,manuscript final (0.85),0.85,ge,256,78,0.3046875,0.25153621542356636,0.36361372849278967,all_families

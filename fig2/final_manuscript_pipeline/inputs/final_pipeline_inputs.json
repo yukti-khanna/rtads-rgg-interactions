@@ -1,0 +1,29 @@
+{
+  "template_script": "scripts/plot_fig2_feature_and_overlap_panels.py",
+  "original_assembly_png": "final_manuscript_pipeline/inputs/reference_figures/Figure2_manuscript_reference.png",
+  "plot_data": "final_manuscript_pipeline/inputs/analysis_cache/figure1/fig2B_seed_vs_random_features_top4_plot_data.tsv",
+  "plot_stats": "final_manuscript_pipeline/inputs/analysis_cache/figure1/fig2B_seed_vs_random_features_top4_stats.tsv",
+  "effect_sizes": "final_manuscript_pipeline/inputs/analysis_cache/figure1/fig2B_effect_size_summary.csv",
+  "recurrence_curves": "final_manuscript_pipeline/inputs/analysis_cache/external_ad/external_AD_recovery_by_consensus_threshold.csv",
+  "external_recurrence": "final_manuscript_pipeline/inputs/analysis_cache/external_ad/external_AD_window_recurrence.csv",
+  "matched_controls": "final_manuscript_pipeline/inputs/analysis_cache/external_ad/external_AD_matched_control_pairs.csv",
+  "control_statistics": "final_manuscript_pipeline/inputs/analysis_cache/external_ad/external_AD_vs_matched_control_recurrence.csv",
+  "nonfamily_curves": "final_manuscript_pipeline/inputs/analysis_cache/external_ad/external_AD_recurrence_nonFOX_sensitivity.csv",
+  "family_enrichment": "final_manuscript_pipeline/inputs/analysis_cache/family_bias/region_family_enrichment_by_threshold.csv",
+  "identity_rates": "final_manuscript_pipeline/inputs/analysis_cache/family_bias/region_prediction_rate_by_seed_identity_bin.csv",
+  "protein_membership": "final_manuscript_pipeline/inputs/analysis_cache/blast/venn_RTADs_ADdatasets_fromBLAST_membership_matrix.tsv",
+  "benchmark": {
+    "expected_model_count": 168,
+    "source_type": "validated supplied 168-model recurrence cache"
+  },
+  "catalogue": {
+    "models": 168,
+    "required_positive_models": 168,
+    "consensus_fraction": 1.0,
+    "sequence_features": 143,
+    "regions": 230,
+    "TF_proteins": 190,
+    "definition_source": "all 168 models positive before merging; 85% is sensitivity only"
+  },
+  "output_directory": "outputs/final_manuscript_package/plot_cache"
+}
