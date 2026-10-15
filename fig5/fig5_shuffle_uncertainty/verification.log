@@ -1,0 +1,30 @@
+TOTAL SHUFFLE COMPARISONS: 345
+AHD SHUFFLES: 230
+RG/RGG SHUFFLES: 115
+UNIQUE WT PARENTS: 115
+ALL PAIRS HAVE 5 WT + 5 SHUFFLE REPLICAS: YES
+CURRENT AHD PEARSON: 0.019972139
+AHD PEARSON BOOTSTRAP 95% CI: [-0.044452, 0.080813]
+AHD SPEARMAN BOOTSTRAP 95% CI: [-0.088671, 0.059434]
+AHD PERMUTATION P: Pearson=0.766462; Spearman=0.752812
+AHD MEDIAN |DELTA_SIM|: 0.039464
+AHD MEDIAN SE(DELTA_SIM): 0.034949
+RECOMMENDATION FOR AHD DELTA ANALYSIS: do not claim recovery; diagnostic only
+CURRENT RGG PEARSON: 0.615932497
+RGG PEARSON BOOTSTRAP 95% CI: [0.496311, 0.607185]
+RGG SPEARMAN BOOTSTRAP 95% CI: [0.508009, 0.632850]
+RGG PERMUTATION P: Pearson=4.99975e-05; Spearman=4.99975e-05
+RGG MEDIAN |DELTA_SIM|: 0.054320
+RGG MEDIAN SE(DELTA_SIM): 0.036951
+RECOMMENDATION FOR RGG DELTA ANALYSIS: retain with qualification
+OVERALL MANUSCRIPT RECOMMENDATION: retain with qualification for RG/RGG only; AHD perturbations are not reliably resolved
+Independent verification passed: {
+  "n_bootstrap": 20000,
+  "n_null": 20000,
+  "metric_max_absolute_difference_vs_scipy": 3.3306690738754696e-16,
+  "shared_WT_synthetic_check": "passed",
+  "full_comparison_counts": "passed",
+  "five_replica_counts": "passed",
+  "source_inputs_unchanged": true,
+  "panel_resolution": "1440 x 1380 pixels, 600 dpi, 2.4 x 2.3 inches"
+}

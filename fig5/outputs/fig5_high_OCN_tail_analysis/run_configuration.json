@@ -1,0 +1,8 @@
+{
+  "source": "outer-OOF predictions only",
+  "residual_prediction_dir": "/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/fig5_tensorflow_residual_final_base",
+  "F2": "rerun only to obtain compatible OOF predictions on seeds/folds [42,123,456,789,2026]",
+  "heldout_1794_accessed": false,
+  "threshold": 40.0,
+  "bootstrap_resamples": 5000
+}

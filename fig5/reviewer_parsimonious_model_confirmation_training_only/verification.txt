@@ -1,0 +1,8 @@
+Verification
+No model was retrained. This script imports no MLPRegressor and contains no model fitting code.
+Only Task 2b OOF predictions were used for primary calculations: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_feature_family_decomposition_training_only/oof_predictions_all_repeats.csv
+Task 2b CV metrics were used only to verify consistency: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_feature_family_decomposition_training_only/cv_metrics_by_repeat.csv
+Maximum absolute difference between recomputed metrics from OOF predictions and Task 2b metrics: 2.220e-16
+The 1,794-pair held-out file was never opened/read/hashed by this script.
+Unsimulated predictions were not used.
+No existing Figure 5 files were modified by this script except files written inside this new output directory.

@@ -1,0 +1,18 @@
+Corrected non-basic shuffle audit
+
+1. Valid matched non-basic shuffles: 160 TAD shuffles and 80 RGG shuffles.
+2. Length, composition, acidic/basic counts, net charge, and -NCP preservation: PASS for all strict non-basic comparisons.
+3. RGG_shuffle: mean delta_B22=-784.199, 95% bootstrap CI [-1294.367, -354.427], Wilcoxon p=0.0116.
+4. RGG_shuffle: median delta_B22=-34.498, median CI [-100.624, 0.470].
+3. TAD_shuffle: mean delta_B22=-232.837, 95% bootstrap CI [-398.743, -99.388], Wilcoxon p=0.000221.
+4. TAD_shuffle: median delta_B22=-61.643, median CI [-101.947, -13.407].
+5. RGG_shuffle: fraction above 1 pooled replica SD=0.438; above 2 pooled SD=0.263.
+5. TAD_shuffle: fraction above 1 pooled replica SD=0.381; above 2 pooled SD=0.169.
+6. TAD parent reproducibility: same-direction fraction=0.738, Pearson=0.684, Spearman=0.522.
+7. Large effects are context-dependent; the largest mean absolute effects are concentrated in: RGG_parent:O60506_3_1, TAD_parent:O43889_external_AD_core, TAD_parent:P98177_463_504, TAD_parent:O43889_external_AD_core, TAD_parent:P19532_512_529.
+8. Frozen model delta performance for RGG_shuffle: Pearson=0.634, Spearman=0.683, sign agreement=0.750.
+8. Frozen model delta performance for TAD_shuffle: Pearson=-0.012, Spearman=-0.027, sign agreement=0.525.
+9. Strongest descriptive feature-delta associations with delta_B22: scd_patch1_std (RGG_shuffle, rho=-0.644), SCD_RGG (RGG_shuffle, rho=0.576), opp_charge_std (RGG_shuffle, rho=-0.572), ah_energy_std (RGG_shuffle, rho=-0.446), rgg_count_patch1_std (RGG_shuffle, rho=0.379).
+10. Best-supported interpretation: context-dependent sequence-order modulation, not a universal positional rule.
+11. The result does not justify a general positional interaction grammar claim.
+12. Model retraining required: NO.

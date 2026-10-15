@@ -1,0 +1,6 @@
+original_residues: /Users/yuktikhanna/calvados/residues.csv; SHA256 2cf55bc77a7ff8a25b7cc841ac947ff5c6ec33a8fdc3a5e575044152c7d0bbc7
+Original vs shard residue table maximum absolute differences: {'q': 0.0, 'sigmas': 1.1102230246251565e-16, 'lambdas': 0.2732135325180461}
+original_fasta: /Users/yuktikhanna/calvados/all_tads_rggs_dis.fasta; SHA256 373cf3468fcc4f7ab5fdd10ff74778b2de6f605011e0bfd68381b725e4a59928
+Original vs shard FASTA: 1238 vs 1238 IDs; different shared sequences: 0
+rgg_headers: /Users/yuktikhanna/calvados/rg_tract_headers.txt; SHA256 01d61bbb70e97e21d4e8ca41346ddb676695a480f1621a4e301adb2eb167c793
+tad_headers: /Users/yuktikhanna/calvados/tad_headers.txt; SHA256 c6412a3deee230094ab174e8b4d8a9792bccc9215719f6aeb2f3fc669ee0e31b

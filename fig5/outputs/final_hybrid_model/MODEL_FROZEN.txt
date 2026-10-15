@@ -1,0 +1,12 @@
+MODEL FROZEN
+
+model_manifest_sha256: fdb9ad1c7d2e0cc80edbac563960957b553c16aff46780656d047d30d7b7a6e9
+lambda_final: 0.13680294067644683
+cap: 0.16914558161466955
+gate_center: 40.0
+gate_scale: 12.0
+final_feature_order: ['Opposite_Charge_Number', 'mean_lambda_RGG', 'mean_lambda_TAD', 'SHD_RGG', 'SHD_TAD', 'opp_charge_std', 'scd_patch1_std', 'scd_patch2_std', 'rg_fraction_patch1_std', 'aromatic_fraction_patch2_std', 'shd_patch1_std', 'shd_patch2_std', 'ah_energy_std']
+final_residual_architecture: Dense 16 tanh; Dense 8 tanh; Dense 1 linear; L2=5e-4; Adam lr=2e-4; Huber delta=0.75
+training_row_count: 917
+
+The 1,794 sequence-exclusive held-out/test dataset was not opened or used during model construction, calibration, fitting, early stopping, or model selection.

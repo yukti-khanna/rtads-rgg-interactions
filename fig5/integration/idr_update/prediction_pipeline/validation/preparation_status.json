@@ -1,0 +1,13 @@
+{
+  "local_inference_performed": false,
+  "local_keras_model_loaded_or_inspected": false,
+  "observed_local_manifest_sha256": "fdb9ad1c7d2e0cc80edbac563960957b553c16aff46780656d047d30d7b7a6e9",
+  "expected_server_manifest_sha256": "48b7279b7e76260c04c1f42ee766d3f385f3d27c5ad61b99b2941d0d02b0d516",
+  "feature_identity_rows": 20,
+  "feature_identity_max_abs_difference": 4.6629367034256575e-15,
+  "prediction_identity_status": "PENDING_SERVER",
+  "S8_feature_audit_sources": {
+    "controls/final_predictions/nonbasic_WT_final_predictions.csv": "ee0f3f9757efb23978beacea891ceb846e3c7331259ff7209108a8a43e44b5bb",
+    "fig5_final_model_validation_local/inputs/controls/manifest/simulation_manifest_400.csv": "2110152a976491ccef0b13ae994f00ea52843cc2e688e741ba27039b590aa33a"
+  }
+}

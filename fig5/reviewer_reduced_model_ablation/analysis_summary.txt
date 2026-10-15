@@ -1,0 +1,36 @@
+FIGURE 5 TASK 2: REDUCED-MODEL BASE-MLP ABLATION
+
+Scope and guardrails
+Only the stored 917-pair Figure 5 feature table was used for fitting and StandardScaler estimation. The 1,794-pair 78-RGG x 23-TAD sequence-exclusive matrix was used once as external evaluation data after fitting. No held-out result selected features, hyperparameters, seeds, thresholds, or models. No residual correction or OCN-dependent gate was used. No B22 or feature table was regenerated, and the unsimulated landscape was not read. Each feature set used five MLPRegressors with seeds 0-4 and predictions were averaged. Architecture: {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (128, 64, 32, 16), 'learning_rate_init': 0.01, 'max_iter': 500, 'solver': 'adam'}. Target: B22_corr1_log10; finite values 917/917 training and 1,794/1,794 held out. All models used every row; zero rows dropped.
+
+Held-out results (primary)
+M1 (OCN only): n=1794, Pearson r=0.937262 [95% matrix-bootstrap CI 0.907099, 0.956622], Spearman rho=0.922815, R2=0.873830 [CI 0.808355, 0.911250], RMSE=0.106953 [CI 0.085096, 0.132722], MAE=0.075147.
+M2 (OCN + SCD): n=1794, Pearson r=0.944941 [95% matrix-bootstrap CI 0.921531, 0.960500], Spearman rho=0.936719, R2=0.885497 [CI 0.833908, 0.916828], RMSE=0.101888 [CI 0.081715, 0.126852], MAE=0.071963.
+M3 (Hydropathy + length): n=1794, Pearson r=0.492743 [95% matrix-bootstrap CI 0.372591, 0.610534], Spearman rho=0.530161, R2=0.200532 [CI -0.051999, 0.329328], RMSE=0.269225 [CI 0.220554, 0.321958], MAE=0.203261.
+M4 (Combined non-redundant): n=1794, Pearson r=0.951868 [95% matrix-bootstrap CI 0.930481, 0.966326], Spearman rho=0.935365, R2=0.903282 [CI 0.857863, 0.931898], RMSE=0.093641 [CI 0.071796, 0.119112], MAE=0.066845.
+M1b (Normalized OCN only): n=1794, Pearson r=0.912769 [95% matrix-bootstrap CI 0.873252, 0.940340], Spearman rho=0.896653, R2=0.830675 [CI 0.754687, 0.876162], RMSE=0.123901 [CI 0.103299, 0.144225], MAE=0.092212.
+
+Differences from OCN-only
+M2 vs M1: ΔR2=+0.011667 [CI +0.000570, +0.030463]; ΔRMSE=-0.005065 [CI -0.010422, -0.000260]; ΔMAE=-0.003184. Both ΔR2 improvement and RMSE reduction supported=True.
+M3 vs M1: ΔR2=-0.673298 [CI -0.899456, -0.550533]; ΔRMSE=+0.162272 [CI +0.124221, +0.202371]; ΔMAE=+0.128114. Both ΔR2 improvement and RMSE reduction supported=False.
+M4 vs M1: ΔR2=+0.029452 [CI -0.011816, +0.074193]; ΔRMSE=-0.013311 [CI -0.030346, +0.005658]; ΔMAE=-0.008301. Both ΔR2 improvement and RMSE reduction supported=False.
+M1b vs M1: ΔR2=-0.043155 [CI -0.094408, +0.004383]; ΔRMSE=+0.016948 [CI -0.001690, +0.035219]; ΔMAE=+0.017065. Both ΔR2 improvement and RMSE reduction supported=False.
+
+Answers to reviewer-focused questions
+1. OCN alone explains R2=0.873830 of held-out response variance (87.4% under the ordinary coefficient-of-determination definition). Pearson correlation alone must not be described as explained variance.
+
+2. Charge patterning beyond OCN: M2 changes held-out R2 by +0.011667, RMSE by -0.005065, and MAE by -0.003184. Matrix-bootstrap support using joint criteria (ΔR2 CI entirely above zero and ΔRMSE CI entirely below zero): True. SCD remains an electrostatic patterning descriptor.
+
+3. Hydropathy/stickiness/patterning/length without bulk charge: M3 achieves R2=0.200532, Pearson r=0.492743, RMSE=0.269225, and MAE=0.203261. This establishes predictive capacity without the excluded bulk-charge features; it does not establish causality or complete electrostatic independence of all physics represented by simulations.
+
+4-5. Combined model: M4 changes R2 by +0.029452, RMSE by -0.013311, and MAE by -0.008301. Matrix-bootstrap joint support: False. Magnitudes and intervals, rather than a binary significance label, are the primary interpretation.
+
+6. Raw versus normalized OCN: raw M1 R2=0.873830, RMSE=0.106953; normalized M1b R2=0.830675, RMSE=0.123901. M1b minus M1: ΔR2=-0.043155, ΔRMSE=+0.016948. This is a pre-specified sensitivity comparison, not model selection.
+
+7. Conservative classification: almost entirely bulk electrostatics within the resolution of this ablation. This classification uses a transparent descriptive threshold of ΔR2 >= 0.10 for “substantial”; that threshold was not supplied by the reviewer and is not a formal hypothesis test. The defensible prose should emphasize the observed point differences and two-axis intervals. The analysis can test whether the current predictor is “just recovering charge complementarity,” but it cannot identify mechanisms or make electrostatic dominance novel.
+
+Matrix-aware uncertainty
+For each of 2,000 replicates (seed 20260911), 78 RGG IDs were sampled with replacement and 23 TAD IDs were independently sampled with replacement. The 78x23 indexed Cartesian cells were then flattened. Repeated sampled IDs were retained with full multiplicity through repeated row/column indices; nothing was deduplicated. Every model was evaluated on the same cells within a replicate, enabling paired differences from M1. Percentile 2.5th and 97.5th quantiles form the reported 95% intervals. This two-axis cluster bootstrap reflects dependence induced by both shared RGG and shared TAD partners. It does not correct for model-training uncertainty, sequence homology, or the deliberate composition of the 78x23 panel. No naive pair-level bootstrap was used.
+
+Interpretive limits
+Training-set scores are apparent fit scores, not cross-validated estimates. The ensemble is fit once per seed and feature set according to the pre-specified design; confidence intervals resample only held-out matrix axes. MLP optimization is stochastic but fixed by seeds. Residual correlations are descriptive diagnostics and do not imply causality. The historical SCD/SHD formulas remain limited by Task 1 provenance; this task uses stored audited values. Derived mean lambdas are transparent ratios and leave original columns unchanged.

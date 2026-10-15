@@ -1,0 +1,18 @@
+base_file: /Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv
+patch_file: /Users/yuktikhanna/rtads-rgg-interactions/fig5/patches/datasets/features_sim_pairs_for_training.csv
+base_rows: 917
+patch_rows: 917
+base_unique_pair_ids: True
+patch_unique_pair_ids: True
+base_ids: 917
+patch_ids: 917
+intersection_size: 917
+base_only_ids: 0
+patch_only_ids: 0
+missing_target: 0
+missing_F2_P1_features: 0
+missing_F2_P8_features: 0
+all_required_columns_finite: True
+merge_method: explicit one-to-one merge by name
+patch_table_usage: local patch-derived descriptors only
+heldout_1794_targets_accessed: NO

@@ -1,0 +1,88 @@
+FIGURE 5 FEATURE-DEFINITION, PROVENANCE, REDUNDANCY AND COLLINEARITY AUDIT
+
+Scope: stored inputs and source/metadata inspection only. No model was loaded for inference, trained, altered, or re-evaluated; no B22, feature table, permutation importance, or Figure 5 output was regenerated. The reviewer document is reference material; its proposed retraining actions are outside this task.
+
+1. Exact current final hybrid feature set (order, 1-based):
+   1. Opposite_Charge_Number
+   2. Normalized_OCN
+   3. charge_TAD
+   4. Average_SHD
+   5. lambda_RGG
+   6. Lambda_Ratio
+   7. lambda_TAD
+   8. TAD_length
+   9. Average_Interaction
+   10. SHD_TAD
+The final training script passes these ten columns to both the base MLP and residual NN via the same StandardScaler. Prediction script order and saved selected-bundle scaler.feature_names_in_ agree. The residual input shape is [None, 10], with Dense widths 16,8,1. OCN also supplies the sigmoid correction gate, so a future electrostatics-free hybrid must consider the gate as well as input columns. Base prediction is not an extra residual input: the residual target is observed minus base-predicted response. The unused FEATURE_COLS_FULL declaration has 26 features; Selected_COLS actually selects X. The ensemble call in the main training script does not supply base_mlp, so the subsequent function's guard retrains a single base MLP in that historical execution path; this audit does not execute it.
+
+Original pruning: 22 BASE_FEATURE_COLS followed by four ENGINEERED_COLS, in model_feature_order.csv. The existing importance table covers those 26 features, not a newly computed ten-feature importance analysis. The selected ten equal the first ten entries in the stored importance ranking. The pruning script's SFS output preserves original candidate order, whereas the hybrid script uses this ranking order; no selected_features.txt or summary.json was supplied to establish the provenance of the hard-coded selection. Average_sigma and Average_Aromatics are available in the CSVs but absent from the 26-feature pruning list.
+
+Saved-output provenance limit: CSV filenames, plotting input paths, stored engineered definitions, source feature order, and bundle feature metadata are mutually consistent with the selected ten-input predictor. However, no generating run manifest links these CSV hashes to this exact bundle. The selected bundle scaler records n_samples_seen_=779, unlike 687 fit rows from a 75% split of 917. This establishes a missing training-row lineage, not the cause of the difference or evidence of leakage. The original referenced training CSV sim_pairs_added_features_data_270525.csv is not present in the supplied repository/fig5 inputs. No historical files were substituted. The complete 917-row panel should not be described as all 917 optimizer-fit samples. Old prediction columns are outcomes; their own feature lineage is not established by the current selected bundle. compare_models.py additionally uses a hard threshold gate, unlike the sigmoid in training/predict scripts. Exact historical prediction execution remains unverified.
+
+2. Is OCN exactly -charge_RGG * charge_TAD for the 917 pairs? YES.
+3. Is the same identity true for all 1,794 held-out pairs? YES.
+ dataset    n  n_exact  n_nonexact  max_abs_error  mean_abs_error
+training  917      917           0            0.0             0.0
+ heldout 1794     1794           0            0.0             0.0
+This is the primary numerical evidence for current Figure 5 OCN. It is a bulk net-charge product, not a positional/patterning descriptor.
+
+4. Stored Normalized_OCN formula: OCN / Total_Length, with Total_Length = RGG_length + TAD_length. The source implements this formula. Held-out values reproduce exactly; training values agree within CSV/floating-point rounding, but not all are bitwise equal. No tested formula exactly reproduces every training decimal as parsed, so 'exact formula' here refers to the sourced implementation, not a false claim of zero numeric error.
+ dataset  n_exact  n_nonexact  max_abs_error  mean_abs_error
+training      190         727   4.662937e-15    3.110206e-16
+ heldout     1794           0   0.000000e+00    0.000000e+00
+The full candidate-formula discrepancies are in exact_relationships.csv, including OCN/(RGG_length*TAD_length) and -NCPR_RGG*NCPR_TAD. OCN/total length is not the product of the two charge densities.
+
+5. OCN / normalized OCN correlations:
+Opposite_Charge_Number vs Normalized_OCN: Pearson training=0.862419, heldout=0.912762; Spearman training=0.968641, heldout=0.979419
+They are deterministically related conditional on length and strongly rank-correlated, not duplicate columns or generally affine-equivalent variables. The normalization adds length dependence, not new residue-order information.
+
+6. Is Charge_Complementarity another net-charge-product representation? YES in compute_pair_features.py, whose charge_complementarity is -Q_RGG*Q_TAD. NO for the current stored Figure 5 column: it matches abs(Q_RGG+Q_TAD) - 0.5*(abs(Q_RGG)+abs(Q_TAD)) exactly in both panels. This formula exists as delta_q in the portable script, but delta_q is not used to emit its Charge_Complementarity. The historical generating source is missing; the stored-value formula match is evidence, not source-level attribution. The stored column equals the net-charge product in only 0 training rows and 7 held-out rows. Coincidental equality on some rows is not algebraic identity.
+
+7. Does compute_pair_features.py reproduce historical OCN and Normalized_OCN definitions exactly? NO.
+8. Precisely what differs? Let P count positive residues and N negative residues. Current OCN = -(P_R-N_R)*(P_T-N_T) = P_R*N_T+N_R*P_T-P_R*P_T-N_R*N_T. Portable OCN = P_R*N_T+N_R*P_T, omitting the same-sign subtraction. Their difference is P_R*P_T+N_R*N_T under a common charge convention. Portable normalized OCN also divides by the product of lengths rather than their sum. Raw sequences/positive-negative counts are not in the current pair tables, so the portable numerator was not recomputed; the OCN/product-length numeric test isolates the denominator mismatch using stored OCN. The training/pruning scripts read the historical OCN column rather than computing it. Prediction only adds missing engineered columns, allowing portable definitions to pass through unchanged.
+Additional discrepancies: portable lambda_RGG/TAD are sequence means; historical extensive values match per-length Average_lambda/Min_lambda formulas within stored numeric precision (up to 6.38e-10 held out). This supports sum-like scale but does not recover the missing original residue-level implementation. Portable Lambda_Ratio is RGG/TAD without epsilon; historical is TAD/(RGG+1e-6). Portable Hydropathy_Diff is absolute mean-lambda difference; historical is signed SHD_TAD-SHD_RGG. Portable Average_Interaction equals Average_lambda; historical values do not. Other historical base-feature formulas remain explicitly unresolved. See implementation_discrepancies.csv.
+
+9. Which final ten have duplicated/overlapping electrostatic information? OCN, Normalized_OCN and charge_TAD all directly contain bulk charge. None is a pairwise exact duplicate of another in these data. OCN and Normalized_OCN have strongly overlapping information; charge_TAD is a constituent of the product but is not determined by OCN alone. Their joint deterministic dependencies should guide grouped ablation; do not infer independent biological mechanisms from separate importances.
+
+10. Which final features are distinct from bulk net-charge magnitude? TAD_length is length. lambda_RGG and lambda_TAD describe hydropathy/stickiness on a historical extensive scale; Lambda_Ratio is deterministically derived from them. SHD_TAD and Average_SHD are hydropathy-decoration descriptors (historical precise formula unresolved). These describe information beyond a net-charge product, although correlations with charge/length can remain. Average_Interaction is a distinct stored column, but its original formula is missing, so it cannot be certified electrostatics-free. Strong correlations do not establish biological equivalence.
+
+11. Groups to carry forward: bulk electrostatics (net-charge product as representative, individual Q and complementarity tested separately); normalized electrostatics/charge density (alternative representation block); charge patterning (SCD, explicitly not an electrostatics-free control); hydropathy/CALVADOS lambda; hydropathy patterning; sequence length; composition where informative; and other derived interaction descriptors only after provenance clarification. Keep length separate from extensive lambda interpretation. Remove constant Average_Aromatics from this panel's candidate inputs as non-informative, not as a general claim about aromatic composition. The strongest-correlate recommendations in feature_groups.csv are based only on definition and correlation. Derived averages, ratios and products are conditionally redundant given their constituents, but were not labeled pairwise identical. No performance-based selection was performed.
+
+TRAINING VERSUS HELD-OUT RELATIONSHIPS
+Opposite_Charge_Number vs Normalized_OCN: Pearson training=0.862419, heldout=0.912762; Spearman training=0.968641, heldout=0.979419
+Opposite_Charge_Number vs charge_TAD: Pearson training=-0.468904, heldout=-0.509148; Spearman training=-0.491666, heldout=-0.483954
+Opposite_Charge_Number vs charge_RGG: Pearson training=0.728490, heldout=0.733284; Spearman training=0.840532, heldout=0.804429
+Opposite_Charge_Number vs RGG_length: Pearson training=0.412932, heldout=0.370147; Spearman training=0.266630, heldout=0.160161
+Opposite_Charge_Number vs TAD_length: Pearson training=0.322702, heldout=0.001383; Spearman training=0.201081, heldout=-0.142494
+Opposite_Charge_Number vs Total_Length: Pearson training=0.506867, heldout=0.340652; Spearman training=0.350500, heldout=0.116285
+charge_TAD vs TAD_length: Pearson training=-0.635571, heldout=-0.002716; Spearman training=-0.434928, heldout=0.270534
+lambda_TAD vs TAD_length: Pearson training=0.872256, heldout=0.878832; Spearman training=0.527299, heldout=0.767861
+Average_SHD vs lambda_RGG: Pearson training=0.846781, heldout=0.761133; Spearman training=0.829338, heldout=0.756335
+Average_SHD vs lambda_TAD: Pearson training=0.327835, heldout=0.468642; Spearman training=0.359880, heldout=0.487682
+Average_SHD vs Average_lambda: Pearson training=0.755194, heldout=0.752788; Spearman training=0.730831, heldout=0.741414
+Average_SHD vs Lambda_Ratio: Pearson training=-0.423614, heldout=-0.277053; Spearman training=-0.582082, heldout=-0.352403
+lambda_TAD vs SHD_TAD: Pearson training=0.794716, heldout=0.877746; Spearman training=0.878897, heldout=0.881423
+Lambda_Ratio vs lambda_RGG: Pearson training=-0.649977, heldout=-0.643192; Spearman training=-0.886788, heldout=-0.815055
+Lambda_Ratio vs lambda_TAD: Pearson training=0.618017, heldout=0.625379; Spearman training=0.418060, heldout=0.512831
+
+Length versus lambda_RGG remains very strong in both panels, consistent with an extensive descriptor. Several major relationships persist, including OCN-normalization rank correlation, charge/SCD relationships, and Average_sigma/Total_Length. These are not confined to the 917-panel sampling. The charge_TAD/TAD_length association falls from r=-0.635571 to -0.002716 (rho=-0.434928 to +0.270534), while OCN/TAD_length falls from r=0.322702 to 0.001383. These length-charge associations are panel-dependent and do not persist in this held-out matrix. Changes in magnitude are descriptive evidence of panel dependence, not proof that the sampling strategy caused them or proof of intrinsic universal sequence-space relationships. The held-out matrix is sequence-ID-exclusive relative to the 917 panel: RGG overlap 0, TAD overlap 0; it has 78 RGG IDs x 23 TAD IDs = 1,794 unique pairs. Sequence identity at the amino-acid level and homology cannot be verified from IDs alone. Repeated partners make rows dependent, so these descriptive coefficients have no independent-row p-values or causal sampling attribution. The 191,386-pair unsimulated landscape was checked for provenance/dimensions only; it has predictions and no simulated target and was not used as a performance test.
+
+NUMERICAL AUDIT COVERAGE
+28 stored sequence-derived columns in each panel; 26 original pruning candidates plus Average_sigma and Average_Aromatics. Outcomes, predictions, names/IDs and the Unnamed index were excluded explicitly. All 45 selected-ten pairs are in selected10_correlations.csv; all 378 candidate pairs per panel are in all_pair_correlations.csv and duplicate_and_affine_checks.csv. Pearson/Spearman matrices retain constant columns as undefined (NaN), shown gray in figures. High-correlation output is the union of |r|>=0.90 OR |rho|>=0.90, without rounding before thresholding. Stats include population and sample variance, unique values, missing and infinite counts; selected10 membership provides the separate subset audit. Exact duplicate pairs: 0. Nonconstant affine-equivalent pairs within numerical tolerance: 0. Constant Average_Aromatics is zero throughout both panels. Constant columns were not treated as informative affine-equivalent descriptors.
+
+Rounding and methods: pandas read_csv(float_precision='round_trip'), float64 arithmetic; n_exact uses strict ==, never an approximate comparison. Separate allclose consistency uses atol=rtol=1e-12 and is explicitly labeled. This tolerance distinguishes algebraic identities perturbed by CSV serialization from strong correlations; it does not prove an unknown generating formula. Pearson uses pairwise finite observations (all audited feature values are finite here); Spearman uses average ranks for ties. Affine screening estimates slope/intercept by centered least squares and tests every row at the same tolerance; it is descriptive numerical evidence, not mathematical proof. Stored precision varies by dataset AND column. Engineered held-out features are exactly reproducible, while several held-out base-feature relationships differ by up to 1.65e-9 because their upstream columns are rounded. The exact_relationships.csv conclusion additionally flags max error <= 1e-8 as consistent with rounded upstream inputs, NOT exact and NOT a pass of the tighter 1e-12 test. This secondary diagnostic is not source-level proof of the historical formula. Training engineered formulas have residual errors at about 1e-14 or less.
+
+SOURCE LOCATORS
+/Users/yuktikhanna/idr-interaction-predict/scripts/mlp_feature_pruning.py:24,77
+/Users/yuktikhanna/idr-interaction-predict/scripts/mlp_with_plateau_residual_calibrated.py:351,370,372,395
+/Users/yuktikhanna/idr-interaction-predict/scripts/mlp_with_plateau_residual_calibrated.py:157,169
+/Users/yuktikhanna/idr-interaction-predict/scripts/mlp_with_plateau_residual_calibrated.py:315,321,353
+/Users/yuktikhanna/idr-interaction-predict/scripts/predict_with_hybrid_model.py:17,165,187
+/Users/yuktikhanna/idr-interaction-predict/scripts/predict_with_hybrid_model.py:19,127,128
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py:293
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py:301
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py:308
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py:312
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py:413,431
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py:414,437
+/Users/yuktikhanna/idr-interaction-predict/scripts/compute_pair_features.py:415,438

@@ -1,0 +1,36 @@
+Figure 5 Task 2 reduced-model ablation provenance
+Repository: https://github.com/yukti-khanna/idr-interaction-predict
+Local repository: /Users/yuktikhanna/idr-interaction-predict
+Commit SHA: af534d380250e6e9e89ec0c9f1c544106f67cb2b
+Working tree status before/after analysis: ?? models_old/
+?? sample_rdfs/
+
+Inputs
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv
+  bytes=511738
+  SHA256=f9ddb700b12bf0aeab3ccb88cebfd12d29d61be0a4b21411f06f6a4da7b6dc5c
+  dimensions=917 rows x 40 original columns (plus 2 analysis-only derived columns in memory)
+/Users/yuktikhanna/rtads-rgg-interactions/fig5/taken_out_preds_with_hybrid_021125_sel_cols.csv
+  bytes=794749
+  SHA256=d01d6cc214dd1fd3d4d00aa4bf4b54524055867c858a2bfbeac5afc80007e754
+  dimensions=1794 rows x 36 original columns (plus 2 analysis-only derived columns in memory)
+Task 1 audit used: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_feature_redundancy_audit
+Task 1 files inspected: audit_summary.txt, feature_definitions.csv, implementation_discrepancies.csv, exact_relationships.csv, feature_groups.csv, selected10_correlations.csv
+Historical model scripts inspected: /Users/yuktikhanna/idr-interaction-predict/scripts/mlp_with_plateau_residual_calibrated.py; /Users/yuktikhanna/idr-interaction-predict/scripts/mlp_feature_pruning.py
+
+Runtime
+Python executable: /Users/yuktikhanna/miniconda3/envs/idr_features/bin/python
+Python: 3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 17:06:34) [Clang 19.1.7 ]
+Platform: macOS-26.5.1-arm64-arm-64bit
+numpy=2.2.6; pandas=2.3.3; scipy=1.15.2; scikit-learn=1.7.2; matplotlib=3.10.8
+
+Model specification
+Feature lists/order: feature_sets.csv
+Seeds: [0, 1, 2, 3, 4]
+Hyperparameters: {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (128, 64, 32, 16), 'learning_rate_init': 0.01, 'max_iter': 500, 'solver': 'adam'}
+Ensemble: unweighted arithmetic mean of five predictions
+Scaler: one StandardScaler per feature set, fit on all 917 training rows only
+Target: B22_corr1_log10; no alternate target transformation
+Rows: every model used 917 training and 1,794 held-out; zero rows dropped
+Bootstrap: two-axis RGG/TAD matrix bootstrap, seed=20260911, replicates=2000; multiplicity preserved
+No residual model, gate, early model selection, feature selection, held-out tuning, permutation importance, B22 generation, feature regeneration, or unsimulated predictions.

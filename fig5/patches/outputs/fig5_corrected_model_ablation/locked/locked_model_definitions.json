@@ -1,0 +1,83 @@
+{
+  "target": "B22_corr1_log10",
+  "scaler": "StandardScaler",
+  "mlp_params": {
+    "activation": "tanh",
+    "alpha": 0.01,
+    "hidden_layer_sizes": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "learning_rate_init": 0.01,
+    "solver": "adam",
+    "max_iter": 500
+  },
+  "cv_procedure": {
+    "n_splits": 5,
+    "shuffle": true,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      2026
+    ]
+  },
+  "frozen_patch_feature": "opp_charge_std",
+  "models": {
+    "M0": [
+      "Opposite_Charge_Number"
+    ],
+    "M1": [
+      "Opposite_Charge_Number",
+      "charge_TAD"
+    ],
+    "M2": [
+      "Average_SHD",
+      "lambda_RGG",
+      "Lambda_Ratio",
+      "lambda_TAD",
+      "TAD_length",
+      "Average_Interaction",
+      "SHD_TAD"
+    ],
+    "M3": [
+      "Opposite_Charge_Number",
+      "charge_TAD",
+      "Average_SHD",
+      "lambda_RGG",
+      "Lambda_Ratio",
+      "lambda_TAD",
+      "TAD_length",
+      "Average_Interaction",
+      "SHD_TAD"
+    ],
+    "M4": [
+      "Opposite_Charge_Number",
+      "charge_TAD",
+      "Average_SHD",
+      "lambda_RGG",
+      "Lambda_Ratio",
+      "lambda_TAD",
+      "TAD_length",
+      "Average_Interaction",
+      "SHD_TAD",
+      "opp_charge_std"
+    ],
+    "ORIGINAL10_REFERENCE": [
+      "Opposite_Charge_Number",
+      "Normalized_OCN",
+      "charge_TAD",
+      "Average_SHD",
+      "lambda_RGG",
+      "Lambda_Ratio",
+      "lambda_TAD",
+      "TAD_length",
+      "Average_Interaction",
+      "SHD_TAD"
+    ]
+  },
+  "heldout_B22_used_before_this_lock": false
+}

@@ -1,0 +1,16 @@
+feature,category,exact_definition,electrostatic_status,algebraic_redundancy,included_model(s),rationale
+Opposite_Charge_Number,bulk net-charge product,-(charge_RGG * charge_TAD),electrostatic,verified on training; max_abs_error=0,"M0, M1, M3, M4, ORIGINAL10_REFERENCE",dominant reviewer baseline
+Normalized_OCN,length-normalized charge product,Opposite_Charge_Number / Total_Length,mixed,deterministic function of OCN and length; max_abs_error=4.66e-15,ORIGINAL10_REFERENCE only,reference model only; not independent electrostatic mechanism
+charge_TAD,global TAD net charge,sum of residue charges in TAD,electrostatic,not exact OCN duplicate,"M1, M3, M4, ORIGINAL10_REFERENCE",kept/excluded according to corrected reviewer-feature hierarchy
+charge_RGG,global RGG net charge,sum of residue charges in RGG,electrostatic,with charge_TAD determines OCN,excluded,kept/excluded according to corrected reviewer-feature hierarchy
+NCPR_RGG,normalized charge,charge_RGG / RGG_length,electrostatic,charge/length derivative,excluded,kept/excluded according to corrected reviewer-feature hierarchy
+NCPR_TAD,normalized charge,charge_TAD / TAD_length,electrostatic,charge/length derivative,excluded,kept/excluded according to corrected reviewer-feature hierarchy
+Charge_Complementarity,charge complementarity,stored historical charge-complementarity descriptor,electrostatic,global charge descriptor,excluded,kept/excluded according to corrected reviewer-feature hierarchy
+Average_SHD,global hydropathy patterning,mean of stored SHD_RGG and SHD_TAD,non-electrostatic,not exact OCN duplicate,"M2, M3, M4, ORIGINAL10_REFERENCE",kept/excluded according to corrected reviewer-feature hierarchy
+lambda_RGG,RGG hydropathy,stored RGG lambda,non-electrostatic,not exact OCN duplicate,"M2, M3, M4, ORIGINAL10_REFERENCE",kept/excluded according to corrected reviewer-feature hierarchy
+Lambda_Ratio,hydropathy ratio,lambda_RGG / lambda_TAD,non-electrostatic,not exact OCN duplicate,"M2, M3, M4, ORIGINAL10_REFERENCE",kept/excluded according to corrected reviewer-feature hierarchy
+lambda_TAD,TAD hydropathy,stored TAD lambda,non-electrostatic,not exact OCN duplicate,"M2, M3, M4, ORIGINAL10_REFERENCE",kept/excluded according to corrected reviewer-feature hierarchy
+TAD_length,length,number of residues in TAD,non-electrostatic,length context; part of Normalized_OCN denominator but no charge product,"M2, M3, M4, ORIGINAL10_REFERENCE",kept/excluded according to corrected reviewer-feature hierarchy
+Average_Interaction,global AH/hydropathy interaction,current generator: (lambda_RGG + lambda_TAD) / 2; patch generator uses AH interaction,non-electrostatic,"AH/hydropathy-derived, no explicit charge product","M2, M3, M4, ORIGINAL10_REFERENCE",kept/excluded according to corrected reviewer-feature hierarchy
+SHD_TAD,TAD hydropathy patterning,stored SHD_TAD,non-electrostatic,not exact OCN duplicate,"M2, M3, M4, ORIGINAL10_REFERENCE",kept/excluded according to corrected reviewer-feature hierarchy
+opp_charge_std,local charge heterogeneity,std of local 5-aa patch opposite-charge descriptor,electrostatic,frozen from prior training-only screen,M4 only,kept/excluded according to corrected reviewer-feature hierarchy

@@ -1,0 +1,7 @@
+Parsimonious model confirmation for corrected Figure 5 training-only analysis.
+OOF predictions used: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_feature_family_decomposition_training_only/oof_predictions_all_repeats.csv
+CV metrics used for cross-check: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_feature_family_decomposition_training_only/cv_metrics_by_repeat.csv
+Rows in OOF prediction table: 917
+No model fitting, fold generation, or fold assignment regeneration was performed.
+The 1,794-pair held-out matrix was not opened, read, hashed, inspected, or used.
+Unsimulated predictions were not used.

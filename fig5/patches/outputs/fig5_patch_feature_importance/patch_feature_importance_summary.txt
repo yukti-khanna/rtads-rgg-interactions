@@ -1,0 +1,1 @@
+Training-only feature screening completed on 917 pairs. Target: B22_corr1_log10. Held-out 1,794 B22 values accessed: NO. 56 patch descriptors screened after exclusions. See CSV outputs for univariate, individual permutation, grouped, ablation and OCN-conditioned results. No model was evaluated on held-out data.

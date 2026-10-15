@@ -1,0 +1,1 @@
+Target: B22_corr1_log10, verified from fig5.py, reviewer scripts, and the authoritative Figure 5 development/held-out CSVs. No alternate B22 correction or transformation was used.

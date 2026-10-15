@@ -1,0 +1,35 @@
+FINAL FIGURE DATA AUDIT
+
+model manifest SHA256: 48b7279b7e76260c04c1f42ee766d3f385f3d27c5ad61b99b2941d0d02b0d516
+lambda_final: 0.1368029406764465
+cap: 0.16914558161466975
+gate centre/scale: 40/12
+
+Main D source: development_917_OOF_final_hybrid.csv
+{}
+Main E source: test_1794_final_hybrid_predictions.csv
+{}
+Main F source: full_landscape_final_hybrid_predictions.csv
+{
+  "n": 191386,
+  "prediction_min": 0.9418996854684096,
+  "prediction_max": 4.34011539660318,
+  "minus_NCP_min": -98.0,
+  "minus_NCP_max": 406.0,
+  "pearson_minus_NCP_prediction_all": 0.9511168458201026,
+  "spearman_minus_NCP_prediction_all": 0.9745983145428705,
+  "linear_fit_slope": 0.01616203997883055,
+  "linear_fit_intercept": 2.743025748306386,
+  "RBP_n": 72314,
+  "RBP_pearson_minus_NCP_prediction": 0.9447907152256971,
+  "RBP_spearman_minus_NCP_prediction": 0.9734739104853541,
+  "non_RBP_n": 119072,
+  "non_RBP_pearson_minus_NCP_prediction": 0.9565262703582843,
+  "non_RBP_spearman_minus_NCP_prediction": 0.9749426530242321
+}
+S5 A/B/D source: development_oof_final_hybrid_predictions.csv
+S5C source: final development-only hybrid metrics/bootstrap
+{}
+No panel uses the older historical hybrid-prediction tables.
+No model parameter was modified during figure generation.
+The locked test set was used only for Panel E reporting.

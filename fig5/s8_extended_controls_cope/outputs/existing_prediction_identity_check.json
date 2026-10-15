@@ -1,0 +1,10 @@
+{
+  "applied_correction": 1.6198699152869533e-09,
+  "base_prediction": 1.3322676295501878e-15,
+  "final_hybrid_prediction": 1.619870015900915e-09,
+  "gate_value": 1.1102230246251565e-16,
+  "identity_tolerance": 1e-07,
+  "n_rows_compared": 790,
+  "pass_identity_tolerance": true,
+  "raw_residual_prediction": 4.893585205112405e-08
+}

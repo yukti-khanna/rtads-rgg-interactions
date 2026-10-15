@@ -1,0 +1,14 @@
+{
+  "package_relative_paths": true,
+  "forbidden_previous_outputs_used": false,
+  "datasets": [
+    "heldout_1794",
+    "histidine",
+    "controls"
+  ],
+  "checkpoint_dir": "artifacts/checkpoints",
+  "external_rdf_paths": {
+    "histidine_rdfs": "SET_ME_OR_USE_--histidine-rdf-dir",
+    "control_rdfs": "SET_ME_OR_USE_--control-rdf-dir"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "run_name": "validated_updated_0",
+  "timestamp_utc": "2026-10-01T08:04:34.109996+00:00",
+  "status": "features_prepared_prediction_pending",
+  "mode": "features_only",
+  "feature_order": [
+    "minus_NCP",
+    "mean_lambda_RGG",
+    "mean_lambda_AHD",
+    "SHD_RGG",
+    "SHD_AHD",
+    "local_charge_complementarity_std",
+    "scd_RGG_patch_std",
+    "scd_AHD_patch_std",
+    "rg_fraction_RGG_patch_std",
+    "aromatic_fraction_AHD_patch_std",
+    "shd_RGG_patch_std",
+    "shd_AHD_patch_std",
+    "ah_energy_patch_std"
+  ],
+  "model_internal_feature_order": [
+    "Opposite_Charge_Number",
+    "mean_lambda_RGG",
+    "mean_lambda_TAD",
+    "SHD_RGG",
+    "SHD_TAD",
+    "opp_charge_std",
+    "scd_patch1_std",
+    "scd_patch2_std",
+    "rg_fraction_patch1_std",
+    "aromatic_fraction_patch2_std",
+    "shd_patch1_std",
+    "shd_patch2_std",
+    "ah_energy_std"
+  ],
+  "target": "log10(-B22)",
+  "model_directory_relative_to_fig5": "outputs/final_hybrid_model/frozen_model",
+  "expected_model_manifest_sha256": "48b7279b7e76260c04c1f42ee766d3f385f3d27c5ad61b99b2941d0d02b0d516",
+  "software_versions": {
+    "python": "3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0]",
+    "platform": "Linux-6.12.95+deb12-amd64-x86_64-with-glibc2.36",
+    "numpy": "2.2.6",
+    "pandas": "2.1.1",
+    "scipy": "1.13.0",
+    "numba": "0.60.0",
+    "scikit-learn": "not installed",
+    "joblib": "1.4.2",
+    "tensorflow": "2.20.0",
+    "keras": "3.12.0"
+  },
+  "input_files": [
+    {
+      "path": "/home/gpfs/o_khanna/validated/validated_final_updated.fasta",
+      "sha256": "46b5efe95ecf9b4f61dafb6ea37b65b98540c8d2f62a31b67b2b3c9a69026457"
+    },
+    {
+      "path": "/home/gpfs/o_khanna/validated/validated_final_names_updated.txt",
+      "sha256": "f750259be719df9b8b244552c96a6d92bdac1398fc74c22b1cfa9582c6dd4e1a"
+    }
+  ],
+  "number_requested_pairs": 73,
+  "number_predicted": 0,
+  "number_rejected": 0,
+  "predictor_script_hash": "a5523ca58a71a4ed447560dbec430dec1352ef46e109bbcc1607e9ed634cf146",
+  "residue_property_table_sha256": {
+    "patch": "fb8851e7889ad5efc9f2f54da574617775a70297e9e92645deaf26d8747c8f73",
+    "global": "2cf55bc77a7ff8a25b7cc841ac947ff5c6ec33a8fdc3a5e575044152c7d0bbc7"
+  },
+  "pipeline_code_hashes": {
+    "model_loader.py": "a09f45929888586f222693a58c709bad83bf31f55f69c046d29e780ee5d8ee9c",
+    "sequence_io.py": "b92b38df0269e7e26ec4cb7f2034be719f90190a04410ea718812074535e3097",
+    "predict_pairs.py": "81a2a9ed9621e529c6e6cc7d0d084f838a83f2f6267e01699e867714bc2c6d6a",
+    "configuration.py": "089274a90e6275c8848da7262392032eef5c5974a13c90dc60858b07b82c1b3a",
+    "feature_engineering.py": "4702c5c5c4dfac7a7c568ee9621017be281c84cd647796fa854f18b245a10cd7",
+    "qc.py": "e245c9cc538d2566f495094174a97b7b00c7dbd316dc51c4d4ac8574ebe726da",
+    "tests/test_feature_identity.py": "effb83b5f4f26344e5a48cae94ed35c43842f03b34846b3cdc3d68b2752491d5",
+    "tests/test_inference_guards.py": "fa7f8f1ccb9e8b8dfd01eecd311a4b2c5a689db04774ecec05b5eaef39421578",
+    "tests/test_prediction_identity.py": "4acf857bb7b09e3d458805384dba182316bf5ee51ca60c5b4f2882262426a7cd",
+    "tests/test_sequence_io.py": "c8981ea9ed510a1a070c46fceca50e8ca91316f278cc74c52efdcffc6fe2c6d9",
+    "vendor/accepted_predictor.py": "a5523ca58a71a4ed447560dbec430dec1352ef46e109bbcc1607e9ed634cf146",
+    "vendor/energy_funcs.py": "2810a4032a9e9df48166bca41ecedb24ec0ee3509002f5c0261a74a3ac19ecee",
+    "vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/historical_features.py": "7a3dab7e111918e0729ddfaaed22ae3b70c133a26c1300043294e1d17d9a2011"
+  },
+  "command": [
+    "prediction_pipeline/predict_pairs.py",
+    "--pairs",
+    "/home/gpfs/o_khanna/validated/validated_final_names_updated.txt",
+    "--ahd-reference",
+    "/home/gpfs/o_khanna/validated/validated_final_updated.fasta",
+    "--rgg-reference",
+    "/home/gpfs/o_khanna/validated/validated_final_updated.fasta",
+    "--run-name",
+    "validated_updated_0",
+    "--features-only"
+  ],
+  "git_commit": null,
+  "observed_model_manifest_sha256": "48b7279b7e76260c04c1f42ee766d3f385f3d27c5ad61b99b2941d0d02b0d516",
+  "canonical_resources": {
+    "upstream_sources_relative_to_fig5": {
+      "fig5_final_model_validation_local/scripts/historical_patch_get_features.py": "451f331e0e778686e01c2a880e4f8f8d8ac6528210d9487135d88bdeeb52389d",
+      "fig5_final_model_validation_local/scripts/energy_funcs.py": "3dab4d6d55a7542ede8dda261393df9edddddc602d5c900a0fe949682b4f51da",
+      "s8_extended_controls/scripts/run_new_s8_control_predictions.py": "fa43d3c112306abd5d0771b2cd6a21ddeb80ed3f96b4d872a65e8c1f93dc131a",
+      "fig5_final_model_validation_local/inputs/histidine/metadata/residues.csv": "fb8851e7889ad5efc9f2f54da574617775a70297e9e92645deaf26d8747c8f73",
+      "patches/features/all_tads_rggs_dis.fasta": "373cf3468fcc4f7ab5fdd10ff74778b2de6f605011e0bfd68381b725e4a59928",
+      "fig5_residual_tuning_local/inputs/fig5_917_F2_P8.csv": "55344a83e7717b4b74c4c4d2478d6008b5990b61f09225df9462241c891f5e01",
+      "outputs/final_hybrid_model/final_predictions/development_917_frozen_model_predictions.csv": "8cf355d9c534e38f91fa22f0c875aa3fbab08754017b8ff0b52e91bb84565299"
+    },
+    "identity_selection": "First 10 development rows below 40 and first 10 at least 40 with nonzero correction; in-sample frozen predictions, not OOF. No held-out rows.",
+    "vendor_policy": "Original function bodies retained verbatim; CLI/I/O bootstrap omitted, optional no-JIT fallback added. Historical files unchanged.",
+    "bundled_files": {
+      "vendor/historical_features.py": "7a3dab7e111918e0729ddfaaed22ae3b70c133a26c1300043294e1d17d9a2011",
+      "vendor/energy_funcs.py": "2810a4032a9e9df48166bca41ecedb24ec0ee3509002f5c0261a74a3ac19ecee",
+      "vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "vendor/accepted_predictor.py": "a5523ca58a71a4ed447560dbec430dec1352ef46e109bbcc1607e9ed634cf146",
+      "resources/residues.csv": "fb8851e7889ad5efc9f2f54da574617775a70297e9e92645deaf26d8747c8f73",
+      "resources/identity_reference.csv": "5c6250730b397d47aaf9d563f3655a8d7712edfdf4d76fb1549ec40f74f18dce",
+      "resources/development_feature_ranges.csv": "8583172f416424db917d3ef86883f570a69b30b3158d1bbbc7cd5aeab5d3c2a3",
+      "resources/global_residues.csv": "2cf55bc77a7ff8a25b7cc841ac947ff5c6ec33a8fdc3a5e575044152c7d0bbc7"
+    },
+    "external_read_only_source": {
+      "path": "/Users/yuktikhanna/calvados/residues.csv",
+      "sha256": "2cf55bc77a7ff8a25b7cc841ac947ff5c6ec33a8fdc3a5e575044152c7d0bbc7",
+      "bundled_as": "resources/global_residues.csv",
+      "purpose": "Exact authoritative development global mean lambda and SHD. Patch features use resources/residues.csv, a different historical table."
+    }
+  },
+  "number_AHD_sequences": 15,
+  "number_RGG_sequences": 9,
+  "identity_results": [
+    {
+      "quantity": "minus_NCP",
+      "n": 20,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "mean_lambda_RGG",
+      "n": 20,
+      "max_absolute_difference": 9.992007221626409e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "mean_lambda_AHD",
+      "n": 20,
+      "max_absolute_difference": 9.43689570931383e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "SHD_RGG",
+      "n": 20,
+      "max_absolute_difference": 4.440892098500626e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "SHD_AHD",
+      "n": 20,
+      "max_absolute_difference": 4.6629367034256575e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "local_charge_complementarity_std",
+      "n": 20,
+      "max_absolute_difference": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "scd_RGG_patch_std",
+      "n": 20,
+      "max_absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "scd_AHD_patch_std",
+      "n": 20,
+      "max_absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "rg_fraction_RGG_patch_std",
+      "n": 20,
+      "max_absolute_difference": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "aromatic_fraction_AHD_patch_std",
+      "n": 20,
+      "max_absolute_difference": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "shd_RGG_patch_std",
+      "n": 20,
+      "max_absolute_difference": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "shd_AHD_patch_std",
+      "n": 20,
+      "max_absolute_difference": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "quantity": "ah_energy_patch_std",
+      "n": 20,
+      "max_absolute_difference": 9.71445146547012e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  ],
+  "number_feature_rows": 73,
+  "finished_utc": "2026-10-01T08:04:41.859300+00:00"
+}

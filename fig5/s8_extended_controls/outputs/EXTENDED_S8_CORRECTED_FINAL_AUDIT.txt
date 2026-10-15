@@ -1,0 +1,27 @@
+Corrected extended S8 audit
+feature_order=["Opposite_Charge_Number", "mean_lambda_RGG", "mean_lambda_TAD", "SHD_RGG", "SHD_TAD", "opp_charge_std", "scd_patch1_std", "scd_patch2_std", "rg_fraction_patch1_std", "aromatic_fraction_patch2_std", "shd_patch1_std", "shd_patch2_std", "ah_energy_std"]
+S8A_original_n=80
+S8A_new_n=95
+S8A_combined_n=175
+S8B_original_TAD_AHD_n=160
+S8B_original_RG_RGG_n=80
+S8B_new_TAD_AHD_n=70
+S8B_new_RG_RGG_n=35
+S8B_combined_TAD_AHD_n=230
+S8B_combined_RG_RGG_n=115
+S8C_rows_unchanged=390
+S8D_original_total_n=80
+S8D_new_total_n=80
+S8D_combined_total_n=160
+new_B22_nonnegative_rows=0
+corrected_mean_lambda_ranges_new={"mean_lambda_RGG": {"max": 0.7236090108871579, "min": 0.40616691828125}, "mean_lambda_TAD": {"max": 0.5012456177294572, "min": 0.3077988262533124}}
+model_identity_check={
+  "applied_correction": 1.6198699152869533e-09,
+  "base_prediction": 1.3322676295501878e-15,
+  "final_hybrid_prediction": 1.619870015900915e-09,
+  "gate_value": 1.1102230246251565e-16,
+  "identity_tolerance": 1e-07,
+  "n_rows_compared": 790,
+  "pass_identity_tolerance": true,
+  "raw_residual_prediction": 4.893585205112405e-08
+}

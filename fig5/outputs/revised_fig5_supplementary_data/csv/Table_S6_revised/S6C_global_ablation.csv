@@ -1,0 +1,2 @@
+status,required_content
+missing upstream reduced-model ablation source,-NCP only; -NCP + charge patterning; non-electrostatic only; -NCP + hydropathy/stickiness; full non-redundant global model

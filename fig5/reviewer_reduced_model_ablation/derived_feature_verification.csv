@@ -1,0 +1,7 @@
+dataset,derived_feature,formula,n,n_zero_length,n_missing,n_infinite,minimum,maximum,verification
+training,mean_lambda_RGG,lambda_RGG / RGG_length,917,0,0,0,0.24864505931222294,0.7259493378208316,all lengths positive; direct division used; original lambda column preserved
+training,mean_lambda_TAD,lambda_TAD / TAD_length,917,0,0,0,0.25808705593973752,0.53188955342336197,all lengths positive; direct division used; original lambda column preserved
+training,Average_lambda cross-check,(mean_lambda_RGG + mean_lambda_TAD)/2 compared with stored Average_lambda,917,0,0,0,0,1.7763568394002505e-15,maximum absolute discrepancy; reflects stored decimal precision
+heldout,mean_lambda_RGG,lambda_RGG / RGG_length,1794,0,0,0,0.37174177470143754,0.70395793969696974,all lengths positive; direct division used; original lambda column preserved
+heldout,mean_lambda_TAD,lambda_TAD / TAD_length,1794,0,0,0,0.21808301605882352,0.49392524494999995,all lengths positive; direct division used; original lambda column preserved
+heldout,Average_lambda cross-check,(mean_lambda_RGG + mean_lambda_TAD)/2 compared with stored Average_lambda,1794,0,0,0,0,6.3726940391362064e-10,maximum absolute discrepancy; reflects stored decimal precision

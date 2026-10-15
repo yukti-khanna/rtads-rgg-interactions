@@ -1,0 +1,24 @@
+2026-09-13 22:08:04.303981: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-09-13 22:08:04.304336: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-13 22:08:04.346541: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-13 22:08:07.395980: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-13 22:08:07.400132: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-09-13 22:08:08.785722: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+Traceback (most recent call last):
+  File "/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/scripts/historical_patch_get_features.py", line 9, in <module>
+    from numba import njit
+ModuleNotFoundError: No module named 'numba'
+Traceback (most recent call last):
+  File "/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/scripts/prepare_validation_features.py", line 110, in <module>
+    if __name__=='__main__': main()
+  File "/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/scripts/prepare_validation_features.py", line 104, in main
+    hf=prepare_special_features('histidine', hb)
+  File "/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/scripts/prepare_validation_features.py", line 75, in prepare_special_features
+    feats=run_historical_patch(names,fasta,'histidine_generated_features.csv')
+  File "/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/scripts/prepare_validation_features.py", line 56, in run_historical_patch
+    subprocess.run(cmd,check=True)
+  File "/home/gpfs/o_khanna/miniconda3/envs/tensorflow/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/gpfs/o_khanna/miniconda3/envs/tensorflow/bin/python', '/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/scripts/historical_patch_get_features.py', '--names_file', '/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/outputs/_feature_work/histidine_generated_features_names.txt', '--residue_csv', '/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/inputs/histidine/metadata/residues.csv', '--fasta_file', '/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/inputs/histidine/metadata/all_tads_rggs_dis.fasta', '--out_folder', '/home/gpfs/o_khanna/predict/fig5_final_model_validation_local/outputs/_feature_work', '--out_csv', 'histidine_generated_features.csv']' returned non-zero exit status 1.
+slurmstepd-sy178: error: pam_close_session: Cannot make/remove an entry for the specified session

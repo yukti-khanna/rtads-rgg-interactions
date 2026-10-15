@@ -1,0 +1,5 @@
+training: independent NumPy Pearson and rank-based Spearman checks passed; no missing/infinite candidate values.
+heldout: independent NumPy Pearson and rank-based Spearman checks passed; no missing/infinite candidate values.
+Held-out IDs form 1,794 unique pairs in the complete 78 x 23 Cartesian matrix.
+All named source/input checksums still match input_provenance.txt.
+Runtime fallback: bundled runtime lacked matplotlib and scipy; used existing neural_net scientific Python environment. Versions recorded in input_provenance.txt. No packages installed or environments modified.

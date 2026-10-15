@@ -1,0 +1,6 @@
+New S8 control prediction audit
+model_dir=/home/gpfs/o_khanna/fig5/outputs/final_hybrid_model/frozen_model
+model_hashes={"MODEL_MANIFEST.json": "48b7279b7e76260c04c1f42ee766d3f385f3d27c5ad61b99b2941d0d02b0d516", "base_model_ensemble.joblib": "f8ecfb6787de2a6e94f7a56f7ef19a2568dd1e10ff197cfacbab0e54f8f66532", "predict_final_hybrid.py": "e2ae4ccf45adb414f7f3b8e6ac1678407b43f8e6459b6ed9eff17d575495bd44", "residual_nn.keras": "97b087300defc35479c693d430d62e0f31c2a35d8e1a5059b412f1c028ac02ea", "residual_preprocessor.joblib": "505b312091e1692561ed33ccd2a2a82df6100d733ae5108b2f042d75ea1f964c"}
+identity_check={"applied_correction": 1.6198699152869533e-09, "base_prediction": 1.3322676295501878e-15, "final_hybrid_prediction": 1.619870015900915e-09, "gate_value": 1.1102230246251565e-16, "identity_tolerance": 1e-07, "n_rows_compared": 790, "pass_identity_tolerance": true, "raw_residual_prediction": 4.893585205112405e-08}
+predicted_n=280
+max_prediction_identity_error=0.0

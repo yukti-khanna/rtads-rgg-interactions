@@ -1,0 +1,170 @@
+[
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "README",
+    "path": "inputs/predictor/README.csv",
+    "sha256": "5d3f7f5cfd330d9083beeeaedce7d4e141e300ec641062812fd48bf40aa8378d"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "Feature dictionary",
+    "path": "inputs/predictor/Feature dictionary.csv",
+    "sha256": "260eb6e22991192f2f61db12ae2e56bc5f44785b33a3f5b6b4616fb2514ab748"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "Fig5B model development",
+    "path": "inputs/predictor/Fig5B model development.csv",
+    "sha256": "e2d125679957c5ad3c29584080dab26f4e160758a8454e5ad4ec855312c6a4f8"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "Fig5C patch ablation",
+    "path": "inputs/predictor/Fig5C patch ablation.csv",
+    "sha256": "8456e3562fee7e02932b2c399b2b1747cc68476b44e14258b252d305f2a2554c"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "Development OOF",
+    "path": "inputs/predictor/Development OOF.csv",
+    "sha256": "7dea911a35a73c3b69a9ba7045e7c2bf8a4952f8fbbb5af33306f56d7b5a8621"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "Locked test 1794",
+    "path": "inputs/predictor/Locked test 1794.csv",
+    "sha256": "0660abb41391b584b14821cfe1a792cd39803ff0728728528ef9ba9f17149e32"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "Full landscape",
+    "path": "inputs/predictor/Full landscape.csv",
+    "sha256": "8059e3d1f6504e2ad1bc793752360b56997b8d94ee355b33e183a91ad79fc71e"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "FigS5 residual source",
+    "path": "inputs/predictor/FigS5 residual source.csv",
+    "sha256": "bfdc1d81ae5e66a32ff180578c777dc9b980e001803e3f8aba9f8615d98cfda9"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "Residual summary",
+    "path": "inputs/predictor/Residual summary.csv",
+    "sha256": "306017b9d0d74a4e16397258083356b724fea9b649fd66b04ebf6c5b6d2bb58f"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S8_Final_Hybrid_Predictor (1).xlsx",
+    "sheet": "Deployment provenance",
+    "path": "inputs/predictor/Deployment provenance.csv",
+    "sha256": "fa3d5ad8bee8fbdd91712414f28c486f745a686c7009ab5c2437106a4b104d92"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "README",
+    "path": "inputs/controls/README.csv",
+    "sha256": "166a0a9c16d60899329c7b4428e4f92527725f21f8065ee111f3fe33cfec36f3"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Non-basic WT",
+    "path": "inputs/controls/Non-basic WT.csv",
+    "sha256": "f489f454a6705514b2e5772f3e6fc750203a64ca89e01a7a6bc388d5929234c5"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Shuffle perturbations",
+    "path": "inputs/controls/Shuffle perturbations.csv",
+    "sha256": "cd721f50b15c9eba015e9ce7052be52b04d1cbf2baf26068261018c5acc6338b"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Histidine pH6.5",
+    "path": "inputs/controls/Histidine pH6.5.csv",
+    "sha256": "652c369a004067750963395879d57bfc24032ec8ab5594d88a21c00fe1ef44ab"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Basic controls ALL80",
+    "path": "inputs/controls/Basic controls ALL80.csv",
+    "sha256": "eb546997d179a01f048d99e4f18b8ba7bef5008cc6732d6013b2b8e78190fdad"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Summary",
+    "path": "inputs/controls/Summary.csv",
+    "sha256": "141f244e2c166b932590ad390e3f699be545450caafbf4a00f37adeac2f0e4ac"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Provenance",
+    "path": "inputs/controls/Provenance.csv",
+    "sha256": "f031c31e9f062851d4129ec1e8aa845f1203f2504087b989368355b16607689b"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Shuffle_WT_115",
+    "path": "inputs/controls/Shuffle_WT_115.csv",
+    "sha256": "f0842cb0aae7d142504012f79172e240c9c05633694d9b70f0c485517b6f27ba"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Shuffle_300_bootstrap",
+    "path": "inputs/controls/Shuffle_300_bootstrap.csv",
+    "sha256": "8c239a12146c8152e2677c6ac3bec2a61d781a353224069056baa8798d20aef2"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Shuffle_300_manifest",
+    "path": "inputs/controls/Shuffle_300_manifest.csv",
+    "sha256": "bebb843cba074a6c41f4850e498c327c592528c547e1f8c12a2d112178dc5447"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "Shuffle_replica_B22",
+    "path": "inputs/controls/Shuffle_replica_B22.csv",
+    "sha256": "1628f445fd505fb4ad8e14cdd6bfd9ad848ade252694cfac8cba2e6e6a5c9390"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S9_Final_Model_Controls_UPDATED_Shuffle_345.xlsx",
+    "sheet": "QC_Shuffle_Update",
+    "path": "inputs/controls/QC_Shuffle_Update.csv",
+    "sha256": "01e94aff0ad4e83acd6ceed353415ba8e1ea16dd0c3b6ea5a04c9552413faac8"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S10_FINCHES.xlsx",
+    "sheet": "README",
+    "path": "inputs/finches/README.csv",
+    "sha256": "f37c7a1078e92b9fd3727ef212a3c599452344244c554a7f60d147a615879ce6"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S10_FINCHES.xlsx",
+    "sheet": "S6A FINCHES simulation",
+    "path": "inputs/finches/S6A FINCHES simulation.csv",
+    "sha256": "97ae9236e091452e0a9494ee616012675b761015dccbae344e08a1e301b235d2"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S10_FINCHES.xlsx",
+    "sheet": "S6B FINCHES landscape",
+    "path": "inputs/finches/S6B FINCHES landscape.csv",
+    "sha256": "161381568177403ff7da921d3f844bffc8b7a5c841e737164dcb04e132b76ccc"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S10_FINCHES.xlsx",
+    "sheet": "Test 1794 audit",
+    "path": "inputs/finches/Test 1794 audit.csv",
+    "sha256": "2b71a8209b88d01a8b83d8179d9e28c20dc70bcae8008b1d268bb6ea90179f30"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S10_FINCHES.xlsx",
+    "sheet": "Summary",
+    "path": "inputs/finches/Summary.csv",
+    "sha256": "9fe6227808eca77578e81988c70a7de996384d1b0b687ac12f09d02a1ba324c2"
+  },
+  {
+    "source": "/Users/yuktikhanna/writing/rbp-tfs/cell_reports/Table_S10_FINCHES.xlsx",
+    "sheet": "Provenance",
+    "path": "inputs/finches/Provenance.csv",
+    "sha256": "6067ce4b192f453b7a464486c361e26548b6dfb96aad584f6da961f52c018b4f"
+  }
+]

@@ -1,0 +1,11 @@
+Figure S5 legend notes for the final hybrid residual component
+
+High−NCP threshold = 40.
+Sigmoid gate centre = 40.
+Gate scale = 12.
+Calibrated residual weight constrained to 0–0.6.
+Correction capped at the 85th percentile of absolute calibration residual magnitude.
+Residual model architecture: neural-network residual branch from the completed final nested OOF lineage; see S5 final source audit for the exact authoritative files.
+Full-development calibration for the frozen external predictor selected λ = 0.
+
+In the final fit to the complete 917-pair development set, residual calibration selected λ = 0; therefore the frozen 1,794-pair external predictions coincide with the base-component predictions.

@@ -1,0 +1,36 @@
+Historical scatter reproduction audit
+
+historical script
+path: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5.py
+functions literally reused/copied: panel_D scatter layering, panel_F landscape downsampling/scatter layering, identity_limits, clean_figure_axes, save_fig, add_is_rbp, load_rbp_unids
+
+D
+917/917 pair overlap: 917/917
+unique current pairs: 917
+target max abs discrepancy: 4.440892098500626e-16
+new-vs-old prediction mean absolute difference: 0.03630988586730338
+new-vs-old prediction correlation: 0.9871464482520352
+RBP/non-RBP counts: 343/574
+current plotted metrics: n=917 R2=0.951067 RMSE=0.074424 Pearson=0.975323 RBP_r=0.974266 RBP_n=343
+output resolution: individual 2.4 x 2.3 inch panel, 600-dpi PNG plus PDF/SVG
+
+E
+1794/1794 pair overlap: 1794/1794
+unique current pairs: 1794
+target max abs discrepancy: 8.881784197001252e-16
+new-vs-old prediction mean absolute difference: 0.039533232257603
+new-vs-old prediction correlation: 0.9814435278280979
+RBP/non-RBP counts: 667/1127
+current plotted metrics: n=1794 R2=0.919336 RMSE=0.085517 Pearson=0.959245 RBP_r=0.965831 RBP_n=667
+output resolution: individual 2.4 x 2.3 inch panel, 600-dpi PNG plus PDF/SVG
+
+F
+current F source exists: True
+current-vs-historical rows: 191386
+current-vs-historical max abs difference: 0.0
+current source rejected: True
+exact model used for recomputation: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_validation_run_model_local/artifacts/final_model
+verification against accepted 1,794 prediction output max abs difference: 1.332267629550188e-15
+final number of landscape predictions: 191386
+plotted points after historical downsampling rule: 172314
+historical hybrid predictions were not substituted.

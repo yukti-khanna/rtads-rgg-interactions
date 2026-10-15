@@ -1,0 +1,8 @@
+{
+  "lambda_hat": 0.0,
+  "cap": 0.17774018303854217,
+  "gate_center": 40,
+  "gate_scale": 12,
+  "threshold_ocn": 40,
+  "validation_targets_used_for_training": false
+}

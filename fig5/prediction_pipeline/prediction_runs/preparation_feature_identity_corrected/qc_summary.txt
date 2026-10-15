@@ -1,0 +1,8 @@
+Run: preparation_feature_identity_corrected
+Status: feature_identity_passed_prediction_pending
+Requested pairs: 0
+Predicted: 0
+Rejected: 0
+Rejected rows are preserved; duplicate sequence pairs under distinct IDs are retained and flagged.
+Predictions are log10(-B22); no back-transformation or model fitting.
+Applicability flags do not alter predictions. Histidine features use the fixed historical charge convention, without a new pH correction.

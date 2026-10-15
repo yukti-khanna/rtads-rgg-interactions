@@ -1,0 +1,43 @@
+Training-only feature-family decomposition
+
+Repeated-CV performance of F0-F6:
+F0_OCN_only: mean R2 0.9195, Pearson 0.9589, RMSE 0.0955, MAE 0.0708.
+F1_OCN_plus_SCD: mean R2 0.9211, Pearson 0.9598, RMSE 0.0945, MAE 0.0696.
+F2_OCN_plus_hydropathy: mean R2 0.9332, Pearson 0.9660, RMSE 0.0870, MAE 0.0644.
+F3_OCN_plus_length: mean R2 0.9320, Pearson 0.9655, RMSE 0.0877, MAE 0.0657.
+F4_OCN_plus_hydropathy_length: mean R2 0.9361, Pearson 0.9676, RMSE 0.0850, MAE 0.0633.
+F5_OCN_plus_SCD_hydropathy: mean R2 0.9371, Pearson 0.9681, RMSE 0.0844, MAE 0.0626.
+F6_full_M4: mean R2 0.9373, Pearson 0.9682, RMSE 0.0842, MAE 0.0630.
+
+Family additions relative to OCN:
+F1 charge patterning: mean delta R2 0.0016.
+F2 hydropathy/stickiness: mean delta R2 0.0137.
+F3 length: mean delta R2 0.0125.
+F4 hydropathy/stickiness plus length: mean delta R2 0.0166.
+F5 SCD plus hydropathy/stickiness: mean delta R2 0.0176.
+F6 full M4: mean delta R2 0.0178.
+
+Targeted family effects:
+Added SCD after OCN+hydropathy+length (F6-F4): mean delta R2 0.0012.
+Added length after OCN+SCD+hydropathy (F6-F5): mean delta R2 0.0002.
+Added hydropathy/stickiness+length after OCN+SCD (F6-F1): mean delta R2 0.0162.
+Added length after OCN+hydropathy/stickiness (F4-F2): mean delta R2 0.0029.
+
+Consistency across repeated CV splits:
+                            comparison  positive_delta_r2_repeats  lower_rmse_repeats  lower_mae_repeats
+              F1_OCN_plus_SCD_minus_F0                          4                   4                  5
+       F2_OCN_plus_hydropathy_minus_F0                          5                   5                  5
+           F3_OCN_plus_length_minus_F0                          5                   5                  5
+F4_OCN_plus_hydropathy_length_minus_F0                          5                   5                  5
+   F5_OCN_plus_SCD_hydropathy_minus_F0                          5                   5                  5
+                   F6_full_M4_minus_F0                          5                   5                  5
+
+Targeted comparison consistency:
+                                    comparison  positive_delta_r2_repeats  lower_rmse_repeats  lower_mae_repeats
+     F4_minus_F2_added_length_after_hydropathy                          5                   5                  5
+F6_minus_F1_added_hydropathy_stickiness_length                          5                   5                  5
+                         F6_minus_F4_added_SCD                          5                   5                  3
+                      F6_minus_F5_added_length                          3                   3                  1
+
+Conservative interpretation:
+Hydropathy/stickiness with length accounts for most of the improvement beyond OCN in this prespecified decomposition. Length contributes detectable incremental information in the tested combinations. SCD adds little once hydropathy/stickiness and length are already present. A simpler OCN plus hydropathy/stickiness plus length model should be considered alongside full M4 because its repeated-CV performance is very close to full M4 within the observed uncertainty. These results are internal to the 917 simulated pairs and do not establish causality or external generalization.

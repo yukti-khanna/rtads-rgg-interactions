@@ -1,0 +1,79 @@
+{
+  "target": "B22_corr1_log10",
+  "features": [
+    "Opposite_Charge_Number",
+    "mean_lambda_RGG",
+    "mean_lambda_TAD",
+    "SHD_RGG",
+    "SHD_TAD",
+    "opp_charge_std",
+    "scd_patch1_std",
+    "scd_patch2_std",
+    "rg_fraction_patch1_std",
+    "aromatic_fraction_patch2_std",
+    "shd_patch1_std",
+    "shd_patch2_std",
+    "ah_energy_std"
+  ],
+  "derived_features": {
+    "mean_lambda_RGG": "lambda_RGG / RGG_length",
+    "mean_lambda_TAD": "lambda_TAD / TAD_length"
+  },
+  "base_model": {
+    "scaler": "StandardScaler",
+    "estimator": "MLPRegressor",
+    "activation": "tanh",
+    "alpha": 0.01,
+    "hidden_layer_sizes": [
+      128,
+      64,
+      32,
+      16
+    ],
+    "learning_rate_init": 0.01,
+    "solver": "adam",
+    "max_iter": 500,
+    "ensemble_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "residual_model": {
+    "threshold_ocn": 40,
+    "gate_center": 40,
+    "gate_scale": 12,
+    "layers": [
+      {
+        "units": 16,
+        "activation": "tanh"
+      },
+      {
+        "units": 8,
+        "activation": "tanh"
+      },
+      {
+        "units": 1,
+        "activation": "linear"
+      }
+    ],
+    "l2": 0.0005,
+    "optimizer": "Adam",
+    "learning_rate": 0.0002,
+    "loss": "Huber",
+    "huber_delta": 0.75,
+    "lambda_bounds": [
+      0,
+      0.6
+    ],
+    "cap_percentile": 85,
+    "internal_cv_folds": 5,
+    "internal_cv_seed": 42,
+    "fit_epochs": 1000,
+    "early_stopping_patience": 80,
+    "validation_fraction_high_ocn": 0.35,
+    "validation_seed": 20260913
+  }
+}

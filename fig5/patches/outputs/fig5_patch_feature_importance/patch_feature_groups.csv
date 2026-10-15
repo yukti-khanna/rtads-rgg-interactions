@@ -1,0 +1,57 @@
+feature,patch_category
+ah_energy_mean,local AH interaction
+ah_energy_min,local AH interaction
+ah_energy_max,local AH interaction
+ah_energy_std,local AH interaction
+opp_charge_mean,local electrostatics
+opp_charge_min,local electrostatics
+opp_charge_max,local electrostatics
+opp_charge_std,local electrostatics
+opp_charge_top5_mean,local electrostatics
+opp_charge_top10_mean,local electrostatics
+top_patch_gap,other patch descriptor
+corr_oppcharge_ah,other patch descriptor
+scd_patch1_mean,RGG charge patterning
+scd_patch1_min,RGG charge patterning
+scd_patch1_max,RGG charge patterning
+scd_patch1_std,RGG charge patterning
+scd_patch2_mean,TAD charge patterning
+scd_patch2_min,TAD charge patterning
+scd_patch2_max,TAD charge patterning
+scd_patch2_std,TAD charge patterning
+shd_patch1_mean,RGG hydropathy patterning
+shd_patch1_min,RGG hydropathy patterning
+shd_patch1_max,RGG hydropathy patterning
+shd_patch1_std,RGG hydropathy patterning
+shd_patch2_mean,TAD hydropathy patterning
+shd_patch2_min,TAD hydropathy patterning
+shd_patch2_max,TAD hydropathy patterning
+shd_patch2_std,TAD hydropathy patterning
+rg_fraction_patch1_mean,RG localization
+rg_fraction_patch1_min,RG localization
+rg_fraction_patch1_max,RG localization
+rg_fraction_patch1_std,RG localization
+rg_fraction_patch2_mean,other patch descriptor
+rg_fraction_patch2_max,other patch descriptor
+rg_fraction_patch2_std,other patch descriptor
+aromatic_fraction_patch1_mean,RGG aromatic localization
+aromatic_fraction_patch1_min,RGG aromatic localization
+aromatic_fraction_patch1_max,RGG aromatic localization
+aromatic_fraction_patch1_std,RGG aromatic localization
+aromatic_fraction_patch2_mean,TAD aromatic localization
+aromatic_fraction_patch2_max,TAD aromatic localization
+aromatic_fraction_patch2_std,TAD aromatic localization
+rgg_count_patch1_mean,RG localization
+rgg_count_patch1_max,RG localization
+rgg_count_patch1_std,RG localization
+rgg_count_patch2_mean,other patch descriptor
+rgg_count_patch2_max,other patch descriptor
+rgg_count_patch2_std,other patch descriptor
+entropy_patch1_mean,RGG complexity
+entropy_patch1_min,RGG complexity
+entropy_patch1_max,RGG complexity
+entropy_patch1_std,RGG complexity
+entropy_patch2_mean,TAD complexity
+entropy_patch2_min,TAD complexity
+entropy_patch2_max,TAD complexity
+entropy_patch2_std,TAD complexity

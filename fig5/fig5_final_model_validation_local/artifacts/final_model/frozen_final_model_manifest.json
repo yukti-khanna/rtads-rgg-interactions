@@ -1,0 +1,22 @@
+{
+  "model": "F2-P8 + historical fixed residual correction",
+  "training_rows": 917,
+  "target": "B22_corr1_log10",
+  "features": [
+    "Opposite_Charge_Number",
+    "mean_lambda_RGG",
+    "mean_lambda_TAD",
+    "SHD_RGG",
+    "SHD_TAD",
+    "opp_charge_std",
+    "scd_patch1_std",
+    "scd_patch2_std",
+    "rg_fraction_patch1_std",
+    "aromatic_fraction_patch2_std",
+    "shd_patch1_std",
+    "shd_patch2_std",
+    "ah_energy_std"
+  ],
+  "validation_data_used_for_fitting": false,
+  "source": "rebuilt from packaged authoritative 917 development inputs"
+}

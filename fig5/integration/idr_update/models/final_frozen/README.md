@@ -1,0 +1,1 @@
+Install the authoritative server MODEL_MANIFEST.json, base_model_ensemble.joblib, residual_preprocessor.joblib and residual_nn.keras here unchanged. Expected hashes are in prediction_pipeline/config/accepted_model_hashes.json. The known-mismatching local model was deliberately not substituted.

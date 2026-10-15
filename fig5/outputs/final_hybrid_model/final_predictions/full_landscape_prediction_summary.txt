@@ -1,0 +1,12 @@
+{
+  "n_pairs": 191386,
+  "prediction_min": 0.9418996854684097,
+  "prediction_max": 4.34011539660318,
+  "prediction_median": 2.898554212526309,
+  "minus_NCP_min": -98.0,
+  "minus_NCP_max": 406.0,
+  "fraction_nonzero_applied_correction": 1.0,
+  "applied_correction_min": -0.023139584121238687,
+  "applied_correction_max": 0.023139613308195615,
+  "applied_correction_median_abs": 0.0006664305446331004
+}

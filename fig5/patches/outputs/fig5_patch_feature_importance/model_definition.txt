@@ -1,0 +1,1 @@
+StandardScaler within each fold; MLPRegressor tanh, (100,50,25), alpha=.01, Adam, learning_rate_init=.01, max_iter=500, seed 42; shuffled 5-fold CV seed 42; 3 permutation repeats.

@@ -1,0 +1,14 @@
+{
+  "lambda_raw": 0.13680294067644683,
+  "lambda_final": 0.13680294067644683,
+  "calibration_sample_count": 93,
+  "calibration_subset": "unique development pairs with \u2212NCP >= 40",
+  "calibration_equation": "lambda_raw = dot(true_residual, predicted_residual) / (dot(predicted_residual, predicted_residual) + epsilon); lambda_final = clip(lambda_raw, 0, 0.6)",
+  "epsilon": 1e-12,
+  "gate_center": 40.0,
+  "gate_scale": 12.0,
+  "threshold": 40.0,
+  "cap_percentile": 85,
+  "cap_quantity": "abs(base residual) among unique high\u2212NCP cross-fitted development pairs",
+  "cap": 0.16914558161466955
+}

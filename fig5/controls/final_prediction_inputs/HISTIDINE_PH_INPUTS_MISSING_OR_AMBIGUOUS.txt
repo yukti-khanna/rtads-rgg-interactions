@@ -1,0 +1,6 @@
+Histidine pH model-prediction inputs were not created.
+
+Reason: existing matched histidine pH tables provide pH7 and pH6.5 targets, but not the full frozen 13-feature rows. S9E contains complete histidine feature rows, but these rows do not label an explicit pH feature/protonation condition, so they cannot be safely used as both pH7 and pH6.5 inputs.
+
+Candidate audit: /Users/yuktikhanna/rtads-rgg-interactions/fig5/controls/final_prediction_inputs/histidine_pH_feature_source_candidates.csv
+Target-only input: /Users/yuktikhanna/rtads-rgg-interactions/fig5/controls/final_prediction_inputs/histidine_pH_matched_targets_ONLY_not_model_features.csv

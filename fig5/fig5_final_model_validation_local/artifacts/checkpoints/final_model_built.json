@@ -1,0 +1,30 @@
+{
+  "stage": "final_model_built",
+  "outputs": [
+    {
+      "path": "artifacts/final_model/base_scaler.pkl",
+      "sha256": "607283feaaf49646c42b07096c8755d9fb7e92edf1d48268c698ba6a89a44871",
+      "size": 911
+    },
+    {
+      "path": "artifacts/final_model/base_model.pkl",
+      "sha256": "f6077abfab5526e6ce6f0bc4b50c33b4c2af5e0827bf433d629aecb0966c6429",
+      "size": 2070124
+    },
+    {
+      "path": "artifacts/final_model/feature_order.json",
+      "sha256": "ea3b7019dd677bfcafc54739941c507e252241d1e8215f5d9a5453fd19737106",
+      "size": 279
+    },
+    {
+      "path": "artifacts/final_model/residual_calibration.json",
+      "sha256": "d2ca566b7461cc1598e03e1afc6b60cedc85abe6559297fb010280027235606f",
+      "size": 166
+    },
+    {
+      "path": "artifacts/final_model/frozen_final_model_manifest.json",
+      "sha256": "7b8dbae972d3bb38357108be9f57dece1cc0d382993a50dc33eb5822ae3b2625",
+      "size": 558
+    }
+  ]
+}

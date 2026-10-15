@@ -1,0 +1,8 @@
+feature_name,feature_family,definition,formula,TAD_or_RGG_or_pair,global_or_local,used_in_final_model,used_in_ablation_only,historical_source_column,historical_alias,notes
+-NCP,bulk electrostatics,Negative net-charge product between the TAD and RGG region.,-Q_TAD x Q_RGG,pair,global,yes,yes,Opposite_Charge_Number,OCN,Historical OCN terminology represented this bulk net-charge product and is not interpreted here as positional pairing.
+mean_lambda_RGG,hydropathy/stickiness,Mean residue stickiness/hydropathy descriptor for the RGG region.,mean(lambda_i over RGG residues),RGG,global,yes,yes,mean_lambda_RGG or lambda_RGG,,Used in the final F2 base model.
+mean_lambda_TAD,hydropathy/stickiness,Mean residue stickiness/hydropathy descriptor for the TAD.,mean(lambda_i over TAD residues),TAD,global,yes,yes,mean_lambda_TAD or lambda_TAD,,Used in the final F2 base model.
+SHD_RGG,sequence patterning,Sequence hydropathy decoration descriptor for the RGG region.,historical SHD implementation,RGG,global,yes,yes,SHD_RGG,,Used in the final F2 base model.
+SHD_TAD,sequence patterning,Sequence hydropathy decoration descriptor for the TAD.,historical SHD implementation,TAD,global,yes,yes,SHD_TAD,,Used in the final F2 base model.
+opp_charge_std,local charge context,Standard deviation of local opposite-charge patch scores across aligned local windows.,std(local opposite-charge patch score),pair,local,yes,yes,opp_charge_std,,Frozen local patch feature from training-only screening.
+ah_energy_std,local hydropathy/stickiness context,Standard deviation of local Ashbaugh-Hatch energy-like patch scores.,std(local AH energy patch score),pair,local,yes,yes,ah_energy_std,,AH-energy heterogeneity term in final local-context model where applicable.

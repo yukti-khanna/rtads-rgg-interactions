@@ -1,0 +1,26 @@
+Python 3.10.13 | packaged by conda-forge | (main, Dec 23 2023, 15:35:25) [Clang 16.0.6 ]
+numpy 1.26.4; pandas 2.2.1
+Target and prediction columns never loaded into audit frames. Exact pair IDs only; no normalization or reversed-name matching.
+Primary: training subset plus full patch landscape for membership/copy checks. All candidate CSVs inventoried; prediction exports are secondary copies.
+bec2ccb6fab8b8a9bd7500cb95c0063f9e75c695bfa36adae77dc4a41f674008  /Users/yuktikhanna/calvados/patches/datasets/features_sim_pairs_for_training.csv
+2cf5a6eee54bc480fd15452d291d03e3877bdd5f274e1e56866606c649408332  /Users/yuktikhanna/calvados/patches/datasets/features_for_training.csv
+b00ae49af1a7a49844029e710b838fc5a726eb913e06a5af6b56ae48103bb96c  /Users/yuktikhanna/calvados/patches/features/one_pair_for_training_added_features_data.csv
+f3e29588605d0df45d9b5c1cdc4b939b18b2552f5d10cbd72c35e1a6b075a14c  /Users/yuktikhanna/calvados/patches/scripts/plot_features.py
+d01f78204c17ff560738df3d9f3ef2377776defec8216c72b4de7529912d1e10  /Users/yuktikhanna/calvados/patches/scripts/get_features.py
+c12cb104aa26a69e668114e9f1254dfefc41f9bf84d9baabe2514e4f56517e88  /Users/yuktikhanna/calvados/patches/scripts/energy_funcs.py
+d5f45061528eec54576e50160a50488f6a6044b13c89515975c06bf5bb021f15  /Users/yuktikhanna/calvados/patches/scripts/merge_datasets.py
+fb8851e7889ad5efc9f2f54da574617775a70297e9e92645deaf26d8747c8f73  /Users/yuktikhanna/calvados/patches/features/residues.csv
+373cf3468fcc4f7ab5fdd10ff74778b2de6f605011e0bfd68381b725e4a59928  /Users/yuktikhanna/calvados/patches/features/all_tads_rggs_dis.fasta
+f9ddb700b12bf0aeab3ccb88cebfd12d29d61be0a4b21411f06f6a4da7b6dc5c  /Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv
+d01d6cc214dd1fd3d4d00aa4bf4b54524055867c858a2bfbeac5afc80007e754  /Users/yuktikhanna/rtads-rgg-interactions/fig5/taken_out_preds_with_hybrid_021125_sel_cols.csv
+a95b7f32a14c95ace3a47150ca695ab6b30d08c5000964fff387877dfdc9e15e  /Users/yuktikhanna/rtads-rgg-interactions/fig5/unsim_preds_with_hybrid_021125_sel_cols.csv
+
+HISTORICAL RESOURCE COMPARISON
+original_residues: /Users/yuktikhanna/calvados/residues.csv; SHA256 2cf55bc77a7ff8a25b7cc841ac947ff5c6ec33a8fdc3a5e575044152c7d0bbc7
+Original vs shard residue table maximum absolute differences: {'q': 0.0, 'sigmas': 1.1102230246251565e-16, 'lambdas': 0.2732135325180461}
+original_fasta: /Users/yuktikhanna/calvados/all_tads_rggs_dis.fasta; SHA256 373cf3468fcc4f7ab5fdd10ff74778b2de6f605011e0bfd68381b725e4a59928
+Original vs shard FASTA: 1238 vs 1238 IDs; different shared sequences: 0
+rgg_headers: /Users/yuktikhanna/calvados/rg_tract_headers.txt; SHA256 01d61bbb70e97e21d4e8ca41346ddb676695a480f1621a4e301adb2eb167c793
+tad_headers: /Users/yuktikhanna/calvados/tad_headers.txt; SHA256 c6412a3deee230094ab174e8b4d8a9792bccc9215719f6aeb2f3fc669ee0e31b
+All 101 audited source hashes rechecked unchanged.
+Audit script SHA256: 87fbc012a2844fac21b0019bdda1695b4d3de2bba703ed8993590effa9366a6b

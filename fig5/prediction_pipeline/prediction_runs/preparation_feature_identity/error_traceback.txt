@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/yuktikhanna/rtads-rgg-interactions/fig5/prediction_pipeline/predict_pairs.py", line 102, in main
+    manifest['identity_results']=identity_test(out,predictor)
+  File "/Users/yuktikhanna/rtads-rgg-interactions/fig5/prediction_pipeline/qc.py", line 55, in identity_test
+    if not passed: raise RuntimeError('Known-row identity check failed; see pipeline_identity_test.csv. New predictions were not generated.')
+RuntimeError: Known-row identity check failed; see pipeline_identity_test.csv. New predictions were not generated.

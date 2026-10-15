@@ -1,0 +1,11 @@
+model,feature_count,features,primary
+F0_OCN_only,1,Opposite_Charge_Number,True
+F1_OCN_plus_SCD,3,Opposite_Charge_Number;SCD_RGG;SCD_TAD,True
+F2_OCN_plus_hydropathy,5,Opposite_Charge_Number;mean_lambda_RGG;mean_lambda_TAD;SHD_RGG;SHD_TAD,True
+F3_OCN_plus_length,3,Opposite_Charge_Number;RGG_length;TAD_length,True
+F4_OCN_plus_hydropathy_length,7,Opposite_Charge_Number;mean_lambda_RGG;mean_lambda_TAD;SHD_RGG;SHD_TAD;RGG_length;TAD_length,True
+F5_OCN_plus_SCD_hydropathy,7,Opposite_Charge_Number;SCD_RGG;SCD_TAD;mean_lambda_RGG;mean_lambda_TAD;SHD_RGG;SHD_TAD,True
+F6_full_M4,9,Opposite_Charge_Number;SCD_RGG;SCD_TAD;mean_lambda_RGG;mean_lambda_TAD;SHD_RGG;SHD_TAD;RGG_length;TAD_length,True
+B_only_charge_patterning,2,SCD_RGG;SCD_TAD,False
+C_only_hydropathy_stickiness,4,mean_lambda_RGG;mean_lambda_TAD;SHD_RGG;SHD_TAD,False
+D_only_length,2,RGG_length;TAD_length,False

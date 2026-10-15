@@ -1,0 +1,9 @@
+Run: validated_updated_1
+Status: failed
+Requested pairs: 73
+Predicted: 0
+Rejected: 0
+Rejected rows are preserved; duplicate sequence pairs under distinct IDs are retained and flagged.
+Predictions are log10(-B22); no back-transformation or model fitting.
+Applicability flags do not alter predictions. Histidine features use the fixed historical charge convention, without a new pH correction.
+Error: No module named 'tensorflow.python'

@@ -1,0 +1,12 @@
+test_all_modes_agree (test_sequence_io.InputValidationTests) ... ok
+test_ambiguous_registry_and_missing_name (test_sequence_io.InputValidationTests) ... ok
+test_bad_text_pairs_are_preserved_as_rejections (test_sequence_io.InputValidationTests) ... ok
+test_duplicate_ids_reject_all_instances (test_sequence_io.InputValidationTests) ... ok
+test_inline_normalization_and_rejections (test_sequence_io.InputValidationTests) ... ok
+test_plain_pair_text_matches_table (test_sequence_io.InputValidationTests) ... ok
+test_separator_escape (test_sequence_io.InputValidationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.072s
+
+OK

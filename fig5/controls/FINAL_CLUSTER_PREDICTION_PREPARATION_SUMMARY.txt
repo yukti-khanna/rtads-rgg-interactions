@@ -1,0 +1,24 @@
+FINAL CLUSTER PREDICTION PREPARATION SUMMARY
+
+Reused existing complete feature sources:
+- outputs/revised_fig5_supplementary_data/csv/Table_S9_reviewer_controls/S9E_applicability_domain.csv for non-basic WT, shuffle WT parents, non-basic shuffles, and histidine sequence-derived features.
+- outputs/revised_fig5_supplementary_data/csv/Table_S9_reviewer_controls/S9D_basic_region_controls.csv for 78 existing basic/noncanonical controls.
+- outputs/fig5_histidine_pH_audit/histidine_matched_b22.csv for histidine pH7/pH6.5 targets.
+- shuffle_control_analysis_local/outputs/shuffle_control_analysis/shuffle_nonbasic_matched_effects.csv for non-basic shuffle parent mapping.
+
+Generated or updated input files:
+- controls/final_prediction_inputs/nonbasic_WT_prediction_input.csv (n=80)
+- controls/final_prediction_inputs/shuffle_WT_parent_prediction_input.csv (n=80)
+- controls/final_prediction_inputs/nonbasic_shuffle_prediction_input.csv (n=240; 160 TAD, 80 RGG)
+- controls/final_prediction_inputs/histidine_pH7_prediction_input.csv (n=390)
+- controls/final_prediction_inputs/histidine_pH6p5_prediction_input.csv (n=390; same feature representation as pH7, pH-specific target)
+- controls/final_prediction_inputs/basic_control_prediction_input_ALL80.csv (n=80; 78 target-evaluable, 2 positive-B22 target-undefined)
+- controls/final_prediction_inputs/development_917_reference_input.csv (n=917)
+- controls/final_prediction_inputs/development_917_reference_predictions.csv (n=917 copy for cluster identity check)
+
+Executable paths:
+- controls/run_final_control_predictions.py
+- controls/run_final_control_predictions.sh
+
+No local Keras inference was performed during preparation.
+All new executable paths are resolved relative to the fig5 project root and should work unchanged in the mirrored cluster fig5 directory.

@@ -1,0 +1,15 @@
+feature1,feature2,relationship,slope,intercept,max_error,proof
+rg_fraction_patch2_min,aromatic_fraction_patch2_min,observed exact duplicate,1.0,0.0,0.0,empirical training equality; not universal identity
+rg_fraction_patch2_min,rgg_count_patch1_min,observed exact duplicate,1.0,0.0,0.0,empirical training equality; not universal identity
+rg_fraction_patch2_min,rgg_count_patch2_min,observed exact duplicate,1.0,0.0,0.0,empirical training equality; not universal identity
+aromatic_fraction_patch2_min,rgg_count_patch1_min,observed exact duplicate,1.0,0.0,0.0,empirical training equality; not universal identity
+aromatic_fraction_patch2_min,rgg_count_patch2_min,observed exact duplicate,1.0,0.0,0.0,empirical training equality; not universal identity
+rgg_count_patch1_min,rgg_count_patch2_min,observed exact duplicate,1.0,0.0,0.0,empirical training equality; not universal identity
+rgg_count_patch2_mean,rgg_count_patch2_max,observed affine transform,15.000000000000018,-4.913190685794724e-18,2.220446049250313e-16,empirical training affine relationship; not universal identity
+rgg_count_patch2_mean,rgg_count_patch2_std,observed affine transform,3.7416573867739458,3.523373588202934e-20,5.551115123125783e-17,empirical training affine relationship; not universal identity
+rgg_count_patch2_max,rgg_count_patch2_std,observed affine transform,0.24944382578492946,3.523373588202934e-20,5.551115123125783e-17,empirical training affine relationship; not universal identity
+ah_energy_mean,ah_density_mean,algebraic fixed-window rescaling,0.04,0.0,0.0,ah_density divides already averaged AH by 5*5; absent main training schema
+ah_energy_min,ah_density_min,algebraic fixed-window rescaling,0.04,0.0,0.0,ah_density divides already averaged AH by 5*5; absent main training schema
+ah_energy_max,ah_density_max,algebraic fixed-window rescaling,0.04,0.0,0.0,ah_density divides already averaged AH by 5*5; absent main training schema
+ah_energy_std,ah_density_std,algebraic fixed-window rescaling,0.04,0.0,0.0,ah_density divides already averaged AH by 5*5; absent main training schema
+ah_energy_top10_mean,ah_density_top10_mean,algebraic fixed-window rescaling,0.04,0.0,0.0,ah_density divides already averaged AH by 5*5; absent main training schema

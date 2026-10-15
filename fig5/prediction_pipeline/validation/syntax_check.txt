@@ -1,0 +1,15 @@
+PASS: parsed 14 Python files. No .fit() calls. Shell syntax also checked.
+configuration.py
+feature_engineering.py
+sequence_io.py
+qc.py
+predict_pairs.py
+model_loader.py
+tests/test_inference_guards.py
+tests/test_sequence_io.py
+tests/test_feature_identity.py
+tests/test_prediction_identity.py
+vendor/historical_features.py
+vendor/energy_funcs.py
+vendor/__init__.py
+vendor/accepted_predictor.py

@@ -1,0 +1,12 @@
+analysis,n,R2,RMSE,MAE,Pearson,Spearman,bias_sim_minus_pred,notes
+non-basic WT,80,0.9323907567282214,0.09599587452029816,0.07442913783071932,0.979704512352652,0.976136896390061,-0.04729826104300406,external/control WT pairs; overlap with 917 development set = 0
+AHD-shuffle Δ prediction (available subset),160,-0.38587960483118167,0.08399854635179821,0.06397965962568561,-0.017794052223568002,-0.04162955584202507,0.014199920003009117,Frozen-prediction subset only; 345-shuffle union contains 230 simulations; do not generalise metrics to unpredicted rows.
+RG/RGG-shuffle Δ prediction (available subset),80,-0.05851782916379955,0.0922527586796562,0.06987333971949589,0.6049791023276555,0.6347866854195968,0.04047599413402838,Frozen-prediction subset only; 345-shuffle union contains 115 simulations; do not generalise metrics to unpredicted rows.
+histidine pH6.5,390,0.9534607440804732,0.0686626434127148,0.05452934765178282,0.9765182831424375,0.9668396629745548,-0.002830703168400186,Predictor features identical between pH7 and pH6.5; tests altered simulation condition.
+basic/noncanonical controls,78,-1.927706664393095,0.3704317979249954,0.2592202958815706,0.5324253306009129,0.4560629244173547,0.2572660011614825,total n=80; evaluable n=78; positive-B22/outside-target-domain n=2; negative R² retained.
+All unique WT–shuffle simulation pairs,345,,,,0.9791137552120349,0.9673022442320286,0.029251420619248947,"115 WT parents; 230 AHD/115 RG/RGG shuffles; simulation-only comparison, not predictor performance."
+Matched 300 source WT–shuffle simulations,300,,,,0.975464930043199,0.9580572263477456,0.026159892899855552,100 WT parents; 200 AHD/100 RG/RGG shuffles with five raw B22 replicas and bootstrap uncertainty.
+AHD-shuffle absolute prediction (available subset),160,0.9484356405285524,0.08524766877800502,0.06583622381229158,0.9814046290863537,0.9816067033868511,-0.033098341039994976,160/230 AHD-shuffle simulations have supplied frozen-model predictions.
+RG/RGG-shuffle absolute prediction (available subset),80,0.9645694459399009,0.07866771466191891,0.059903209184735,0.9822616721602904,0.9763947491795594,-0.0068222669089756825,80/115 RG/RGG-shuffle simulations have supplied frozen-model predictions.
+All shuffled pairs with frozen predictions,240,,,,,,,Frozen-model predictions available for original 240 only; 105 additional source rows require prediction.
+Matched shuffle-pair replica bootstrap available,300,,,,,,,195 overlap original 240; 105 new; 45 original-only have no uploaded replica-bootstrap source.

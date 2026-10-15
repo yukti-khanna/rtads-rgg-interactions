@@ -1,0 +1,8 @@
+FigS8A_non_dataset_WT_model_prediction
+
+Status: NOT GENERATED
+
+The available non-dataset WT table contains old prediction columns but does not contain the 13 frozen final-model input features. Reusing old predictions would violate the task requirement to use the already-frozen final hybrid model.
+
+Checked inputs:
+- /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplementary_data/csv/Table_S9_reviewer_controls/S9A_non_dataset_WT.csv :: exists=True

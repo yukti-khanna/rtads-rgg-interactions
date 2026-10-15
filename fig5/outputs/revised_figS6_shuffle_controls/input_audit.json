@@ -1,0 +1,15 @@
+{
+  "input_sha256": {
+    "s8_extended_controls/outputs/S8B_extended_source.csv": "c249db63967a3058acaebd99af1c09f058e44c84764f04d2051e7caec32ff536",
+    "fig5_shuffle_uncertainty/predictor_shuffle_replica_data.csv": "e0b968fc616a6e8de09ad66d54da2e4216d0419871e3835b7bea2cbbd0ff6026",
+    "fig5_shuffle_uncertainty/predictor_delta_uncertainty_summary.csv": "f66fe0218596736d75ccfccd5f697da93ada1f7b631c03ca6bc2f2c421f6ae33"
+  },
+  "cached_uncertainty_target_prediction_max_differences": {
+    "simulated_WT_target": 8.881784197001252e-16,
+    "simulated_shuffled_target": 1.3322676295501878e-15,
+    "predicted_WT_target": 0.0,
+    "predicted_shuffled_target": 0.0,
+    "delta_simulated": 1.4016565685892601e-15,
+    "delta_predicted": 5.000340419503146e-16
+  }
+}

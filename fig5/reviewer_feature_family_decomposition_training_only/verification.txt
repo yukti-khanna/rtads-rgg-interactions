@@ -1,0 +1,13 @@
+Verification
+Only 917-pair simulation file used for modelling/evaluation: /Users/yuktikhanna/rtads-rgg-interactions/fig5/sim_pairs_pred_with_hybrid_sel_cols_with_old.csv
+The 1,794-pair held-out file was never opened/read/hashed by this script.
+Unsimulated predictions were not used.
+Corrected Task 2 fold assignments were reused: /Users/yuktikhanna/rtads-rgg-interactions/fig5/reviewer_reduced_model_ablation_training_only/cv_fold_assignments.csv
+All compared models used identical folds: True
+Scalers were fit inside training folds only.
+All rows received one OOF prediction per repeat: True
+OOF prediction rows: 917
+Task 2 reproduction max absolute metric difference: 1.110e-16
+Pre-existing Figure 5 files modified by this script audit: ['patches/scripts/run_fig5_corrected_model_ablation.py']
+Pre-existing Figure 5 files missing by this script audit: []
+Unexpected new files outside this output directory and corrected Task 2 directory: ['patches/outputs/fig5_corrected_model_ablation_singlecv_work/cv/cv_fold_metrics.csv', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/cv/cv_model_performance.csv', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/cv/cv_oof_predictions.csv', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/cv/cv_pairwise_model_differences.csv', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/heldout/independent_heldout_performance.csv', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/heldout/independent_heldout_predictions.csv', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/heldout/paired_model_comparisons.csv', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/locked/locked_model_definitions.json', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/locked/locked_model_definitions.sha256', 'patches/outputs/fig5_corrected_model_ablation_singlecv_work/provenance/global_feature_classification.csv']

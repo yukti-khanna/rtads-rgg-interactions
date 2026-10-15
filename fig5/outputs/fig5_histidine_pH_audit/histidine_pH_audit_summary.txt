@@ -1,0 +1,27 @@
+Histidine pH audit summary
+
+1. Exact matched pH7/pH6.5 histidine pairs available: 390. Inventory rows: 390; complete matched simulations: 390.
+
+2. Simulation settings: metadata indicate matched pair IDs, same sequences/constructs, five pH7 and five pH6.5 replicas for the complete set, same corrected B22/Hummer finite-size procedure. The intended difference is histidine protonation/pH parameterization; see histidine_simulation_comparability_audit.txt.
+
+3. pH-induced B22 change: mean ΔB22=-3.129, median ΔB22=-3.082, SD=213, median |ΔB22|=85.98. On log target scale, mean ΔlogB22=0.000853, median ΔlogB22=0.001117.
+
+4. Direction: fraction stronger attraction at pH6.5 (more negative B22)=0.508; fraction weaker attraction=0.492. The signed distribution is heterogeneous rather than uniformly one-sided.
+
+5. Replicate variability: fraction of pairs where |condition mean difference| exceeds pooled within-condition replicate SD=0.162. Median standardized condition difference=-0.0153. Thus pH changes are usually smaller than, or comparable to, replicate-scale variability rather than overwhelmingly larger.
+
+6. Histidine count relationship: total_H vs ΔB22 Pearson=-0.186, Spearman=-0.136; total_H vs |ΔB22| Pearson=0.109.
+
+7. Charge/OCN relationship: ΔOCN proxy vs ΔB22 Pearson=-0.458, Spearman=-0.313.
+
+8. Model pH encoding: CASE B. The frozen predictor does not encode pH as an independent variable and does not receive separate pH-specific feature rows. prediction_pH7 == prediction_pH6p5 by construction for the same pair. See histidine_model_pH_encoding_audit.txt.
+
+9. Frozen model performance on same histidine subset at pH7: n=390, R2=0.9621, RMSE=0.06198, MAE=0.04929, Pearson=0.981, Spearman=0.9729, mean residual=-0.003917.
+
+10. Frozen model performance at pH6.5: n=390, R2=0.9525, RMSE=0.06938, MAE=0.05503, Pearson=0.976, Spearman=0.9668, mean residual=-0.003064.
+
+11. Prediction error change: mean Δ absolute error=0.005736 (95% CI 0.001232 to 0.01024); median Δ absolute error=0.002774; fraction error increases=0.538. Prediction error does not materially worsen at pH6.5.
+
+12. Simulation landscape preservation: pH7 vs pH6.5 corrected B22 Pearson=0.9958, Spearman=0.9647, descriptive slope=0.9935, mean absolute deviation from identity=128.9. The pH6.5 rerun supports robustness of the original pH7 simulation conclusions with limited quantitative shifts.
+
+13. Is model modification required? NO. This is a sensitivity test only; no retraining, recalibration, feature changes, or model-selection changes are justified.

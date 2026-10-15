@@ -1,0 +1,1 @@
+Target is B22_corr1_log10, the corrected/log10 simulated B22 column used by Figure 5 scripts.

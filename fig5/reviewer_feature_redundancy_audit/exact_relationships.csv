@@ -1,0 +1,51 @@
+dataset,feature,tested_formula,n,n_exact,n_nonexact,max_abs_error,mean_abs_error,conclusion,n_finite,n_within_tolerance,csv_precision_diagnostic_atol
+training,Opposite_Charge_Number,-(charge_RGG * charge_TAD),917,917,0,0,0,exact in all stored binary64 rows,917,917,1e-08
+training,Normalized_OCN,Opposite_Charge_Number / Total_Length,917,190,727,4.6629367034256575e-15,3.1102059616722666e-16,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Normalized_OCN,Opposite_Charge_Number / (RGG_length * TAD_length),917,35,882,2.0545203588681833,0.3475025105023542,does not reproduce stored values,917,35,1e-08
+training,Normalized_OCN,-(charge_RGG*charge_TAD)/(RGG_length+TAD_length),917,190,727,4.6629367034256575e-15,3.1102059616722666e-16,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Normalized_OCN,-NCPR_RGG*NCPR_TAD,917,35,882,2.0545203588681837,0.3475025105023542,does not reproduce stored values,917,35,1e-08
+training,Charge_Complementarity,-(charge_RGG * charge_TAD),917,0,917,351.5,19.27917121046892,does not reproduce stored values,917,0,1e-08
+training,Charge_Complementarity,abs(charge_RGG + charge_TAD) - (abs(charge_RGG) + abs(charge_TAD))/2,917,917,0,0,0,exact in all stored binary64 rows,917,917,1e-08
+training,Average_charge,(charge_RGG + charge_TAD)/2,917,917,0,0,0,exact in all stored binary64 rows,917,917,1e-08
+training,Charge_Asymmetry,abs(charge_TAD - charge_RGG),917,917,0,0,0,exact in all stored binary64 rows,917,917,1e-08
+training,NCPR_RGG,charge_RGG / RGG_length,917,214,703,4.9960036108132044e-16,1.564618421494981e-16,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,NCPR_TAD,charge_TAD / TAD_length,917,376,541,4.9960036108132044e-16,1.3956484096364767e-16,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Average_NCPR,(NCPR_RGG + NCPR_TAD)/2,917,114,803,7.2164496600635175e-16,1.5071474300007877e-16,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Total_Length,RGG_length + TAD_length,917,917,0,0,0,exact in all stored binary64 rows,917,917,1e-08
+training,Average_lambda,(lambda_RGG/RGG_length + lambda_TAD/TAD_length)/2,917,59,858,1.7763568394002505e-15,3.6254774779062499e-16,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Average_lambda,(lambda_RGG+lambda_TAD)/2,917,0,917,43.416830072344972,9.4731898829308925,does not reproduce stored values,917,0,1e-08
+training,Min_lambda,"min(lambda_RGG/RGG_length, lambda_TAD/TAD_length)",917,111,806,1.9984014443252818e-15,2.7519486749977981e-16,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Average_SCD,(SCD_RGG + SCD_TAD)/2,917,142,775,1.5987211554602254e-14,1.407608684812517e-15,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Average_SHD,(SHD_RGG + SHD_TAD)/2,917,368,549,5.3290705182007514e-15,2.5386211974198782e-15,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Hydropathy_Diff,SHD_TAD - SHD_RGG,917,153,764,1.0658141036401503e-14,3.1947288023556293e-15,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Hydropathy_Diff,abs(lambda_RGG-lambda_TAD),917,0,917,59.398258444098673,7.5191695304955388,does not reproduce stored values,917,0,1e-08
+training,Lambda_Ratio,lambda_TAD / (lambda_RGG + 1e-6),917,36,881,1.1990408665951691e-14,9.7876995494284854e-16,"consistent within float/CSV rounding (rtol=atol=1e-12), NOT bitwise exact",917,917,1e-08
+training,Lambda_Ratio,lambda_RGG/lambda_TAD,917,0,917,10.908850729717189,1.4253215300634676,does not reproduce stored values,917,0,1e-08
+training,Average_Interaction,(lambda_RGG+lambda_TAD)/2,917,0,917,44.520113342419862,10.564297875905146,does not reproduce stored values,917,0,1e-08
+training,Average_Interaction,Average_lambda,917,0,917,1.4368651622335968,1.0911079929742529,does not reproduce stored values,917,0,1e-08
+training,Average_Aromatics,0,917,917,0,0,0,exact in all stored binary64 rows,917,917,1e-08
+heldout,Opposite_Charge_Number,-(charge_RGG * charge_TAD),1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,Normalized_OCN,Opposite_Charge_Number / Total_Length,1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,Normalized_OCN,Opposite_Charge_Number / (RGG_length * TAD_length),1794,232,1562,2.4434984520123839,0.28243406429113688,does not reproduce stored values,1794,232,1e-08
+heldout,Normalized_OCN,-(charge_RGG*charge_TAD)/(RGG_length+TAD_length),1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,Normalized_OCN,-NCPR_RGG*NCPR_TAD,1794,232,1562,2.4434984518421055,0.28243406427757434,does not reproduce stored values,1794,232,1e-08
+heldout,Charge_Complementarity,-(charge_RGG * charge_TAD),1794,7,1787,141,14.452898550724637,does not reproduce stored values,1794,7,1e-08
+heldout,Charge_Complementarity,abs(charge_RGG + charge_TAD) - (abs(charge_RGG) + abs(charge_TAD))/2,1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,Average_charge,(charge_RGG + charge_TAD)/2,1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,Charge_Asymmetry,abs(charge_TAD - charge_RGG),1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,NCPR_RGG,charge_RGG / RGG_length,1794,897,897,4.7368420991178439e-10,5.2200159303690721e-11,consistent with rounded upstream CSV inputs (max error <= 1e-8); NOT exact; fails tighter 1e-12 test,1794,1449,1e-08
+heldout,NCPR_TAD,charge_TAD / TAD_length,1794,546,1248,3.33333360913457e-10,1.6467091639546879e-10,consistent with rounded upstream CSV inputs (max error <= 1e-8); NOT exact; fails tighter 1e-12 test,1794,546,1e-08
+heldout,Average_NCPR,(NCPR_RGG + NCPR_TAD)/2,1794,328,1466,6.5789475603428293e-10,2.2593175652656655e-10,consistent with rounded upstream CSV inputs (max error <= 1e-8); NOT exact; fails tighter 1e-12 test,1794,505,1e-08
+heldout,Total_Length,RGG_length + TAD_length,1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,Average_lambda,(lambda_RGG/RGG_length + lambda_TAD/TAD_length)/2,1794,112,1682,6.3726940391362064e-10,4.7650708846322128e-11,consistent with rounded upstream CSV inputs (max error <= 1e-8); NOT exact; fails tighter 1e-12 test,1794,295,1e-08
+heldout,Average_lambda,(lambda_RGG+lambda_TAD)/2,1794,0,1794,26.051311660109263,9.2118346842413672,does not reproduce stored values,1794,0,1e-08
+heldout,Min_lambda,"min(lambda_RGG/RGG_length, lambda_TAD/TAD_length)",1794,179,1615,3.8374997624046614e-10,4.3019524459515413e-11,consistent with rounded upstream CSV inputs (max error <= 1e-8); NOT exact; fails tighter 1e-12 test,1794,660,1e-08
+heldout,Average_SCD,(SCD_RGG + SCD_TAD)/2,1794,488,1306,1.6528064637679352e-09,1.2720610089860416e-10,consistent with rounded upstream CSV inputs (max error <= 1e-8); NOT exact; fails tighter 1e-12 test,1794,665,1e-08
+heldout,Average_SHD,(SHD_RGG + SHD_TAD)/2,1794,1104,690,4.9583004368969341e-10,1.9296853227178554e-11,consistent with rounded upstream CSV inputs (max error <= 1e-8); NOT exact; fails tighter 1e-12 test,1794,1639,1e-08
+heldout,Hydropathy_Diff,SHD_TAD - SHD_RGG,1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,Hydropathy_Diff,abs(lambda_RGG-lambda_TAD),1794,0,1794,36.518748239817931,6.0585132386142924,does not reproduce stored values,1794,0,1e-08
+heldout,Lambda_Ratio,lambda_TAD / (lambda_RGG + 1e-6),1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08
+heldout,Lambda_Ratio,lambda_RGG/lambda_TAD,1794,0,1794,9.8996263331190626,1.1501701682825258,does not reproduce stored values,1794,0,1e-08
+heldout,Average_Interaction,(lambda_RGG+lambda_TAD)/2,1794,0,1794,27.252836709,10.351124419968986,does not reproduce stored values,1794,0,1e-08
+heldout,Average_Interaction,Average_lambda,1794,0,1794,1.5199576796925385,1.1392897357276199,does not reproduce stored values,1794,0,1e-08
+heldout,Average_Aromatics,0,1794,1794,0,0,0,exact in all stored binary64 rows,1794,1794,1e-08

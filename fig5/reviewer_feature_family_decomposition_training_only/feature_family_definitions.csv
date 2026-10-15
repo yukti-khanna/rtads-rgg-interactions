@@ -1,0 +1,5 @@
+family,features,description
+A_bulk_electrostatics,Opposite_Charge_Number,Bulk net-charge product baseline.
+B_charge_patterning,SCD_RGG;SCD_TAD,Charge patterning descriptors.
+C_hydropathy_stickiness,mean_lambda_RGG;mean_lambda_TAD;SHD_RGG;SHD_TAD,Hydropathy/stickiness descriptors without length.
+D_sequence_length,RGG_length;TAD_length,Sequence length descriptors.

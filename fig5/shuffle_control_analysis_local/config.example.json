@@ -1,0 +1,8 @@
+{
+  "manifest": "/Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_final_model_validation_local/inputs/controls/manifest/simulation_manifest_400.csv",
+  "b22": "/Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_final_model_validation_local/outputs/controls/control_b22_from_original_rdfs.csv",
+  "predictions": "/Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_validation_run_model_local/outputs/controls/control_final_predictions.csv",
+  "rdf_dir": "/Users/yuktikhanna/rtads-rgg-interactions/fig5/controls_rdfs",
+  "rdf_scripts_dir": "/Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_final_model_validation_local/scripts",
+  "out": "./outputs/shuffle_control_analysis"
+}

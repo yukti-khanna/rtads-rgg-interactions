@@ -1,0 +1,21 @@
+model,model_label,primary_model,feature_order,feature,definition
+M1,OCN only,True,1,Opposite_Charge_Number,-charge_RGG * charge_TAD
+M2,OCN + SCD,True,1,Opposite_Charge_Number,-charge_RGG * charge_TAD
+M2,OCN + SCD,True,2,SCD_RGG,stored historical Figure 5 value; see Task 1 audit
+M2,OCN + SCD,True,3,SCD_TAD,stored historical Figure 5 value; see Task 1 audit
+M3,Hydropathy + length,True,1,mean_lambda_RGG,lambda_RGG / RGG_length
+M3,Hydropathy + length,True,2,mean_lambda_TAD,lambda_TAD / TAD_length
+M3,Hydropathy + length,True,3,SHD_RGG,stored historical Figure 5 value; see Task 1 audit
+M3,Hydropathy + length,True,4,SHD_TAD,stored historical Figure 5 value; see Task 1 audit
+M3,Hydropathy + length,True,5,RGG_length,stored historical Figure 5 value; see Task 1 audit
+M3,Hydropathy + length,True,6,TAD_length,stored historical Figure 5 value; see Task 1 audit
+M4,Combined non-redundant,True,1,Opposite_Charge_Number,-charge_RGG * charge_TAD
+M4,Combined non-redundant,True,2,SCD_RGG,stored historical Figure 5 value; see Task 1 audit
+M4,Combined non-redundant,True,3,SCD_TAD,stored historical Figure 5 value; see Task 1 audit
+M4,Combined non-redundant,True,4,mean_lambda_RGG,lambda_RGG / RGG_length
+M4,Combined non-redundant,True,5,mean_lambda_TAD,lambda_TAD / TAD_length
+M4,Combined non-redundant,True,6,SHD_RGG,stored historical Figure 5 value; see Task 1 audit
+M4,Combined non-redundant,True,7,SHD_TAD,stored historical Figure 5 value; see Task 1 audit
+M4,Combined non-redundant,True,8,RGG_length,stored historical Figure 5 value; see Task 1 audit
+M4,Combined non-redundant,True,9,TAD_length,stored historical Figure 5 value; see Task 1 audit
+M1b,Normalized OCN only,False,1,Normalized_OCN,Opposite_Charge_Number / Total_Length

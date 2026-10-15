@@ -1,0 +1,65 @@
+Supplementary Figure S5 final hybrid figure audit
+
+Workspace: /Users/yuktikhanna/rtads-rgg-interactions/fig5
+Scope: Supplementary Figure S5 only.
+Main Figure 5, Supplementary Figure S8, manuscript text, supplementary workbooks, and idr-interaction-predict were not modified by this script.
+
+Historical plotting aesthetics:
+  /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5.py
+  /Users/yuktikhanna/rtads-rgg-interactions/fig5/make_FigS5.py
+  Standalone 2.4 × 2.3 inch panels, 600 dpi PNG, historical grey/blue, hidden top/right spines, outward ticks.
+
+Authoritative residual-analysis files:
+  OOF predictions: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs/outer_oof_predictions.csv
+  Bootstrap high−NCP differences: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs/tail_bootstrap_differences.csv
+  Outer-fold results: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs/outer_fold_results.csv
+  Tail metrics: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs/tail_metrics.csv
+  Improvement summary: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs/high_OCN_pair_improvement_summary.csv
+  Inner tuning diagnostics: /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs/inner_tuning_results.csv
+
+Source-selection reason:
+  Selected /Users/yuktikhanna/rtads-rgg-interactions/fig5/fig5_residual_tuning_local/outputs because tail_bootstrap_differences.csv reproduces the expected final high−NCP result: ΔRMSE=-0.001334, 95% CI=[-0.002614, -0.000038], ΔR²=0.004083, Δbias=-0.001589; and outer_fold_results.csv contains 25 matching final hybrid outer folds.
+
+Definitions:
+  base residual = simulated target − base-component prediction
+  hybrid residual = simulated target − full-hybrid prediction
+  applied correction = full-hybrid prediction − base-component prediction
+
+Validation:
+  S5A
+    paths: ['/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5A_base_residual_vs_minusNCP.pdf', '/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5A_base_residual_vs_minusNCP.svg', '/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5A_base_residual_vs_minusNCP.png']
+    source_csv: /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5A_source.csv
+    unique_pairs: 917
+    high_minus_NCP_pairs: 93
+    residual_definition: simulated target − base-component prediction
+    x_limits: (-38.88, 362.88)
+    y_limits: (-0.39093804375644475, 0.3839480102035564)
+  S5B
+    paths: ['/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5B_hybrid_residual_vs_minusNCP.pdf', '/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5B_hybrid_residual_vs_minusNCP.svg', '/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5B_hybrid_residual_vs_minusNCP.png']
+    source_csv: /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5B_source.csv
+    unique_pairs: 917
+    high_minus_NCP_pairs: 93
+    residual_definition: simulated target − full-hybrid prediction
+    x_limits: (-38.88, 362.88)
+    y_limits: (-0.39093804375644475, 0.3839480102035564)
+  S5C
+    paths: ['/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5C_high_minusNCP_RMSE_ablation.pdf', '/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5C_high_minusNCP_RMSE_ablation.svg', '/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5C_high_minusNCP_RMSE_ablation.png']
+    source_csv: /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5C_source.csv
+    fold_count: 25
+    observed_delta_RMSE: -0.0013344642546114
+    ci_2_5: -0.002613573575339
+    ci_97_5: -3.7740915148335545e-05
+    visible_labels: Base component; Full hybrid
+  S5D
+    paths: ['/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5D_applied_residual_correction.pdf', '/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5D_applied_residual_correction.svg', '/Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5D_applied_residual_correction.png']
+    source_csv: /Users/yuktikhanna/rtads-rgg-interactions/fig5/outputs/revised_fig5_supplement/FigS5D_source.csv
+    applied_correction_definition: full-hybrid prediction − base-component prediction
+    identity_max_abs_error: 1.1813466871402056e-15
+
+Observed high−NCP ΔRMSE = -0.001334
+Observed high−NCP ΔRMSE 95% CI = [-0.002614, -0.000038]
+Observed high−NCP ΔR² = 0.004083
+Observed high−NCP bias change = -0.001589
+Only one final hybrid model lineage is represented in visible panels.
+No old/new model comparison is shown.
+Final full-development calibration λ = 0 is documented only in FigS5_legend_notes.txt.

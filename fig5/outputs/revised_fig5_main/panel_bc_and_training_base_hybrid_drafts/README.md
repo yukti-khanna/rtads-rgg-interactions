@@ -1,0 +1,1 @@
+Draft-only outputs. Panel F rasterized_2400 was updated separately. This folder contains a training-only base-vs-hybrid scatter using only development OOF predictions, plus one possible combined Panel B/C layout concept. The held-out set is not used in these drafts.

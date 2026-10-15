@@ -1,0 +1,24 @@
+Basic-control audit summary
+
+1. Expected basic controls: 80. Simulated feature/target rows present: 78. Prediction rows present: 78. Missing predictions: 2.
+Missing pair IDs: RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF12, RGG_O60506_3_1_WT__TAD_Q9NQB0_459_505_basic_AD_control_SHUF05.
+
+2. Input/alignment/target checks: PASS for all 78 basic controls that were simulated and predicted. The only failed rows are the two expected controls absent from the simulation/prediction outputs. See basic_control_integrity_check.csv.
+
+3. Poor performance appears to be a genuine model result for the 78 analyzable basic controls, not a row-order merge, target-transformation, duplication, or prediction-alignment problem.
+
+4. Basic residual convention is y_true - y_pred. Mean residual=0.2569, median residual=0.1761, fraction residual > 0=0.987. The model systematically UNDERPREDICTS simulated basic-control interaction strength.
+
+5. Feature domain: 1.000 of basic controls exceed the 95th percentile of training Mahalanobis distance. Median max |feature z|=6.24; median count |z|>2=2.
+
+6. Features with largest basic-vs-training standardized mean shifts: SHD_TAD (+6.06 SD), mean_lambda_TAD (+1.81 SD), Opposite_Charge_Number (-1.38 SD), aromatic_fraction_patch2_std (+1.02 SD), shd_patch2_std (+0.86 SD).
+
+7. Error distribution across basic controls: by-sequence/group summaries are in basic_control_error_by_group.csv. Largest group MAEs appear in Figure E; inspect whether one family dominates. Overall basic RMSE=0.3703, MAE=0.2589.
+
+8. Matched basic-vs-reference deltas: n=78, Pearson=0.4291, Spearman=0.3783, sign agreement=0.833, delta MAE=0.03207.
+
+9. Shuffled controls vs basic controls: shuffled RMSE=0.08633, MAE=0.06633, mean residual=-0.02997; basic RMSE=0.3703, MAE=0.2589, mean residual=0.2569. This supports separating sequence-order perturbations from generic basic-region controls.
+
+10. Safest interpretation: The frozen predictor was trained on TAD-RGG sequence space and does not quantitatively extrapolate to generic basic-region controls; the two missing simulations should be reported as absent, but they do not explain the systematic error among the 78 predicted basic controls.
+
+11. Should this result change the final model? NO. These are validation/control data and should not be used to refit F2-P8, tune residuals, or add features.

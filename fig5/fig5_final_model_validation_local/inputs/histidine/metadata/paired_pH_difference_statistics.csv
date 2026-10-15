@@ -1,0 +1,2 @@
+n,mean_difference,mean_difference_CI_low,mean_difference_CI_high,median_difference,median_difference_CI_low,median_difference_CI_high,SD_difference,paired_Cohens_dz,Wilcoxon_statistic,Wilcoxon_p,bootstrap_resamples,random_seed
+390,-3.1288986351367267,-24.235241142217461,17.907593320643493,-3.0818552912521682,-16.603900230790373,15.274313825890005,212.97573202820163,-0.014691338798743543,37968,0.94470575983043537,10000,20260910

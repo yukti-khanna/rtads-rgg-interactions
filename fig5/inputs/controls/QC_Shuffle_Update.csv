@@ -1,0 +1,23 @@
+QUALITY CONTROL • S9 shuffle update,Count / result,Meaning
+Total unique S9 shuffle pairs,345,115 WT parent pairs × three composition-preserving variants
+AHD shuffle pairs,230,Two AHD shuffles per WT parent
+RG/RGG shuffle pairs,115,One RG/RGG shuffle per WT parent
+Original S9 predicted rows,240,160 AHD + 80 RG/RGG; original model outputs retained
+Uploaded simulation/uncertainty comparisons,300,200 AHD + 100 RG/RGG; five replicas per system
+Exact pair-ID overlap,195,Shared values validated against uploaded source
+Newly added pairs,105,Simulated B22 present; frozen model predictions not supplied
+Original S9-only pairs,45,Existing predictions present; bootstrap source not uploaded
+Unique WT parents,115,80 original WT parents + 35 additional WT parents
+WT parents with provided model predictions,80,From original Non-basic WT tab
+WT parents with new raw replica source,100,From uploaded 300 source
+New WT parents requiring frozen predictions,35,No model predictions inferred
+Max numerical deviation in WT log-strength,8.881784197001252e-16,195 exact overlaps
+Max numerical deviation in shuffle log-strength,1.7763568394002505e-15,195 exact overlaps
+Max numerical deviation in Δ_sim,1.4085954624931674e-15,195 exact overlaps
+Replica-level B22 rows,2000,400 unique systems × five replicas
+Invalid bootstrap rows,0,Source invalid-case CSV empty
+Median absolute Δ_sim (300),0.044268661530415976,"Source subset, not all 345"
+RMS Δ_sim (300),0.08116720072171633,"Source subset, not all 345"
+Median bootstrap SE of Δ_sim (300),0.037901072651308966,Per-matched-pair raw-replica bootstrap
+Predictor evaluation conclusion,PARTIAL,Do not report 345-pair predictor accuracy until 105 new predictions are computed.
+Machine-readable historical identifiers,TAD_SHUFFLE_A/B,Retained for exact pipeline joins; refers to AHD shuffle.
