@@ -68,12 +68,12 @@
     "panel": "revision_analysis/supplementary_figures/intensity_ratio_vs_predicted_and_simulated",
     "axes": 0,
     "xlim": [
-      2.8118321955658607,
-      4.0781393085262305
+      2.8128735358817516,
+      4.056271161892516
     ],
     "ylim": [
-      0.030207049999999996,
-      0.62521795
+      0.030150166266511912,
+      0.6264125084032498
     ],
     "aspect": "auto"
   }

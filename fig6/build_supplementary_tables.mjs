@@ -100,7 +100,7 @@ const overview = await workbook.inspect({kind: "workbook,sheet,region", maxChars
 await fs.writeFile(path.join(root, "Supplementary_Table_S11.xlsx.inspect.ndjson"), overview.ndjson ?? JSON.stringify(overview, null, 2));
 const preview = await workbook.render({sheetName: "NMR outcomes and Kd", range: "A1:V18", scale: 1, format: "png"});
 await fs.writeFile(path.join(root, "Supplementary_Table_S11_preview.png"), new Uint8Array(await preview.arrayBuffer()));
-for (const name of ['pH simulation comparison','pH predictor comparison']) {
+for (const name of ['pH simulation comparison','pH predictor comparison','Salt-dependent CSPs']) {
  const preview = await workbook.render({sheetName:name,range:'A4:G12',scale:1,format:'png'});
  await fs.writeFile(path.join(root,name.replaceAll(' ','_')+'_preview.png'),new Uint8Array(await preview.arrayBuffer()));
 }

@@ -1,0 +1,180 @@
+sheet,column,description
+NMR outcomes and Kd,pair_id,"Unique oriented machine identifier, RGG partner followed by AHD construct."
+NMR outcomes and Kd,pair_display_name,Human-readable AHD–RG/RGG pair name.
+NMR outcomes and Kd,AHD_name,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+NMR outcomes and Kd,RGG_name,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+NMR outcomes and Kd,AHD_length,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+NMR outcomes and Kd,RGG_length,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+NMR outcomes and Kd,Outcome,Curated experimental outcome used by the analyses; raw labels are not used.
+NMR outcomes and Kd,Experimental_description,Expanded description of the curated experimental outcome.
+NMR outcomes and Kd,Kd_uM,Fitted dissociation constant in micromolar.
+NMR outcomes and Kd,Kd_error_uM,Reported fitting error for Kd in micromolar; its source uncertainty type is preserved.
+NMR outcomes and Kd,pKd,6 − log10(Kd in micromolar).
+NMR outcomes and Kd,pKd_error,First-order propagation of the reported Kd error to pKd.
+NMR outcomes and Kd,highest_ligand_equivalents,Highest ligand-to-labelled-protein molar equivalent measured for this pair.
+NMR outcomes and Kd,fraction_bound_highest_ligand,Manually supplied bound fraction at the highest ligand equivalent; range 0–1.
+NMR outcomes and Kd,percent_bound_highest_ligand,Manually supplied bound percentage at the highest ligand equivalent; equals 100 × fraction when both are supplied.
+NMR outcomes and Kd,I_ratio_threshold,Intensity-ratio threshold measurement supplied by the experimental table.
+NMR outcomes and Kd,I_ratio_mean_below_threshold,Mean retained intensity ratio below the supplied threshold.
+NMR outcomes and Kd,Pred_log10_negB22_final,"Frozen predictor output, log10(−B22)."
+NMR outcomes and Kd,Sim_log10_negB22_final,Simulation-derived log10(−B22) after the established replica aggregation.
+NMR outcomes and Kd,experimental_status,Measurement availability or resolution status.
+NMR outcomes and Kd,Notes,Curated experimental or provenance note.
+Validation statistics,analysis,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,series,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,comparison,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,n,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,statistic,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,effect,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,effect_name,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,p_raw,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,p_adjusted,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,test,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,permutations,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,adjustment,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,counts,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,n_a,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,n_b,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,CI95_low,Lower endpoint of the 95% grouped-bootstrap interval.
+Validation statistics,CI95_high,Upper endpoint of the 95% grouped-bootstrap interval.
+Validation statistics,Spearman_rho,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,Spearman_two_sided_p,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,Pearson_r,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,seed,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,exclusions,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Validation statistics,uncertainty,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,comparison,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,series,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,n,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,positive,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,negative,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,AUROC,Area under the ROC curve; equal to positive–negative concordance with half credit for score ties.
+AUROC and concordance,positive_negative_concordance,"Probability that a positive pair scores above a negative pair, with half credit for ties."
+AUROC and concordance,CI95_low,Lower endpoint of the 95% grouped-bootstrap interval.
+AUROC and concordance,CI95_high,Upper endpoint of the 95% grouped-bootstrap interval.
+AUROC and concordance,valid_resamples,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,requested_resamples,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,cluster,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,seed,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,panel,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,metric,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+AUROC and concordance,estimate,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,comparison,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,series,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,threshold,Exploratory score cutoff selected by balanced accuracy.
+Threshold sensitivity,evaluation,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,TP,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,TN,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,FP,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,FN,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,sensitivity,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,specificity,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,balanced_accuracy,Mean of sensitivity and specificity.
+Threshold sensitivity,n_evaluated,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,grouping,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,held_out,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,pair_id,"Unique oriented machine identifier, RGG partner followed by AHD construct."
+Threshold sensitivity,observed,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Threshold sensitivity,predicted,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Intensity ratios,pair_id,"Unique oriented machine identifier, RGG partner followed by AHD construct."
+Intensity ratios,pair_display_name,Human-readable AHD–RG/RGG pair name.
+Intensity ratios,Experimental_description,Expanded description of the curated experimental outcome.
+Intensity ratios,I_ratio_threshold,Intensity-ratio threshold measurement supplied by the experimental table.
+Intensity ratios,I_ratio_mean_below_threshold,Mean retained intensity ratio below the supplied threshold.
+Intensity ratios,I_ratio_threshold_rank_ascending,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Intensity ratios,I_ratio_mean_below_threshold_rank_ascending,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Intensity ratios,Pred_log10_negB22_final,"Frozen predictor output, log10(−B22)."
+Intensity ratios,Sim_log10_negB22_final,Simulation-derived log10(−B22) after the established replica aggregation.
+Intensity ratios,I_ratio_source,Source or provenance field retained from the analysis.
+Intensity ratios,I_ratio_source_location,Source or provenance field retained from the analysis.
+Shuffle comparisons,pair_id,"Unique oriented machine identifier, RGG partner followed by AHD construct."
+Shuffle comparisons,parent_pair_id,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Shuffle comparisons,label,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Shuffle comparisons,WT_outcome,Matched WT value for outcome.
+Shuffle comparisons,shuffle_outcome,Shuffled-construct value for outcome.
+Shuffle comparisons,WT_Pred_log10_negB22_final,Matched WT value for Pred_log10_negB22_final.
+Shuffle comparisons,shuffle_Pred_log10_negB22_final,Shuffled-construct value for Pred_log10_negB22_final.
+Shuffle comparisons,delta_Pred_log10_negB22_final,Shuffle value minus matched WT value for Pred_log10_negB22_final.
+Shuffle comparisons,WT_Sim_log10_negB22_final,Matched WT value for Sim_log10_negB22_final.
+Shuffle comparisons,shuffle_Sim_log10_negB22_final,Shuffled-construct value for Sim_log10_negB22_final.
+Shuffle comparisons,delta_Sim_log10_negB22_final,Shuffle value minus matched WT value for Sim_log10_negB22_final.
+Shuffle comparisons,experimental_delta_status,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,pair_id,"Unique oriented machine identifier, RGG partner followed by AHD construct."
+LEF1 context,frames,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,n_replicas,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contiguous_blocks,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_frames,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,possible_residue_pairs,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,uncertainty,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,AH_kJ_mol,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,Yukawa_kJ_mol,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,total_kJ_mol,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_08,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_06,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_10,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contacts_08,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,attractive_total_kJ_mol,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,repulsive_total_kJ_mol,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,AH_kJ_mol_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,AH_kJ_mol_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,AH_kJ_mol_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,Yukawa_kJ_mol_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,Yukawa_kJ_mol_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,Yukawa_kJ_mol_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,total_kJ_mol_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,total_kJ_mol_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,total_kJ_mol_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_08_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_08_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_08_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_06_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_06_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_06_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_10_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_10_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contact_10_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contacts_08_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contacts_08_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,contacts_08_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,attractive_total_kJ_mol_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,attractive_total_kJ_mol_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,attractive_total_kJ_mol_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,repulsive_total_kJ_mol_replica_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,repulsive_total_kJ_mol_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,repulsive_total_kJ_mol_contact_conditioned,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,AH_kJ_mol_per_possible_pair,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,Yukawa_kJ_mol_per_possible_pair,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,total_kJ_mol_per_possible_pair,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,AHD_name,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,RGG_name,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,Outcome,Curated experimental outcome used by the analyses; raw labels are not used.
+LEF1 context,metric,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,LEF1_value,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,LEF1_block_SEM,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,comparator_median,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,LEF1_minus_comparator_median,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,n_comparators,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,direction_consistent,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,consistent_partners,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,tested_partners,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+LEF1 context,exact_two_sided_sign_p,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Bound-fraction guide,field,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Bound-fraction guide,definition,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Bound-fraction guide,allowed_values,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+Bound-fraction guide,entry_rule,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH simulation comparison,pair_id,"Unique oriented machine identifier, RGG partner followed by AHD construct."
+pH simulation comparison,RGG_id,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH simulation comparison,AHD_id,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH simulation comparison,total_H,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH simulation comparison,simulated_pH7,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH simulation comparison,simulated_pH6p5,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH simulation comparison,delta_pH6p5_minus_pH7,Shuffle value minus matched WT value for pH6p5_minus_pH7.
+pH predictor comparison,pair_id,"Unique oriented machine identifier, RGG partner followed by AHD construct."
+pH predictor comparison,RGG_id,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH predictor comparison,AHD_id,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH predictor comparison,simulated_pH6p5,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH predictor comparison,predicted_pH6p5,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH predictor comparison,residual_predicted_minus_simulated,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH predictor comparison,model_manifest_sha256,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH predictor comparison,base_model_sha256,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+pH predictor comparison,residual_model_sha256,"See the corresponding sheet heading, figure caption, and analysis methods for this field."

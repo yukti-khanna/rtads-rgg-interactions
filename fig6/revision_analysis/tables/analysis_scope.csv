@@ -1,0 +1,74 @@
+pair_id,is_shuffle,Outcome,primary_outcome_included,primary_affinity_included,intensity_included,primary_exclusion_reason
+g3bp1_rgg__atf4_tad,False,Kd_fit,True,True,False,
+g3bp1_rgg__foxm1,False,NB,True,False,False,
+g3bp1_rgg__foxo4_cr3,False,Kd_fit,True,True,False,
+g3bp1_rgg__foxo6_cr3,False,Kd_fit,True,True,False,
+g3bp1_rgg__lef1_nter,False,NB,True,False,False,
+g3bp1_rgg__sox12,False,NB,True,False,False,
+g3bp1_rgg__tfe3_cter,False,LB,True,False,False,
+g3bp1_rgg__tp53,False,NB,True,False,False,
+q8n319__atf4_tad,False,,False,False,False,
+q8n319__foxo4_cr3,False,,False,False,False,
+q8n319__foxo6_cr3,False,,False,False,False,
+q8n319__lef1_nter,False,,False,False,False,
+q8n319__tfe3_cter,False,,False,False,False,
+rab44__atf4_tad,False,NB,True,False,False,
+rab44__foxo4_cr3,False,NB,True,False,False,
+rab44__foxo6_cr3,False,NB,True,False,False,
+rab44__lef1_nter,False,LB,True,False,True,
+rab44__tfe3_cter,False,LB,True,False,True,
+rbmx__atf4_tad,False,LB,True,False,True,
+rbmx__foxo4_cr3,False,Kd_fit,True,True,False,
+rbmx__foxo6_cr3,False,Kd_fit,True,True,False,
+rbmx__lef1_nter,False,NB,True,False,False,
+rbmx__tfe3_cter,False,NB,True,False,False,
+snrnp70_s__atf4_tad,False,LB,True,False,True,
+snrnp70_s__foxo4_cr3,False,NB,True,False,False,
+snrnp70_s__foxo6_cr3,False,NB,True,False,False,
+snrnp70_s__lef1_nter,False,NB,True,False,False,
+snrnp70_s__tfe3_cter,False,NB,True,False,False,
+taf15_rgg__atf4_tad,False,NB,True,False,False,
+taf15_rgg__atf4_tad_shuffle_1,True,NB,False,False,False,matched shuffle control analysed separately
+taf15_rgg__foxm1,False,NB,True,False,False,
+taf15_rgg__foxo4_cr3,False,LB,True,False,True,
+taf15_rgg__foxo6_cr3,False,LB,True,False,True,
+taf15_rgg__lef1_nter,False,NB,True,False,False,
+taf15_rgg__sox12,False,NB,True,False,False,
+taf15_rgg__tfe3_cter,False,NB,True,False,False,
+taf15_rgg__tfe3_cter_shuffle_2,True,LB,False,False,True,matched shuffle control analysed separately
+taf15_rgg__tp53,False,NB,True,False,False,
+tceal6__atf4_tad,False,LB,True,False,True,
+tceal6__foxo4_cr3,False,NB,True,False,False,
+tceal6__foxo6_cr3,False,NB,True,False,False,
+tceal6__lef1_nter,False,NB,True,False,False,
+tceal6__tfe3_cter,False,NB,True,False,False,
+thoc4_cter__atf4_tad,False,Kd_fit,True,True,False,
+thoc4_cter__atf4_tad_shuffle_1,True,,False,False,False,matched shuffle control analysed separately
+thoc4_cter__foxm1,False,NB,True,False,False,
+thoc4_cter__foxm1_shuffle_1,True,,False,False,False,matched shuffle control analysed separately
+thoc4_cter__foxo4_cr3,False,Kd_fit,True,True,False,
+thoc4_cter__foxo4_cr3_shuffle_2,True,,False,False,False,matched shuffle control analysed separately
+thoc4_cter__foxo6_cr3,False,NB,True,False,False,
+thoc4_cter__foxo6_cr3_shuffle_1,True,LB,False,False,True,matched shuffle control analysed separately
+thoc4_cter__lef1_nter,False,NB,True,False,False,
+thoc4_cter__lef1_nter_shuffle_1,True,,False,False,False,matched shuffle control analysed separately
+thoc4_cter__sox12,False,NB,True,False,False,
+thoc4_cter__tfe3_cter,False,LB,True,False,False,
+thoc4_cter__tfe3_cter_shuffle_2,True,,False,False,False,matched shuffle control analysed separately
+thoc4_cter__tp53,False,NB,True,False,False,
+thoc4_cter__tp53_shuffle_1,True,,False,False,False,matched shuffle control analysed separately
+thoc4_nter__atf4_tad,False,Kd_fit,True,True,False,
+thoc4_nter__atf4_tad_shuffle_1,True,NB,False,False,False,matched shuffle control analysed separately
+thoc4_nter__foxm1,False,Kd_fit,True,True,False,
+thoc4_nter__foxm1_shuffle_1,True,LB,False,False,False,matched shuffle control analysed separately
+thoc4_nter__foxo4_cr3,False,Kd_fit,True,True,False,
+thoc4_nter__foxo4_cr3_shuffle_2,True,Kd_fit,False,False,False,matched shuffle control analysed separately
+thoc4_nter__foxo6_cr3,False,Kd_fit,True,True,False,
+thoc4_nter__foxo6_cr3_shuffle_1,True,LB,False,False,False,matched shuffle control analysed separately
+thoc4_nter__lef1_nter,False,NB,True,False,False,
+thoc4_nter__lef1_nter_shuffle_1,True,NB,False,False,False,matched shuffle control analysed separately
+thoc4_nter__sox12,False,NB,True,False,False,
+thoc4_nter__tfe3_cter,False,Kd_fit,True,True,False,
+thoc4_nter__tfe3_cter_shuffle_2,True,LB,False,False,True,matched shuffle control analysed separately
+thoc4_nter__tp53,False,Kd_fit,True,True,False,
+thoc4_nter__tp53_shuffle_1,True,Kd_fit,False,False,False,matched shuffle control analysed separately

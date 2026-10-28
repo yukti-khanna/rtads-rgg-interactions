@@ -153,14 +153,14 @@ def validate_outputs(master: pd.DataFrame) -> None:
     if missing:
         raise RuntimeError(f"Final package is missing required outputs: {missing}")
 
-    expected = set(master.loc[master.Outcome.isin(["NB", "LB", "Kd_fit"]), "pair_id"])
+    expected = set(master.loc[master.AHD_variant.eq("WT") & master.Outcome.isin(["NB", "LB", "Kd_fit"]), "pair_id"])
     panel_b = pd.read_csv(OUT / "source_data/Fig5B_scores_by_outcome.csv")
     if set(panel_b.pair_id) != expected:
         raise RuntimeError("Panel B membership does not match all eligible curated master rows")
     nmr = pd.read_csv(OUT / "tables/Table_S11_NMR_outcomes_and_Kd.csv")
     if set(nmr.pair_id) != set(master.pair_id):
         raise RuntimeError("Supplementary Table S11 NMR sheet does not contain every curated master row")
-    fitted = set(master.loc[master.Outcome.eq("Kd_fit"), "pair_id"])
+    fitted = set(master.loc[master.AHD_variant.eq("WT") & master.Outcome.eq("Kd_fit"), "pair_id"])
     panel_d = pd.read_csv(OUT / "source_data/Fig5D_fitted_affinities.csv")
     if set(panel_d.pair_id) != fitted:
         raise RuntimeError("Panel D membership does not match all fitted Kd rows")

@@ -1,0 +1,152 @@
+pair_id,field,old,new,source
+g3bp1_rgg__sox12,experiment_status,ambiguous qualitative result,explicit NB,curated outcome
+rab44__lef1_nter,experiment_status,line broadening without fitted Kd,LB without fitted Kd,curated outcome
+rab44__tfe3_cter,experiment_status,line broadening without fitted Kd,LB without fitted Kd,curated outcome
+rbmx__foxo4_cr3,Kd_uM,103.231,180.243,pasted experimental columns
+rbmx__foxo4_cr3,Kd_uM_err,13.598,22.301,pasted experimental columns
+rbmx__foxo6_cr3,Kd_uM,71.607,193.904,pasted experimental columns
+rbmx__foxo6_cr3,Kd_uM_err,8.295,26.496,pasted experimental columns
+rbmx__atf4_tad,experiment_status,line broadening without fitted Kd,LB without fitted Kd,curated outcome
+rbmx__tfe3_cter,experiment_status,ambiguous qualitative result,explicit NB,curated outcome
+snrnp70_s__atf4_tad,experiment_status,ambiguous qualitative result,LB without fitted Kd,curated outcome
+taf15_rgg__sox12,experiment_status,ambiguous qualitative result,explicit NB,curated outcome
+taf15_rgg__tfe3_cter_shuffle_2,experiment_status,line broadening without fitted Kd,LB without fitted Kd,curated outcome
+taf15_rgg__foxm1,Outcome,Kd_pending,NB,pasted experimental columns
+taf15_rgg__foxm1,experiment_status,titration pending,explicit NB,curated outcome
+taf15_rgg__tp53,Outcome,Kd_pending,NB,pasted experimental columns
+taf15_rgg__tp53,experiment_status,titration pending,explicit NB,curated outcome
+tceal6__atf4_tad,experiment_status,ambiguous qualitative result,LB without fitted Kd,curated outcome
+tceal6__foxo4_cr3,experiment_status,ambiguous qualitative result,explicit NB,curated outcome
+tceal6__foxo6_cr3,experiment_status,ambiguous qualitative result,explicit NB,curated outcome
+thoc4_cter__sox12,experiment_status,ambiguous qualitative result,explicit NB,curated outcome
+thoc4_cter__foxo6_cr3_shuffle_1,experiment_status,line broadening without fitted Kd,LB without fitted Kd,curated outcome
+thoc4_cter__tp53,Outcome,LB,NB,pasted experimental columns
+thoc4_cter__tp53,experiment_status,qualitative binding,explicit NB,curated outcome
+thoc4_nter__sox12,experiment_status,ambiguous qualitative result,explicit NB,curated outcome
+thoc4_nter__foxo4_cr3_shuffle_2,Outcome,Kd_pending,Kd_fit,pasted experimental columns
+thoc4_nter__foxo4_cr3_shuffle_2,Kd_uM,,29.999,pasted experimental columns
+thoc4_nter__foxo4_cr3_shuffle_2,Kd_uM_err,,2.158,pasted experimental columns
+thoc4_nter__foxo4_cr3_shuffle_2,experiment_status,titration pending,fitted Kd supplied,curated outcome
+thoc4_nter__tp53_shuffle_1,Outcome,Kd_pending,Kd_fit,pasted experimental columns
+thoc4_nter__tp53_shuffle_1,Kd_uM,,461.439,pasted experimental columns
+thoc4_nter__tp53_shuffle_1,Kd_uM_err,,80.192,pasted experimental columns
+thoc4_nter__tp53_shuffle_1,experiment_status,titration pending,fitted Kd supplied,curated outcome
+thoc4_nter__foxo6_cr3_shuffle_1,Outcome,Kd_pending,LB,pasted experimental columns
+thoc4_nter__foxo6_cr3_shuffle_1,experiment_status,titration pending,LB without fitted Kd,curated outcome
+thoc4_nter__atf4_tad_shuffle_1,experiment_status,ambiguous qualitative result,explicit NB,curated outcome
+thoc4_nter__tfe3_cter_shuffle_2,experiment_status,line broadening without fitted Kd,LB without fitted Kd,curated outcome
+thoc4_nter__foxm1_shuffle_1,experiment_status,line broadening without fitted Kd,LB without fitted Kd,curated outcome
+thoc4_nter__lef1_nter_shuffle_1,Outcome,LB,NB,pasted experimental columns
+thoc4_nter__lef1_nter_shuffle_1,experiment_status,qualitative binding,explicit NB,curated outcome
+thoc4_nter__foxm1,Outcome,Kd_pending,Kd_fit,pasted experimental columns
+thoc4_nter__foxm1,Kd_uM,,282.424,pasted experimental columns
+thoc4_nter__foxm1,Kd_uM_err,,90.357,pasted experimental columns
+thoc4_nter__foxm1,experiment_status,titration pending,fitted Kd supplied,curated outcome
+thoc4_nter__tp53,Outcome,Kd_pending,Kd_fit,pasted experimental columns
+thoc4_nter__tp53,Kd_uM,,146.366,pasted experimental columns
+thoc4_nter__tp53,Kd_uM_err,,10.706,pasted experimental columns
+thoc4_nter__tp53,experiment_status,titration pending,fitted Kd supplied,curated outcome
+g3bp1_rgg__foxo4_cr3,Kd_uM,676.877,708.26,user confirmed revised FOXO4–G3BP1 fit
+g3bp1_rgg__foxo4_cr3,Kd_uM_err,92.77,99.23,user confirmed revised FOXO4–G3BP1 fit
+rbmx__foxo4_cr3,fraction_bound_highest_ligand,,0.509549,separate user-supplied bound-fraction table
+rbmx__foxo4_cr3,percent_bound_highest_ligand,,50.95486,separate user-supplied bound-fraction table
+rbmx__foxo4_cr3,fraction_bound_highest_ligand_uncertainty,,0.029922,separate user-supplied bound-fraction table
+rbmx__foxo4_cr3,percent_bound_highest_ligand_uncertainty,,2.992226,separate user-supplied bound-fraction table
+rbmx__foxo4_cr3,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_nter__foxo4_cr3_shuffle_2,fraction_bound_highest_ligand,,0.812148,separate user-supplied bound-fraction table
+thoc4_nter__foxo4_cr3_shuffle_2,percent_bound_highest_ligand,,81.21485,separate user-supplied bound-fraction table
+thoc4_nter__foxo4_cr3_shuffle_2,fraction_bound_highest_ligand_uncertainty,,0.010661,separate user-supplied bound-fraction table
+thoc4_nter__foxo4_cr3_shuffle_2,percent_bound_highest_ligand_uncertainty,,1.066123,separate user-supplied bound-fraction table
+thoc4_nter__foxo4_cr3_shuffle_2,highest_ligand_equivalents,,6,L_total / P_total from supplied table
+thoc4_nter__tp53_shuffle_1,fraction_bound_highest_ligand,,0.294518,separate user-supplied bound-fraction table
+thoc4_nter__tp53_shuffle_1,percent_bound_highest_ligand,,29.45178,separate user-supplied bound-fraction table
+thoc4_nter__tp53_shuffle_1,fraction_bound_highest_ligand_uncertainty,,0.035161,separate user-supplied bound-fraction table
+thoc4_nter__tp53_shuffle_1,percent_bound_highest_ligand_uncertainty,,3.51608,separate user-supplied bound-fraction table
+thoc4_nter__tp53_shuffle_1,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_nter__tp53,fraction_bound_highest_ligand,,0.559636,separate user-supplied bound-fraction table
+thoc4_nter__tp53,percent_bound_highest_ligand,,55.96361,separate user-supplied bound-fraction table
+thoc4_nter__tp53,fraction_bound_highest_ligand_uncertainty,,0.017448,separate user-supplied bound-fraction table
+thoc4_nter__tp53,percent_bound_highest_ligand_uncertainty,,1.744828,separate user-supplied bound-fraction table
+thoc4_nter__tp53,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_nter__foxm1,fraction_bound_highest_ligand,,0.402114,separate user-supplied bound-fraction table
+thoc4_nter__foxm1,percent_bound_highest_ligand,,40.21142,separate user-supplied bound-fraction table
+thoc4_nter__foxm1,fraction_bound_highest_ligand_uncertainty,,0.074559,separate user-supplied bound-fraction table
+thoc4_nter__foxm1,percent_bound_highest_ligand_uncertainty,,7.455873,separate user-supplied bound-fraction table
+thoc4_nter__foxm1,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+rbmx__foxo6_cr3,fraction_bound_highest_ligand,,0.491875,separate user-supplied bound-fraction table
+rbmx__foxo6_cr3,percent_bound_highest_ligand,,49.18753,separate user-supplied bound-fraction table
+rbmx__foxo6_cr3,fraction_bound_highest_ligand_uncertainty,,0.033052,separate user-supplied bound-fraction table
+rbmx__foxo6_cr3,percent_bound_highest_ligand_uncertainty,,3.305197,separate user-supplied bound-fraction table
+rbmx__foxo6_cr3,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_cter__atf4_tad,fraction_bound_highest_ligand,,0.51991,separate user-supplied bound-fraction table
+thoc4_cter__atf4_tad,percent_bound_highest_ligand,,51.99096,separate user-supplied bound-fraction table
+thoc4_cter__atf4_tad,fraction_bound_highest_ligand_uncertainty,,0.033102,separate user-supplied bound-fraction table
+thoc4_cter__atf4_tad,percent_bound_highest_ligand_uncertainty,,3.310243,separate user-supplied bound-fraction table
+thoc4_cter__atf4_tad,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_nter__atf4_tad,fraction_bound_highest_ligand,,0.666271,separate user-supplied bound-fraction table
+thoc4_nter__atf4_tad,percent_bound_highest_ligand,,66.62708,separate user-supplied bound-fraction table
+thoc4_nter__atf4_tad,fraction_bound_highest_ligand_uncertainty,,0.007778,separate user-supplied bound-fraction table
+thoc4_nter__atf4_tad,percent_bound_highest_ligand_uncertainty,,0.777845,separate user-supplied bound-fraction table
+thoc4_nter__atf4_tad,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+g3bp1_rgg__atf4_tad,fraction_bound_highest_ligand,,0.356951,separate user-supplied bound-fraction table
+g3bp1_rgg__atf4_tad,percent_bound_highest_ligand,,35.69509,separate user-supplied bound-fraction table
+g3bp1_rgg__atf4_tad,fraction_bound_highest_ligand_uncertainty,,0.037658,separate user-supplied bound-fraction table
+g3bp1_rgg__atf4_tad,percent_bound_highest_ligand_uncertainty,,3.765811,separate user-supplied bound-fraction table
+g3bp1_rgg__atf4_tad,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_cter__foxo4_cr3,fraction_bound_highest_ligand,,0.489238,separate user-supplied bound-fraction table
+thoc4_cter__foxo4_cr3,percent_bound_highest_ligand,,48.92379,separate user-supplied bound-fraction table
+thoc4_cter__foxo4_cr3,fraction_bound_highest_ligand_uncertainty,,0.023514,separate user-supplied bound-fraction table
+thoc4_cter__foxo4_cr3,percent_bound_highest_ligand_uncertainty,,2.351393,separate user-supplied bound-fraction table
+thoc4_cter__foxo4_cr3,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+g3bp1_rgg__foxo4_cr3,fraction_bound_highest_ligand,,0.350653,separate user-supplied bound-fraction table
+g3bp1_rgg__foxo4_cr3,percent_bound_highest_ligand,,35.06535,separate user-supplied bound-fraction table
+g3bp1_rgg__foxo4_cr3,fraction_bound_highest_ligand_uncertainty,,0.030979,separate user-supplied bound-fraction table
+g3bp1_rgg__foxo4_cr3,percent_bound_highest_ligand_uncertainty,,3.097891,separate user-supplied bound-fraction table
+g3bp1_rgg__foxo4_cr3,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_nter__foxo6_cr3,fraction_bound_highest_ligand,,0.730007,separate user-supplied bound-fraction table
+thoc4_nter__foxo6_cr3,percent_bound_highest_ligand,,73.00074,separate user-supplied bound-fraction table
+thoc4_nter__foxo6_cr3,fraction_bound_highest_ligand_uncertainty,,0.006337,separate user-supplied bound-fraction table
+thoc4_nter__foxo6_cr3,percent_bound_highest_ligand_uncertainty,,0.633747,separate user-supplied bound-fraction table
+thoc4_nter__foxo6_cr3,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+g3bp1_rgg__foxo6_cr3,fraction_bound_highest_ligand,,0.40955,separate user-supplied bound-fraction table
+g3bp1_rgg__foxo6_cr3,percent_bound_highest_ligand,,40.95497,separate user-supplied bound-fraction table
+g3bp1_rgg__foxo6_cr3,fraction_bound_highest_ligand_uncertainty,,0.047354,separate user-supplied bound-fraction table
+g3bp1_rgg__foxo6_cr3,percent_bound_highest_ligand_uncertainty,,4.735366,separate user-supplied bound-fraction table
+g3bp1_rgg__foxo6_cr3,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_nter__tfe3_cter,fraction_bound_highest_ligand,,0.430063,separate user-supplied bound-fraction table
+thoc4_nter__tfe3_cter,percent_bound_highest_ligand,,43.00627,separate user-supplied bound-fraction table
+thoc4_nter__tfe3_cter,fraction_bound_highest_ligand_uncertainty,,0.039703,separate user-supplied bound-fraction table
+thoc4_nter__tfe3_cter,percent_bound_highest_ligand_uncertainty,,3.970274,separate user-supplied bound-fraction table
+thoc4_nter__tfe3_cter,highest_ligand_equivalents,,8,L_total / P_total from supplied table
+thoc4_cter__foxo4_cr3,pKd,3.7076841064831623,3.70768410648316,recalculated from Kd in micromolar
+thoc4_cter__foxo4_cr3,pKd_error,0.042222675,0.0422226746117227,first-order propagation of supplied Kd error
+thoc4_cter__atf4_tad,pKd,3.461730479383868,3.46173047938387,recalculated from Kd in micromolar
+thoc4_cter__atf4_tad,pKd_error,0.059514634,0.0595146339306899,first-order propagation of supplied Kd error
+thoc4_nter__foxo4_cr3,pKd,4.3145628220270265,4.31456282202703,recalculated from Kd in micromolar
+thoc4_nter__foxo4_cr3,pKd_error,0.014695724,0.0146957238130098,first-order propagation of supplied Kd error
+thoc4_nter__foxo6_cr3,pKd,4.172475649464825,4.17247564946483,recalculated from Kd in micromolar
+thoc4_nter__foxo6_cr3,pKd_error,0.014322725,0.0143227250145708,first-order propagation of supplied Kd error
+thoc4_nter__tfe3_cter,pKd,3.600677662782462,3.60067766278246,recalculated from Kd in micromolar
+thoc4_nter__tfe3_cter,pKd_error,0.072630906,0.0726309064879886,first-order propagation of supplied Kd error
+thoc4_nter__atf4_tad,pKd,3.735973596852019,3.73597359685202,recalculated from Kd in micromolar
+thoc4_nter__atf4_tad,pKd_error,0.015648931,0.0156489308318717,first-order propagation of supplied Kd error
+g3bp1_rgg__foxo4_cr3,pKd,3.169490242798574,3.14980728491319,recalculated from Kd in micromolar
+g3bp1_rgg__foxo4_cr3,pKd_error,0.05952263,0.0608463578901246,first-order propagation of supplied Kd error
+g3bp1_rgg__foxo6_cr3,pKd,3.5629108924620514,3.56291089246205,recalculated from Kd in micromolar
+g3bp1_rgg__foxo6_cr3,pKd_error,0.087745319,0.0877453185585444,first-order propagation of supplied Kd error
+g3bp1_rgg__atf4_tad,pKd,3.162129488,3.16212948822263,recalculated from Kd in micromolar
+g3bp1_rgg__atf4_tad,pKd_error,0.073393532,0.0733935324034413,first-order propagation of supplied Kd error
+rbmx__foxo4_cr3,pKd,3.9861898656229022,3.74414159274116,recalculated from Kd in micromolar
+rbmx__foxo4_cr3,pKd_error,0.057207005,0.0537341324818407,first-order propagation of supplied Kd error
+rbmx__foxo6_cr3,pKd,4.145044520809789,3.71241323187019,recalculated from Kd in micromolar
+rbmx__foxo6_cr3,pKd_error,0.050308946,0.0593441424236146,first-order propagation of supplied Kd error
+thoc4_nter__foxo4_cr3_shuffle_2,pKd,,4.52289322200435,recalculated from Kd in micromolar
+thoc4_nter__foxo4_cr3_shuffle_2,pKd_error,,0.0312412911079442,first-order propagation of supplied Kd error
+thoc4_nter__tp53_shuffle_1,pKd,,3.33588570246986,recalculated from Kd in micromolar
+thoc4_nter__tp53_shuffle_1,pKd_error,,0.0754746414862757,first-order propagation of supplied Kd error
+thoc4_nter__tp53,pKd,,3.83455979573174,recalculated from Kd in micromolar
+thoc4_nter__tp53,pKd_error,,0.0317666447348169,first-order propagation of supplied Kd error
+g3bp1_rgg__tp53,pKd,3.5546527135265453,3.55465271352655,recalculated from Kd in micromolar
+g3bp1_rgg__tp53,pKd_error,0.1372902304296233,0.137290230429623,first-order propagation of supplied Kd error
+thoc4_nter__foxm1,pKd,,3.54909840030903,recalculated from Kd in micromolar
+thoc4_nter__foxm1,pKd_error,,0.138945509239059,first-order propagation of supplied Kd error

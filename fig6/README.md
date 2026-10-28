@@ -16,6 +16,21 @@ The default uses cached trajectory summaries. Only use
 trajectories and their verified topology/parameter files are available.
 
 Edit `fig6_parent_master.csv` to update curated experimental measurements.
+For an existing pair, enter `Kd_uM` and `Kd_uM_err` in micromolar and change
+`Outcome` to `Kd_fit`. Leave unavailable errors blank; do not substitute zero.
+The pipeline recalculates `pKd` and `pKd_error` from these input fields, so their
+stored values do not need manual editing. Keep pair identifiers and constructs
+unchanged. A completely new construct pair also needs verified sequence mapping
+and frozen prediction/simulation inputs; adding an experimental-only row is not
+sufficient. Preserve blank values as blank CSV cells.
+
+The build rewrites the generated workbook. Keep manual experimental changes in
+the master CSV rather than in Supplementary Table S11 alone.
+
+Individual publication panels are exported to
+`final_figure_package/figures/panels_9x5cm/` as PDF, editable SVG and PNG.
+Each panel canvas is exactly 9 cm wide by 5 cm high with Arial text at 7 pt.
+The larger assembled figures remain available as overview files.
 The runner does not invoke the original Excel importer or retrain the model.
 Outputs are written to `final_figure_package/`, including
 `Supplementary_Table_S11.xlsx` (formerly Table S10).

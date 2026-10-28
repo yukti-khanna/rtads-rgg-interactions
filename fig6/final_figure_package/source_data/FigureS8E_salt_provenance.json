@@ -1,0 +1,14 @@
+{
+  "input_sha256": {
+    "p53_ref_150_nacl_thoc4n": "d6719e907ab2e13d41e982d7860979577aef12edb7a71a5e746ad2a07df2ad0f",
+    "p53_ref_150_nacl_thoc4n_8eq": "410ea31613eb2c22d20835a813c090287b9641cea058c4851d9a3edac24d4710",
+    "p53_ref_450_nacl_thoc4n_ref": "2ce0aba915b6360589a0cf47bd97fd527716c0b319ddc0d2a8b6d4c867ccde89",
+    "p53_ref_450_nacl_thoc4n_8eq": "382549c7a04e8910543aab06a139d8ecb05041b08f3bc9bc5c3769ba2f1c5ab8"
+  },
+  "pairing": "row order confirmed by user",
+  "labels": "peak indices, not residue assignments",
+  "formula": "sqrt(dH^2+(dN/7)^2)",
+  "display_cutoff_ppm": 0.001,
+  "reference_method": "fig2/scripts/plot_p53_rrgg_salt_csp_heatmap.py",
+  "n_peaks": 66
+}

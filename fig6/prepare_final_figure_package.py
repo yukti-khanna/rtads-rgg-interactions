@@ -22,7 +22,7 @@ OUT=ROOT/'final_figure_package'
 FIG=OUT/'figures'; TAB=OUT/'tables'; SRC=OUT/'source_data'
 PRED='Pred_log10_negB22_final'; SIM='Sim_log10_negB22_final'
 BLUE='#0072B2'; ORANGE='#D55E00'; GREEN='#009E73'; GREY='#777777'; PALE='#E8E8E8'
-plt.rcParams.update({'font.size':8,'axes.spines.top':False,'axes.spines.right':False,'svg.fonttype':'none','pdf.fonttype':42})
+plt.rcParams.update({'font.family':'Arial','font.size':7,'mathtext.fontset':'custom','mathtext.rm':'Arial','mathtext.it':'Arial:italic','mathtext.bf':'Arial:bold','axes.spines.top':False,'axes.spines.right':False,'svg.fonttype':'none','pdf.fonttype':42})
 
 LABELS={'Kd_fit':'Kd fit','LB':'LB','NB':'ND','Binding_qualitative':'Qualitative interaction','Kd_pending':'Measurement pending','Ambiguous':'Unresolved response'}
 FULL_LABELS={'Kd_fit':'Quantitative Kd fit','LB':'Line broadening without an extractable Kd','NB':'No detectable interaction under the tested conditions','Binding_qualitative':'Qualitative interaction','Kd_pending':'Measurement pending','Ambiguous':'Unresolved response'}
@@ -45,7 +45,10 @@ def savefig(fig,name):
  from plot_master_validation import identity_labels
  for ax,frame,col in getattr(fig,'_identity_panels',[]):
   identity_labels(fig,ax,frame,col,'pKd',yerr='pKd_error')
+ from panel_export import set_panel_fonts,export_panels
+ set_panel_fonts(fig)
  for ext in ['pdf','svg','png']:fig.savefig(FIG/f'{name}.{ext}',dpi=300,bbox_inches='tight')
+ export_panels(fig,name,FIG)
  plt.close(fig)
 
 def auc(y,s):
@@ -84,7 +87,7 @@ def outcome_matrix(ax,d):
  z[['pair_id','pair_display_name','AHD_name','RGG_name','Outcome','Kd_uM','Kd_error_uM']].to_csv(SRC/'Fig5A_outcome_matrix.csv',index=False)
 
 def score_outcomes(ax,d,col=PRED,source='Fig5B_scores_by_outcome',primary_stat=False):
- order=['NB','LB','Kd_fit'];z=d[d.Outcome.isin(order)&np.isfinite(d[col])].copy();colors={'NB':'#999999','LB':'#E69F00','Kd_fit':'#56B4E9'}
+ order=['NB','LB','Kd_fit'];z=d[(~d.is_shuffle)&d.Outcome.isin(order)&np.isfinite(d[col])].copy();colors={'NB':'#999999','LB':'#E69F00','Kd_fit':'#56B4E9'}
  rng=np.random.default_rng(7)
  counts=[]
  for k,o in enumerate(order):
@@ -107,7 +110,7 @@ def score_outcomes(ax,d,col=PRED,source='Fig5B_scores_by_outcome',primary_stat=F
  z[['pair_id','pair_display_name','Outcome',col]].to_csv(SRC/(source+'.csv'),index=False)
 
 def primary_roc(ax,d,source='Fig5C_primary_ROC'):
- z=d[d.Outcome.isin(['Kd_fit','NB']) & np.isfinite(d[PRED]) & np.isfinite(d[SIM])].copy();y=z.Outcome.eq('Kd_fit').values
+ z=d[(~d.is_shuffle)&d.Outcome.isin(['Kd_fit','NB']) & np.isfinite(d[PRED]) & np.isfinite(d[SIM])].copy();y=z.Outcome.eq('Kd_fit').values
  for col,label,color in [(PRED,'Predicted',BLUE),(SIM,'Simulated',ORANGE)]:
   q=roc_points(y,z[col]);ax.plot(q[:,0],q[:,1],label=f'{label}: AUROC {auc(y,z[col]):.2f}',color=color,lw=1.8)
  ax.plot([0,1],[0,1],':',c='#777777',lw=1)
@@ -116,7 +119,7 @@ def primary_roc(ax,d,source='Fig5C_primary_ROC'):
  z[['pair_id','pair_display_name','Outcome',PRED,SIM]].to_csv(SRC/(source+'.csv'),index=False)
 
 def predictor_primary_roc(ax,d,source='Fig5C_predictor_ROC'):
- z=d[d.Outcome.isin(['Kd_fit','NB']) & np.isfinite(d[PRED])].copy();y=z.Outcome.eq('Kd_fit').to_numpy()
+ z=d[(~d.is_shuffle)&d.Outcome.isin(['Kd_fit','NB']) & np.isfinite(d[PRED])].copy();y=z.Outcome.eq('Kd_fit').to_numpy()
  q=roc_points(y,z[PRED]);estimate=auc(y,z[PRED])
  stats=pd.read_csv(REV/'tables/discrimination_statistics.csv')
  ahd=stats[(stats.comparison.eq('Kd_vs_NB')) & (stats.series.eq('Predicted')) & (stats.cluster.eq('AHD_parent'))].iloc[0]
@@ -141,12 +144,12 @@ def outcome_concordance(ax,d,cluster='AHD_parent',source='Fig5C_AUROC_concordanc
               ('LB_vs_NB',['LB'],'LB vs ND')]
  plotted=[];members=[];labels=[]
  for k,(name,positive,label) in enumerate(comparisons):
-  valid=d.Outcome.isin(positive+['NB']) & np.isfinite(d[PRED]) & np.isfinite(d[SIM])
+  valid=(~d.is_shuffle)&d.Outcome.isin(positive+['NB']) & np.isfinite(d[PRED]) & np.isfinite(d[SIM])
   z=d[valid];y=z.Outcome.isin(positive).to_numpy()
   labels.append(f'{label}\n{int(y.sum())} vs {int((~y).sum())} pairs')
   mem=d[['pair_id','pair_display_name','Outcome',PRED,SIM]].copy()
   mem['comparison']=name;mem['included']=valid
-  mem['reason']=np.where(valid,'included','outcome outside comparison or score unavailable')
+  mem['reason']=np.where(d.is_shuffle,'shuffle control excluded from primary analysis',np.where(valid,'included','outcome outside comparison or score unavailable'))
   members.append(mem)
   for off,series,col,color,marker in [(-.14,'Predicted',PRED,BLUE,'o'),(.14,'Simulated',SIM,ORANGE,'^')]:
    estimate=auc(y,z[col])
@@ -190,7 +193,7 @@ def intensity_combined(ax,d):
 
 def pkd(ax,d,col=PRED,source='Fig5D_fitted_affinities'):
  from plot_master_validation import limits
- z=d[d.Outcome.eq('Kd_fit') & np.isfinite(d[col]) & np.isfinite(d.pKd)].copy()
+ z=d[(~d.is_shuffle)&d.Outcome.eq('Kd_fit') & np.isfinite(d[col]) & np.isfinite(d.pKd)].copy()
  marker_cycle=['o','^','s','*','D','v','P','X','<','>','h']
  markers={name:marker_cycle[i%len(marker_cycle)] for i,name in enumerate(sorted(z.RGG_name.dropna().unique()))}
  markers.update({'thoc4_nter':'o','thoc4_cter':'^','g3bp1_rgg':'s','rbmx':'*'})
@@ -270,7 +273,7 @@ def fig_s11(d):
 
  thresholds=pd.read_csv(REV/'tables/threshold_summary.csv')
  primary=thresholds[(thresholds.comparison.eq('Kd_vs_NB'))&(thresholds.series.eq('Predicted'))&(thresholds.evaluation.eq('in-sample exploratory'))].iloc[0]
- cutoff=float(primary.threshold);z=d[d.Outcome.isin(['Kd_fit','NB'])&np.isfinite(d[PRED])].copy().sort_values(['Outcome',PRED]);rng=np.random.default_rng(14)
+ cutoff=float(primary.threshold);z=d[(~d.is_shuffle)&d.Outcome.isin(['Kd_fit','NB'])&np.isfinite(d[PRED])].copy().sort_values(['Outcome',PRED]);rng=np.random.default_rng(14)
  z['outcome_y']=z.Outcome.map({'NB':0,'Kd_fit':1}).astype(float)+rng.uniform(-.12,.12,len(z));z['above_threshold']=z[PRED]>=cutoff;z['correct']=z.above_threshold.eq(z.Outcome.eq('Kd_fit'))
  colors=z.Outcome.map({'NB':'#999999','Kd_fit':'#56B4E9'});edges=np.where(z.correct,'white','#D55E00')
  a.axvspan(z[PRED].min()-.05,cutoff,color='#F2F2F2',zorder=-2);a.axvspan(cutoff,z[PRED].max()+.05,color='#EAF4FA',zorder=-2);a.axvline(cutoff,color='#222222',ls='--',lw=1.2)
@@ -372,8 +375,12 @@ def tables(d):
   if stale.exists():stale.unlink()
  for pattern in ['Table_S11*.csv','Table_S12*.csv','Table_S13*.csv','Table_S14*.csv','Table_S15*.csv']:
   for stale in TAB.glob(pattern):stale.unlink()
+ bound_fields=['highest_ligand_equivalents','fraction_bound_highest_ligand','percent_bound_highest_ligand','fraction_bound_highest_ligand_uncertainty','percent_bound_highest_ligand_uncertainty']
+ curated=pd.read_csv(ROOT/'fig6_parent_master.csv').set_index('pair_id')
+ d=d.copy()
+ for field in bound_fields:d[field]=d.pair_id.map(curated[field])
  exp=d[d.experimental_status.ne('no experimental measurement supplied')].copy();exp['Experimental_description']=exp.Outcome.map(FULL_LABELS)
- cols=['pair_id','pair_display_name','AHD_name','RGG_name','AHD_length','RGG_length','AHD_variant','Outcome','Experimental_description','Kd_uM','Kd_error_uM','pKd','pKd_error','highest_ligand_equivalents','fraction_bound_highest_ligand','percent_bound_highest_ligand','I_ratio_threshold','I_ratio_mean_below_threshold',PRED,SIM,'experimental_status','Notes']
+ cols=['pair_id','pair_display_name','AHD_name','RGG_name','AHD_length','RGG_length','AHD_variant','Outcome','Experimental_description','Kd_uM','Kd_error_uM','pKd','pKd_error','highest_ligand_equivalents','fraction_bound_highest_ligand','percent_bound_highest_ligand','fraction_bound_highest_ligand_uncertainty','percent_bound_highest_ligand_uncertainty','I_ratio_threshold','I_ratio_mean_below_threshold',PRED,SIM,'experimental_status','Notes']
  nmr=exp[[c for c in cols if c in exp]].copy()
  nmr.to_csv(TAB/'Table_S11_NMR_outcomes_and_Kd.csv',index=False)
 
@@ -415,7 +422,7 @@ def tables(d):
   {'field':'percent_bound_highest_ligand','definition':'The same bound fraction expressed as a percentage.','allowed_values':'0 to 100 or blank','entry_rule':'When both forms are supplied, this must equal 100 × fraction_bound_highest_ligand.'}
  ])
  guide.to_csv(TAB/'Table_S11_bound_fraction_guide.csv',index=False)
- bound_entries=nmr[nmr.Outcome.eq('Kd_fit')][['pair_id','pair_display_name','Kd_uM','Kd_error_uM','highest_ligand_equivalents','fraction_bound_highest_ligand','percent_bound_highest_ligand']].copy()
+ bound_entries=nmr[nmr.Outcome.eq('Kd_fit')][['pair_id','pair_display_name','Kd_uM','Kd_error_uM','highest_ligand_equivalents','fraction_bound_highest_ligand','percent_bound_highest_ligand','fraction_bound_highest_ligand_uncertainty','percent_bound_highest_ligand_uncertainty']].copy()
 
  from histidine_ph_controls import load_controls
  phsim,phpred,phmetrics,phsources=load_controls()
@@ -448,6 +455,19 @@ def tables(d):
  payload[-1:-1]=[
   {'sheet':'pH simulation comparison','description':'Matched histidine pH controls, separate from NMR measurements. Five replicas per condition; SD is within-condition replicate variability. Deltas are pH6.5 minus pH7.','sections':[_section('Matched simulations and replicate variability',audit_sim),_section('Agreement statistics',phmetrics[phmetrics.panel.eq('S10A')]),_section('Source provenance',phsources)]},
   {'sheet':'pH predictor comparison','description':'Base and final hybrid predictions are explicitly distinguished. The supplied audit uses base_prediction; the existing figure uses final_hybrid_prediction. Residuals here are predicted minus simulated. No pH-specific prediction claim or retraining.','sections':[_section('Matched predictions at both pH conditions',audit_pred),_section('Model-specific agreement statistics',audit_metrics),_section('Existing final-hybrid panel source',phpred),_section('Existing panel agreement statistics',phmetrics[phmetrics.panel.eq('S10B')]),_section('Source provenance',phsources)]}]
+ from salt_control_panel import build as build_salt
+ salt_source,salt_stats=build_salt()
+ salt_provenance=json.loads((SRC/'FigureS8E_salt_provenance.json').read_text())
+ salt_sources=pd.DataFrame([{'source_file':name,'sha256':digest} for name,digest in salt_provenance['input_sha256'].items()])
+ salt_paired=pd.read_csv(SRC/'FigureS8E_salt_paired_changes.csv')
+ salt_method=pd.DataFrame([
+  {'field':'Figure panel','definition':'Supplementary Figure S8E; p53–THOC4-N, 8 ligand equivalents'},
+  {'field':'Matching','definition':'User-confirmed matching by row order across all four peak lists; spectrum-local peak IDs are not joined and are not residue assignments.'},
+  {'field':'CSP calculation','definition':'sqrt(delta_H_ppm^2 + (delta_N_ppm/7)^2); each 8-equivalent spectrum is compared with the reference at the same NaCl concentration.'},
+  {'field':'Display rule','definition':'Mask CSP <= 0.001 ppm; retain peaks above this cutoff at either salt. Sort by 150 mM CSP. Statistics use all matched peaks, without masking.'},
+  {'field':'Uncertainty','definition':'No independent replicate uncertainty supplied. Peaks within a spectrum are correlated observations; no peak-level significance test is reported.'},
+  {'field':'Interpretation','definition':'Salt-dependent CSP attenuation supports a salt-sensitive response; it does not quantify Kd or prove a uniquely electrostatic mechanism.'}])
+ payload.insert(-1,{'sheet':'Salt-dependent CSPs','description':'S8E: salt-matched p53–THOC4-N CSPs; peak indices are not residue assignments.','sections':[_section('Descriptive summaries; peaks are not independent replicates',salt_stats),_section('All matched peaks and original positions',salt_source),_section('Paired changes: 450 minus 150 mM',salt_paired),_section('Methods and interpretation',salt_method),_section('Source files and SHA256 provenance',salt_sources)]})
  (OUT/'tables_payload.json').write_text(json.dumps(payload,indent=2,ensure_ascii=False))
  # Proposed unified main Table 1: quantitative/qualitative [RRGG]7 experiments
  # from Figure 1 plus the integrated natural-partner measurements.
@@ -470,9 +490,9 @@ def write_package_texts():
 The figure follows one question at a time.
 
 1. **What experimental responses were observed?** Figure 5A shows representative NMR evidence in the same order used in the Results: a quantitatively fitted interaction, interaction-associated line broadening without an extractable Kd, and no detectable interaction under the tested conditions.
-2. **How do the frozen predictions distribute across those outcomes?** Figure 5B shows all measured outcome groups. LB remains visible but is not forced into an affinity order.
+2. **How do the frozen predictions distribute across those outcomes?** Figure 5B shows the WT pairs across measured outcome groups. LB remains visible but is not forced into an affinity order.
 3. **How robust is outcome discrimination to the treatment of line broadening?** Figure 5C reports group-versus-group AUROC, equivalent to positive-negative pairwise concordance, for Kd fit versus ND, Kd fit plus LB versus ND, and LB versus ND. The first comparison is primary; the two LB-inclusive comparisons are sensitivity analyses that do not assign LB an affinity rank.
-4. **Among pairs with fitted Kd values, does the predictor recover relative affinity?** Figure 5D shows the descriptive pKd association, including all fitted measurements and their supplied fitting errors. The intended claim is coarse rank ordering, not calibrated affinity prediction.
+4. **Among pairs with fitted Kd values, does the predictor recover relative affinity?** Figure 5D shows the descriptive pKd association, including all WT fitted measurements and their supplied fitting errors. The intended claim is coarse rank ordering, not calibrated affinity prediction.
 
 Figure S10 asks whether simulation-derived scores show the same qualitative patterns and keeps the intensity-ratio analysis explicitly exploratory. Figure S11 first makes the exploratory predictor threshold and held-family sensitivity explicit, then shows pair-resolved WT-to-shuffle experimental changes and tests whether LEF1 differs from partner-matched AHDs in encounter frequency and interaction energy.
 
@@ -480,14 +500,16 @@ The main AUROC panel shows AHD-parent-grouped uncertainty for predicted and simu
 ''')
  (OUT/'CAPTIONS.md').write_text('''# Final figure captions
 
+Primary outcome, AUROC, affinity and threshold panels include WT constructs only. Intensity-ratio analysis includes WT and shuffle constructs. All shuffle controls remain in the matched-control panel and the complete Table S11 dataset.
+
 ## Figure 5 Experimental evaluation of predicted AHD–RG/RGG interaction propensities
-(A) Representative NMR evidence supplied by the authors, ordered from a quantitatively fitted interaction to interaction-associated line broadening without an extractable Kd and no detectable interaction under the tested conditions. The fitted example should include its titration curve and fitted model. (B) Frozen predicted interaction scores grouped by experimental response. Each point is a measured pair; horizontal bars show group medians and labels report pair counts. LB is retained as a separate qualitative response and is not assigned an affinity order. Pending measurements are excluded. (C) Group-versus-group AUROC, equivalent to positive-negative pairwise concordance with half credit for ties, for Kd fit versus ND (primary comparison), Kd fit plus LB versus ND, and LB versus ND. Blue circles show predicted scores and orange triangles show simulation-derived scores. Bars give 95% percentile intervals from 2,000 bootstrap resamples grouped by AHD parent; RGG-parent-grouped sensitivity, panel membership and exclusions are reported in Supplementary Table S11. The dotted line marks chance concordance. The LB-inclusive comparisons treat broadening as qualitative interaction evidence and do not impose an affinity ordering on LB. Targeted sampling and shared constructs limit generalization. (D) Experimental pKd versus predicted interaction scores for all quantitatively fitted measurements. Text labels identify the AHD and marker shapes identify the RG/RGG partner. Error bars propagate the supplied Kd fitting errors to pKd by first-order error propagation, preserving their original uncertainty interpretation. The dashed line is an ordinary-least-squares descriptive fit; the reported coefficient is Spearman rank correlation. This line is not a calibration model. The corresponding simulation comparison is Figure S10D. Complete WT outcomes and Kd estimates with fitting errors are reported in Table 1; shuffle measurements are reported in Supplementary Table S11 and Figure S11. These results support qualitative discrimination and coarse affinity ordering rather than precise affinity prediction.
+(A) Representative NMR evidence supplied by the authors, ordered from a quantitatively fitted interaction to interaction-associated line broadening without an extractable Kd and no detectable interaction under the tested conditions. The fitted example should include its titration curve and fitted model. (B) Frozen predicted interaction scores grouped by experimental response. Each point is a measured WT pair; horizontal bars show group medians and labels report pair counts. LB is retained as a separate qualitative response and is not assigned an affinity order. Pending measurements are excluded. (C) Group-versus-group AUROC, equivalent to positive-negative pairwise concordance with half credit for ties, for Kd fit versus ND (primary comparison), Kd fit plus LB versus ND, and LB versus ND. Blue circles show predicted scores and orange triangles show simulation-derived scores. Bars give 95% percentile intervals from 2,000 bootstrap resamples grouped by AHD parent; RGG-parent-grouped sensitivity, panel membership and exclusions are reported in Supplementary Table S11. The dotted line marks chance concordance. The LB-inclusive comparisons treat broadening as qualitative interaction evidence and do not impose an affinity ordering on LB. Targeted sampling and shared constructs limit generalization. (D) Experimental pKd versus predicted interaction scores for all quantitatively fitted WT measurements. Text labels identify the AHD and marker shapes identify the RG/RGG partner. Error bars propagate the supplied Kd fitting errors to pKd by first-order error propagation, preserving their original uncertainty interpretation. The dashed line is an ordinary-least-squares descriptive fit; the reported coefficient is Spearman rank correlation. This line is not a calibration model. The corresponding simulation comparison is Figure S10D. Complete WT outcomes and Kd estimates with fitting errors are reported in Table 1; shuffle measurements are reported in Supplementary Table S11 and Figure S11. These results support qualitative discrimination and coarse affinity ordering rather than precise affinity prediction.
 
 ## Figure S10 Simulation comparisons and exploratory intensity attenuation
 (A) Simulation-derived scores grouped by ND, LB and Kd-fit outcomes; bars show medians. (B) Experimental pKd versus simulated score for the same fitted measurements as Figure 5D. AHD labels and RG/RGG marker shapes identify each pair, error bars propagate supplied Kd fitting errors, and the dashed line is a descriptive least-squares fit. Simulation uncertainty is not displayed; the supplied fit errors are not total experimental uncertainty. (C) Exploratory mean-below-threshold intensity ratios versus predicted and simulated scores. Lines are descriptive least-squares fits and coefficients are Spearman correlations. Lower retained intensity indicates greater attenuation; these measurements are not converted to Kd and do not establish specificity. Ranked intensity measurements, pair identities, AUROC sensitivity analyses and held-family threshold checks are reported in Supplementary Table S11.
 
 ## Figure S11 Sequence order and partner-context analyses
-(A) Frozen predicted scores for Kd-fit and ND pairs relative to the exploratory balanced-accuracy cutoff. Orange outlines identify pairs misclassified at this cutoff. The cutoff is a visualization of the selected validation panel and is not a universal binding boundary. (B) Balanced accuracy for Kd fit versus ND, Kd fit plus LB versus ND, and LB versus ND under in-sample, leave-AHD-parent-out and leave-RGG-partner-out threshold selection. (C) Pair-resolved experimental responses for composition-preserving shuffles and their matched WT constructs. Pending denotes measurement status rather than an experimental response. Five of the six pairs with completed responses in both constructs change category; LEF1–THOC4-N changes from ND to LB. Similar ND-to-LB changes in other constructs mean that the LEF1 transition is evidence of sequence-order dependence but is not unique to LEF1. (D) All-frame mean total interchain energy, (E) contact occupancy using the 0.8-nm cutoff, and (F) contact-conditioned total energy for LEF1 and matched WT AHD comparators against the same four provenance-resolved partners. Error bars show contiguous-block sensitivity where available and are not independent-replica errors. LEF1 follows the weaker-interaction direction relative to the comparator median for all four partners in each metric; the exact two-sided sign test gives p=0.125, so this is a consistent descriptive pattern rather than a statistically significant general effect. Energies are model-dependent ensemble observables and do not establish an experimental binding interface.
+(A) Frozen predicted scores for Kd-fit and ND pairs relative to the exploratory balanced-accuracy cutoff. Orange outlines identify pairs misclassified at this cutoff. The cutoff is a visualization of the selected validation panel and is not a universal binding boundary. (B) Balanced accuracy for Kd fit versus ND, Kd fit plus LB versus ND, and LB versus ND under in-sample, leave-AHD-parent-out and leave-RGG-partner-out threshold selection. (C) Pair-resolved experimental responses for composition-preserving shuffles and their matched WT constructs. Pending denotes measurement status rather than an experimental response. The panel and its source table report the current matched outcomes; response-category changes describe titration behaviour rather than a numerical affinity ordering. (D) All-frame mean total interchain energy, (E) contact occupancy using the 0.8-nm cutoff, and (F) contact-conditioned total energy for LEF1 and matched WT AHD comparators against the same four provenance-resolved partners. Error bars show contiguous-block sensitivity where available and are not independent-replica errors. LEF1 follows the weaker-interaction direction relative to the comparator median for all four partners in each metric; the exact two-sided sign test gives p=0.125, so this is a consistent descriptive pattern rather than a statistically significant general effect. Energies are model-dependent ensemble observables and do not establish an experimental binding interface.
 ''')
  (OUT/'README.md').write_text('''# Final Figure 5 package
 
@@ -514,6 +536,8 @@ def main():
  stale=SRC/'FigureS10_source.csv'
  if stale.exists():stale.unlink()
  d=data();figure5(d);fig_s10(d);fig_s11(d);tables(d);write_package_texts()
+ from salt_control_panel import write_manuscript_order
+ write_manuscript_order()
  manifest=[]
  for p in sorted(OUT.rglob('*')):
   if p.is_file():manifest.append({'path':str(p.relative_to(OUT)),'bytes':p.stat().st_size})
