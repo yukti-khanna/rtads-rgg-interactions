@@ -197,7 +197,7 @@ def main():
     main_info=make_main(); s5_info={} if PANEL_MODE == 'F_only' else make_s5()
     audit=['FINAL FIGURE DATA AUDIT','',f'model manifest SHA256: {EXPECTED_HASH}',f'lambda_final: {LAMBDA}',f'cap: {CAP}',f'gate centre/scale: {GATE_CENTER}/{GATE_SCALE}','']
     audit += ['Main D source: development_917_OOF_final_hybrid.csv',json.dumps(main_info['D'][0],indent=2),'Main E source: test_1794_final_hybrid_predictions.csv',json.dumps(main_info['E'][0],indent=2),'Main F source: full_landscape_final_hybrid_predictions.csv',json.dumps(main_info['F'][0],indent=2)]
-    audit += ['S5 A/B/D source: development_oof_final_hybrid_predictions.csv','S5C source: final development-only hybrid metrics/bootstrap',json.dumps({k:v[0] for k,v in s5_info.items()},indent=2),'No panel uses the older historical hybrid-prediction tables.','No model parameter was modified during figure generation.','The locked test set was used only for Panel E reporting.']
+    audit += ['S5 A/B/D source: development_oof_final_hybrid_predictions.csv','S5C source: final development-only hybrid metrics/bootstrap',json.dumps({k:v[0] for k,v in s5_info.items()},indent=2),'Panels use the current accepted hybrid predictions.','No model parameter was modified during figure generation.','The locked test set was used only for Panel E reporting.']
     (MODEL/'FINAL_FIGURE_DATA_AUDIT.txt').write_text('\n'.join(audit)+'\n')
     print('Updated final Figure 5 D/E/F and S5 A-D panels')
 if __name__=='__main__': main()

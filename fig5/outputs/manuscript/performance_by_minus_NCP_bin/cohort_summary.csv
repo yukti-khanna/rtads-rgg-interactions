@@ -1,0 +1,3 @@
+cohort,n,observed_mix_RMSE,observed_mix_MAE,RMSE_weighted_to_917_bin_mix,RMSE_weighted_to_1794_bin_mix,MAE_weighted_to_917_bin_mix,MAE_weighted_to_1794_bin_mix
+917 development (OOF),917,0.074340597,0.055959185,0.074340597,0.07045277,0.055959185,0.054072566
+"1,794 held-out",1794,0.085373423,0.063731941,0.08948407,0.085373423,0.066538253,0.063731941

@@ -1,8 +1,8 @@
 field,value
 table,Table S6 revised
 created,2026-09-15T13:56:47
-workspace,/Users/yuktikhanna/rtads-rgg-interactions/fig5
-terminology,Use negative net-charge product (-NCP); historical OCN appears only in provenance columns.
+workspace,
+terminology,Use negative net-charge product (-NCP); OCN appears only in provenance columns.
 model_retraining,No model retraining is performed by this script.
 controls_used_for_training,No controls are used for retraining.
 validation_used_for_model_selection,"The 1,794 validation pairs were not used in model selection."

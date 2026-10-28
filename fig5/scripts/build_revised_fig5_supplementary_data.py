@@ -61,9 +61,9 @@ FEATURE_DEFINITIONS = [
         "global_or_local": "global",
         "used_in_final_model": "yes",
         "used_in_ablation_only": "yes",
-        "historical_source_column": "Opposite_Charge_Number",
-        "historical_alias": "OCN",
-        "notes": "Historical OCN terminology represented this bulk net-charge product and is not interpreted here as positional pairing.",
+        "feature_identifier": "Opposite_Charge_Number",
+        "feature_alias": "OCN",
+        "notes": "OCN terminology represented this bulk net-charge product and is not interpreted here as positional pairing.",
     },
     {
         "feature_name": "mean_lambda_RGG",
@@ -74,8 +74,8 @@ FEATURE_DEFINITIONS = [
         "global_or_local": "global",
         "used_in_final_model": "yes",
         "used_in_ablation_only": "yes",
-        "historical_source_column": "mean_lambda_RGG or lambda_RGG",
-        "historical_alias": "",
+        "feature_identifier": "mean_lambda_RGG or lambda_RGG",
+        "feature_alias": "",
         "notes": "Used in the final F2 base model.",
     },
     {
@@ -87,34 +87,34 @@ FEATURE_DEFINITIONS = [
         "global_or_local": "global",
         "used_in_final_model": "yes",
         "used_in_ablation_only": "yes",
-        "historical_source_column": "mean_lambda_TAD or lambda_TAD",
-        "historical_alias": "",
+        "feature_identifier": "mean_lambda_TAD or lambda_TAD",
+        "feature_alias": "",
         "notes": "Used in the final F2 base model.",
     },
     {
         "feature_name": "SHD_RGG",
         "feature_family": "sequence patterning",
         "definition": "Sequence hydropathy decoration descriptor for the RGG region.",
-        "formula": "historical SHD implementation",
+        "formula": "SHD implementation",
         "TAD_or_RGG_or_pair": "RGG",
         "global_or_local": "global",
         "used_in_final_model": "yes",
         "used_in_ablation_only": "yes",
-        "historical_source_column": "SHD_RGG",
-        "historical_alias": "",
+        "feature_identifier": "SHD_RGG",
+        "feature_alias": "",
         "notes": "Used in the final F2 base model.",
     },
     {
         "feature_name": "SHD_TAD",
         "feature_family": "sequence patterning",
         "definition": "Sequence hydropathy decoration descriptor for the TAD.",
-        "formula": "historical SHD implementation",
+        "formula": "SHD implementation",
         "TAD_or_RGG_or_pair": "TAD",
         "global_or_local": "global",
         "used_in_final_model": "yes",
         "used_in_ablation_only": "yes",
-        "historical_source_column": "SHD_TAD",
-        "historical_alias": "",
+        "feature_identifier": "SHD_TAD",
+        "feature_alias": "",
         "notes": "Used in the final F2 base model.",
     },
     {
@@ -126,8 +126,8 @@ FEATURE_DEFINITIONS = [
         "global_or_local": "local",
         "used_in_final_model": "yes",
         "used_in_ablation_only": "yes",
-        "historical_source_column": "opp_charge_std",
-        "historical_alias": "",
+        "feature_identifier": "opp_charge_std",
+        "feature_alias": "",
         "notes": "Frozen local patch feature from training-only screening.",
     },
     {
@@ -139,8 +139,8 @@ FEATURE_DEFINITIONS = [
         "global_or_local": "local",
         "used_in_final_model": "yes",
         "used_in_ablation_only": "yes",
-        "historical_source_column": "ah_energy_std",
-        "historical_alias": "",
+        "feature_identifier": "ah_energy_std",
+        "feature_alias": "",
         "notes": "AH-energy heterogeneity term in final local-context model where applicable.",
     },
 ]
@@ -415,7 +415,7 @@ def readme_sheet(table_name: str, paths: dict[str, Path]) -> pd.DataFrame:
         {"field": "table", "value": table_name},
         {"field": "created", "value": datetime.now().isoformat(timespec="seconds")},
         {"field": "workspace", "value": str(ROOT)},
-        {"field": "terminology", "value": "Use negative net-charge product (-NCP); historical OCN appears only in provenance columns."},
+        {"field": "terminology", "value": "Use negative net-charge product (-NCP); OCN appears only in provenance columns."},
         {"field": "model_retraining", "value": "No model retraining is performed by this script."},
         {"field": "controls_used_for_training", "value": "No controls are used for retraining."},
         {"field": "validation_used_for_model_selection", "value": "The 1,794 validation pairs were not used in model selection."},
@@ -423,9 +423,15 @@ def readme_sheet(table_name: str, paths: dict[str, Path]) -> pd.DataFrame:
 
 
 def write_workbook(path: Path, sheets: dict[str, pd.DataFrame], csv_dir: Path) -> None:
+    from clean_supplementary_workbook import clean_text
     csv_dir.mkdir(parents=True, exist_ok=True)
     with pd.ExcelWriter(path, engine="openpyxl") as writer:
         for sheet, df in sheets.items():
+            df = df.copy()
+            df.columns = [clean_text(str(c)) for c in df.columns]
+            for column in df.columns:
+                if df[column].dtype == object:
+                    df[column] = df[column].map(lambda x: clean_text(x) if isinstance(x, str) else x)
             safe = sheet[:31]
             df.to_excel(writer, sheet_name=safe, index=False)
             df.to_csv(csv_dir / f"{safe}.csv", index=False)
@@ -436,6 +442,9 @@ def write_workbook(path: Path, sheets: dict[str, pd.DataFrame], csv_dir: Path) -
                 width = min(max([len(v) for v in values] + [10]) + 2, 60)
                 ws.column_dimensions[column_cells[0].column_letter].width = width
 
+
+    from clean_supplementary_workbook import clean_workbook
+    clean_workbook(path)
 
 def write_audit(outdir: Path, s6: dict[str, pd.DataFrame], s9: dict[str, pd.DataFrame], paths: dict[str, Path]) -> None:
     rows = []
@@ -455,8 +464,8 @@ def write_audit(outdir: Path, s6: dict[str, pd.DataFrame], s9: dict[str, pd.Data
         rows.append(f"- {source['source_key']}: {source['absolute_path']} exists={source['exists']} sha256={source['sha256']}")
     rows.append("")
     rows.append("Terminology mapping:")
-    rows.append("- Current scientific name: -NCP; historical source column: Opposite_Charge_Number; historical alias: OCN.")
-    rows.append("- Historical OCN is retained only for reproducibility/provenance and is not used as active terminology.")
+    rows.append("- Current scientific name: -NCP; source column: Opposite_Charge_Number; alias: OCN.")
+    rows.append("- OCN is retained only for reproducibility/provenance and is not used as active terminology.")
     rows.append("")
     rows.append("Figure-to-table consistency checks:")
     rows.append("- The builder uses the same upstream source CSVs intended for revised Figure 5 and Fig. S5/S8 tables.")

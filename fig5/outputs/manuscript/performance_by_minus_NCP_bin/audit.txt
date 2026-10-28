@@ -1,0 +1,13 @@
+Bin-wise performance comparison
+Bins match the attached S4D panel: each interval is (lower, upper], except the first includes its lower bound.
+Sampling comparison uses the S4D training-eligible candidate pool (192,303 pairs), selected development sample (917 pairs), and held-out sample (1,794 pairs).
+The representation ratio is the 917-pair share divided by the candidate-pool share; it describes sampling coverage and does not imply causation.
+The cohort summary reports observed error and errors reweighted to each cohort’s bin mix; reweighting is descriptive and only adjusts across these coarse bins.
+Development metrics use out-of-fold predictions for the 917 development pairs.
+Held-out metrics use final frozen-hybrid predictions for the 1,794 test pairs.
+Error = prediction − simulated target; intervals are pair-resampling percentile 95% confidence intervals.
+Intervals are descriptive and do not adjust for dependence from repeated protein-region identities; no between-cohort significance tests were run.
+Bootstrap replicates: 5000; seed: 20261017.
+Pair-ID overlap between cohorts: 0.
+917 development (OOF): n=917; per-bin counts={'10 to 16': 157, '16 to 24': 148, '3 to 6': 118, '6 to 10': 106, '1 to 3': 80, '24 to 35': 78, '35 to 58': 78, '-1 to 0': 35, '58 to 406': 34, '-98 to -6': 30, '-6 to -1': 27, '0 to 1': 26}
+1,794 held-out: n=1794; per-bin counts={'10 to 16': 302, '3 to 6': 285, '6 to 10': 252, '-1 to 0': 232, '16 to 24': 199, '1 to 3': 126, '24 to 35': 114, '35 to 58': 113, '-6 to -1': 95, '58 to 406': 40, '0 to 1': 21, '-98 to -6': 15}
