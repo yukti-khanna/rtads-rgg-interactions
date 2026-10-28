@@ -1,0 +1,16 @@
+pair_id,P_total,L_total,fraction_bound,fraction_bound_uncertainty,percent_bound,percent_bound_uncertainty,mapping_status
+rbmx__foxo4_cr3,25,200,0.509549,0.029922,50.95486,2.992226,confirmed
+thoc4_nter__foxo4_cr3_shuffle_2,25,150,0.812148,0.010661,81.21485,1.066123,confirmed
+thoc4_nter__tp53_shuffle_1,25,200,0.294518,0.035161,29.45178,3.51608,confirmed
+thoc4_nter__tp53,25,200,0.559636,0.017448,55.96361,1.744828,confirmed
+thoc4_nter__foxm1,25,200,0.402114,0.074559,40.21142,7.455873,confirmed
+rbmx__foxo6_cr3,25,200,0.491875,0.033052,49.18753,3.305197,confirmed
+thoc4_cter__atf4_tad,50,400,0.51991,0.033102,51.99096,3.310243,confirmed
+thoc4_nter__atf4_tad,50,400,0.666271,0.007778,66.62708,0.777845,confirmed
+g3bp1_rgg__atf4_tad,50,400,0.356951,0.037658,35.69509,3.765811,confirmed
+thoc4_cter__foxo4_cr3,25,200,0.489238,0.023514,48.92379,2.351393,confirmed
+thoc4_nter__foxo4_cr3,50,400,0.880162,0.003517,88.01618,0.351675,awaiting_construct_confirmation
+g3bp1_rgg__foxo4_cr3,50,400,0.350653,0.030979,35.06535,3.097891,confirmed
+thoc4_nter__foxo6_cr3,25,200,0.730007,0.006337,73.00074,0.633747,confirmed
+g3bp1_rgg__foxo6_cr3,25,200,0.40955,0.047354,40.95497,4.735366,confirmed
+thoc4_nter__tfe3_cter,25,200,0.430063,0.039703,43.00627,3.970274,confirmed

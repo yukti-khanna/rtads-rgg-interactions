@@ -28,47 +28,31 @@ snrnp70_s__foxo6_cr3,FOXO6–SNRNP70 short,simulation_vs_outcome,True,
 snrnp70_s__lef1_nter,LEF1–SNRNP70 short,simulation_vs_outcome,True,
 snrnp70_s__tfe3_cter,TFE3–SNRNP70 short,simulation_vs_outcome,True,
 taf15_rgg__atf4_tad,ATF4–TAF15,simulation_vs_outcome,True,
-taf15_rgg__atf4_tad_shuffle_1,ATF4 shuffle 1–TAF15,simulation_vs_outcome,True,
-taf15_rgg__foxm1,FOXM1–TAF15,simulation_vs_outcome,False,no eligible annotated outcome
+taf15_rgg__foxm1,FOXM1–TAF15,simulation_vs_outcome,True,
 taf15_rgg__foxo4_cr3,FOXO4–TAF15,simulation_vs_outcome,True,
 taf15_rgg__foxo6_cr3,FOXO6–TAF15,simulation_vs_outcome,True,
 taf15_rgg__lef1_nter,LEF1–TAF15,simulation_vs_outcome,True,
 taf15_rgg__sox12,SOX12–TAF15,simulation_vs_outcome,True,
 taf15_rgg__tfe3_cter,TFE3–TAF15,simulation_vs_outcome,True,
-taf15_rgg__tfe3_cter_shuffle_2,TFE3 shuffle 2–TAF15,simulation_vs_outcome,True,
-taf15_rgg__tp53,p53–TAF15,simulation_vs_outcome,False,no eligible annotated outcome
+taf15_rgg__tp53,p53–TAF15,simulation_vs_outcome,True,
 tceal6__atf4_tad,ATF4–TCEAL6,simulation_vs_outcome,True,
 tceal6__foxo4_cr3,FOXO4–TCEAL6,simulation_vs_outcome,True,
 tceal6__foxo6_cr3,FOXO6–TCEAL6,simulation_vs_outcome,True,
 tceal6__lef1_nter,LEF1–TCEAL6,simulation_vs_outcome,True,
 tceal6__tfe3_cter,TFE3–TCEAL6,simulation_vs_outcome,True,
 thoc4_cter__atf4_tad,ATF4–THOC4 C-term,simulation_vs_outcome,True,
-thoc4_cter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 C-term,simulation_vs_outcome,False,no eligible annotated outcome
 thoc4_cter__foxm1,FOXM1–THOC4 C-term,simulation_vs_outcome,True,
-thoc4_cter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 C-term,simulation_vs_outcome,False,no eligible annotated outcome
 thoc4_cter__foxo4_cr3,FOXO4–THOC4 C-term,simulation_vs_outcome,True,
-thoc4_cter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 C-term,simulation_vs_outcome,False,no eligible annotated outcome
 thoc4_cter__foxo6_cr3,FOXO6–THOC4 C-term,simulation_vs_outcome,True,
-thoc4_cter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 C-term,simulation_vs_outcome,True,
 thoc4_cter__lef1_nter,LEF1–THOC4 C-term,simulation_vs_outcome,True,
-thoc4_cter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 C-term,simulation_vs_outcome,False,no eligible annotated outcome
 thoc4_cter__sox12,SOX12–THOC4 C-term,simulation_vs_outcome,True,
 thoc4_cter__tfe3_cter,TFE3–THOC4 C-term,simulation_vs_outcome,True,
-thoc4_cter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 C-term,simulation_vs_outcome,False,no eligible annotated outcome
 thoc4_cter__tp53,p53–THOC4 C-term,simulation_vs_outcome,True,
-thoc4_cter__tp53_shuffle_1,p53 shuffle 1–THOC4 C-term,simulation_vs_outcome,False,no eligible annotated outcome
 thoc4_nter__atf4_tad,ATF4–THOC4 N-term,simulation_vs_outcome,True,
-thoc4_nter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 N-term,simulation_vs_outcome,True,
-thoc4_nter__foxm1,FOXM1–THOC4 N-term,simulation_vs_outcome,False,no eligible annotated outcome
-thoc4_nter__foxm1_shuffle_1,FOXM1 shuffle 1–THOC4 N-term,simulation_vs_outcome,True,
+thoc4_nter__foxm1,FOXM1–THOC4 N-term,simulation_vs_outcome,True,
 thoc4_nter__foxo4_cr3,FOXO4–THOC4 N-term,simulation_vs_outcome,True,
-thoc4_nter__foxo4_cr3_shuffle_2,FOXO4 shuffle 2–THOC4 N-term,simulation_vs_outcome,False,no eligible annotated outcome
 thoc4_nter__foxo6_cr3,FOXO6–THOC4 N-term,simulation_vs_outcome,True,
-thoc4_nter__foxo6_cr3_shuffle_1,FOXO6 shuffle 1–THOC4 N-term,simulation_vs_outcome,False,no eligible annotated outcome
 thoc4_nter__lef1_nter,LEF1–THOC4 N-term,simulation_vs_outcome,True,
-thoc4_nter__lef1_nter_shuffle_1,LEF1 shuffle 1–THOC4 N-term,simulation_vs_outcome,True,
 thoc4_nter__sox12,SOX12–THOC4 N-term,simulation_vs_outcome,True,
 thoc4_nter__tfe3_cter,TFE3–THOC4 N-term,simulation_vs_outcome,True,
-thoc4_nter__tfe3_cter_shuffle_2,TFE3 shuffle 2–THOC4 N-term,simulation_vs_outcome,True,
-thoc4_nter__tp53,p53–THOC4 N-term,simulation_vs_outcome,False,no eligible annotated outcome
-thoc4_nter__tp53_shuffle_1,p53 shuffle 1–THOC4 N-term,simulation_vs_outcome,False,no eligible annotated outcome
+thoc4_nter__tp53,p53–THOC4 N-term,simulation_vs_outcome,True,

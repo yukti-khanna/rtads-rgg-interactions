@@ -129,8 +129,8 @@ def inventory(d):
 def discrimination(d):
  stats=[];thresholds=[];folds=[];members=[]
  for name,pos in [('Kd_vs_NB',['Kd_fit']),('Kd_LB_vs_NB',['Kd_fit','LB']),('LB_vs_NB',['LB'])]:
-  valid=d.Outcome.isin(pos+['NB']) & np.isfinite(d[PRED]) & np.isfinite(d[SIM])
-  mem=d[['pair_id','Outcome']].copy();mem['panel']=name;mem['included']=valid;mem['reason']=np.where(valid,'included','outcome outside comparison or score unavailable');members.append(mem)
+  valid=(~d.is_shuffle) & d.Outcome.isin(pos+['NB']) & np.isfinite(d[PRED]) & np.isfinite(d[SIM])
+  mem=d[['pair_id','Outcome']].copy();mem['panel']=name;mem['included']=valid;mem['reason']=np.where(d.is_shuffle,'shuffle control excluded from primary analysis',np.where(valid,'included','outcome outside comparison or score unavailable'));members.append(mem)
   z=d[valid].copy();z['positive']=z.Outcome.isin(pos)
   fig,ax=plt.subplots(figsize=(5.2,4.5));figt,axt=plt.subplots(figsize=(5.2,4.5));panelstats=[]
   for label,col,color in [('Predicted',PRED,'#0072B2'),('Simulated',SIM,'#D55E00')]:
@@ -162,13 +162,13 @@ def discrimination(d):
  # Audited simulation-only sensitivity on the same rows for both scores.
  rows=[]
  for name,pos in [('Kd_vs_NB',['Kd_fit']),('Kd_LB_vs_NB',['Kd_fit','LB']),('LB_vs_NB',['LB'])]:
-  z=d[d.Outcome.isin(pos+['NB']) & d.simulation_accuracy_eligible.astype(str).str.lower().eq('true')].copy()
+  z=d[(~d.is_shuffle) & d.Outcome.isin(pos+['NB']) & d.simulation_accuracy_eligible.astype(str).str.lower().eq('true')].copy()
   for label,col in [('Predicted',PRED),('Simulated',SIM)]:rows.append(dict(comparison=name,series=label,n=len(z),AUROC=auc(z.Outcome.isin(pos),z[col]),scope='existing audited simulation subset'))
  save(pd.DataFrame(rows),'tables/audited_subset_discrimination.csv')
 
 def rankstats(d):
  rows=[]
- for panel,ycol,sel in [('pKd','pKd',d.Outcome.eq('Kd_fit')),('intensity','I_ratio_mean_below_threshold',d.I_ratio_mean_below_threshold.notna())]:
+ for panel,ycol,sel in [('pKd','pKd',(~d.is_shuffle) & d.Outcome.eq('Kd_fit')),('intensity','I_ratio_mean_below_threshold',d.I_ratio_mean_below_threshold.notna())]:
   z=d[sel & np.isfinite(d[PRED]) & np.isfinite(d[SIM])].copy()
   save(z,f'tables/{panel}_rank_members.csv')
   for label,col in [('Predicted',PRED),('Simulated',SIM)]:
@@ -225,8 +225,21 @@ def plots(d):
  from plot_master_validation import MasterFigures
  from validation_master import load_config
  cfg=load_config('validation_sources.json');cfg['diagnostics_dir']=str(OUT/'diagnostics')
- dd=d.copy();dd['Outcome']=dd.Outcome.replace({'Kd_fit':'Kd fit'})
+ dd=d[~d.is_shuffle].copy();dd['Outcome']=dd.Outcome.replace({'Kd_fit':'Kd fit'})
  MasterFigures(dd,cfg,str(OUT)).run(diagnostics=False)
+ full=d.copy();full['Outcome']=full.Outcome.replace({'Kd_fit':'Kd fit'})
+ intensity=MasterFigures(full,cfg,str(OUT));intensity.intensity_correlation()
+ membership_path=intensity.reports/'analysis_membership.csv'
+ membership=pd.read_csv(membership_path)
+ panels=[m.panel.iloc[0] for m in intensity.members]
+ membership=pd.concat([membership[~membership.panel.isin(panels)],*intensity.members],ignore_index=True)
+ membership.to_csv(membership_path,index=False)
+ scope=d[['pair_id','is_shuffle','Outcome']].copy()
+ scope['primary_outcome_included']=(~d.is_shuffle)&d.Outcome.isin(['Kd_fit','LB','NB'])
+ scope['primary_affinity_included']=(~d.is_shuffle)&d.Outcome.eq('Kd_fit')
+ scope['intensity_included']=d.I_ratio_mean_below_threshold.notna()
+ scope['primary_exclusion_reason']=np.where(d.is_shuffle,'matched shuffle control analysed separately','')
+ save(scope,'tables/analysis_scope.csv')
  discrimination(d);rankstats(d);context(d);shuffles(d)
 
 def report(d):
@@ -239,11 +252,11 @@ This draft distinguishes completed analyses from remaining experimental work. Ra
 
 LEF1 binds synthetic [RRGG]7 with Kd 44.292 ± 4.422 µM, the weakest of the five reference WT constructs. Its WT-to-shuffle Kd changes to 64.372 ± 6.089 µM in the synthetic-repeat dataset. The supplied quantitative CSP matrix likewise shows the smallest RRGG response for LEF1 among the four initial seeds. These different observables are not interchangeable. Together they demonstrate heterogeneity among seed constructs rather than a uniform class of strong binders.
 
-The original four natural-partner LEF1 outcomes remain NB, whereas the expanded panel includes LEF1–RAB44 LB and a qualitative-binding THOC4-N shuffle. This supports partner and sequence-context dependence. It does not establish that the weak repeat-peptide affinity causes natural-partner NB. Differences in construct boundaries and assay conditions must remain explicit. p53 and FOXM1 are now represented, with pending measurements shown as pending.
+The original four natural-partner LEF1 outcomes remain NB, whereas the expanded panel includes LEF1–RAB44 LB and the THOC4-N shuffle is currently annotated ND. This supports partner and sequence-context dependence. It does not establish that the weak repeat-peptide affinity causes natural-partner NB. Differences in construct boundaries and assay conditions must remain explicit. p53 and FOXM1 are now represented, with pending measurements shown as pending.
 
 ## R2-31: discrimination and rank concordance
 
-All supplied fitted Kd values are retained, including p53–G3BP1 and FOXO4–G3BP1. Primary discrimination compares Kd fits with NB; secondary comparisons pool Kd fits with LB or assess LB alone. LB is not assigned an ordinal affinity rank. AUROC is the positive-negative concordance with half credit for score ties. Confidence intervals resample AHD parents and RGG parents separately; shared constructs and targeted selection limit generalization. Quantitative affinity comparisons include Spearman and pairwise concordance with grouped-bootstrap uncertainty. Exploratory cutoffs are evaluated using held-family-out threshold selection, not presented as universal binding boundaries. NB has no invented numeric Kd or censoring bound.
+Primary analyses use WT pairs only; all supplied WT fitted Kd values are retained, with eligibility determined from the current curated master. p53–G3BP1 is classified as ND and is excluded from affinity fitting comparisons. Primary discrimination compares Kd fits with NB; secondary comparisons pool Kd fits with LB or assess LB alone. LB is not assigned an ordinal affinity rank. AUROC is the positive-negative concordance with half credit for score ties. Confidence intervals resample AHD parents and RGG parents separately; shared constructs and targeted selection limit generalization. Quantitative affinity comparisons include Spearman and pairwise concordance with grouped-bootstrap uncertainty. Exploratory cutoffs are evaluated using held-family-out threshold selection, not presented as universal binding boundaries. NB has no invented numeric Kd or censoring bound.
 
 ## R2-29: composition-preserving shuffles
 

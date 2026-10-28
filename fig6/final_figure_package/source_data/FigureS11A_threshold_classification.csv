@@ -6,10 +6,11 @@ rbmx__foxo6_cr3,FOXO6–RBMX,Kd_fit,4.0297812276899645,True,True
 thoc4_cter__foxo4_cr3,FOXO4–THOC4 C-term,Kd_fit,4.0435303938213805,True,True
 thoc4_nter__tfe3_cter,TFE3–THOC4 N-term,Kd_fit,4.046658006564283,True,True
 g3bp1_rgg__foxo4_cr3,FOXO4–G3BP1,Kd_fit,4.083035222714828,True,True
-g3bp1_rgg__tp53,p53–G3BP1,Kd_fit,4.09605757643346,True,True
 thoc4_nter__atf4_tad,ATF4–THOC4 N-term,Kd_fit,4.107048874011658,True,True
 thoc4_nter__foxo6_cr3,FOXO6–THOC4 N-term,Kd_fit,4.133097503603028,True,True
+thoc4_nter__foxm1,FOXM1–THOC4 N-term,Kd_fit,4.160102546112894,True,True
 rbmx__foxo4_cr3,FOXO4–RBMX,Kd_fit,4.171614930616354,True,True
+thoc4_nter__tp53,p53–THOC4 N-term,Kd_fit,4.2190663804747865,True,True
 thoc4_nter__foxo4_cr3,FOXO4–THOC4 N-term,Kd_fit,4.225118664554327,True,True
 taf15_rgg__sox12,SOX12–TAF15,NB,2.840270451531044,False,True
 g3bp1_rgg__sox12,SOX12–G3BP1,NB,2.851105637145337,False,True
@@ -24,18 +25,20 @@ rab44__foxo6_cr3,FOXO6–RAB44,NB,3.2752216206845897,False,True
 tceal6__tfe3_cter,TFE3–TCEAL6,NB,3.3762216855935474,False,True
 rab44__foxo4_cr3,FOXO4–RAB44,NB,3.391019612997953,False,True
 taf15_rgg__tfe3_cter,TFE3–TAF15,NB,3.3921371794591253,False,True
-taf15_rgg__atf4_tad_shuffle_1,ATF4 shuffle 1–TAF15,NB,3.406288942411185,False,True
 taf15_rgg__atf4_tad,ATF4–TAF15,NB,3.4217008216268345,False,True
 tceal6__foxo6_cr3,FOXO6–TCEAL6,NB,3.428387133983754,False,True
+taf15_rgg__foxm1,FOXM1–TAF15,NB,3.5080900454032937,False,True
 taf15_rgg__lef1_nter,LEF1–TAF15,NB,3.5164330901691216,False,True
 tceal6__lef1_nter,LEF1–TCEAL6,NB,3.518194770761022,False,True
 tceal6__foxo4_cr3,FOXO4–TCEAL6,NB,3.549723838296237,False,True
+taf15_rgg__tp53,p53–TAF15,NB,3.581327992415395,False,True
 thoc4_cter__foxo6_cr3,FOXO6–THOC4 C-term,NB,3.866322068828507,True,False
 rbmx__tfe3_cter,TFE3–RBMX,NB,3.914586558863298,True,False
 thoc4_cter__foxm1,FOXM1–THOC4 C-term,NB,3.9387061094600138,True,False
 g3bp1_rgg__foxm1,FOXM1–G3BP1,NB,3.9840430425467854,True,False
 thoc4_cter__lef1_nter,LEF1–THOC4 C-term,NB,3.986222362131916,True,False
+thoc4_cter__tp53,p53–THOC4 C-term,NB,4.018484626427419,True,False
 g3bp1_rgg__lef1_nter,LEF1–G3BP1,NB,4.061071165509613,True,False
-thoc4_nter__atf4_tad_shuffle_1,ATF4 shuffle 1–THOC4 N-term,NB,4.087342434119536,True,False
+g3bp1_rgg__tp53,p53–G3BP1,NB,4.09605757643346,True,False
 rbmx__lef1_nter,LEF1–RBMX,NB,4.124977510182793,True,False
 thoc4_nter__lef1_nter,LEF1–THOC4 N-term,NB,4.205672713585686,True,False

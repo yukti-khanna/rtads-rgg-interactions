@@ -54,9 +54,12 @@ class OutputChecks(unittest.TestCase):
   self.assertEqual(sha(ROOT/'fig6_parent_master.csv'),hashes.loc[str(ROOT/'fig6_parent_master.csv'),'sha256'])
   source=pd.read_csv(ROOT/'fig6_parent_master.csv')
   plotted=pd.read_csv(OUT/'paper_figures/prediction_vs_pKd.csv')
-  expected=set(source.loc[source.Outcome.eq('Kd_fit')&source.Kd_uM.gt(0),'pair_id'])
+  expected=set(source.loc[source.AHD_variant.eq('WT')&source.Outcome.eq('Kd_fit')&source.Kd_uM.gt(0),'pair_id'])
   self.assertEqual(set(plotted.pair_id),expected)
-  self.assertIn('g3bp1_rgg__tp53',expected);self.assertIn('g3bp1_rgg__foxo4_cr3',expected)
+  self.assertTrue(source.loc[source.Outcome.eq('NB'),'Kd_uM'].isna().all())
+  corrected=source.set_index('pair_id').loc['g3bp1_rgg__tp53']
+  self.assertEqual(corrected.Outcome,'NB')
+  self.assertNotIn('g3bp1_rgg__tp53',set(plotted.pair_id))
  def test_shuffle_and_concordance_exports(self):
   from run_revision_analysis import ROOT,OUT
   source=pd.read_csv(ROOT/'fig6_parent_master.csv');audit=pd.read_csv(OUT/'tables/shuffle_composition_audit.csv')
@@ -67,6 +70,16 @@ class OutputChecks(unittest.TestCase):
   stats=pd.read_csv(OUT/'tables/discrimination_statistics.csv')
   np.testing.assert_allclose(stats.AUROC,stats.positive_negative_concordance)
   self.assertTrue(stats.CI95_low.between(0,1).all());self.assertTrue(stats.CI95_high.between(0,1).all())
+ def test_primary_WT_and_intensity_scope(self):
+  root=Path(__file__).resolve().parent
+  master=pd.read_csv(root/'fig6_parent_master.csv')
+  wt=set(master.loc[master.AHD_variant.eq('WT'),'pair_id'])
+  for name in ['pKd_rank_members.csv','threshold_heldout_predictions.csv']:
+   frame=pd.read_csv(root/'revision_analysis/tables'/name)
+   self.assertTrue(set(frame.pair_id)<=wt)
+  intensity=pd.read_csv(root/'revision_analysis/tables/intensity_rank_members.csv')
+  self.assertEqual(set(intensity.pair_id),set(master.loc[master.I_ratio_mean_below_threshold.notna(),'pair_id']))
+  self.assertTrue(bool(set(intensity.pair_id)-wt))
  def test_energy_aggregation(self):
   from run_revision_analysis import OUT
   path=OUT/'trajectories/summary.csv'
@@ -89,12 +102,15 @@ class OutputChecks(unittest.TestCase):
   from run_revision_analysis import OUT,ROOT
   package=ROOT/'final_figure_package';source=package/'source_data'
   threshold=pd.read_csv(source/'FigureS11A_threshold_classification.csv')
-  expected=pd.read_csv(ROOT/'fig6_parent_master.csv');expected=set(expected.loc[expected.Outcome.isin(['Kd_fit','NB']),'pair_id'])
+  expected=pd.read_csv(ROOT/'fig6_parent_master.csv');expected=set(expected.loc[expected.AHD_variant.eq('WT')&expected.Outcome.isin(['Kd_fit','NB']),'pair_id'])
   self.assertEqual(set(threshold.pair_id),expected)
   robust=pd.read_csv(source/'FigureS11B_threshold_robustness.csv')
   self.assertEqual(set(robust.evaluation),{'in-sample exploratory','leave-AHD_parent-out','leave-RGG_parent-out'})
   shuffle=pd.read_csv(source/'FigureS11C_shuffle_outcomes.csv')
-  self.assertEqual(int(shuffle.complete_pair.sum()),6);self.assertEqual(int(shuffle.outcome_changed.sum()),5)
+  complete=shuffle.WT_outcome.ne('Kd_pending') & shuffle.shuffle_outcome.ne('Kd_pending')
+  changed=complete & shuffle.WT_outcome.ne(shuffle.shuffle_outcome)
+  np.testing.assert_array_equal(shuffle.complete_pair,complete)
+  np.testing.assert_array_equal(shuffle.outcome_changed,changed)
   lef=pd.read_csv(source/'FigureS11D-F_LEF1_matched_metrics.csv')
   self.assertEqual(set(lef.metric),{'total_kJ_mol','contact_08','total_kJ_mol_contact_conditioned'})
   self.assertEqual(lef.groupby('metric').size().to_dict(),{'contact_08':4,'total_kJ_mol':4,'total_kJ_mol_contact_conditioned':4})

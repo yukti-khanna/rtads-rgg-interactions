@@ -61,3 +61,27 @@ Experimental paired deltas are not calculated without paired measurements and co
 ## Preparation status
 
 The inventory stage was run before the user requested local execution. Plotting, bootstrap analyses, trajectory calculations and the synthetic verification script have been prepared but have not been run by the agent. Existing figures outside this revision output are from earlier work; they are not evidence that this new workflow passed verification. Final scientific and visual checks are for the local run.
+
+### Analysis population (updated 28 October 2026)
+Primary outcome comparisons, AUROC, pKd concordance/correlation and exploratory
+threshold analyses use WT constructs only. Shuffles remain in the separate
+matched WT–shuffle analysis and may contribute to exploratory intensity-ratio
+analysis whenever measured. Supplementary Table S11 retains all master rows.
+The runner regenerates `revision_analysis/tables/analysis_scope.csv` to document
+these inclusion rules. Do not reuse statistics calculated from pooled WT and
+shuffle outcomes for the WT-only manuscript claims.
+
+### Salt control and manuscript panel order
+The standard `python build_final_figure_package.py` command now regenerates S8E
+from the four p53/THOC4-N salt peak lists in fig6 and adds the `Salt-dependent CSPs`
+sheet to Supplementary Table S11. Row matching was explicitly confirmed by the
+user; the labels are peak indices, not assigned residues. All input lists remain
+unchanged. The method follows Figure S2B (nitrogen divisor 7; display cutoff
+0.001 ppm). Summary statistics use all 66 matched peaks.
+
+Use `final_figure_package/figures/manuscript_panels/` for the current numbering:
+S8A–D retain their manuscript meaning; S8E is salt, S8F intensity, S8G–H histidine.
+S9A–D contain shuffle and LEF1 context. Historical S10/S11 figure filenames
+remain compatibility outputs. Table numbering remains S11. Current supplementary
+legends are in `MANUSCRIPT_SUPPLEMENTARY_LEGENDS.md`. Each standalone panel is
+9 × 5 cm, Arial 7 pt. The manuscript DOCX files are not edited.

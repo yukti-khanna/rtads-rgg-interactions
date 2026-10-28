@@ -14,6 +14,8 @@ NMR outcomes and Kd,pKd_error,First-order propagation of the reported Kd error t
 NMR outcomes and Kd,highest_ligand_equivalents,Highest ligand-to-labelled-protein molar equivalent measured for this pair.
 NMR outcomes and Kd,fraction_bound_highest_ligand,Manually supplied bound fraction at the highest ligand equivalent; range 0–1.
 NMR outcomes and Kd,percent_bound_highest_ligand,Manually supplied bound percentage at the highest ligand equivalent; equals 100 × fraction when both are supplied.
+NMR outcomes and Kd,fraction_bound_highest_ligand_uncertainty,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
+NMR outcomes and Kd,percent_bound_highest_ligand_uncertainty,"See the corresponding sheet heading, figure caption, and analysis methods for this field."
 NMR outcomes and Kd,I_ratio_threshold,Intensity-ratio threshold measurement supplied by the experimental table.
 NMR outcomes and Kd,I_ratio_mean_below_threshold,Mean retained intensity ratio below the supplied threshold.
 NMR outcomes and Kd,Pred_log10_negB22_final,"Frozen predictor output, log10(−B22)."

@@ -1,0 +1,16 @@
+pair_id,highest_ligand_equivalents,fraction_bound_highest_ligand,fraction_bound_highest_ligand_uncertainty,percent_bound_highest_ligand,percent_bound_highest_ligand_uncertainty
+thoc4_nter__tp53_shuffle_1,8,0.294518,0.035161,29.45178,3.51608
+g3bp1_rgg__foxo4_cr3,8,0.350653,0.030979,35.06535,3.097891
+g3bp1_rgg__atf4_tad,8,0.356951,0.037658,35.69509,3.765811
+thoc4_nter__foxm1,8,0.402114,0.074559,40.21142,7.455873
+g3bp1_rgg__foxo6_cr3,8,0.40955,0.047354,40.95497,4.735366
+thoc4_nter__tfe3_cter,8,0.430063,0.039703,43.00627,3.970274
+rbmx__foxo6_cr3,8,0.491875,0.033052,49.18753,3.305197
+rbmx__foxo4_cr3,8,0.509549,0.029922,50.95486,2.992226
+thoc4_cter__atf4_tad,8,0.51991,0.033102,51.99096,3.310243
+thoc4_nter__tp53,8,0.559636,0.017448,55.96361,1.744828
+thoc4_cter__foxo4_cr3,8,0.652075,0.021398,65.20751,2.139819
+thoc4_nter__atf4_tad,8,0.666271,0.007778,66.62708,0.777845
+thoc4_nter__foxo6_cr3,8,0.730007,0.006337,73.00074,0.633747
+thoc4_nter__foxo4_cr3_shuffle_2,6,0.812148,0.010661,81.21485,1.066123
+thoc4_nter__foxo4_cr3,8,0.880162,0.003517,88.01618,0.351675
