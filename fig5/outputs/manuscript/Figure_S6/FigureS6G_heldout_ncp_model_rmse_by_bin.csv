@@ -1,0 +1,25 @@
+bin_id,bin_label,bin_lower_exclusive_except_first,bin_upper_inclusive,model,n,RMSE,RMSE_CI_2.5,RMSE_CI_97.5,bootstrap,bootstrap_replicates
+1,-98 to -6,-98.0,-6.0,−NCP-only model,15,0.09928577150808167,0.02655990637989003,0.14959328372857217,two-way cluster bootstrap over RGG and TAD identities,5000
+1,-98 to -6,-98.0,-6.0,Full 13-feature predictor,15,0.08123503715757048,0.03195887573331819,0.12284422550397821,two-way cluster bootstrap over RGG and TAD identities,5000
+2,-6 to -1,-6.0,-1.0,−NCP-only model,95,0.08664813291064803,0.05738290456935873,0.1248625828066014,two-way cluster bootstrap over RGG and TAD identities,5000
+2,-6 to -1,-6.0,-1.0,Full 13-feature predictor,95,0.08670683696830361,0.059420748364697434,0.12248875536925004,two-way cluster bootstrap over RGG and TAD identities,5000
+3,-1 to 0,-1.0,0.0,−NCP-only model,232,0.09145486060949753,0.06500998086691269,0.11156300983453268,two-way cluster bootstrap over RGG and TAD identities,5000
+3,-1 to 0,-1.0,0.0,Full 13-feature predictor,232,0.07524530131691344,0.0623765230653717,0.09017737184876601,two-way cluster bootstrap over RGG and TAD identities,5000
+4,0 to 1,0.0,1.0,−NCP-only model,21,0.07353692159988422,0.03656310008250207,0.11756094407229026,two-way cluster bootstrap over RGG and TAD identities,5000
+4,0 to 1,0.0,1.0,Full 13-feature predictor,21,0.07399288389002229,0.038848095330567045,0.11830744288168323,two-way cluster bootstrap over RGG and TAD identities,5000
+5,1 to 3,1.0,3.0,−NCP-only model,126,0.07628873771295208,0.05754886967506452,0.09432618080548942,two-way cluster bootstrap over RGG and TAD identities,5000
+5,1 to 3,1.0,3.0,Full 13-feature predictor,126,0.06938279035678249,0.052430209419540366,0.08862823640898262,two-way cluster bootstrap over RGG and TAD identities,5000
+6,3 to 6,3.0,6.0,−NCP-only model,285,0.07780146389718945,0.06022655745262443,0.09727122984966545,two-way cluster bootstrap over RGG and TAD identities,5000
+6,3 to 6,3.0,6.0,Full 13-feature predictor,285,0.06832834908488286,0.056522131803469385,0.0812213866991619,two-way cluster bootstrap over RGG and TAD identities,5000
+7,6 to 10,6.0,10.0,−NCP-only model,252,0.10240845364078145,0.059011464396417974,0.15753173386778974,two-way cluster bootstrap over RGG and TAD identities,5000
+7,6 to 10,6.0,10.0,Full 13-feature predictor,252,0.07553898193854715,0.05884666391212311,0.10278907720894104,two-way cluster bootstrap over RGG and TAD identities,5000
+8,10 to 16,10.0,16.0,−NCP-only model,302,0.08734972537242186,0.061384693838017514,0.1276690665285918,two-way cluster bootstrap over RGG and TAD identities,5000
+8,10 to 16,10.0,16.0,Full 13-feature predictor,302,0.07397966031344141,0.05918651680922785,0.0936659497227271,two-way cluster bootstrap over RGG and TAD identities,5000
+9,16 to 24,16.0,24.0,−NCP-only model,199,0.0932761706843095,0.0668739727634988,0.13207338538713875,two-way cluster bootstrap over RGG and TAD identities,5000
+9,16 to 24,16.0,24.0,Full 13-feature predictor,199,0.08283494542163389,0.06455204658737468,0.10301364964789167,two-way cluster bootstrap over RGG and TAD identities,5000
+10,24 to 35,24.0,35.0,−NCP-only model,114,0.14130611230277917,0.09548708022282966,0.18493717086601288,two-way cluster bootstrap over RGG and TAD identities,5000
+10,24 to 35,24.0,35.0,Full 13-feature predictor,114,0.13019231246663468,0.08021585527624749,0.1752018443971355,two-way cluster bootstrap over RGG and TAD identities,5000
+11,35 to 58,35.0,58.0,−NCP-only model,113,0.18873988873974074,0.11715297521385797,0.27438079601730425,two-way cluster bootstrap over RGG and TAD identities,5000
+11,35 to 58,35.0,58.0,Full 13-feature predictor,113,0.12263510348714332,0.0808329530128274,0.1759052461968907,two-way cluster bootstrap over RGG and TAD identities,5000
+12,58 to 406,58.0,406.0,−NCP-only model,40,0.23278752143842613,0.11407200217542668,0.2942925624576767,two-way cluster bootstrap over RGG and TAD identities,5000
+12,58 to 406,58.0,406.0,Full 13-feature predictor,40,0.14602462616402023,0.09198931107517341,0.19132336694516014,two-way cluster bootstrap over RGG and TAD identities,5000

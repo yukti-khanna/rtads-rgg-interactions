@@ -302,7 +302,7 @@ def main():
         "The 917 simulated targets were taken from the definitive development table.",
         "The full-landscape hybrid predictions were taken from the already-finalised full-landscape prediction table and were not regenerated.",
         "No hybrid model inference was performed during the FINCHES update.",
-        "No historical B22_pred_hybrid values were used in the revised FINCHES figure.",
+        "FINCHES panels use accepted epsilon and final prediction values.",
         "Pair reconciliation was performed using exact pair IDs.",
     ]
     (OUTDIR / "FINCHES_final_model_audit.txt").write_text("\n".join(audit_lines) + "\n")
